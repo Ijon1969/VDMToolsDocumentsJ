@@ -1,0 +1,37 @@
+\begin{vdm_al}
+class Timer
+
+instance variables
+
+currentTime  : nat   := 0;
+finished     : bool  := false;
+
+operations
+
+public Finished : () ==> ()
+Finished() == finished := true;
+
+sync
+
+  mutex(StepTime, GetTime);
+
+operations
+
+public StepTime : () ==> ()
+StepTime() ==
+  currentTime := currentTime + stepLength;
+
+public GetTime : () ==> nat
+GetTime() ==
+  return currentTime;
+
+values
+
+  stepLength : nat = 100;
+
+end Timer
+\end{vdm_al}
+
+\begin{rtinfo}[Timer`StepTime]
+{vdm.tc}[Timer]
+\end{rtinfo}

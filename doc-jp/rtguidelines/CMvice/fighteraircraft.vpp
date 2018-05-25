@@ -1,0 +1,114 @@
+\section{ミサイル防御対策システム}
+\begin{vdm_al}
+system ミサイル防御対策システム
+
+instance variables
+
+-- cpu to deploy sensor 1 and 2
+cpu1 : CPU := new CPU (<FCFS>,1E6);
+
+-- cpu to deploy sensor 3 and 4
+cpu2 : CPU := new CPU (<FCFS>,1E6);
+
+-- cpu to deploy the ミサイル探知器
+-- and the 火炎弾Controllers
+cpu3 : CPU := new CPU (<FP>,1E9);
+
+-- cpus for the 火炎弾 容器s
+cpu4 : CPU := new CPU (<FCFS>,1E6);
+cpu5 : CPU := new CPU (<FCFS>,1E6);
+cpu6 : CPU := new CPU (<FCFS>,1E6);
+
+-- bus to connect sensors 1 and 2 to the ミサイル s探知器
+bus1 : BUS := new BUS (<FCFS>,1E3,{cpu1,cpu3});
+
+-- bus to connect sensors 3 and 4 to the ミサイル s探知器
+bus2 : BUS := new BUS (<FCFS>,1E3,{cpu2,cpu3});
+  
+-- bus to connect 火炎弾 controllers to the 容器s
+bus3 : BUS := new BUS (<FCFS>,1E3,{cpu3,cpu4,cpu5,cpu6});
+
+-- maintain a link to the s探知器
+public static s探知器 : ミサイル探知器 := new ミサイル探知器();
+
+public static sensor0 : Sensor := new Sensor(s探知器,0);
+public static sensor1 : Sensor := new Sensor(s探知器,90);
+public static sensor2 : Sensor := new Sensor(s探知器,180);
+public static sensor3 : Sensor := new Sensor(s探知器,270);
+
+public static controller0 : 火炎弾コントローラ := new 火炎弾コントローラ(0);
+public static controller1 : 火炎弾コントローラ := new 火炎弾コントローラ(120);
+public static controller2 : 火炎弾コントローラ := new 火炎弾コントローラ(240);
+
+public static 容器0 : 火炎弾容器 := new 火炎弾容器(0);
+public static 容器1 : 火炎弾容器 := new 火炎弾容器(30);
+public static 容器2 : 火炎弾容器 := new 火炎弾容器(60);
+public static 容器3 : 火炎弾容器 := new 火炎弾容器(90);
+
+public static 容器4 : 火炎弾容器 := new 火炎弾容器(0);
+public static 容器5 : 火炎弾容器 := new 火炎弾容器(30);
+public static 容器6 : 火炎弾容器 := new 火炎弾容器(60);
+public static 容器7 : 火炎弾容器 := new 火炎弾容器(90);
+
+public static 容器8 : 火炎弾容器 := new 火炎弾容器(0);
+public static 容器9 : 火炎弾容器 := new 火炎弾容器(30);
+public static 容器10 : 火炎弾容器 := new 火炎弾容器(60);
+public static 容器11 : 火炎弾容器 := new 火炎弾容器(90);
+  
+operations
+
+public ミサイル防御対策システム: () ==> ミサイル防御対策システム
+ミサイル防御対策システム () ==
+  (cpu3.deploy(s探知器);
+   cpu3.setPriority(ミサイル探知器`add脅威,100);
+
+   -- set-up sensor 0 and 1
+   cpu1.deploy(sensor0);
+   cpu1.setPriority(Sensor`trip,100);
+   cpu1.deploy(sensor1);
+
+   -- set-up sensor 2 and 3
+   cpu2.deploy(sensor2);
+   cpu2.setPriority(Sensor`trip,100);
+   cpu2.deploy(sensor3);
+
+   -- add the first controller with four 容器s
+   cpu3.deploy(controller0);
+   cpu3.setPriority(火炎弾コントローラ`add脅威,80);
+   -- add the 容器s to the controller
+   cpu4.deploy(容器0);
+   cpu4.setPriority(火炎弾容器`add脅威,100);
+   cpu4.setPriority(火炎弾容器`evalQueue,80);
+   cpu4.deploy(容器1);
+   cpu4.deploy(容器2);
+   cpu4.deploy(容器3);
+
+   -- add the second controller with four 容器s
+   cpu3.deploy(controller1);
+   -- add the 容器s to the controller
+   cpu5.deploy(容器4);
+   cpu5.setPriority(火炎弾容器`add脅威,100);
+   cpu5.setPriority(火炎弾容器`evalQueue,80);
+   cpu5.deploy(容器5);
+   cpu5.deploy(容器6);
+   cpu5.deploy(容器7);
+
+   -- add the third controller with four 容器s
+   cpu3.deploy(controller2);
+   -- add the 容器s to the controller
+   cpu6.deploy(容器8);
+   cpu6.setPriority(火炎弾容器`add脅威,100);
+   cpu6.setPriority(火炎弾容器`evalQueue,80);
+   cpu6.deploy(容器9);
+   cpu6.deploy(容器10);
+   cpu6.deploy(容器11);
+   )
+
+end ミサイル防御対策システム
+\end{vdm_al}
+
+\subsubsection{テストカバレッジ}
+ここでは、ミサイル防御対策システムクラスをテストしたカバレッジ結果を表形式で表示している。
+\begin{rtinfo}
+  [ミサイル防御対策システム]{vdm.tc}[ミサイル防御対策システム]
+\end{rtinfo}

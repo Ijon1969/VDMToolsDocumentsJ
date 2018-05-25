@@ -1,0 +1,33 @@
+\begin{thebibliography}{{Gra}97}
+
+\bibitem[{Gra}97]{Booch&97}
+{Grady Booch, Ivar Jacobson and Jim Rumbaugh}.
+\newblock {The Unified Modelling Language, version 1.1}.
+\newblock Technical report, Rational Software Corporation, September 1997.
+\newblock Available at: http://www.rational.com/.
+
+\bibitem[Rat98]{Rational98}
+Rational.
+\newblock {\em Rose 98 User Manual}, 1998.
+
+\bibitem[SCSa]{InstallPPMan-SCSK}
+SCSK.
+\newblock {\em VDM++ Installation Guide}.
+\newblock SCSK.
+
+\bibitem[SCSb]{LangManPP-SCSK}
+SCSK.
+\newblock {\em The VDM++ Language}.
+\newblock SCSK.
+
+\bibitem[SCSc]{SortExpp-SCSK}
+SCSK.
+\newblock {\em VDM++ Sorting Algorithms}.
+\newblock SCSK.
+
+\bibitem[SCSd]{UserManPP-SCSK}
+SCSK.
+\newblock {\em VDM++ Toolbox User Manual}.
+\newblock SCSK.
+
+\end{thebibliography}

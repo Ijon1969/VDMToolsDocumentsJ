@@ -1,0 +1,84 @@
+\contentsline {section}{\numberline {1}Introduction}{1}{section.1}
+\contentsline {section}{\numberline {2}\VDMTools \ Overview}{4}{section.2}
+\contentsline {section}{\numberline {3}A Guided Tour of the \VDMTools }{6}{section.3}
+\contentsline {subsection}{\numberline {3.1}Creating Input to \VDMTools }{6}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Starting the VDM-SL\ Graphical User Interface}{7}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}On-Line Help}{7}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Menus, Toolbars and Subwindows}{8}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}Configuring your Project}{9}{subsection.3.5}
+\contentsline {subsection}{\numberline {3.6}Syntax Checking your VDM Specification}{11}{subsection.3.6}
+\contentsline {subsubsection}{\numberline {3.6.1}Parsing the specification}{11}{subsubsection.3.6.1}
+\contentsline {subsubsection}{\numberline {3.6.2}Correcting syntax errors}{12}{subsubsection.3.6.2}
+\contentsline {subsection}{\numberline {3.7}Type Checking your VDM Specification}{15}{subsection.3.7}
+\contentsline {subsection}{\numberline {3.8}Validating your Specification}{18}{subsection.3.8}
+\contentsline {subsubsection}{\numberline {3.8.1}Evaluating expressions using the interpreter}{19}{subsubsection.3.8.1}
+\contentsline {subsubsection}{\numberline {3.8.2}Setting breakpoints}{20}{subsubsection.3.8.2}
+\contentsline {subsubsection}{\numberline {3.8.3}Dynamic type checking}{24}{subsubsection.3.8.3}
+\contentsline {subsubsection}{\numberline {3.8.4}Checking Integrity Properties}{25}{subsubsection.3.8.4}
+\contentsline {subsection}{\numberline {3.9}Introducing Systematic Testing}{30}{subsection.3.9}
+\contentsline {subsection}{\numberline {3.10}Pretty Printing}{32}{subsection.3.10}
+\contentsline {subsection}{\numberline {3.11}Generating Code}{33}{subsection.3.11}
+\contentsline {subsection}{\numberline {3.12}The Dynamic Link Facility}{34}{subsection.3.12}
+\contentsline {subsection}{\numberline {3.13}The \VDMTools \ API}{34}{subsection.3.13}
+\contentsline {subsection}{\numberline {3.14}Exiting \VDMTools }{34}{subsection.3.14}
+\contentsline {section}{\numberline {4}The \VDMTools \ Reference Manual}{35}{section.4}
+\contentsline {subsection}{\numberline {4.1}The Overall Graphical User Interface}{35}{subsection.4.1}
+\contentsline {subsubsection}{\numberline {4.1.1}Project handling}{36}{subsubsection.4.1.1}
+\contentsline {subsubsection}{\numberline {4.1.2}Operations on specifications}{39}{subsubsection.4.1.2}
+\contentsline {subsubsection}{\numberline {4.1.3}The log window, error list and source window}{40}{subsubsection.4.1.3}
+\contentsline {subsubsection}{\numberline {4.1.4}Editing files}{41}{subsubsection.4.1.4}
+\contentsline {subsubsection}{\numberline {4.1.5}Using the interpreter}{42}{subsubsection.4.1.5}
+\contentsline {subsubsection}{\numberline {4.1.6}On-line help}{42}{subsubsection.4.1.6}
+\contentsline {subsection}{\numberline {4.2}The Overall Command Line Interface}{42}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}Initialisation file}{44}{subsubsection.4.2.1}
+\contentsline {subsection}{\numberline {4.3}The Syntax Checker}{45}{subsection.4.3}
+\contentsline {subsubsection}{\numberline {4.3.1}The graphical user interface}{45}{subsubsection.4.3.1}
+\contentsline {subsubsection}{\numberline {4.3.2}Format of syntax errors}{46}{subsubsection.4.3.2}
+\contentsline {subsubsection}{\numberline {4.3.3}The command line interface}{46}{subsubsection.4.3.3}
+\contentsline {subsubsection}{\numberline {4.3.4}The Emacs interface}{47}{subsubsection.4.3.4}
+\contentsline {subsection}{\numberline {4.4}The Type Checker}{49}{subsection.4.4}
+\contentsline {subsubsection}{\numberline {4.4.1}The graphical user interface}{50}{subsubsection.4.4.1}
+\contentsline {paragraph}{Setting options}{50}{section*.4}
+\contentsline {subsubsection}{\numberline {4.4.2}Format of type errors and warnings}{50}{subsubsection.4.4.2}
+\contentsline {paragraph}{Understanding errors from ``def'' type check}{51}{section*.5}
+\contentsline {subsubsection}{\numberline {4.4.3}The command line interface}{52}{subsubsection.4.4.3}
+\contentsline {subsubsection}{\numberline {4.4.4}The Emacs interface}{52}{subsubsection.4.4.4}
+\contentsline {subsection}{\numberline {4.5}The Interpreter and Debugger}{54}{subsection.4.5}
+\contentsline {subsubsection}{\numberline {4.5.1}The graphical user interface}{54}{subsubsection.4.5.1}
+\contentsline {paragraph}{Commands available in the dialog pane}{55}{section*.6}
+\contentsline {paragraph}{Setting options}{59}{section*.7}
+\contentsline {subsubsection}{\numberline {4.5.2}Standard libraries}{60}{subsubsection.4.5.2}
+\contentsline {subsubsection}{\numberline {4.5.3}The command line interface}{61}{subsubsection.4.5.3}
+\contentsline {subsubsection}{\numberline {4.5.4}The Emacs interface}{62}{subsubsection.4.5.4}
+\contentsline {subsection}{\numberline {4.6}The Integrity Examiner}{67}{subsection.4.6}
+\contentsline {subsection}{\numberline {4.7}The Pretty Printer}{69}{subsection.4.7}
+\contentsline {subsubsection}{\numberline {4.7.1}The graphical user interface}{70}{subsubsection.4.7.1}
+\contentsline {paragraph}{Setting options}{70}{section*.11}
+\contentsline {subsubsection}{\numberline {4.7.2}The command line interface}{70}{subsubsection.4.7.2}
+\contentsline {subsubsection}{\numberline {4.7.3}The Emacs interface}{71}{subsubsection.4.7.3}
+\contentsline {subsection}{\numberline {4.8}The VDM-SL to C++ Code Generator}{73}{subsection.4.8}
+\contentsline {subsubsection}{\numberline {4.8.1}The graphical user interface}{73}{subsubsection.4.8.1}
+\contentsline {subsubsection}{\numberline {4.8.2}The command line interface}{73}{subsubsection.4.8.2}
+\contentsline {subsubsection}{\numberline {4.8.3}The Emacs interface}{74}{subsubsection.4.8.3}
+\contentsline {subsection}{\numberline {4.9}Systematic Testing of VDM models}{75}{subsection.4.9}
+\contentsline {subsubsection}{\numberline {4.9.1}Preparing the test coverage file}{76}{subsubsection.4.9.1}
+\contentsline {subsubsection}{\numberline {4.9.2}Updating the test coverage file}{76}{subsubsection.4.9.2}
+\contentsline {subsubsection}{\numberline {4.9.3}Producing the test coverage statistics}{76}{subsubsection.4.9.3}
+\contentsline {subsubsection}{\numberline {4.9.4}Test coverage example using \LaTeX \ }{77}{subsubsection.4.9.4}
+\contentsline {paragraph}{Format of input file for \LaTeX \ test coverage}{78}{section*.12}
+\contentsline {paragraph}{Test coverage tables and the \LaTeX \ test coverage environment}{79}{section*.13}
+\contentsline {paragraph}{Colouring}{80}{section*.14}
+\contentsline {section}{Glossary}{83}{section*.16}
+\contentsline {section}{\numberline {A}Information Resources on VDM Technology}{85}{appendix.A}
+\contentsline {section}{\numberline {B}Combining VDM-SL and \LaTeX \ }{87}{appendix.B}
+\contentsline {subsection}{\numberline {B.1}Format of a Specification File}{87}{subsection.B.1}
+\contentsline {subsection}{\numberline {B.2}Setting up a \LaTeX \ Document}{87}{subsection.B.2}
+\contentsline {section}{\numberline {C}Setting up your \VDMTools {} Environment}{90}{appendix.C}
+\contentsline {subsection}{\numberline {C.1}General}{90}{subsection.C.1}
+\contentsline {subsection}{\numberline {C.2}Interface Options}{91}{subsection.C.2}
+\contentsline {section}{\numberline {D}The Emacs Interface}{93}{appendix.D}
+\contentsline {section}{\numberline {E}Test Scripts for the Sorting Example}{94}{appendix.E}
+\contentsline {subsection}{\numberline {E.1}The Windows/DOS Platform}{94}{subsection.E.1}
+\contentsline {subsection}{\numberline {E.2}The UNIX Platforms}{95}{subsection.E.2}
+\contentsline {section}{\numberline {F}Troubleshooting Problems with Microsoft Word}{97}{appendix.F}
+\contentsline {section}{Index}{104}{Item.15}

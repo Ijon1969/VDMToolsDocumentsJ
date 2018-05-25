@@ -1,0 +1,26 @@
+
+CMflat.vdm,680
+% $Id: sort.vdm,3,24
+\documentclass[32,514
+\documentclass[\pformat,32,514
+\documentclass[\pformat,pdftex,32,514
+  MissileInput 58,1046
+  MissileType 60,1085
+  Angle 62,1149
+  Output 65,1189
+  MagId 67,1233
+  OutputStep 69,1251
+  Response 71,1288
+  AbsTime 73,1319
+  FlareType 75,1337
+  Plan 79,1512
+  Delay 81,1550
+  responseDB : map MissileType to Plan 85,1574
+  missilePriority : map MissileType to nat93,1957
+  stepLength : nat 99,2170
+  testval : MissileInputs 101,2197
+  testval2 : MissileInputs 106,2396
+  testval3 : MissileInputs 111,2598
+CM: MissileInputs * Output * map MagId to 122,2925
+                          seq of 178,5053
+{vdm.tc}200,5655

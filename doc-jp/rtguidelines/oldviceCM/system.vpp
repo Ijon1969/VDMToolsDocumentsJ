@@ -1,0 +1,56 @@
+--system CM
+class CM
+
+instance variables
+  -- create a FlareController class instance
+  static public fc : FlareController := new FlareController();
+  -- define the first CPU with fixed priority scheduling and 22E6 MIPS
+  CPU1 : CPU := new CPU (<FP>, 22E6);
+
+  -- create an Radio four FlareDispenser class instance
+  static public disp1 : FlareDispenser := new FlareDispenser();
+  static public disp2 : FlareDispenser := new FlareDispenser();
+  static public disp3 : FlareDispenser := new FlareDispenser();
+  static public disp4 : FlareDispenser := new FlareDispenser();
+  -- define the second CPU with fixed priority scheduling and 11E6 MIPS
+  CPU2 : CPU := new CPU (<FP>, 11E6);
+  CPU3 : CPU := new CPU (<FP>, 11E6);
+  CPU4 : CPU := new CPU (<FP>, 11E6);
+  CPU5 : CPU := new CPU (<FP>, 11E6);
+
+  -- create a MissileDetector class instance
+  static public md : MissileDetector := new MissileDetector();
+  -- define the third CPU with fixed priority scheduling and 113 MIPS
+  CPU6 : CPU := new CPU (<FP>, 113E6); 
+
+  -- create a communication bus that links the three CPU's together
+  BUS1 : BUS := new BUS (<CSMACD>, 72E3, {CPU1, CPU2, CPU3})
+
+operations
+  public CM: () ==> CM
+  CM () ==
+    ( -- deploy fc on CPU1
+      CPU1.deploy(fc,"");
+      CPU1.setPriority(MissileIsHere,100);
+      CPU1.setPriority(StepPlan,90);
+      CPU1.setPriority(StartPlan,80);
+      -- deploy flaredispesers on each their CPU
+      CPU2.deploy(disp1,"");
+      CPU3.deploy(disp2,"");
+      CPU4.deploy(disp3,"");
+      CPU5.deploy(disp4,"");
+      CPU2.setPriority(ReleaseAFlare,100);
+      CPU2.setPriority(NewMissileValue,90);
+      CPU3.setPriority(ReleaseAFlare,100);
+      CPU3.setPriority(NewMissileValue,90);
+      CPU4.setPriority(ReleaseAFlare,100);
+      CPU4.setPriority(NewMissileValue,90);
+      CPU5.setPriority(ReleaseAFlare,100);
+      CPU5.setPriority(NewMissileValue,90);
+      -- deploy md on CPU3
+      CPU6.deploy(md,"");
+      CPU6.setPriority(Update, 100);
+      -- starting the CPUs and BUS is implicit
+    );
+
+end CM

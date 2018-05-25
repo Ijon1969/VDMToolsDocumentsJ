@@ -1,0 +1,3215 @@
+This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.euc) (TeX Live 2017) (preloaded format=platex 2017.7.6)  25 MAY 2018 19:00
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**ApiMan_a4J.tex
+(./ApiMan_a4J.tex
+pLaTeX2e <2017/05/05> (based on LaTeX2e <2017-04-15>)
+Babel <3.12> and hyphenation patterns for 84 language(s) loaded.
+(/opt/texlive/2016/texmf-dist/tex/platex/base/jarticle.cls
+Document Class: jarticle 2017/03/05 v1.7e Standard pLaTeX class
+\c@@paper=\count82
+(/opt/texlive/2016/texmf-dist/tex/platex/base/jsize12.clo
+File: jsize12.clo 2017/03/05 v1.7e Standard pLaTeX file (size option)
+)
+\c@part=\count83
+\c@section=\count84
+\c@subsection=\count85
+\c@subsubsection=\count86
+\c@paragraph=\count87
+\c@subparagraph=\count88
+\c@figure=\count89
+\c@table=\count90
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\symmincho=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `mincho' in version `bold'
+(Font)                  JY1/mc/m/n --> JY1/gt/m/n on input line 613.
+\toclineskip=\dimen118
+\@lnumwidth=\dimen119
+\bibindent=\dimen120
+\heisei=\count91
+) (./toolbox.sty
+Package: toolbox 1998/10/05 Toolbox Style. V1.2
+
+(/opt/texlive/2016/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footer
+s
+\f@nch@headwidth=\skip43
+\f@nch@O@elh=\skip44
+\f@nch@O@erh=\skip45
+\f@nch@O@olh=\skip46
+\f@nch@O@orh=\skip47
+\f@nch@O@elf=\skip48
+\f@nch@O@erf=\skip49
+\f@nch@O@olf=\skip50
+\f@nch@O@orf=\skip51
+)
+(/opt/texlive/2016/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/opt/texlive/2016/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+(/opt/texlive/2016/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+(/opt/texlive/2016/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/opt/texlive/2016/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: dvips.def on input line 99.
+
+(/opt/texlive/2016/texmf-dist/tex/latex/graphics-def/dvips.def
+File: dvips.def 2017/06/20 v3.1d Graphics/color driver for dvips
+))
+\Gin@req@height=\dimen121
+\Gin@req@width=\dimen122
+)
+(/opt/texlive/2016/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
+
+(/opt/texlive/2016/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: dvips.def on input line 147.
+
+(/opt/texlive/2016/texmf-dist/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+))
+(/opt/texlive/2016/texmf-dist/tex/latex/psnfss/pifont.sty
+Package: pifont 2005/04/12 PSNFSS-v9.2a Pi font support (SPQR) 
+
+(I search kanjifont definition file: . . ) (I search font definition file: . .
+. . . . . )
+LaTeX Font Info:    Try loading font information for U+pzd on input line 63.
+ (/opt/texlive/2016/texmf-dist/tex/latex/psnfss/upzd.fd
+File: upzd.fd 2001/06/04 font definitions for U/pzd.
+)
+(I search kanjifont definition file: . . ) (I search font definition file: . .
+. . . . . )
+LaTeX Font Info:    Try loading font information for U+psy on input line 64.
+ (/opt/texlive/2016/texmf-dist/tex/latex/psnfss/upsy.fd
+File: upsy.fd 2001/06/04 font definitions for U/psy.
+))
+(/opt/texlive/2016/texmf-dist/tex/latex/graphics/rotating.sty
+Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
+
+(/opt/texlive/2016/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\c@r@tfl@t=\count92
+\rotFPtop=\skip52
+\rotFPbot=\skip53
+\rot@float@box=\box42
+\rot@mess@toks=\toks16
+)
+\ToolboxLogo=\box43
+File: QU-logo.eps Graphic file (type eps)
+ <QU-logo.eps>
+\aabox=\box44
+)
+(/opt/texlive/2016/texmf-dist/tex/latex/base/makeidx.sty
+Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
+)
+(/home/yomori/lib/tex/macros/here.sty)
+(/opt/texlive/2016/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count93
+\float@exts=\toks17
+\float@box=\box45
+\@float@everytoks=\toks18
+\@floatcapt=\box46
+) (./verbatimfiles.sty
+\c@lineno=\count94
+)
+(/opt/texlive/2016/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip54
+\LTright=\skip55
+\LTpre=\skip56
+\LTpost=\skip57
+\LTchunksize=\count95
+\LTcapwidth=\dimen123
+\LT@head=\box47
+\LT@firsthead=\box48
+\LT@foot=\box49
+\LT@lastfoot=\box50
+\LT@cols=\count96
+\LT@rows=\count97
+\c@LT@tables=\count98
+\c@LT@chunks=\count99
+\LT@p@ftn=\toks19
+)
+(/opt/texlive/2016/texmf-dist/tex/latex/tools/array.sty
+Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
+\col@sep=\dimen124
+\extrarowheight=\dimen125
+\NC@list=\toks20
+\extratabsurround=\skip58
+\backup@length=\skip59
+)
+(/opt/texlive/2016/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2017/03/14 v6.85a Hypertext links for LaTeX
+
+(/opt/texlive/2016/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
+
+
+(/opt/texlive/2016/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: pdfTeX >= 1.30 not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode not found.
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
+)
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+)
+(/home/yomori/lib/tex/macros/ifxetex.sty
+Package: ifxetex 2008/09/18 v0.4 Provides ifxetex conditional
+)
+(/opt/texlive/2016/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+)
+(/opt/texlive/2016/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+)
+\@linkdim=\dimen126
+\Hy@linkcounter=\count100
+\Hy@pagecounter=\count101
+
+(/opt/texlive/2016/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2017/03/14 v6.85a Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count102
+
+(/opt/texlive/2016/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Option `bookmarks' set `true' on input line 4374.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 4374
+.
+Package hyperref Info: Option `colorlinks' set `true' on input line 4374.
+Package hyperref Info: Option `plainpages' set `true' on input line 4374.
+Package hyperref Info: Hyper figures OFF on input line 4498.
+Package hyperref Info: Link nesting OFF on input line 4503.
+Package hyperref Info: Hyper index ON on input line 4506.
+Package hyperref Info: Plain pages ON on input line 4511.
+Package hyperref Info: Backreferencing OFF on input line 4518.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4751.
+\c@Hy@tempcnt=\count103
+
+(/opt/texlive/2016/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5104.
+\XeTeXLinkMargin=\dimen127
+\Fld@menulength=\count104
+\Field@Width=\dimen128
+\Fld@charsize=\dimen129
+Package hyperref Info: Hyper figures OFF on input line 6358.
+Package hyperref Info: Link nesting OFF on input line 6363.
+Package hyperref Info: Hyper index ON on input line 6366.
+Package hyperref Info: backreferencing OFF on input line 6373.
+Package hyperref Info: Link coloring ON on input line 6376.
+Package hyperref Info: Link coloring with OCG OFF on input line 6383.
+Package hyperref Info: PDF/A mode OFF on input line 6388.
+LaTeX Info: Redefining \ref on input line 6428.
+LaTeX Info: Redefining \pageref on input line 6432.
+\Hy@abspage=\count105
+\c@Item=\count106
+\c@Hfootnote=\count107
+)
+
+Package hyperref Message: Driver: hdvipdfm.
+
+(/opt/texlive/2016/texmf-dist/tex/latex/hyperref/hdvipdfm.def
+File: hdvipdfm.def 2017/03/14 v6.85a Hyperref driver for dvipdfm
+\pdfm@box=\box51
+\c@Hy@AnnotLevel=\count108
+\HyField@AnnotCount=\count109
+\Fld@listcount=\count110
+\c@bookmark@seq@number=\count111
+
+(/opt/texlive/2016/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip60
+)
+(/opt/texlive/2016/texmf-dist/tex/latex/cite/cite.sty
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 332.
+Package: cite 2015/02/27  v 5.5
+)
+\@indexfile=\write3
+\openout3 = `ApiMan_a4J.idx'.
+
+
+Writing index file ApiMan_a4J.idx
+(./ApiMan_a4J.aux)
+\openout1 = `ApiMan_a4J.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+\AtBeginShipoutBox=\box52
+Package hyperref Info: Link coloring ON on input line 149.
+ (/opt/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+(/opt/texlive/2016/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count112
+)
+LaTeX Info: Redefining \ref on input line 149.
+LaTeX Info: Redefining \pageref on input line 149.
+LaTeX Info: Redefining \nameref on input line 149.
+
+(./ApiMan_a4J.out) (./ApiMan_a4J.out)
+\@outlinefile=\write4
+\openout4 = `ApiMan_a4J.out'.
+
+ (I search kanjifont definition file: . .
+) (I search font definition file: . . . . . . . . )
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <52> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 152.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <52> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 152.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 152.
+
+
+(/opt/texlive/2016/texmf-dist/tex/latex/psnfss/ot1phv.fd
+File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
+)
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <52> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 152.
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <22> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 152.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <22> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 152.
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <22> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 152.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 152.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 152.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 152.
+File: QUcover-logo.eps Graphic file (type eps)
+ <QUcover-logo.eps>
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 152.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 152.
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <12> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 152.
+File: vdmtools-logo.eps Graphic file (type eps)
+
+<vdmtools-logo.eps> [1
+
+]
+
+LaTeX Font Warning: Font shape `JT1/mc/m/sl' undefined
+(Font)              using `JT1/mc/m/n' instead on input line 152.
+
+
+LaTeX Font Warning: Font shape `JY1/mc/m/sl' undefined
+(Font)              using `JY1/mc/m/n' instead on input line 152.
+
+
+Overfull \hbox (16.44855pt too wide) in paragraph at lines 152--152
+[][] 
+ []
+
+
+LaTeX Font Warning: Font shape `JT1/mc/m/it' undefined
+(Font)              using `JT1/mc/m/n' instead on input line 152.
+
+
+LaTeX Font Warning: Font shape `JY1/mc/m/it' undefined
+(Font)              using `JY1/mc/m/n' instead on input line 152.
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 152.
+
+(/opt/texlive/2016/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <14.4> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 152.
+
+Overfull \hbox (9.3202pt too wide) in paragraph at lines 152--152
+[][] 
+ []
+
+[2]
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <17.28> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 152.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <17.28> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 152.
+ (./ApiMan_a4J.toc [1] [2])
+\tf@toc=\write5
+\openout5 = `ApiMan_a4J.toc'.
+
+ [3] [4] [1] [1]
+
+LaTeX Font Warning: Font shape `JT1/gt/m/it' undefined
+(Font)              using `JT1/gt/m/n' instead on input line 185.
+
+
+LaTeX Font Warning: Font shape `JY1/gt/m/it' undefined
+(Font)              using `JY1/gt/m/n' instead on input line 185.
+
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 193.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 193.
+[2]
+Overfull \hbox (9.52946pt too wide) in paragraph at lines 207--210
+[]\OT1/cmr/m/n/12 VDM Tool-box \JY1/mc/m/sl/12 の \OT1/cmr/m/n/12 CORBA \JY1/mc
+/m/sl/12 インタ ーフ ェ イスは 、 ２つの \OT1/cmr/m/n/12 IDL \JY1/mc/m/sl/12 フ
+ ァ イル \OT1/cmtt/m/n/12 corba[]api.idl
+ []
+
+
+Overfull \hbox (11.27478pt too wide) in paragraph at lines 254--259
+[][][]\OT1/cmtt/m/n/12 VDMApplication[][] \JY1/mc/m/sl/12 インタ ーフ ェ イスを
+図 [][]\OT1/cmr/m/n/12 1[][] \JY1/mc/m/sl/12 に示す。 メソ ッ ド \OT1/cmtt/m/n/
+12 Register \JY1/mc/m/sl/12 と \OT1/cmtt/m/n/12 Unregister
+ []
+
+[3] [4] [5]
+Overfull \hbox (62.72258pt too wide) in paragraph at lines 364--367
+[]\JY1/mc/m/sl/12 型チ ェ ッ クツ ール 、 コ ード生成ツ ール 、 清書印刷ツ ール
+ \OT1/cmr/m/n/12 ([][]\OT1/cmtt/m/n/12 VDMCodeGenerator[][]\JY1/mc/m/sl/12 、 [
+][]\OT1/cmtt/m/n/12 VDMTypeChecker[][]\JY1/mc/m/sl/12 、
+ []
+
+
+Overfull \hbox (7.78525pt too wide) in paragraph at lines 380--406
+ [] 
+ []
+
+[6] [7] [8] [9]
+File: VDMvalues.eps Graphic file (type eps)
+ <VDMvalues.eps>
+Overfull \hbox (1.16025pt too wide) in paragraph at lines 566--566
+[]                            \OT1/cmtt/m/n/12 "{ e |-> 2**e | e in set {1,...,
+16}}");[] 
+ []
+
+[10]
+Overfull \hbox (1.16025pt too wide) in paragraph at lines 566--566
+[]\OT1/cmtt/m/n/12 13      cout << iter->ToAscii() << "-->" << rng->ToAscii() <
+< "\n";[] 
+ []
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 569.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 569.
+[11] [12]
+Overfull \hbox (1.16025pt too wide) in paragraph at lines 637--637
+[]                            \OT1/cmtt/m/n/12 "{ e |-> 2**e | e in set {1,...,
+16}}");[] 
+ []
+
+
+Overfull \hbox (1.16025pt too wide) in paragraph at lines 637--637
+[]\OT1/cmtt/m/n/12 14      cout << iter->ToAscii() << "-->" << rng->ToAscii() <
+< "\n";[] 
+ []
+
+
+Overfull \hbox (24.85664pt too wide) in paragraph at lines 639--641
+[]\OT1/cmtt/m/n/12 PushTag \JY1/mc/m/sl/12 と \OT1/cmtt/m/n/12 DestroyTag \JY1/
+mc/m/sl/12 に対する呼び出しは 、 任意の深さの入れ子にされて \OT1/cmtt/m/n/12 De
+stroyTag
+ []
+
+[13] [14]
+Overfull \hbox (7.33525pt too wide) in paragraph at lines 707--707
+[]\OT1/cmtt/m/n/12 g = interp->EvalExpression(client_id, "[ e | e in set {1,...
+,10}]");[] 
+ []
+
+[15]
+Overfull \hbox (14.25916pt too wide) in paragraph at lines 717--722
+[]\OT1/cmr/m/n/12 IDL \JY1/mc/m/sl/12 インタ ーフ ェ イスである \OT1/cmtt/m/n/1
+2 metaiv[]idl.idl \JY1/mc/m/sl/12 では 、 \OT1/cmr/m/n/12 CORBA \JY1/mc/m/sl/12
+ の２つの例外 \OT1/cmtt/m/n/12 APIError
+ []
+
+[16] [17] [18] [19]
+Overfull \hbox (32.29758pt too wide) in paragraph at lines 836--842
+[]\OT1/cmr/m/n/12 VDM Tool-box \JY1/mc/m/sl/12 に対する主導権を獲得するためのも
+う１つのアプロ ーチ\OT1/cmr/m/n/12 - \OT1/cmtt/m/n/12 VDMApplication
+ []
+
+
+Overfull \hbox (4.32268pt too wide) in paragraph at lines 836--842
+\JY1/mc/m/sl/12 換する 。 すべての \OT1/cmr/m/n/12 ORB \JY1/mc/m/sl/12 実装は２
+つの関数 \OT1/cmtt/m/n/12 object[]to[]string \JY1/mc/m/sl/12 と \OT1/cmtt/m/n/1
+2 string[]to[]object
+ []
+
+[20]
+Overfull \hbox (1.98178pt too wide) in paragraph at lines 856--859
+\OT1/cmtt/m/n/12 VDMApplication \JY1/mc/m/sl/12 であれば \OT1/cmtt/m/n/12 SL[]T
+OOLBOX \JY1/mc/m/sl/12 また \OT1/cmtt/m/n/12 VDMApplication \JY1/mc/m/sl/12 で
+あれば \OT1/cmtt/m/n/12 PP[]TOOLBOX
+ []
+
+[21] [22] [23]
+Overfull \hbox (1.16025pt too wide) in paragraph at lines 983--983
+[]\OT1/cmtt/m/n/12 g = interp->EvalExpression(client_id, "MergeSort([6,4,9,7,3,
+42])");[] 
+ []
+
+[24] [25]
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 1033.
+
+ [26] [27]
+Overfull \hbox (8.96649pt too wide) in paragraph at lines 1084--1087
+[]\OT1/cmtt/m/n/12 jp.co.csk.vdm.toolbox.api.corba.VDM \JY1/mc/m/sl/12 このパ 
+ッ ケ ージは \OT1/cmtt/m/n/12 metaiv[]idl.idl
+ []
+
+
+Overfull \hbox (46.01651pt too wide) in paragraph at lines 1088--1090
+[]\OT1/cmtt/m/n/12 jp.co.csk.vdm.toolbox.api.corba.ToolboxAPI \JY1/mc/m/sl/12 
+このパ ッ ケ ージは \OT1/cmtt/m/n/12 corba[]api.idl
+ []
+
+[28]
+Overfull \hbox (31.00217pt too wide) in paragraph at lines 1128--1129
+[]\OT1/cmr/m/n/12 C++ \JY1/mc/m/sl/12 実装においてと同様に 、 \OT1/cmr/m/n/12 V
+DM Tool-box \JY1/mc/m/sl/12 に対するメインハンドル －[][] \OT1/cmtt/m/n/12 VDMA
+pplication[][]
+ []
+
+[29] [30]
+Overfull \hbox (15.47458pt too wide) in paragraph at lines 1190--1193
+\JY1/mc/m/sl/12 の \OT1/cmtt/m/n/12 vdmref.ior \JY1/mc/m/sl/12 あるいは \OT1/cm
+tt/m/n/12 vppref.ior \JY1/mc/m/sl/12 フ ァ イルを読み込むために \OT1/cmtt/m/n/1
+2 getVDMApplication
+ []
+
+[31] [32] [33] [34] [35] [36] [37] [38]
+Underfull \vbox (badness 10000) detected at line 1462
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 1489
+ []
+
+[39]
+Underfull \vbox (badness 10000) detected at line 1508
+ []
+
+[40] [41] [42] [43] [44] [45] [46] [47]
+Overfull \vbox (3.42763pt too high) has occurred while \output is active []
+
+
+[48] [49]
+Underfull \vbox (badness 10000) detected at line 1862
+ []
+
+[50] [51] [52] [53] [54] [55] [56] [57] [58]
+Underfull \vbox (badness 10000) detected at line 2268
+ []
+
+[59] [60] [61]
+Overfull \hbox (23.36823pt too wide) in paragraph at lines 2337--2341
+[]\JY1/mc/m/it/12 これらのクラスや以下に述べるクラスに加えて 、 さらにもう１つ
+クラス\OT1/cmr/m/n/12 -\OT1/cmtt/m/n/12 ToolboxClient
+ []
+
+[62]
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <12> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 2406.
+
+ [63] (./ApiMan_a4J.bbl) [64] (./example/client_example.cc
+Missing character: There is no ^^8a in font cmtt12!
+Missing character: There is no ^^97 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b1 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8b in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^a2 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^89 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^93 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8f in font cmtt12!
+Missing character: There is no ^^88 in font cmtt12!
+Missing character: There is no ^^97 in font cmtt12!
+Missing character: There is no ^^9d in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^c0 in font cmtt12!
+Missing character: There is no ^^91 in font cmtt12!
+Missing character: There is no ^^95 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b7 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^fb in font cmtt12!
+Missing character: There is no ^^96 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^a0 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b1 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8b in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^8f in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^a8 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^8f in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^93 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8b in font cmtt12!
+Missing character: There is no ^^89 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^a0 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^8f in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^97 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b7 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^a2 in font cmtt12!
+
+Overfull \hbox (6.28056pt too wide) in paragraph at lines 9--9
+[]\OT1/cmtt/m/n/12 *  *    98/NT \JY1/mc/m/it/12    \OT1/cmtt/m/n/12 nmake \J
+Y1/mc/m/it/12   \OT1/cmtt/m/n/12 gp \JY1/mc/m/it/12  \OT1/cmtt/m/n/12 ^^ea^^8
+d^^87 \JY1/mc/m/it/12   \OT1/cmtt/m/n/12 makefile \JY1/mc/m/it/12   \OT1/cmtt
+/m/n/12 Makefile.nm \JY1/mc/m/it/12  
+ []
+
+Missing character: There is no ^^8f in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^93 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8b in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b7 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^a2 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+
+Overfull \hbox (32.03526pt too wide) in paragraph at lines 12--12
+[]\OT1/cmtt/m/n/12 *  *    $Id: client_example.cc,v 1.27 2006/02/07 05:14:11 vd
+mtools Exp $[] 
+ []
+
+Missing character: There is no ^^8f in font cmtt12!
+Missing character: There is no ^^89 in font cmtt12!
+Missing character: There is no ^^8a in font cmtt12!
+Missing character: There is no ^^fa in font cmtt12!
+Missing character: There is no ^^89 in font cmtt12!
+Missing character: There is no ^^bb in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^a8 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^bd in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^bc in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b1 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^bd in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^bd in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+[65]
+Missing character: There is no ^^8f in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^92 in font cmtt12!
+Missing character: There is no ^^86 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^89 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^85 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8f in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^89 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^85 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b7 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b7 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+ [66]
+Overfull \hbox (25.86026pt too wide) in paragraph at lines 71--71
+[]    \OT1/cmtt/m/n/12 cerr << "Environment variable VDM_SOURCE_LOCATION not se
+t" << endl;[] 
+ []
+
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b7 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^93 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8b in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^89 in font cmtt12!
+Missing character: There is no ^^8a in font cmtt12!
+Missing character: There is no ^^fa in font cmtt12!
+Missing character: There is no ^^89 in font cmtt12!
+Missing character: There is no ^^bb in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b1 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^a2 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+
+Overfull \hbox (7.93736pt too wide) in paragraph at lines 78--78
+[]  \OT1/cmtt/m/n/12 // ORB^^cc^^8fB^^ea^^82^^aa^^c7^^82^^cc^^82^^e6^^82^^a4^^c
+9^^8ds \JY1/mc/m/it/12  
+ []
+
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^86 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^85 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8b in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^8d in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^8d in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b5 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^bd in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b7 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^93 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8b in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b7 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^93 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8b in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^90 in font cmtt12!
+Missing character: There is no ^^ac in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b3 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b6 in font cmtt12!
+Missing character: There is no ^^8e in font cmtt12!
+Missing character: There is no ^^9a in font cmtt12!
+Missing character: There is no ^^97 in font cmtt12!
+Missing character: There is no ^^8e in font cmtt12!
+Missing character: There is no ^^a6 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b5 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^93 in font cmtt12!
+Missing character: There is no ^^be in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b7 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^95 in font cmtt12!
+Missing character: There is no ^^b6 in font cmtt12!
+Missing character: There is no ^^8e in font cmtt12!
+Missing character: There is no ^^9a in font cmtt12!
+Missing character: There is no ^^97 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8b in font cmtt12!
+Missing character: There is no ^^96 in font cmtt12!
+Missing character: There is no ^^bc in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^a2 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^bd in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b5 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^91 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^ab in font cmtt12!
+Missing character: There is no ^^8f in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b3 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b3 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8c in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8a in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^a9 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b1 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^90 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^a2 in font cmtt12!
+Missing character: There is no ^^8f in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^a9 in font cmtt12!
+Missing character: There is no ^^93 in font cmtt12!
+Missing character: There is no ^^ae in font cmtt12!
+Missing character: There is no ^^93 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^80 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^bd in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+
+Overfull \hbox (211.71246pt too wide) in paragraph at lines 87--87
+[]  \OT1/cmtt/m/n/12 // ^^ea^^82^^aa^^dd^^92^^e8^^82^^b3 \JY1/mc/m/it/12  \OT1
+/cmtt/m/n/12 ^^c8^^82^^ea^^8d^^87Aget_app ^^cd^^8eI^^c9^^83z[iUnixj^^dc^^82
+ []
+
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8d in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8b in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8c in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8a in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8b in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b5 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^ad in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+
+Overfull \hbox (1.16025pt too wide) in paragraph at lines 91--91
+[]  \OT1/cmtt/m/n/12 GetAppReturnCode rt = get_app(app, NULL, ToolboxAPI::PP_TO
+OLBOX);[] 
+ []
+
+
+Overfull \hbox (1.16025pt too wide) in paragraph at lines 93--93
+[]  \OT1/cmtt/m/n/12 GetAppReturnCode rt = get_app(app, NULL, ToolboxAPI::SL_TO
+OLBOX);[] 
+ []
+
+
+Overfull \hbox (25.86026pt too wide) in paragraph at lines 97--97
+[]    \OT1/cmtt/m/n/12 cerr << "Environment variable VDM_OBJECT_LOCATION not se
+t" << endl;[] 
+ []
+
+
+Overfull \hbox (32.03526pt too wide) in paragraph at lines 100--100
+[]      \OT1/cmtt/m/n/12 cerr << "The file " + GetIORFileName() + " could not b
+e located. \[] 
+ []
+
+[67]
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^89 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^93 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^98 in font cmtt12!
+Missing character: There is no ^^8c in font cmtt12!
+Missing character: There is no ^^bb in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8d in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^92 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b7 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^93 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b7 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^93 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8b in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^89 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^93 in font cmtt12!
+Missing character: There is no ^^be in font cmtt12!
+Missing character: There is no ^^90 in font cmtt12!
+Missing character: There is no ^^8b in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8d in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^95 in font cmtt12!
+Missing character: There is no ^^97 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8b in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8d in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^92 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b7 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+
+Overfull \hbox (32.63737pt too wide) in paragraph at lines 121--121
+[]    \OT1/cmtt/m/n/12 // Kv^^c8^^83t@C \JY1/mc/m/it/12  \OT1/cmtt/m/n/12 ^^dc
+^^82^^df^^82^^e9^^82^^bd^^df^^82^^c9^^81AvWFNg
+ []
+
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8b in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^aa in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b5 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^bd in font cmtt12!
+Missing character: There is no ^^93 in font cmtt12!
+Missing character: There is no ^^af in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b6 in font cmtt12!
+Missing character: There is no ^^8f in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^94 in font cmtt12!
+Missing character: There is no ^^92 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b3 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^af in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^a2 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^bb in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+
+Overfull \hbox (133.24376pt too wide) in paragraph at lines 123--123
+[]    \OT1/cmtt/m/n/12 // zu \JY1/mc/m/it/12  \OT1/cmtt/m/n/12 ^^c8^^82 \JY1/m
+c/m/it/12  \OT1/cmtt/m/n/12 ^^ce^^82^^c8^^82 \JY1/mc/m/it/12  \OT1/cmtt/m/n/1
+2 ^^c8^^82B \JY1/mc/m/it/12  \OT1/cmtt/m/n/12 ^^c8^^8aO^^cc^^8f^^ea^^8d^^87^^c
+d^^81A[] 
+ []
+
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8b in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b7 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^a2 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^ab in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^a0 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+
+Overfull \hbox (13.51025pt too wide) in paragraph at lines 127--127
+[]        \OT1/cmtt/m/n/12 prj->AddFile(ADD_PATH(source_path,"examples/sort/sor
+t.vdm"));[] 
+ []
+
+
+Overfull \hbox (25.86026pt too wide) in paragraph at lines 130--130
+[]      \OT1/cmtt/m/n/12 prj->AddFile(ADD_PATH(source_path,"examples/sort/impls
+ort.vpp"));[] 
+ []
+
+
+Overfull \hbox (13.51025pt too wide) in paragraph at lines 131--131
+[]      \OT1/cmtt/m/n/12 prj->AddFile(ADD_PATH(source_path,"examples/sort/sorte
+r.vpp"));[] 
+ []
+
+
+Overfull \hbox (25.86026pt too wide) in paragraph at lines 132--132
+[]      \OT1/cmtt/m/n/12 prj->AddFile(ADD_PATH(source_path,"examples/sort/expls
+ort.vpp"));[] 
+ []
+
+
+Overfull \hbox (32.03526pt too wide) in paragraph at lines 133--133
+[]      \OT1/cmtt/m/n/12 prj->AddFile(ADD_PATH(source_path,"examples/sort/merge
+sort.vpp"));[] 
+ []
+
+
+Overfull \hbox (44.38527pt too wide) in paragraph at lines 134--134
+[]      \OT1/cmtt/m/n/12 prj->AddFile(ADD_PATH(source_path,"examples/sort/sortm
+achine.vpp"));[] 
+ []
+
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8b in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^95 in font cmtt12!
+Missing character: There is no ^^b6 in font cmtt12!
+Missing character: There is no ^^89 in font cmtt12!
+[68]
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^c1 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^bd in font cmtt12!
+Missing character: There is no ^^95 in font cmtt12!
+Missing character: There is no ^^fb in font cmtt12!
+Missing character: There is no ^^96 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8b in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^95 in font cmtt12!
+Missing character: There is no ^^b6 in font cmtt12!
+Missing character: There is no ^^89 in font cmtt12!
+Missing character: There is no ^^b7 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^91 in font cmtt12!
+Missing character: There is no ^^fb in font cmtt12!
+Missing character: There is no ^^96 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8b in font cmtt12!
+Missing character: There is no ^^88 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^9f in font cmtt12!
+Missing character: There is no ^^93 in font cmtt12!
+Missing character: There is no ^^a2 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b5 in font cmtt12!
+
+Overfull \hbox (25.76106pt too wide) in paragraph at lines 142--142
+[]    \OT1/cmtt/m/n/12 // \JY1/mc/m/it/12   \OT1/cmtt/m/n/12 ^^cc^^95@^^c5^^8
+2^^cd^^83t@C^^ea^^97^^97 \JY1/mc/m/it/12   \OT1/cmtt/m/n/12 P^^c2^^82P^^c2^^8c
+[] 
+ []
+
+Missing character: There is no ^^8a in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8b in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^95 in font cmtt12!
+Missing character: There is no ^^b6 in font cmtt12!
+Missing character: There is no ^^89 in font cmtt12!
+Missing character: There is no ^^b7 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b5 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^92 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8b in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^aa in font cmtt12!
+Missing character: There is no ^^97 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^a0 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+
+Overfull \hbox (143.88954pt too wide) in paragraph at lines 144--144
+[]    \OT1/cmtt/m/n/12 // i^^e0^^82^^bf \JY1/mc/m/it/12    \OT1/cmtt/m/n/12 A
+SL_TOOLBOX^^c9^^91^^ce^^82^^c4^^82^^cd^^8d\zt@CBP^^c2^^82^^c5^^82
+ []
+
+Missing character: There is no ^^90 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b1 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^95 in font cmtt12!
+Missing character: There is no ^^aa in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^a0 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+
+Overfull \hbox (1.76236pt too wide) in paragraph at lines 145--145
+[]    \OT1/cmtt/m/n/12 // ^^e0^^96^^be^^c5^^82^^cd^^82 \JY1/mc/m/it/12  \OT1/c
+mtt/m/n/12 ^^c5^^8f\^^c5^^82^^eb^^82^^a4)[] 
+ []
+
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^bb in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b5 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^bb in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8b in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^95 in font cmtt12!
+Missing character: There is no ^^b6 in font cmtt12!
+Missing character: There is no ^^89 in font cmtt12!
+Missing character: There is no ^^8d in font cmtt12!
+Missing character: There is no ^^95 in font cmtt12!
+Missing character: There is no ^^b6 in font cmtt12!
+Missing character: There is no ^^89 in font cmtt12!
+Missing character: There is no ^^86 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^89 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^aa in font cmtt12!
+Missing character: There is no ^^8b in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^ab in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^bd in font cmtt12!
+Missing character: There is no ^^8f in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b1 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b1 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b2 in font cmtt12!
+Missing character: There is no ^^8d in font cmtt12!
+Missing character: There is no ^^b8 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^89 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^93 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^89 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^89 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^97 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b7 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^89 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^fc in font cmtt12!
+[69]
+Missing character: There is no ^^93 in font cmtt12!
+Missing character: There is no ^^af in font cmtt12!
+Missing character: There is no ^^97 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^8d in font cmtt12!
+Missing character: There is no ^^90 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^8d in font cmtt12!
+Missing character: There is no ^^87 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^ab in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b7 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^85 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8b in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^bc in font cmtt12!
+Missing character: There is no ^^8f in font cmtt12!
+
+Overfull \hbox (1.76236pt too wide) in paragraph at lines 179--179
+[]    \OT1/cmtt/m/n/12 // ^^d7^^82^^c4^^82^^cc^^83W[^^cc^^96^^cc^^82^^c6^^8f \J
+Y1/mc/m/it/12  \OT1/cmtt/m/n/12 ^^d4^^82
+ []
+
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b7 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^85 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8b in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b7 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^85 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8b in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^8f in font cmtt12!
+
+Overfull \hbox (88.2124pt too wide) in paragraph at lines 192--192
+[]    \OT1/cmtt/m/n/12 // ^^d7^^82^^c4^^82^^cc^^83W[^^cc^^8d^^c5^^90V \JY1/mc/m
+/it/12  \OT1/cmtt/m/n/12 ^^d4^^82^^cc^^88^^ea^^97^^97:[] 
+ []
+
+Missing character: There is no ^^8d in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^93 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8a in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^97 in font cmtt12!
+Missing character: There is no ^^96 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b7 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^91 in font cmtt12!
+Missing character: There is no ^^90 in font cmtt12!
+Missing character: There is no ^^94 in font cmtt12!
+Missing character: There is no ^^8c in font cmtt12!
+Missing character: There is no ^^8e in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^94 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b5 in font cmtt12!
+Missing character: There is no ^^91 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^fb in font cmtt12!
+Missing character: There is no ^^96 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b5 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b9 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^a2 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^fb in font cmtt12!
+Missing character: There is no ^^96 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b7 in font cmtt12!
+
+Overfull \hbox (22.89713pt too wide) in paragraph at lines 205--205
+[]    \OT1/cmtt/m/n/12 // \JY1/mc/m/it/12   \OT1/cmtt/m/n/12 Q^^cc^^95@^^c6^^8
+2^^c4^^96^^e2^^8d^^87 \JY1/mc/m/it/12   \OT1/cmtt/m/n/12 p \JY1/mc/m/it/12  \
+OT1/cmtt/m/n/12 @^^f0^^8e^^a6^^82:[] 
+ []
+
+[70]
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b3 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^ab in font cmtt12!
+Missing character: There is no ^^90 in font cmtt12!
+Missing character: There is no ^^ae in font cmtt12!
+Missing character: There is no ^^90 in font cmtt12!
+Missing character: There is no ^^94 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^92 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b7 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b1 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^bd in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^92 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b7 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^bd in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b7 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^93 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8b in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+
+Overfull \hbox (97.20139pt too wide) in paragraph at lines 207--207
+[]    \OT1/cmtt/m/n/12 // VDMl \JY1/mc/m/it/12     \OT1/cmtt/m/n/12 o^^df^^8
+2 \JY1/mc/m/it/12   \OT1/cmtt/m/n/12 VDMFactory^^c9^^91^^ce^^82 \JY1/mc/m/it/1
+2   \OT1/cmtt/m/n/12 nh^^f0^^8b^^81^^82^^df^^82
+ []
+
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b1 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b6 in font cmtt12!
+Missing character: There is no ^^90 in font cmtt12!
+Missing character: There is no ^^ac in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b3 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b7 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^95 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^af in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b7 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+
+Overfull \hbox (25.05684pt too wide) in paragraph at lines 211--211
+[]    \OT1/cmtt/m/n/12 // \JY1/mc/m/it/12  \OT1/cmtt/m/n/12 ^^c8^^8d~^^cd^^90^
+^ea^^82^^bdIuWFNg^^d7^^82^^c4^^82^^c9^^83^Ot
+ []
+
+
+Overfull \hbox (13.51025pt too wide) in paragraph at lines 219--219
+[]    \OT1/cmtt/m/n/12 cout << "The sequence to be sorted: " << list->ToAscii()
+ << endl;[] 
+ []
+
+Missing character: There is no ^^8c in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b5 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^bd in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^f8 in font cmtt12!
+Missing character: There is no ^^90 in font cmtt12!
+Missing character: There is no ^^94 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^92 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b1 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+
+Overfull \hbox (40.21791pt too wide) in paragraph at lines 221--221
+[]    \OT1/cmtt/m/n/12 // ^^c4^^82 \JY1/mc/m/it/12 я \OT1/cmtt/m/n/12 o^^cc^^8
+2^^df^^82^^cc^^88^^cc^^88^^ea^^97^^97^^cc^^8d\zB
+ []
+
+Missing character: There is no ^^89 in font cmtt12!
+Missing character: There is no ^^95 in font cmtt12!
+Missing character: There is no ^^c0 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^88 in font cmtt12!
+Missing character: There is no ^^f8 in font cmtt12!
+Missing character: There is no ^^90 in font cmtt12!
+Missing character: There is no ^^94 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^92 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^a0 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+
+Overfull \hbox (22.89713pt too wide) in paragraph at lines 222--222
+[]    \OT1/cmtt/m/n/12 // E \JY1/mc/m/it/12 т\OT1/cmtt/m/n/12 ^^c9^^91S \JY1/m
+c/m/it/12  \OT1/cmtt/m/n/12 ^^dc^^82^^df^^82 \JY1/mc/m/it/12   \OT1/cmtt/m/n/
+12 VDM::Sequence^^cc^^8d\z^^c5^^82
+ []
+
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^86 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^93 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^93 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8a in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^a2 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^89 in font cmtt12!
+Missing character: There is no ^^95 in font cmtt12!
+Missing character: There is no ^^8e in font cmtt12!
+Missing character: There is no ^^a6 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b7 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^8e in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^93 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8a in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^fa in font cmtt12!
+Missing character: There is no ^^89 in font cmtt12!
+Missing character: There is no ^^bb in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b7 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+[71]
+Missing character: There is no ^^8d in font cmtt12!
+Missing character: There is no ^^89 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^92 in font cmtt12!
+Missing character: There is no ^^86 in font cmtt12!
+Missing character: There is no ^^90 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b6 in font cmtt12!
+Missing character: There is no ^^90 in font cmtt12!
+Missing character: There is no ^^ac in font cmtt12!
+Missing character: There is no ^^8e in font cmtt12!
+Missing character: There is no ^^9f in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b1 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8f in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b5 in font cmtt12!
+Missing character: There is no ^^8d in font cmtt12!
+Missing character: There is no ^^95 in font cmtt12!
+Missing character: There is no ^^b3 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^97 in font cmtt12!
+Missing character: There is no ^^b5 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^97 in font cmtt12!
+Missing character: There is no ^^91 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+
+Overfull \hbox (161.61113pt too wide) in paragraph at lines 248--248
+[]    \OT1/cmtt/m/n/12 // ^^c5^^8c \JY1/mc/m/it/12  \OT1/cmtt/m/n/12 ^^c9^^81A
+^^d4^^82^^ea^^82^^bd \JY1/mc/m/it/12   \OT1/cmtt/m/n/12 ^^ca^^82^^c4^^97^^f1^
+^92^^86^^82^^cc^^91Svf
+ []
+
+Missing character: There is no ^^8d in font cmtt12!
+Missing character: There is no ^^87 in font cmtt12!
+Missing character: There is no ^^8c in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^8e in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b7 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b5 in font cmtt12!
+
+Overfull \hbox (7.33525pt too wide) in paragraph at lines 254--254
+[]      \OT1/cmtt/m/n/12 VDM::VDMNumeric_var n = VDM::VDMNumeric::_narrow(s->In
+dex(k));[] 
+ []
+
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^89 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^93 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^98 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+[72]
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^8e in font cmtt12!
+Missing character: There is no ^^88 in font cmtt12!
+Missing character: There is no ^^ba in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^90 in font cmtt12!
+Missing character: There is no ^^94 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^ac in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b5 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^bb in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^bb in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^97 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b7 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b1 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^93 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8a in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^a9 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^8b in font cmtt12!
+Missing character: There is no ^^89 in font cmtt12!
+Missing character: There is no ^^9d in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+
+Overfull \hbox (11.90341pt too wide) in paragraph at lines 291--291
+[]  \OT1/cmtt/m/n/12 // \JY1/mc/m/it/12   \OT1/cmtt/m/n/12 VDM::Generic ^^cd^^
+83C^[v^[\JY1/mc/m/it/12  \OT1/cmtt/m/n/12 ^^cc^^8c^^ca^^82^^cc^^95^^db^^8e
+ []
+
+Missing character: There is no ^^97 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^a2 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^88 in font cmtt12!
+Missing character: There is no ^^ba in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^90 in font cmtt12!
+Missing character: There is no ^^94 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^8e in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b7 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^a2 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+
+Overfull \hbox (7.33525pt too wide) in paragraph at lines 298--298
+[]                  \OT1/cmtt/m/n/12 & exists1 x in set {2,...,e} & e mod x = 0
+ ]", n);[] 
+ []
+
+
+Overfull \hbox (56.73528pt too wide) in paragraph at lines 301--301
+[]    \OT1/cmtt/m/n/12 cout << "All primes below " << n << ":" << endl << g->To
+Ascii() << endl;[] 
+ []
+
+[73]
+Missing character: There is no ^^8e in font cmtt12!
+Missing character: There is no ^^8f in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^8e in font cmtt12!
+Missing character: There is no ^^88 in font cmtt12!
+Missing character: There is no ^^ba in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^90 in font cmtt12!
+Missing character: There is no ^^94 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^ac in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b5 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^bb in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^bb in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^97 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b7 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^92 in font cmtt12!
+Missing character: There is no ^^c1 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b5 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^92 in font cmtt12!
+Missing character: There is no ^^91 in font cmtt12!
+Missing character: There is no ^^91 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^a9 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^89 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^93 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^91 in font cmtt12!
+Missing character: There is no ^^a4 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b5 in font cmtt12!
+
+Overfull \hbox (54.57556pt too wide) in paragraph at lines 317--317
+[]  \OT1/cmtt/m/n/12 // ^^c7^^89^^c6^^82^^c4^^81AVDMlS^^cc^^82 \JY1/mc/m/it/12 
+  \OT1/cmtt/m/n/12 toolbox \JY1/mc/m/it/12   \OT1/cmtt/m/n/12 NCAg^^d6^^88^^d
+a^^8ds[] 
+ []
+
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b1 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b3 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^a2 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^92 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b7 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b7 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+
+Overfull \hbox (187.51537pt too wide) in paragraph at lines 318--318
+[]  \OT1/cmtt/m/n/12 // \JY1/mc/m/it/12    \OT1/cmtt/m/n/12 metaiv.h^^c9^^90^
+^e9^^8c^^be \JY1/mc/m/it/12  \OT1/cmtt/m/n/12 ^^c4^^82 \JY1/mc/m/it/12  \OT1/
+cmtt/m/n/12 "real"\JY1/mc/m/it/12   \OT1/cmtt/m/n/12 C++l^^c9^^95^^cf^^8a^^e9^
+^82^^bd^^df^^82
+ []
+
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^a4 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^97 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^ab in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^94 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^aa in font cmtt12!
+Missing character: There is no ^^8e in font cmtt12!
+Missing character: There is no ^^a6 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b5 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^a2 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+
+Overfull \hbox (139.01796pt too wide) in paragraph at lines 319--319
+[]  \OT1/cmtt/m/n/12 // ^^c7^^82GetCPPValue \JY1/mc/m/it/12   \OT1/cmtt/m/n/12
+ gp^^c5^^82^^e9^^82^^a9A^^f0^^82^^b1^^82^^cc^^8a^^d6^^90^^c4^^82
+ []
+
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b1 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^93 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8a in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^a9 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^8b in font cmtt12!
+Missing character: There is no ^^89 in font cmtt12!
+Missing character: There is no ^^9d in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b7 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+
+Overfull \hbox (6.93263pt too wide) in paragraph at lines 321--321
+[]  \OT1/cmtt/m/n/12 // \JY1/mc/m/it/12   \OT1/cmtt/m/n/12 VDM::VDMGeneric ^^c
+d^^83C^[v^[\JY1/mc/m/it/12  \OT1/cmtt/m/n/12 ^^cc^^8c^^ca^^82 \JY1/mc/m/it/12 
+ \OT1/cmtt/m/n/12 ^^db^^8e \JY1/mc/m/it/12 邱
+ []
+
+Missing character: There is no ^^97 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^a2 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^88 in font cmtt12!
+Missing character: There is no ^^ba in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^90 in font cmtt12!
+Missing character: There is no ^^94 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^8e in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b7 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^a2 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^92 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^95 in font cmtt12!
+Missing character: There is no ^^b7 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b7 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b1 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b1 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^91 in font cmtt12!
+Missing character: There is no ^^91 in font cmtt12!
+Missing character: There is no ^^aa in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^89 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^93 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^91 in font cmtt12!
+Missing character: There is no ^^a4 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b3 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^c0 in font cmtt12!
+Missing character: There is no ^^91 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+
+Overfull \hbox (32.03526pt too wide) in paragraph at lines 335--335
+[]  \OT1/cmtt/m/n/12 // ^^c5^^92lS^^cc^^82NCAg^^d6^^88^^da^^82^^ea^^82^^bd^^cc^
+^82^^c5^^88S
+ []
+
+Missing character: There is no ^^94 in font cmtt12!
+Missing character: There is no ^^8a in font cmtt12!
+Missing character: There is no ^^fc in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b7 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^aa in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^ab in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+[74]
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b1 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^94 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^85 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8b in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^bb in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b7 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+
+Overfull \hbox (100.46321pt too wide) in paragraph at lines 351--351
+[]  \OT1/cmtt/m/n/12 // ^^cc^^8a^^d6^^90^^cd^^83W[^^c6^^82 \JY1/mc/m/it/12   
+\OT1/cmtt/m/n/12 ^^cc^^8f \JY1/mc/m/it/12  \OT1/cmtt/m/n/12 ^^d4^^82 \JY1/mc/m
+/it/12  \OT1/cmtt/m/n/12 ^^ea^^97^^97^^c9^^82
+ []
+
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8d in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^93 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8b in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^85 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8b in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8a in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8a in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b1 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^91 in font cmtt12!
+Missing character: There is no ^^a2 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^85 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8b in font cmtt12!
+Missing character: There is no ^^8f in font cmtt12!
+Missing character: There is no ^^9d in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^97 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b3 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^94 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^85 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8b in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+
+Overfull \hbox (7.93736pt too wide) in paragraph at lines 365--365
+[]    \OT1/cmtt/m/n/12 // i^^d4^^96^^da^^82^^cc^^83W[^^cc^^8f \JY1/mc/m/it/12 
+ \OT1/cmtt/m/n/12 ^^d4^^82^^f0^^93^^be^^82
+ []
+
+Missing character: There is no ^^8f in font cmtt12!
+Missing character: There is no ^^fc in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b7 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+[75]) (./example/client_example.java
+Missing character: There is no ^^90 in font cmtt12!
+Missing character: There is no ^^b6 in font cmtt12!
+Missing character: There is no ^^90 in font cmtt12!
+Missing character: There is no ^^ac in font cmtt12!
+ [76]
+Overfull \hbox (69.08528pt too wide) in paragraph at lines 34--34
+[]                                                         \OT1/cmtt/m/n/12 Too
+lType.SL_TOOLBOX);[] 
+ []
+
+
+Overfull \hbox (69.08528pt too wide) in paragraph at lines 44--44
+[]                                                         \OT1/cmtt/m/n/12 Too
+lType.PP_TOOLBOX);[] 
+ []
+
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^89 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^93 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^98 in font cmtt12!
+Missing character: There is no ^^8d in font cmtt12!
+Missing character: There is no ^^89 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^8c in font cmtt12!
+Missing character: There is no ^^bb in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8d in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^92 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b7 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^93 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b7 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^93 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8b in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^93 in font cmtt12!
+Missing character: There is no ^^be in font cmtt12!
+[77]
+Missing character: There is no ^^95 in font cmtt12!
+Missing character: There is no ^^97 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8b in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8d in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^92 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b7 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+
+Overfull \hbox (51.16238pt too wide) in paragraph at lines 66--66
+[]        \OT1/cmtt/m/n/12 // Kv^^c8^^83t@C \JY1/mc/m/it/12  \OT1/cmtt/m/n/12 
+^^dc^^82^^df^^82^^e9^^82^^bd^^df^^82^^c9^^83vWFNg
+ []
+
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8b in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^aa in font cmtt12!
+Missing character: There is no ^^8e in font cmtt12!
+Missing character: There is no ^^93 in font cmtt12!
+Missing character: There is no ^^ae in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b5 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^bd in font cmtt12!
+Missing character: There is no ^^93 in font cmtt12!
+Missing character: There is no ^^af in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b6 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8c in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8a in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^94 in font cmtt12!
+Missing character: There is no ^^92 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b3 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^a2 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^af in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^a2 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^bb in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+
+Overfull \hbox (151.76877pt too wide) in paragraph at lines 68--68
+[]        \OT1/cmtt/m/n/12 // zu \JY1/mc/m/it/12  \OT1/cmtt/m/n/12 ^^c4^^82^^c
+8^^82 \JY1/mc/m/it/12  \OT1/cmtt/m/n/12 ^^ce^^82^^c8^^82 \JY1/mc/m/it/12  \OT
+1/cmtt/m/n/12 ^^c8^^82B \JY1/mc/m/it/12  \OT1/cmtt/m/n/12 ^^c8^^8aO^^cc^^8f^^e
+a^^8d^^87
+ []
+
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8b in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^97 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b7 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^ab in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^a0 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8b in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^95 in font cmtt12!
+Missing character: There is no ^^b6 in font cmtt12!
+Missing character: There is no ^^89 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^fb in font cmtt12!
+Missing character: There is no ^^96 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8b in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^95 in font cmtt12!
+Missing character: There is no ^^b6 in font cmtt12!
+Missing character: There is no ^^89 in font cmtt12!
+Missing character: There is no ^^b7 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^91 in font cmtt12!
+
+Overfull \hbox (26.26106pt too wide) in paragraph at lines 89--89
+[]        \OT1/cmtt/m/n/12 // Q^^c2^^82^^cc^^88^^d9^^82^^c8^^82 \JY1/mc/m/it/12
+  \OT1/cmtt/m/n/12 @^^c5^^83t@C \JY1/mc/m/it/12  \OT1/cmtt/m/n/12 \\JY1/mc/m/
+it/12  \OT1/cmtt/m/n/12 ^^cd^^82
+ []
+
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8b in font cmtt12!
+Missing character: There is no ^^88 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^a2 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b5 in font cmtt12!
+Missing character: There is no ^^8a in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8b in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^95 in font cmtt12!
+Missing character: There is no ^^b6 in font cmtt12!
+Missing character: There is no ^^89 in font cmtt12!
+Missing character: There is no ^^b7 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+
+Overfull \hbox (38.81238pt too wide) in paragraph at lines 90--90
+[]        \OT1/cmtt/m/n/12 // t@C^^ea^^97^^97^^f0^^8c^^9f^^93et@C \JY1/mc/m/it/
+12  \OT1/cmtt/m/n/12 ^^c2^^95^^ca^^82^^c9^^8d\
+ []
+
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b5 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^92 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8b in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^aa in font cmtt12!
+Missing character: There is no ^^97 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^a0 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+
+Overfull \hbox (168.58955pt too wide) in paragraph at lines 91--91
+[]        \OT1/cmtt/m/n/12 // (^^e0^^82^^bf \JY1/mc/m/it/12    \OT1/cmtt/m/n/
+12 ASL_TOOLBOX^^c9^^91^^ce^^82^^c4^^82^^cd^^8d\zt@CBP^^c2^^82^^c5^^82
+ []
+
+Missing character: There is no ^^90 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b1 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^95 in font cmtt12!
+Missing character: There is no ^^aa in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^a0 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+
+Overfull \hbox (26.46237pt too wide) in paragraph at lines 92--92
+[]        \OT1/cmtt/m/n/12 // ^^e0^^96^^be^^c9^^82^^cd^^82 \JY1/mc/m/it/12  \O
+T1/cmtt/m/n/12 ^^c5^^8f\^^c5^^82^^eb^^82^^a4)[] 
+ []
+
+[78]
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^bb in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b5 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^bb in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8b in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^95 in font cmtt12!
+Missing character: There is no ^^b6 in font cmtt12!
+Missing character: There is no ^^89 in font cmtt12!
+
+Overfull \hbox (20.9916pt too wide) in paragraph at lines 104--104
+[]        \OT1/cmtt/m/n/12 // ^^c4^^82^^cc^^8c \JY1/mc/m/it/12 シ\OT1/cmtt/m/n/
+12 ^^d7^^82^^c4^^82^^cc^^83t@C \JY1/mc/m/it/12    \OT1/cmtt/m/n/12 x^^c9^^8d\
+
+ []
+
+Missing character: There is no ^^8d in font cmtt12!
+Missing character: There is no ^^95 in font cmtt12!
+Missing character: There is no ^^b6 in font cmtt12!
+Missing character: There is no ^^89 in font cmtt12!
+Missing character: There is no ^^86 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^89 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^aa in font cmtt12!
+Missing character: There is no ^^8b in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^ab in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^bd in font cmtt12!
+Missing character: There is no ^^8f in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b1 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b1 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b2 in font cmtt12!
+Missing character: There is no ^^8d in font cmtt12!
+Missing character: There is no ^^b8 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^89 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^93 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^89 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^89 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^97 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b7 in font cmtt12!
+
+Overfull \hbox (13.51025pt too wide) in paragraph at lines 120--120
+[]         \OT1/cmtt/m/n/12 jp.co.csk.vdm.toolbox.api.corba.ToolboxAPI.Error er
+rlist[] =[] 
+ []
+
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^89 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^fc in font cmtt12!
+[79]
+Missing character: There is no ^^93 in font cmtt12!
+Missing character: There is no ^^af in font cmtt12!
+Missing character: There is no ^^97 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^8d in font cmtt12!
+Missing character: There is no ^^90 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^8d in font cmtt12!
+Missing character: There is no ^^87 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^ab in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+
+Overfull \hbox (2.96658pt too wide) in paragraph at lines 132--132
+[]        \OT1/cmtt/m/n/12 // l^^c9^^8cx \JY1/mc/m/it/12  \OT1/cmtt/m/n/12 ^^e
+2^^82^^a2^^ed^^82^^b9 \JY1/mc/m/it/12 邱\OT1/cmtt/m/n/12 ^^c6^^82 \JY1/mc/m/it/
+12  \OT1/cmtt/m/n/12 ^^c5^^82
+ []
+
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b7 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^85 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8b in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^bc in font cmtt12!
+Missing character: There is no ^^8f in font cmtt12!
+
+Overfull \hbox (26.46237pt too wide) in paragraph at lines 134--134
+[]        \OT1/cmtt/m/n/12 // ^^d7^^82^^c4^^82^^cc^^83W[^^cc^^96^^cc^^82^^c6^^8
+f \JY1/mc/m/it/12  \OT1/cmtt/m/n/12 ^^d4^^82
+ []
+
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b7 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^85 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8b in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b7 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^85 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8b in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^8f in font cmtt12!
+
+Overfull \hbox (112.91241pt too wide) in paragraph at lines 149--149
+[]        \OT1/cmtt/m/n/12 // ^^d7^^82^^c4^^82^^cc^^83W[^^cc^^8d^^c5^^90V \JY1/
+mc/m/it/12  \OT1/cmtt/m/n/12 ^^d4^^82^^cc^^88^^ea^^97^^97:[] 
+ []
+
+Missing character: There is no ^^8d in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^93 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8a in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^97 in font cmtt12!
+Missing character: There is no ^^96 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b7 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^91 in font cmtt12!
+Missing character: There is no ^^90 in font cmtt12!
+Missing character: There is no ^^94 in font cmtt12!
+Missing character: There is no ^^8c in font cmtt12!
+Missing character: There is no ^^8e in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^94 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b5 in font cmtt12!
+Missing character: There is no ^^91 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^fb in font cmtt12!
+Missing character: There is no ^^96 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b5 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b9 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^a2 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^fb in font cmtt12!
+Missing character: There is no ^^96 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b7 in font cmtt12!
+
+Overfull \hbox (47.59714pt too wide) in paragraph at lines 163--163
+[]        \OT1/cmtt/m/n/12 // \JY1/mc/m/it/12   \OT1/cmtt/m/n/12 Q^^cc^^95@^^c
+6^^82^^c4^^96^^e2^^8d^^87 \JY1/mc/m/it/12   \OT1/cmtt/m/n/12 p \JY1/mc/m/it/12
+  \OT1/cmtt/m/n/12 @^^f0^^8e^^a6^^82:[] 
+ []
+
+[80]
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b3 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^ab in font cmtt12!
+Missing character: There is no ^^90 in font cmtt12!
+Missing character: There is no ^^ae in font cmtt12!
+Missing character: There is no ^^90 in font cmtt12!
+Missing character: There is no ^^94 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^92 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b7 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b1 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^bd in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^92 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b7 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^bd in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b7 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^93 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8b in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+
+Overfull \hbox (121.9014pt too wide) in paragraph at lines 165--165
+[]        \OT1/cmtt/m/n/12 // VDMl \JY1/mc/m/it/12     \OT1/cmtt/m/n/12 o^^d
+f^^82 \JY1/mc/m/it/12   \OT1/cmtt/m/n/12 VDMFactory^^c9^^91^^ce^^82 \JY1/mc/m/
+it/12   \OT1/cmtt/m/n/12 nh^^f0^^8b^^81^^82^^df^^82
+ []
+
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b1 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b6 in font cmtt12!
+Missing character: There is no ^^90 in font cmtt12!
+Missing character: There is no ^^ac in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b3 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b7 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^95 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^af in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b7 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+
+Overfull \hbox (49.75685pt too wide) in paragraph at lines 170--170
+[]        \OT1/cmtt/m/n/12 // \JY1/mc/m/it/12  \OT1/cmtt/m/n/12 ^^c8^^8d~^^cd^
+^90^^ea^^82^^bdIuWFNg^^d7^^82^^c4^^82^^c9^^83^Ot
+ []
+
+Missing character: There is no ^^8c in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b5 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^bd in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^f8 in font cmtt12!
+Missing character: There is no ^^90 in font cmtt12!
+Missing character: There is no ^^94 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^92 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b1 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+
+Overfull \hbox (64.91792pt too wide) in paragraph at lines 183--183
+[]        \OT1/cmtt/m/n/12 // ^^c4^^82 \JY1/mc/m/it/12 я \OT1/cmtt/m/n/12 o^^c
+c^^82^^df^^82^^cc^^88^^cc^^88^^ea^^97^^97^^cc^^8d\zB
+ []
+
+Missing character: There is no ^^89 in font cmtt12!
+Missing character: There is no ^^95 in font cmtt12!
+Missing character: There is no ^^c0 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^88 in font cmtt12!
+Missing character: There is no ^^f8 in font cmtt12!
+Missing character: There is no ^^90 in font cmtt12!
+Missing character: There is no ^^94 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^92 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^a0 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+
+Overfull \hbox (16.72212pt too wide) in paragraph at lines 184--184
+[]        \OT1/cmtt/m/n/12 // E \JY1/mc/m/it/12 т\OT1/cmtt/m/n/12 ^^c9^^91S \J
+Y1/mc/m/it/12  \OT1/cmtt/m/n/12 ^^dc^^82^^df^^82 \JY1/mc/m/it/12   \OT1/cmtt/
+m/n/12 Sequence^^cc^^8d\z^^c5^^82
+ []
+
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^86 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^93 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^93 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8a in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^a2 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^89 in font cmtt12!
+Missing character: There is no ^^95 in font cmtt12!
+Missing character: There is no ^^8e in font cmtt12!
+Missing character: There is no ^^a6 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b7 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^8e in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^93 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8a in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^fa in font cmtt12!
+Missing character: There is no ^^89 in font cmtt12!
+Missing character: There is no ^^bb in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b7 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+[81]
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^8d in font cmtt12!
+Missing character: There is no ^^89 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^92 in font cmtt12!
+Missing character: There is no ^^86 in font cmtt12!
+Missing character: There is no ^^90 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b6 in font cmtt12!
+Missing character: There is no ^^90 in font cmtt12!
+Missing character: There is no ^^ac in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^8e in font cmtt12!
+Missing character: There is no ^^9f in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b1 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8f in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b5 in font cmtt12!
+
+Overfull \hbox (3.0687pt too wide) in paragraph at lines 207--207
+[]        \OT1/cmtt/m/n/12 @// ^^cd^^81A^^cc^^83IuWFNg \JY1/mc/m/it/12    \OT
+1/cmtt/m/n/12 GoSorting \bh \JY1/mc/m/it/12  \OT1/cmtt/m/n/12 ^^c4^^82 \JY1/mc
+/m/it/12 я \OT1/cmtt/m/n/12 o:[] 
+ []
+
+Missing character: There is no ^^8d in font cmtt12!
+Missing character: There is no ^^95 in font cmtt12!
+Missing character: There is no ^^b3 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^97 in font cmtt12!
+Missing character: There is no ^^b5 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^86 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^97 in font cmtt12!
+Missing character: There is no ^^91 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+
+Overfull \hbox (8.53947pt too wide) in paragraph at lines 213--213
+[]        \OT1/cmtt/m/n/12 // ^^c5^^8c \JY1/mc/m/it/12  \OT1/cmtt/m/n/12 ^^c9^
+^81A^^d4^^82^^ea^^82^^bd^^f1^^8b^^93^^82 \JY1/mc/m/it/12  
+ []
+
+Missing character: There is no ^^8d in font cmtt12!
+Missing character: There is no ^^87 in font cmtt12!
+Missing character: There is no ^^8c in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^8e in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b7 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b5 in font cmtt12!
+
+Overfull \hbox (7.33525pt too wide) in paragraph at lines 221--221
+[]        \OT1/cmtt/m/n/12 for (int ii=s.First(eholder); ii != 0; ii=s.Next(eho
+lder)) {[] 
+ []
+
+
+Overfull \hbox (1.16025pt too wide) in paragraph at lines 226--226
+[]        \OT1/cmtt/m/n/12 System.out.println("The sum of all the elements: " +
+  sum);[] 
+ []
+
+[82]
+Overfull \hbox (87.61029pt too wide) in paragraph at lines 241--241
+[]      \OT1/cmtt/m/n/12 (jp.co.csk.vdm.toolbox.api.ToolboxClient.CouldNotResol
+veObjectException ex)[] 
+ []
+
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b1 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^94 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^85 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8b in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^bb in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b7 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+
+Overfull \hbox (1.66316pt too wide) in paragraph at lines 256--256
+[]      \OT1/cmtt/m/n/12 // ^^cc^^8a^^d6^^90^^cd^^83W[^^c6^^82 \JY1/mc/m/it/12 
+  \OT1/cmtt/m/n/12 ^^cc^^8f \JY1/mc/m/it/12  \OT1/cmtt/m/n/12 ^^d4^^82 \JY1/
+mc/m/it/12  
+ []
+
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8d in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^93 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8b in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^85 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8b in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8a in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8a in font cmtt12!
+[83]
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b1 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^91 in font cmtt12!
+Missing character: There is no ^^a2 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^85 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8b in font cmtt12!
+Missing character: There is no ^^8f in font cmtt12!
+Missing character: There is no ^^9d in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^97 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b3 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+
+Overfull \hbox (0.95894pt too wide) in paragraph at lines 271--271
+[]     \OT1/cmtt/m/n/12 @ // ^^cc^^8d\^^cd^^83W[\JY1/mc/m/it/12  \OT1/cmtt/m/n
+/12 ^^d4^^82^^cc^^95^^db^^8e^^c9^^8egp \JY1/mc/m/it/12  
+ []
+
+Missing character: There is no ^^94 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^85 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8b in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+
+Overfull \hbox (32.63737pt too wide) in paragraph at lines 273--273
+[]        \OT1/cmtt/m/n/12 // i^^d4^^96^^da^^82^^cc^^83W[^^cc^^8f \JY1/mc/m/it/
+12  \OT1/cmtt/m/n/12 ^^d4^^82^^f0^^93^^be^^82
+ []
+
+Missing character: There is no ^^8f in font cmtt12!
+Missing character: There is no ^^fc in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b7 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+
+Overfull \hbox (1.16025pt too wide) in paragraph at lines 279--279
+[]        \OT1/cmtt/m/n/12 System.out.println("SyntaxChecked: " + stat.SyntaxCh
+ecked);[] 
+ []
+
+
+Overfull \hbox (7.33525pt too wide) in paragraph at lines 281--281
+[]        \OT1/cmtt/m/n/12 System.out.println("Code generated: " + stat.CodeGen
+erated);[] 
+ []
+
+
+Overfull \hbox (1.16025pt too wide) in paragraph at lines 282--282
+[]        \OT1/cmtt/m/n/12 System.out.println("PrettyPrinted: " + stat.PrettyPr
+inted);[] 
+ []
+
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^8e in font cmtt12!
+Missing character: There is no ^^88 in font cmtt12!
+Missing character: There is no ^^ba in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^90 in font cmtt12!
+Missing character: There is no ^^94 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^ac in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b5 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^bb in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^bb in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^97 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b7 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+[84]
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b1 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^93 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8a in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^a9 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^8b in font cmtt12!
+Missing character: There is no ^^89 in font cmtt12!
+Missing character: There is no ^^9d in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b7 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+
+Overfull \hbox (31.63264pt too wide) in paragraph at lines 301--301
+[]      \OT1/cmtt/m/n/12 // \JY1/mc/m/it/12   \OT1/cmtt/m/n/12 Generic ^^cd^^8
+3C^[v^[\JY1/mc/m/it/12  \OT1/cmtt/m/n/12 ^^cc^^8c^^ca^^82 \JY1/mc/m/it/12  \O
+T1/cmtt/m/n/12 ^^db^^8e \JY1/mc/m/it/12 邱\OT1/cmtt/m/n/12 ^^c6^^82
+ []
+
+Missing character: There is no ^^97 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^a2 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^88 in font cmtt12!
+Missing character: There is no ^^ba in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^90 in font cmtt12!
+Missing character: There is no ^^94 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^8e in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b7 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^a2 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^8e in font cmtt12!
+Missing character: There is no ^^8f in font cmtt12!
+[85]
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^8e in font cmtt12!
+Missing character: There is no ^^88 in font cmtt12!
+Missing character: There is no ^^ba in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^90 in font cmtt12!
+Missing character: There is no ^^94 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^ac in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b5 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^bb in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^bb in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^97 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b7 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+
+Overfull \hbox (8.64159pt too wide) in paragraph at lines 338--338
+[]    \OT1/cmtt/m/n/12 // ^^cc^^97 \JY1/mc/m/it/12    \OT1/cmtt/m/n/12 stdout
+^^d6^^82^^cc^^82^^dc^^82^^dc^^91 \JY1/mc/m/it/12  \OT1/cmtt/m/n/12 ^^d4^^82B[]
+ 
+ []
+
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^92 in font cmtt12!
+Missing character: There is no ^^c1 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b5 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^92 in font cmtt12!
+Missing character: There is no ^^91 in font cmtt12!
+Missing character: There is no ^^91 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^a9 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^89 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^93 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^91 in font cmtt12!
+Missing character: There is no ^^a4 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b5 in font cmtt12!
+
+Overfull \hbox (60.75056pt too wide) in paragraph at lines 339--339
+[]  \OT1/cmtt/m/n/12 @// ^^c7^^89^^c6^^82^^c4^^81AVDMlS^^cc^^82 \JY1/mc/m/it/12
+   \OT1/cmtt/m/n/12 toolbox \JY1/mc/m/it/12   \OT1/cmtt/m/n/12 NCAg^^d6^^88^^
+da^^8ds[] 
+ []
+
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b1 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b3 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^a2 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^92 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b7 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b7 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^a4 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^97 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^ab in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^94 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^aa in font cmtt12!
+Missing character: There is no ^^8e in font cmtt12!
+Missing character: There is no ^^a6 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b5 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^a2 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+
+Overfull \hbox (145.19296pt too wide) in paragraph at lines 342--342
+[]  \OT1/cmtt/m/n/12 @// ^^c7^^82GetCPPValue \JY1/mc/m/it/12   \OT1/cmtt/m/n/1
+2 gp^^c5^^82^^e9^^82^^a9A^^f0^^82^^b1^^82^^cc^^8a^^d6^^90^^c4^^82
+ []
+
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b1 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^93 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^8a in font cmtt12!
+Missing character: There is no ^^83 in font cmtt12!
+Missing character: There is no ^^81 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^a9 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^8b in font cmtt12!
+Missing character: There is no ^^89 in font cmtt12!
+Missing character: There is no ^^9d in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+
+Overfull \hbox (24.25342pt too wide) in paragraph at lines 347--347
+[]      \OT1/cmtt/m/n/12 // \JY1/mc/m/it/12   \OT1/cmtt/m/n/12 VDMGeneric ^^cd
+^^83C^[v^[\JY1/mc/m/it/12  \OT1/cmtt/m/n/12 ^^cc^^8c^^ca^^82^^cc^^95^^db^^8e
+ []
+
+Missing character: There is no ^^8e in font cmtt12!
+Missing character: There is no ^^97 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b3 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^97 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b5 in font cmtt12!
+Missing character: There is no ^^88 in font cmtt12!
+Missing character: There is no ^^ba in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^90 in font cmtt12!
+Missing character: There is no ^^94 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^8e in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b7 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+
+Overfull \hbox (38.21027pt too wide) in paragraph at lines 358--358
+[]        \OT1/cmtt/m/n/12 System.out.println("All primes below " + n + ": " + 
+g.ToAscii());[] 
+ []
+
+Missing character: There is no ^^92 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b7 in font cmtt12!
+[86]
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^92 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b7 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^b7 in font cmtt12!
+Missing character: There is no ^^82 in font cmtt12!
+Missing character: There is no ^^8e in font cmtt12!
+Missing character: There is no ^^8f in font cmtt12!
+ [87])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2443.
+ [88]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2443.
+ (./ApiMan_a4J.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 2443.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2443.
+
+Package rerunfilecheck Info: File `ApiMan_a4J.out' has not changed.
+(rerunfilecheck)             Checksum: 11686A90B92CA104146EFE6D3524A5EF;6816.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2443.
+ ) 
+Here is how much of TeX's memory you used:
+ 5750 strings out of 493648
+ 83219 string characters out of 6151003
+ 205485 words of memory out of 5000000
+ 9233 multiletter control sequences out of 15000+600000
+ 20582 words of font info for 76 fonts, out of 8000000 for 9000
+ 929 hyphenation exceptions out of 8191
+ 36i,17n,49p,398b,535s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on ApiMan_a4J.dvi (95 pages, 377324 bytes).

@@ -1,0 +1,76 @@
+\BOOKMARK [1][-]{section.1}{1 Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{2 VDMTools Overview}{}% 2
+\BOOKMARK [1][-]{section.3}{3 A Guided Tour of the VDMTools}{}% 3
+\BOOKMARK [2][-]{subsection.3.1}{3.1 Creating Input to VDMTools}{section.3}% 4
+\BOOKMARK [2][-]{subsection.3.2}{3.2 Starting the VDM-SL Graphical User Interface}{section.3}% 5
+\BOOKMARK [2][-]{subsection.3.3}{3.3 On-Line Help}{section.3}% 6
+\BOOKMARK [2][-]{subsection.3.4}{3.4 Menus, Toolbars and Subwindows}{section.3}% 7
+\BOOKMARK [2][-]{subsection.3.5}{3.5 Configuring your Project}{section.3}% 8
+\BOOKMARK [2][-]{subsection.3.6}{3.6 Syntax Checking your VDM Specification}{section.3}% 9
+\BOOKMARK [3][-]{subsubsection.3.6.1}{3.6.1 Parsing the specification}{subsection.3.6}% 10
+\BOOKMARK [3][-]{subsubsection.3.6.2}{3.6.2 Correcting syntax errors}{subsection.3.6}% 11
+\BOOKMARK [2][-]{subsection.3.7}{3.7 Type Checking your VDM Specification}{section.3}% 12
+\BOOKMARK [2][-]{subsection.3.8}{3.8 Validating your Specification}{section.3}% 13
+\BOOKMARK [3][-]{subsubsection.3.8.1}{3.8.1 Evaluating expressions using the interpreter}{subsection.3.8}% 14
+\BOOKMARK [3][-]{subsubsection.3.8.2}{3.8.2 Setting breakpoints}{subsection.3.8}% 15
+\BOOKMARK [3][-]{subsubsection.3.8.3}{3.8.3 Dynamic type checking}{subsection.3.8}% 16
+\BOOKMARK [3][-]{subsubsection.3.8.4}{3.8.4 Checking Integrity Properties}{subsection.3.8}% 17
+\BOOKMARK [2][-]{subsection.3.9}{3.9 Introducing Systematic Testing}{section.3}% 18
+\BOOKMARK [2][-]{subsection.3.10}{3.10 Pretty Printing}{section.3}% 19
+\BOOKMARK [2][-]{subsection.3.11}{3.11 Generating Code}{section.3}% 20
+\BOOKMARK [2][-]{subsection.3.12}{3.12 The Dynamic Link Facility}{section.3}% 21
+\BOOKMARK [2][-]{subsection.3.13}{3.13 The VDMTools API}{section.3}% 22
+\BOOKMARK [2][-]{subsection.3.14}{3.14 Exiting VDMTools}{section.3}% 23
+\BOOKMARK [1][-]{section.4}{4 The VDMTools Reference Manual}{}% 24
+\BOOKMARK [2][-]{subsection.4.1}{4.1 The Overall Graphical User Interface}{section.4}% 25
+\BOOKMARK [3][-]{subsubsection.4.1.1}{4.1.1 Project handling}{subsection.4.1}% 26
+\BOOKMARK [3][-]{subsubsection.4.1.2}{4.1.2 Operations on specifications}{subsection.4.1}% 27
+\BOOKMARK [3][-]{subsubsection.4.1.3}{4.1.3 The log window, error list and source window}{subsection.4.1}% 28
+\BOOKMARK [3][-]{subsubsection.4.1.4}{4.1.4 Editing files}{subsection.4.1}% 29
+\BOOKMARK [3][-]{subsubsection.4.1.5}{4.1.5 Using the interpreter}{subsection.4.1}% 30
+\BOOKMARK [3][-]{subsubsection.4.1.6}{4.1.6 On-line help}{subsection.4.1}% 31
+\BOOKMARK [2][-]{subsection.4.2}{4.2 The Overall Command Line Interface}{section.4}% 32
+\BOOKMARK [3][-]{subsubsection.4.2.1}{4.2.1 Initialisation file}{subsection.4.2}% 33
+\BOOKMARK [2][-]{subsection.4.3}{4.3 The Syntax Checker}{section.4}% 34
+\BOOKMARK [3][-]{subsubsection.4.3.1}{4.3.1 The graphical user interface}{subsection.4.3}% 35
+\BOOKMARK [3][-]{subsubsection.4.3.2}{4.3.2 Format of syntax errors}{subsection.4.3}% 36
+\BOOKMARK [3][-]{subsubsection.4.3.3}{4.3.3 The command line interface}{subsection.4.3}% 37
+\BOOKMARK [3][-]{subsubsection.4.3.4}{4.3.4 The Emacs interface}{subsection.4.3}% 38
+\BOOKMARK [2][-]{subsection.4.4}{4.4 The Type Checker}{section.4}% 39
+\BOOKMARK [3][-]{subsubsection.4.4.1}{4.4.1 The graphical user interface}{subsection.4.4}% 40
+\BOOKMARK [3][-]{subsubsection.4.4.2}{4.4.2 Format of type errors and warnings}{subsection.4.4}% 41
+\BOOKMARK [3][-]{subsubsection.4.4.3}{4.4.3 The command line interface}{subsection.4.4}% 42
+\BOOKMARK [3][-]{subsubsection.4.4.4}{4.4.4 The Emacs interface}{subsection.4.4}% 43
+\BOOKMARK [2][-]{subsection.4.5}{4.5 The Interpreter and Debugger}{section.4}% 44
+\BOOKMARK [3][-]{subsubsection.4.5.1}{4.5.1 The graphical user interface}{subsection.4.5}% 45
+\BOOKMARK [3][-]{subsubsection.4.5.2}{4.5.2 Standard libraries}{subsection.4.5}% 46
+\BOOKMARK [3][-]{subsubsection.4.5.3}{4.5.3 The command line interface}{subsection.4.5}% 47
+\BOOKMARK [3][-]{subsubsection.4.5.4}{4.5.4 The Emacs interface}{subsection.4.5}% 48
+\BOOKMARK [2][-]{subsection.4.6}{4.6 The Integrity Examiner}{section.4}% 49
+\BOOKMARK [2][-]{subsection.4.7}{4.7 The Pretty Printer}{section.4}% 50
+\BOOKMARK [3][-]{subsubsection.4.7.1}{4.7.1 The graphical user interface}{subsection.4.7}% 51
+\BOOKMARK [3][-]{subsubsection.4.7.2}{4.7.2 The command line interface}{subsection.4.7}% 52
+\BOOKMARK [3][-]{subsubsection.4.7.3}{4.7.3 The Emacs interface}{subsection.4.7}% 53
+\BOOKMARK [2][-]{subsection.4.8}{4.8 The VDM-SL to C++ Code Generator}{section.4}% 54
+\BOOKMARK [3][-]{subsubsection.4.8.1}{4.8.1 The graphical user interface}{subsection.4.8}% 55
+\BOOKMARK [3][-]{subsubsection.4.8.2}{4.8.2 The command line interface}{subsection.4.8}% 56
+\BOOKMARK [3][-]{subsubsection.4.8.3}{4.8.3 The Emacs interface}{subsection.4.8}% 57
+\BOOKMARK [2][-]{subsection.4.9}{4.9 Systematic Testing of VDM models}{section.4}% 58
+\BOOKMARK [3][-]{subsubsection.4.9.1}{4.9.1 Preparing the test coverage file}{subsection.4.9}% 59
+\BOOKMARK [3][-]{subsubsection.4.9.2}{4.9.2 Updating the test coverage file}{subsection.4.9}% 60
+\BOOKMARK [3][-]{subsubsection.4.9.3}{4.9.3 Producing the test coverage statistics}{subsection.4.9}% 61
+\BOOKMARK [3][-]{subsubsection.4.9.4}{4.9.4 Test coverage example using LaTeX }{subsection.4.9}% 62
+\BOOKMARK [1][-]{section*.16}{Glossary}{}% 63
+\BOOKMARK [1][-]{appendix.A}{A Information Resources on VDM Technology}{}% 64
+\BOOKMARK [1][-]{appendix.B}{B Combining VDM-SL and LaTeX }{}% 65
+\BOOKMARK [2][-]{subsection.B.1}{B.1 Format of a Specification File}{appendix.B}% 66
+\BOOKMARK [2][-]{subsection.B.2}{B.2 Setting up a LaTeX Document}{appendix.B}% 67
+\BOOKMARK [1][-]{appendix.C}{C Setting up your VDMTools Environment}{}% 68
+\BOOKMARK [2][-]{subsection.C.1}{C.1 General}{appendix.C}% 69
+\BOOKMARK [2][-]{subsection.C.2}{C.2 Interface Options}{appendix.C}% 70
+\BOOKMARK [1][-]{appendix.D}{D The Emacs Interface}{}% 71
+\BOOKMARK [1][-]{appendix.E}{E Test Scripts for the Sorting Example}{}% 72
+\BOOKMARK [2][-]{subsection.E.1}{E.1 The Windows/DOS Platform}{appendix.E}% 73
+\BOOKMARK [2][-]{subsection.E.2}{E.2 The UNIX Platforms}{appendix.E}% 74
+\BOOKMARK [1][-]{appendix.F}{F Troubleshooting Problems with Microsoft Word}{}% 75
+\BOOKMARK [1][-]{Item.15}{Index}{}% 76

@@ -1,0 +1,41 @@
+\begin{vdm_al}
+class Sensor
+
+types
+
+public MissileType = <MissileA> | <MissileB> | <MissileC> | <None>;
+
+public Angle = nat
+inv num == num <= 360;
+
+instance variables
+
+io     : SensorIO                 := new SensorIO();
+threat : [(MissileType|<Consumed>) * Angle] := io.readThreat();
+
+operations
+
+public SetThreat : () ==> ()
+SetThreat() ==
+  threat := io.readThreat();
+
+public ReadThreat : () ==> [MissileType * Angle]
+ReadThreat() ==
+  return threat;
+
+public IsFinished : () ==> bool
+IsFinished() == return threat = nil;
+
+public GetThreat : () ==> [MissileType * Angle]
+GetThreat() ==
+  let orgthreat = threat in
+    (if threat <> nil
+     then threat := mk_(<Consumed>,0);
+     return orgthreat);
+
+end Sensor
+\end{vdm_al}
+
+\begin{rtinfo}[Sensor`IsFinished]
+{vdm.tc}[Sensor]
+\end{rtinfo}

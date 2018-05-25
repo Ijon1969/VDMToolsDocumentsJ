@@ -1,0 +1,133 @@
+\contentsline {section}{\numberline {1}Introduction}{1}{section.1}
+\contentsline {section}{\numberline {2}Conformance Issues}{2}{section.2}
+\contentsline {section}{\numberline {3}Concrete Syntax Notation}{3}{section.3}
+\contentsline {section}{\numberline {4}Data Type Definitions}{3}{section.4}
+\contentsline {subsection}{\numberline {4.1}Basic Data Types}{4}{subsection.4.1}
+\contentsline {subsubsection}{\numberline {4.1.1}The Boolean Type}{4}{subsubsection.4.1.1}
+\contentsline {subsubsection}{\numberline {4.1.2}The Numeric Types}{7}{subsubsection.4.1.2}
+\contentsline {subsubsection}{\numberline {4.1.3}The Character Type}{10}{subsubsection.4.1.3}
+\contentsline {subsubsection}{\numberline {4.1.4}The Quote Type}{10}{subsubsection.4.1.4}
+\contentsline {subsubsection}{\numberline {4.1.5}The Token Type}{11}{subsubsection.4.1.5}
+\contentsline {subsection}{\numberline {4.2}Compound Types}{12}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}Set Types}{12}{subsubsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2}Sequence Types}{15}{subsubsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.3}Map Types}{18}{subsubsection.4.2.3}
+\contentsline {subsubsection}{\numberline {4.2.4}Product Types}{22}{subsubsection.4.2.4}
+\contentsline {subsubsection}{\numberline {4.2.5}Composite Types}{22}{subsubsection.4.2.5}
+\contentsline {subsubsection}{\numberline {4.2.6}Union and Optional Types}{26}{subsubsection.4.2.6}
+\contentsline {subsubsection}{\numberline {4.2.7}Function Types}{28}{subsubsection.4.2.7}
+\contentsline {subsection}{\numberline {4.3}Invariants}{30}{subsection.4.3}
+\contentsline {section}{\numberline {5}Algorithm Definitions}{31}{section.5}
+\contentsline {section}{\numberline {6}Function Definitions}{32}{section.6}
+\contentsline {subsection}{\numberline {6.1}Polymorphic Functions}{36}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Higher Order Functions}{37}{subsection.6.2}
+\contentsline {section}{\numberline {7}Expressions}{38}{section.7}
+\contentsline {subsection}{\numberline {7.1}Let Expressions}{38}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}The Define Expression}{41}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}Unary and Binary Expressions}{42}{subsection.7.3}
+\contentsline {subsection}{\numberline {7.4}Conditional Expressions}{43}{subsection.7.4}
+\contentsline {subsection}{\numberline {7.5}Quantified Expressions}{46}{subsection.7.5}
+\contentsline {subsection}{\numberline {7.6}The Iota Expression}{48}{subsection.7.6}
+\contentsline {subsection}{\numberline {7.7}Set Expressions}{49}{subsection.7.7}
+\contentsline {subsection}{\numberline {7.8}Sequence Expressions}{50}{subsection.7.8}
+\contentsline {subsection}{\numberline {7.9}Map Expressions}{52}{subsection.7.9}
+\contentsline {subsection}{\numberline {7.10}Tuple Constructor Expressions}{53}{subsection.7.10}
+\contentsline {subsection}{\numberline {7.11}Record Expressions}{54}{subsection.7.11}
+\contentsline {subsection}{\numberline {7.12}Apply Expressions}{55}{subsection.7.12}
+\contentsline {subsection}{\numberline {7.13}The Lambda Expression}{57}{subsection.7.13}
+\contentsline {subsection}{\numberline {7.14}Narrow Expressions}{58}{subsection.7.14}
+\contentsline {subsection}{\numberline {7.15}Is Expressions}{59}{subsection.7.15}
+\contentsline {subsection}{\numberline {7.16}Literals and Names}{60}{subsection.7.16}
+\contentsline {subsection}{\numberline {7.17}The Undefined Expression}{62}{subsection.7.17}
+\contentsline {subsection}{\numberline {7.18}The Precondition Expression}{62}{subsection.7.18}
+\contentsline {section}{\numberline {8}Patterns}{63}{section.8}
+\contentsline {section}{\numberline {9}Bindings}{68}{section.9}
+\contentsline {section}{\numberline {10}Value (Constant) Definitions}{69}{section.10}
+\contentsline {section}{\numberline {11}The State Definition}{71}{section.11}
+\contentsline {section}{\numberline {12}Operation Definitions}{73}{section.12}
+\contentsline {section}{\numberline {13}Statements}{78}{section.13}
+\contentsline {subsection}{\numberline {13.1}Let Statements}{79}{subsection.13.1}
+\contentsline {subsection}{\numberline {13.2}The Define Statement}{81}{subsection.13.2}
+\contentsline {subsection}{\numberline {13.3}The Block Statement}{82}{subsection.13.3}
+\contentsline {subsection}{\numberline {13.4}The Assignment Statement}{83}{subsection.13.4}
+\contentsline {subsection}{\numberline {13.5}Conditional Statements}{86}{subsection.13.5}
+\contentsline {subsection}{\numberline {13.6}For-Loop Statements}{88}{subsection.13.6}
+\contentsline {subsection}{\numberline {13.7}The While-Loop Statement}{90}{subsection.13.7}
+\contentsline {subsection}{\numberline {13.8}The Nondeterministic Statement}{91}{subsection.13.8}
+\contentsline {subsection}{\numberline {13.9}The Call Statement}{93}{subsection.13.9}
+\contentsline {subsection}{\numberline {13.10}The Return Statement}{94}{subsection.13.10}
+\contentsline {subsection}{\numberline {13.11}Exception Handling Statements}{95}{subsection.13.11}
+\contentsline {subsection}{\numberline {13.12}The Error Statement}{98}{subsection.13.12}
+\contentsline {subsection}{\numberline {13.13}The Identity Statement}{99}{subsection.13.13}
+\contentsline {subsection}{\numberline {13.14}The Specification Statement}{100}{subsection.13.14}
+\contentsline {section}{\numberline {14}Top-level Specification}{101}{section.14}
+\contentsline {subsection}{\numberline {14.1}A Flat Specification}{101}{subsection.14.1}
+\contentsline {subsection}{\numberline {14.2}A Structured Specification}{102}{subsection.14.2}
+\contentsline {subsubsection}{\numberline {14.2.1}The Layout of a Module}{103}{subsubsection.14.2.1}
+\contentsline {subsubsection}{\numberline {14.2.2}The Exports Section}{104}{subsubsection.14.2.2}
+\contentsline {subsubsection}{\numberline {14.2.3}The Imports Section}{108}{subsubsection.14.2.3}
+\contentsline {section}{\numberline {15}Dynamic Link Modules}{110}{section.15}
+\contentsline {section}{\numberline {16}Differences between VDM-SL and\\ ISO/VDM-SL}{114}{section.16}
+\contentsline {section}{\numberline {17}Static Semantics}{116}{section.17}
+\contentsline {section}{\numberline {A}The VDM-SL Syntax}{118}{appendix.A}
+\contentsline {subsection}{\numberline {A.1}Document}{118}{subsection.A.1}
+\contentsline {subsection}{\numberline {A.2}Modules}{118}{subsection.A.2}
+\contentsline {subsection}{\numberline {A.3}Definitions}{121}{subsection.A.3}
+\contentsline {subsubsection}{\numberline {A.3.1}Type Definitions}{121}{subsubsection.A.3.1}
+\contentsline {subsubsection}{\numberline {A.3.2}The State Definition}{123}{subsubsection.A.3.2}
+\contentsline {subsubsection}{\numberline {A.3.3}Value Definitions}{124}{subsubsection.A.3.3}
+\contentsline {subsubsection}{\numberline {A.3.4}Function Definitions}{124}{subsubsection.A.3.4}
+\contentsline {subsubsection}{\numberline {A.3.5}Operation Definitions}{125}{subsubsection.A.3.5}
+\contentsline {subsection}{\numberline {A.4}Expressions}{127}{subsection.A.4}
+\contentsline {subsubsection}{\numberline {A.4.1}Bracketed Expressions}{127}{subsubsection.A.4.1}
+\contentsline {subsubsection}{\numberline {A.4.2}Local Binding Expressions}{128}{subsubsection.A.4.2}
+\contentsline {subsubsection}{\numberline {A.4.3}Conditional Expressions}{128}{subsubsection.A.4.3}
+\contentsline {subsubsection}{\numberline {A.4.4}Unary Expressions}{128}{subsubsection.A.4.4}
+\contentsline {subsubsection}{\numberline {A.4.5}Binary Expressions}{130}{subsubsection.A.4.5}
+\contentsline {subsubsection}{\numberline {A.4.6}Quantified Expressions}{133}{subsubsection.A.4.6}
+\contentsline {subsubsection}{\numberline {A.4.7}The Iota Expression}{133}{subsubsection.A.4.7}
+\contentsline {subsubsection}{\numberline {A.4.8}Set Expressions}{134}{subsubsection.A.4.8}
+\contentsline {subsubsection}{\numberline {A.4.9}Sequence Expressions}{134}{subsubsection.A.4.9}
+\contentsline {subsubsection}{\numberline {A.4.10}Map Expressions}{134}{subsubsection.A.4.10}
+\contentsline {subsubsection}{\numberline {A.4.11}The Tuple Constructor Expression}{134}{subsubsection.A.4.11}
+\contentsline {subsubsection}{\numberline {A.4.12}Record Expressions}{135}{subsubsection.A.4.12}
+\contentsline {subsubsection}{\numberline {A.4.13}Apply Expressions}{135}{subsubsection.A.4.13}
+\contentsline {subsubsection}{\numberline {A.4.14}The Lambda Expression}{135}{subsubsection.A.4.14}
+\contentsline {subsection}{\numberline {A.5}The narrow Expression}{135}{subsection.A.5}
+\contentsline {subsubsection}{\numberline {A.5.1}The Is Expression}{135}{subsubsection.A.5.1}
+\contentsline {subsubsection}{\numberline {A.5.2}The Undefined Expression}{136}{subsubsection.A.5.2}
+\contentsline {subsubsection}{\numberline {A.5.3}The Precondition Expression}{136}{subsubsection.A.5.3}
+\contentsline {subsubsection}{\numberline {A.5.4}Names}{136}{subsubsection.A.5.4}
+\contentsline {subsection}{\numberline {A.6}State Designators}{136}{subsection.A.6}
+\contentsline {subsection}{\numberline {A.7}Statements}{137}{subsection.A.7}
+\contentsline {subsubsection}{\numberline {A.7.1}Local Binding Statements}{137}{subsubsection.A.7.1}
+\contentsline {subsubsection}{\numberline {A.7.2}Block and Assignment Statements}{138}{subsubsection.A.7.2}
+\contentsline {subsubsection}{\numberline {A.7.3}Conditional Statements}{138}{subsubsection.A.7.3}
+\contentsline {subsubsection}{\numberline {A.7.4}Loop Statements}{139}{subsubsection.A.7.4}
+\contentsline {subsubsection}{\numberline {A.7.5}The Nondeterministic Statement}{139}{subsubsection.A.7.5}
+\contentsline {subsubsection}{\numberline {A.7.6}Call and Return Statements}{139}{subsubsection.A.7.6}
+\contentsline {subsubsection}{\numberline {A.7.7}The Specification Statement}{139}{subsubsection.A.7.7}
+\contentsline {subsubsection}{\numberline {A.7.8}Exception Handling Statements}{139}{subsubsection.A.7.8}
+\contentsline {subsubsection}{\numberline {A.7.9}The Error Statement}{140}{subsubsection.A.7.9}
+\contentsline {subsubsection}{\numberline {A.7.10}The Identity Statement}{140}{subsubsection.A.7.10}
+\contentsline {subsection}{\numberline {A.8}Patterns and Bindings}{140}{subsection.A.8}
+\contentsline {subsubsection}{\numberline {A.8.1}Patterns}{140}{subsubsection.A.8.1}
+\contentsline {subsubsection}{\numberline {A.8.2}Bindings}{142}{subsubsection.A.8.2}
+\contentsline {section}{\numberline {B}Lexical Specification}{142}{appendix.B}
+\contentsline {subsection}{\numberline {B.1}Characters}{142}{subsection.B.1}
+\contentsline {subsection}{\numberline {B.2}Symbols}{145}{subsection.B.2}
+\contentsline {section}{\numberline {C}Operator Precedence}{148}{appendix.C}
+\contentsline {subsection}{\numberline {C.1}The Family of Combinators}{149}{subsection.C.1}
+\contentsline {subsection}{\numberline {C.2}The Family of Applicators}{149}{subsection.C.2}
+\contentsline {subsection}{\numberline {C.3}The Family of Evaluators}{150}{subsection.C.3}
+\contentsline {subsection}{\numberline {C.4}The Family of Relations}{151}{subsection.C.4}
+\contentsline {subsection}{\numberline {C.5}The Family of Connectives}{152}{subsection.C.5}
+\contentsline {subsection}{\numberline {C.6}The Family of Constructors}{152}{subsection.C.6}
+\contentsline {subsection}{\numberline {C.7}Grouping}{152}{subsection.C.7}
+\contentsline {subsection}{\numberline {C.8}The Type Operators}{153}{subsection.C.8}
+\contentsline {section}{\numberline {D}Differences between the two Concrete Syntaxes}{153}{appendix.D}
+\contentsline {section}{\numberline {E}Standard Libraries}{155}{appendix.E}
+\contentsline {subsection}{\numberline {E.1}Math Library}{155}{subsection.E.1}
+\contentsline {subsection}{\numberline {E.2}IO Library}{156}{subsection.E.2}
+\contentsline {subsection}{\numberline {E.3}VDMUtil Library}{158}{subsection.E.3}
+\contentsline {section}{Index}{161}{subsection.E.3}

@@ -1,0 +1,39 @@
+\begin{vdm_al}
+class MissileDetector
+
+instance variables
+
+sensorRef       : Sensor;
+flareControlRef : FlareController;
+threat          : [Sensor`MissileType * Sensor`Angle] := mk_(<None>,0);
+
+operations
+
+public Init : Sensor * FlareController ==> ()
+Init (newSensor, newFlareController) ==
+  (sensorRef := newSensor;
+   flareControlRef := newFlareController;
+  );
+
+public Step : () ==> ()
+Step() ==
+  let newthreat = sensorRef.GetThreat() in
+    Update(newthreat);
+
+Update : [Sensor`MissileType * Sensor`Angle] ==> ()
+Update(newThreat) ==
+  (if newThreat = nil or (newThreat <> nil and newThreat.#1 <> <None>)
+   then (threat := newThreat;
+         flareControlRef.MissileIsHere(newThreat);
+        )
+  );
+
+public IsFinished : () ==> bool
+IsFinished() == return threat = nil;
+
+end MissileDetector
+\end{vdm_al}
+
+\begin{rtinfo}[MissileDetector`IsFinished]
+{vdm.tc}[MissileDetector]
+\end{rtinfo}

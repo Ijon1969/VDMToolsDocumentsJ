@@ -1,0 +1,83 @@
+\begin{vdm}{\small\sf class} $World$\index{World|ModDef}
+\par
+\kInstanceVarDef
+\parlinebr
+\begin{insvar}
+\assdef{sensor}{Sensor\index{Sensor|TypeOcc}}[{\fnapply{\new{Sensor}}{}}]
+\end{insvar}
+\begin{insvar}
+\assdef{detector}{MissileDetector\index{MissileDetector|TypeOcc}}[{\fnapply{\new{MissileDetector}}{}}]
+\end{insvar}
+\begin{insvar}
+\assdef{flareControl}{FlareController\index{FlareController|TypeOcc}}[{\fnapply{\new{FlareController}}{}}]
+\end{insvar}
+\begin{insvar}
+\assdef{timerRef}{Timer\index{Timer|TypeOcc}}[{\fnapply{\new{Timer}}{}}]
+\end{insvar}
+\par
+\kOperations
+\kw{\kw{public}}\begin{op}[e]{Run}\index{Run|FuncDef}%
+\signature{() \Oto FlareDispenser`MagId\index{MagId|TypeOcc} \Gmap \seqof*{\Lp FlareDispenser`FlareType\index{FlareType|TypeOcc} \X \Nat  \Rp }}
+\parms{}
+\annlab[o]{World`Run}
+\begin{blockstmt}
+$sensor$.\call{Init}{timerRef} ; \\
+$detector$.\call{Init}{sensor,flareControl} ; \\
+$flareControl$.\call{Init}{detector,timerRef} ; \\
+
+\start{sensor} ; \\
+
+\start{detector} ; \\
+
+\start{flareControl} ; \\
+$sensor$.\call{IsFinished}{} ; \\
+$detector$.\call{IsFinished}{} ; \\
+\return{\fnapply{flareControl.IsFinished}{}}
+\end{blockstmt}
+\end{op}
+{\small\sf end} {\it World}
+
+\end{vdm}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{tabular}{p{25mm}l}
+{\bf Test Suite :} & vdm.tc \\ 
+{\bf Class :} & World \\ 
+\end{tabular}
+
+\begin{longtable}{|l|r|r|}\hline
+{\bf World`Run} & {\bf \#Calls} & {\bf Coverage} \kill
+{\bf Name} & {\bf \#Calls} & {\bf Coverage} \\ \hline\hline
+\endhead
+World`Run & 1 & $\surd$ \\ \hline
+\hline
+{\bf Total Coverage} & & {\bf 100\%} \\ \hline
+\end{longtable}
+
+

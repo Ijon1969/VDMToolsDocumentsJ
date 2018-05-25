@@ -1,0 +1,70 @@
+\begin{thebibliography}{10}
+
+\bibitem{Dickinson&95}
+I.P.\ Dickinson and K.J.\ Lines.
+\newblock {Typesetting VDM-SL with VDM-SL macros}.
+\newblock Technical report, National Physical Laboratory, Teddington,
+  Middelsex, TW11 0LW, UK, July 1995.
+
+\bibitem{Fitzgerald&98b}
+John Fitzgerald and Peter~Gorm Larsen.
+\newblock {\em {Modelling Systems -- Practical Tools and Techniques in Software
+  Development}}.
+\newblock Cambridge University Press, The Edinburgh Building, Cambridge CB2
+  2RU, UK, 1998.
+\newblock ISBN 0-521-62348-0.
+
+\bibitem{Fitzgerald&05}
+John Fitzgerald, Peter~Gorm Larsen, Paul Mukherjee, Nico Plat, and Marcel
+  Verhoef.
+\newblock {\em {Validated Designs for Object--oriented Systems}}.
+\newblock Springer, New York, 2005.
+
+\bibitem{ISOVDM96}
+{P. G. Larsen and B. S. Hansen and H. Brunn N. Plat and H. Toetenel and D. J.
+  Andrews and J. Dawes and G. Parkin and others}.
+\newblock {Information technology --- Programming languages, their environments
+  and system software interfaces --- Vienna Development Method ---
+  Specification Language --- Part 1: Base language}, December 1996.
+
+\bibitem{DLMan-SCSK}
+SCSK.
+\newblock {\em The Dynamic Link Facility}.
+\newblock SCSK.
+
+\bibitem{UMLMan-SCSK}
+SCSK.
+\newblock {\em The Rose-VDM++ Link}.
+\newblock SCSK.
+
+\bibitem{LangManPP-SCSK}
+SCSK.
+\newblock {\em The VDM++ Language}.
+\newblock SCSK.
+
+\bibitem{InstallMan-SCSK}
+SCSK.
+\newblock {\em VDM-SL Installation Guide}.
+\newblock SCSK.
+
+\bibitem{LangMan-SCSK}
+SCSK.
+\newblock {\em The VDM-SL Language}.
+\newblock SCSK.
+
+\bibitem{SortEx-SCSK}
+SCSK.
+\newblock {\em VDM-SL Sorting Algorithms}.
+\newblock SCSK.
+
+\bibitem{CGMan-SCSK}
+SCSK.
+\newblock {\em The VDM-SL to C++ Code Generator}.
+\newblock SCSK.
+
+\bibitem{APIMan-SCSK}
+SCSK.
+\newblock {\em VDM Toolbox API}.
+\newblock SCSK.
+
+\end{thebibliography}

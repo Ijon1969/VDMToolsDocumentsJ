@@ -1,0 +1,169 @@
+class FlareController
+
+types
+
+Plan = seq of PlanStep;
+
+PlanStep = FlareType * nat;
+
+public FlareType = <FlareOneA> | <FlareTwoA> | <FlareOneB> |
+                   <FlareTwoB> | <FlareOneC> | <FlareTwoC> |
+                   <DoNothingA> | <DoNothingB> | <DoNothingC>;
+
+values
+
+responseDB : map Sensor`MissileType to Plan =
+  {<MissileA> |-> [ mk_(<FlareOneA>,900), mk_(<FlareTwoA>,500),
+                    mk_(<DoNothingA>,100), mk_(<FlareOneA>,500)],
+   <MissileB> |-> [ mk_(<FlareTwoB>,500), mk_(<FlareTwoB>,700)],
+   <MissileC> |-> [ mk_(<FlareOneC>,400), mk_(<DoNothingC>,100),
+                    mk_(<FlareTwoC>,400), mk_(<FlareOneC>,500)]
+  };
+
+missilePriority : map Sensor`MissileType to nat
+                = {<MissileA> |-> 1,
+                   <MissileB> |-> 2,
+                   <MissileC> |-> 3,
+                   <None> |-> 0}
+
+instance variables
+
+missileDetectorRef : MissileDetector;
+timerRef            : Timer;
+currentMissileValue : [Sensor`MissileType]:= <None>;
+currentStep         : nat                 :=0;
+fresh               : bool                := false;
+latestMissileValue  : Sensor`MissileType  := <None>;
+outputSequence      : seq of FlareType    := [];
+noMoreMissiles      : bool                := false;
+
+operations
+
+public IsFinished : () ==> seq of FlareType
+IsFinished() == return outputSequence;
+
+sync
+
+  per IsFinished => currentStep = 0 and noMoreMissiles;
+
+operations
+
+ReleaseAFlare : FlareType ==> ()
+ReleaseAFlare(ps) ==
+  duration(10)
+  ( cases ps:
+      <FlareOneA> -> ReleaseFlareOneA(),
+      <FlareTwoA> -> ReleaseFlareTwoA(),
+      <FlareOneB> -> ReleaseFlareOneB(),
+      <FlareTwoB> -> ReleaseFlareTwoB(),
+      <FlareOneC> -> ReleaseFlareOneC(),
+      <FlareTwoC> -> ReleaseFlareTwoC(),
+      <DoNothingA> -> ReleaseFlareDoNothingA(),
+      <DoNothingB> -> ReleaseFlareDoNothingB(),
+      <DoNothingC> -> ReleaseFlareDoNothingC()
+    end;
+    outputSequence := outputSequence ^[ps]
+  );
+
+ReleaseFlareOneA : () ==> ()
+ReleaseFlareOneA() == skip;
+
+ReleaseFlareTwoA : () ==> ()
+ReleaseFlareTwoA() == skip;
+
+ReleaseFlareOneB : () ==> ()
+ReleaseFlareOneB() == skip;
+
+ReleaseFlareTwoB : () ==> ()
+ReleaseFlareTwoB() == skip;
+
+ReleaseFlareOneC : () ==> ()
+ReleaseFlareOneC() == skip;
+
+ReleaseFlareTwoC : () ==> ()
+ReleaseFlareTwoC() == skip;
+
+ReleaseFlareDoNothingA : () ==> ()
+ReleaseFlareDoNothingA() == skip;
+
+ReleaseFlareDoNothingB : () ==> ()
+ReleaseFlareDoNothingB() == skip;
+
+ReleaseFlareDoNothingC : () ==> ()
+ReleaseFlareDoNothingC() == skip;
+
+public Init : MissileDetector * Timer ==> ()
+Init(initMissileDetector, initTimer) ==
+  (missileDetectorRef := initMissileDetector;
+   timerRef := initTimer);
+
+CheckFreshData : () ==> ()
+CheckFreshData() ==
+  (if HigherPriority(latestMissileValue,currentMissileValue)
+   then StartPlan(latestMissileValue);
+   latestMissileValue := <None>;
+  );
+
+StepAlgorithm : () ==> ()
+StepAlgorithm() ==
+  (if fresh
+   then (fresh := false;
+         CheckFreshData();
+        );
+   StepPlan()
+  );
+
+sync
+
+per StepAlgorithm => fresh = true or currentMissileValue <> <None>;
+
+thread
+
+while true do
+( StepAlgorithm();
+  if currentMissileValue = nil
+  then noMoreMissiles := true
+  elseif currentMissileValue <> <None>
+  then let mk_(-, delay_val) =
+         responseDB(currentMissileValue)(currentStep-1)
+       in timerRef.Alarm(delay_val))
+
+operations
+
+HigherPriority : Sensor`MissileType *
+                 Sensor`MissileType ==> bool
+HigherPriority(latest, current) ==
+  return missilePriority(latest) > missilePriority(current);
+
+StartPlan : Sensor`MissileType ==> ()
+StartPlan(newMissileValue) ==
+  (currentMissileValue := newMissileValue;
+   currentStep := 1
+  );
+
+StepPlan : () ==> ()
+StepPlan() ==
+  if currentStep <= len responseDB(currentMissileValue)
+  then
+    (let mk_(flare, -) = responseDB(currentMissileValue)(currentStep)
+     in ReleaseAFlare(flare);
+     currentStep := currentStep + 1
+    )
+  else (currentMissileValue := <None>;
+        currentStep := 0
+       );
+
+public MissileIsHere : [Sensor`MissileType] ==> ()
+MissileIsHere(newMissileValue) ==
+( if newMissileValue not in set {<None>, nil} 
+  then fresh := true;
+  if newMissileValue = nil
+  then noMoreMissiles := true
+  else latestMissileValue := newMissileValue;
+);
+
+sync
+
+mutex(MissileIsHere, CheckFreshData);
+
+end FlareController

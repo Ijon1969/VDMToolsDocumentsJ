@@ -1,0 +1,640 @@
+\begin{theindex}
+
+  \item \keyw{abs}, \hyperpage{9}
+  \item \keyw{and}, \hyperpage{6}
+  \item \keyw{card}, \hyperpage{15}
+  \item \keyw{comp}
+    \subitem function composition, \hyperpage{31}
+    \subitem map composition, \hyperpage{20}
+  \item \keyw{conc}, \hyperpage{17}
+  \item \keyw{dinter}, \hyperpage{15}
+  \item \keyw{div}, \hyperpage{9}
+  \item \keyw{dom}, \hyperpage{20}
+  \item \keyw{dunion}, \hyperpage{15}
+  \item \keyw{elems}, \hyperpage{17}
+  \item \keyw{floor}, \hyperpage{9}
+  \item \keyw{hd}, \hyperpage{17}
+  \item \keyw{in set}, \hyperpage{15}
+  \item \keyw{inds}, \hyperpage{17}
+  \item \keyw{inmap to}, \hyperpage{19}
+  \item \keyw{inter}, \hyperpage{15}
+  \item \keyw{inverse}, \hyperpage{20}
+  \item \keyw{len}, \hyperpage{17}
+  \item \keyw{map to}, \hyperpage{19}
+  \item \keyw{merge}, \hyperpage{20}
+  \item \keyw{mk\_}
+    \subitem record constructor, \hyperpage{25}
+    \subitem token value, \hyperpage{12}
+    \subitem tuple constructor, \hyperpage{23}
+  \item \keyw{mod}, \hyperpage{9}
+  \item \keyw{munion}, \hyperpage{20}
+  \item \keyw{not in set}, \hyperpage{15}
+  \item \keyw{not}, \hyperpage{6}
+  \item \keyw{or}, \hyperpage{6}
+  \item \keyw{power}, \hyperpage{15}
+  \item \keyw{psubset}, \hyperpage{15}
+  \item \keyw{rng}, \hyperpage{20}
+  \item \keyw{seq of}, \hyperpage{17}
+  \item \keyw{seq1 of}, \hyperpage{17}
+  \item \keyw{set of}, \hyperpage{14}
+  \item \keyw{subset}, \hyperpage{15}
+  \item \keyw{tl}, \hyperpage{17}
+  \item \keyw{union}, \hyperpage{15}
+  \item \texttt{()}
+    \subitem function apply, \hyperpage{31}
+    \subitem map apply, \hyperpage{20}
+    \subitem sequence apply, \hyperpage{17}
+  \item \texttt{**}, \hyperpage{20}
+    \subitem function iteration, \hyperpage{31}
+    \subitem numeric power, \hyperpage{9}
+  \item \texttt{*}, \hyperpage{9}
+    \subitem tuple type, \hyperpage{23}
+  \item \texttt{++}
+    \subitem map override, \hyperpage{20}
+    \subitem sequence modification, \hyperpage{17}
+  \item \texttt{+>}, \hyperpage{30}
+  \item \texttt{+}, \hyperpage{9}
+  \item \texttt{->}, \hyperpage{30}
+  \item \texttt{-}, \hyperpage{9}
+  \item \texttt{.}
+    \subitem record field selector, \hyperpage{25}
+  \item \texttt{/}, \hyperpage{9}
+  \item \texttt{:->}, \hyperpage{20}
+  \item \texttt{:-}, \hyperpage{24}
+  \item \texttt{::}, \hyperpage{24}
+  \item \texttt{:>}, \hyperpage{20}
+  \item \texttt{<-:}, \hyperpage{20}
+  \item \texttt{<:}, \hyperpage{20}
+  \item \texttt{<=>}, \hyperpage{6}
+  \item \texttt{<=}, \hyperpage{9}
+  \item \texttt{<>}
+    \subitem boolean inequality, \hyperpage{6}
+    \subitem char inequality, \hyperpage{11}
+    \subitem function inequality, \hyperpage{31}
+    \subitem map inequality, \hyperpage{20}
+    \subitem numeric inequality, \hyperpage{9}
+    \subitem optional inequality, \hyperpage{28}
+    \subitem quote inequality, \hyperpage{12}
+    \subitem quote value, \hyperpage{12}
+    \subitem record inequality, \hyperpage{25}
+    \subitem sequence inequality, \hyperpage{17}
+    \subitem set inequality, \hyperpage{15}
+    \subitem token inequality, \hyperpage{12}
+    \subitem tuple inequality, \hyperpage{23}
+    \subitem union inequality, \hyperpage{28}
+  \item \texttt{<}, \hyperpage{9}
+  \item \texttt{=>}, \hyperpage{6}
+  \item \texttt{=}
+    \subitem boolean equality, \hyperpage{6}
+    \subitem char equality, \hyperpage{11}
+    \subitem function equality, \hyperpage{31}
+    \subitem map equality, \hyperpage{20}
+    \subitem numeric equality, \hyperpage{9}
+    \subitem optional equality, \hyperpage{28}
+    \subitem quote equality, \hyperpage{12}
+    \subitem record equality, \hyperpage{25}
+    \subitem sequence equality, \hyperpage{17}
+    \subitem set equality, \hyperpage{15}
+    \subitem token equality, \hyperpage{12}
+    \subitem tuple equality, \hyperpage{23}
+    \subitem union equality, \hyperpage{28}
+  \item \texttt{>=}, \hyperpage{9}
+  \item \texttt{>}, \hyperpage{9}
+  \item \texttt{[]}
+    \subitem optional type, \hyperpage{28}
+    \subitem sequence enumeration, \hyperpage{17}
+  \item \texttt{[|]}
+    \subitem sequence comprehension, \hyperpage{17}
+  \item \texttt{\&}
+    \subitem map comprehension, \hyperpage{20}
+    \subitem sequence comprehension, \hyperpage{17}
+    \subitem set comprehension, \hyperpage{14}
+  \item \texttt{\char'134}, \hyperpage{15}
+  \item \texttt{\char'136}, \hyperpage{17}
+  \item \texttt{\{\}}
+    \subitem map enumeration, \hyperpage{20}
+    \subitem set enumeration, \hyperpage{14}
+  \item \texttt{\{|\}}
+    \subitem map comprehension, \hyperpage{20}
+    \subitem set comprehension, \hyperpage{14}
+  \item {\sf  bool}, \hyperpage{6}
+  \item {\sf  char}, \hyperpage{11}
+  \item {\sf  false}, \hyperpage{6}
+  \item {\sf  int}, \hyperpage{8}
+  \item {\sf  is not yet specified}
+    \subitem functions, \hyperpage{36}
+    \subitem operations, \hyperpage{85}
+  \item {\sf  is subclass responsibility}
+    \subitem functions, \hyperpage{36}
+    \subitem operations, \hyperpage{85}
+  \item {\sf  nat1}, \hyperpage{8}
+  \item {\sf  nat}, \hyperpage{8}
+  \item {\sf  rat}, \hyperpage{8}
+  \item {\sf  real}, \hyperpage{8}
+  \item {\sf  token}, \hyperpage{12}
+  \item {\sf  true}, \hyperpage{6}
+
+  \indexspace
+
+  \item Absolute value, \hyperpage{9}
+  \item access, \hyperpage{34}, \hyperpage{143}
+  \item access assignment definition, \hyperpage{82}, \hyperpage{148}
+  \item access function definition, \hyperpage{34}, \hyperpage{145}
+  \item access operation definition, \hyperpage{84}, \hyperpage{146}
+  \item access type definition, \hyperpage{142}
+  \item access value definition, \hyperpage{81}, \hyperpage{145}
+  \item act expression, \hyperpage{69}, \hyperpage{160}
+  \item active expression, \hyperpage{70}, \hyperpage{160}
+  \item all expression, \hyperpage{48}, \hyperpage{156}
+  \item always statement, \hyperpage{106}, \hyperpage{164}
+  \item and, \hyperpage{155}
+  \item applicator, \hyperpage{174}
+  \item apply, \hyperpage{58}, \hyperpage{158}, \hyperpage{174}
+  \item arithmetic abs, \hyperpage{153}
+  \item arithmetic divide, \hyperpage{155}
+  \item arithmetic infix operator, \hyperpage{175}
+  \item arithmetic integer division, \hyperpage{155}
+  \item arithmetic minus, \hyperpage{154}
+  \item arithmetic mod, \hyperpage{155}
+  \item arithmetic multiplication, \hyperpage{155}
+  \item arithmetic plus, \hyperpage{154}
+  \item arithmetic prefix operator, \hyperpage{175}
+  \item arithmetic rem, \hyperpage{155}
+  \item assign statement, \hyperpage{93}, \hyperpage{162}
+  \item assignment definition, \hyperpage{82}, \hyperpage{92}, 
+		\hyperpage{162}
+
+  \indexspace
+
+  \item base class membership expression, \hyperpage{67}
+  \item basic type, \hyperpage{143}
+  \item Biimplication, \hyperpage{6}
+  \item binary expression, \hyperpage{45}, \hyperpage{154}
+  \item binary operator, \hyperpage{45}, \hyperpage{154}
+  \item bind, \hyperpage{80}, \hyperpage{166}
+  \item bind list, \hyperpage{48}, \hyperpage{80}, \hyperpage{166}
+  \item block statement, \hyperpage{92}, \hyperpage{162}
+  \item Boolean, \hyperpage{6}
+  \item boolean literal, \hyperpage{171}
+  \item bracketed expression, \hyperpage{151}
+  \item bracketed type, \hyperpage{143}
+
+  \indexspace
+
+  \item call statement, \hyperpage{103}, \hyperpage{164}
+  \item Cardinality, \hyperpage{15}
+  \item cases expression, \hyperpage{46}, \hyperpage{152}
+  \item cases expression alternative, \hyperpage{46}, \hyperpage{152}
+  \item cases expression alternatives, \hyperpage{46}, \hyperpage{152}
+  \item cases statement, \hyperpage{96}, \hyperpage{163}
+  \item cases statement alternative, \hyperpage{96}, \hyperpage{163}
+  \item cases statement alternatives, \hyperpage{96}, \hyperpage{163}
+  \item Char, \hyperpage{11}
+  \item character, \hyperpage{167}
+  \item character literal, \hyperpage{171}
+  \item class, \hyperpage{114}, \hyperpage{142}
+  \item class body, \hyperpage{114}, \hyperpage{142}
+  \item class membership expression, \hyperpage{68}
+  \item combinator, \hyperpage{174}
+  \item composite type, \hyperpage{24}, \hyperpage{143}
+  \item composition, \hyperpage{156}, \hyperpage{174}
+  \item Concatenation, \hyperpage{17}
+  \item Conjunction, \hyperpage{6}
+  \item connective, \hyperpage{177}
+  \item Cosine, \hyperpage{180}
+  \item Cotangent, \hyperpage{180}
+
+  \indexspace
+
+  \item dcl statement, \hyperpage{92}, \hyperpage{162}
+  \item decimal literal, \hyperpage{171}
+  \item def expression, \hyperpage{44}, \hyperpage{151}
+  \item def statement, \hyperpage{90}, \hyperpage{162}
+  \item definition block, \hyperpage{115}, \hyperpage{142}
+  \item Difference
+    \subitem numeric, \hyperpage{9}
+    \subitem set, \hyperpage{15}
+  \item discretionary type, \hyperpage{30}, \hyperpage{35}, 
+		\hyperpage{85}, \hyperpage{144}
+  \item Disjunction, \hyperpage{6}
+  \item Distribute merge, \hyperpage{20}
+  \item Distributed concatenation, \hyperpage{17}
+  \item Distributed intersection, \hyperpage{15}
+  \item distributed map merge, \hyperpage{153}
+  \item distributed sequence concatenation, \hyperpage{153}
+  \item distributed set intersection, \hyperpage{153}
+  \item distributed set union, \hyperpage{153}
+  \item Distributed union, \hyperpage{15}
+  \item Division, \hyperpage{9}
+  \item document, \hyperpage{114}, \hyperpage{142}
+  \item Domain, \hyperpage{20}
+  \item Domain restrict by, \hyperpage{20}
+  \item Domain restrict to, \hyperpage{20}
+
+  \indexspace
+
+  \item Elements, \hyperpage{17}
+  \item elseif expression, \hyperpage{46}, \hyperpage{151}
+  \item elseif statement, \hyperpage{96}, \hyperpage{163}
+  \item equal, \hyperpage{155}
+  \item Equality
+    \subitem boolean type, \hyperpage{6}
+    \subitem char, \hyperpage{11}
+    \subitem function type, \hyperpage{31}
+    \subitem map type, \hyperpage{20}
+    \subitem numeric type, \hyperpage{9}
+    \subitem optional type, \hyperpage{28}
+    \subitem quote type, \hyperpage{12}
+    \subitem record, \hyperpage{25}
+    \subitem sequence type, \hyperpage{17}
+    \subitem set type, \hyperpage{15}
+    \subitem token type, \hyperpage{12}
+    \subitem tuple, \hyperpage{23}
+    \subitem union type, \hyperpage{28}
+  \item equality abstraction field, \hyperpage{25}
+  \item equals definition, \hyperpage{90}, \hyperpage{162}
+  \item error, \hyperpage{85}, \hyperpage{148}
+  \item error list, \hyperpage{85}, \hyperpage{148}
+  \item error statement, \hyperpage{109}, \hyperpage{165}
+  \item escape sequence, \hyperpage{171}
+  \item evaluator, \hyperpage{175}
+  \item exceptions, \hyperpage{85}, \hyperpage{148}
+  \item exists expression, \hyperpage{48}, \hyperpage{156}
+  \item exists unique expression, \hyperpage{48}, \hyperpage{156}
+  \item exit statement, \hyperpage{106}, \hyperpage{165}
+  \item explicit function definition, \hyperpage{34}, \hyperpage{145}
+  \item explicit operation definition, \hyperpage{84}, \hyperpage{147}
+  \item exponent, \hyperpage{171}
+  \item expression, \hyperpage{40}, \hyperpage{43--45}, \hyperpage{48}, 
+		\hyperpage{50, 51}, \hyperpage{53}, \hyperpage{55, 56}, 
+		\hyperpage{58--61}, \hyperpage{63, 64}, 
+		\hyperpage{66--69}, \hyperpage{71}, \hyperpage{73, 74}, 
+		\hyperpage{150}
+  \item expression list, \hyperpage{51}, \hyperpage{150}
+  \item extended explicit function definition, \hyperpage{35}, 
+		\hyperpage{146}
+  \item extended explicit operation definition, \hyperpage{84}, 
+		\hyperpage{147}
+  \item externals, \hyperpage{85}, \hyperpage{147}
+
+  \indexspace
+
+  \item field, \hyperpage{24}, \hyperpage{143}
+  \item field list, \hyperpage{24}, \hyperpage{143}
+  \item field reference, \hyperpage{93}, \hyperpage{161}
+  \item Field select, \hyperpage{25}
+  \item field select, \hyperpage{58}, \hyperpage{158}, \hyperpage{174}
+  \item fin expression, \hyperpage{70}, \hyperpage{160}
+  \item Finite power set, \hyperpage{15}
+  \item finite power set, \hyperpage{153}
+  \item Floor, \hyperpage{9}
+  \item floor, \hyperpage{153}
+  \item for loop, \hyperpage{98}
+  \item Function apply, \hyperpage{31}
+  \item function body, \hyperpage{36}, \hyperpage{146}
+  \item Function composition, \hyperpage{31}
+  \item function definition, \hyperpage{34}, \hyperpage{145}
+  \item function definitions, \hyperpage{34}, \hyperpage{145}
+  \item Function iteration, \hyperpage{31}
+  \item function type, \hyperpage{30}, \hyperpage{35}, \hyperpage{144}
+  \item function type instantiation, \hyperpage{58}, \hyperpage{158}, 
+		\hyperpage{174}
+
+  \indexspace
+
+  \item general assign statement, \hyperpage{93}, \hyperpage{162}
+  \item general is expression, \hyperpage{66}, \hyperpage{159}
+  \item general map type, \hyperpage{19}, \hyperpage{144}
+  \item Greater or equal, \hyperpage{9}
+  \item Greater than, \hyperpage{9}
+  \item greater than, \hyperpage{155}
+  \item greater than or equal, \hyperpage{155}
+
+  \indexspace
+
+  \item Head, \hyperpage{17}
+  \item hexadecimal literal, \hyperpage{171}
+  \item history expressions, \hyperpage{69}
+
+  \indexspace
+
+  \item identifier, \hyperpage{170}
+  \item identifier type pair, \hyperpage{146}
+  \item identifier type pair list, \hyperpage{35}, \hyperpage{146}
+  \item identity statement, \hyperpage{110}, \hyperpage{165}
+  \item if expression, \hyperpage{46}, \hyperpage{151}
+  \item if statement, \hyperpage{96}, \hyperpage{163}
+  \item Implication, \hyperpage{6}
+  \item implicit function definition, \hyperpage{35}, \hyperpage{145}
+  \item implicit operation body, \hyperpage{84}, \hyperpage{147}
+  \item implicit operation definition, \hyperpage{84}, \hyperpage{147}
+  \item imply, \hyperpage{155}
+  \item in set, \hyperpage{155}
+  \item index for loop, \hyperpage{98}, \hyperpage{163}
+  \item Indexes, \hyperpage{17}
+  \item Inequality
+    \subitem boolean type, \hyperpage{6}
+    \subitem char, \hyperpage{11}
+    \subitem function type, \hyperpage{31}
+    \subitem map type, \hyperpage{20}
+    \subitem numeric type, \hyperpage{9}
+    \subitem optional type, \hyperpage{28}
+    \subitem quote, \hyperpage{12}
+    \subitem record, \hyperpage{25}
+    \subitem sequence type, \hyperpage{17}
+    \subitem set type, \hyperpage{15}
+    \subitem token type, \hyperpage{12}
+    \subitem tuple, \hyperpage{23}
+    \subitem union type, \hyperpage{28}
+  \item inheritance clause, \hyperpage{114}, \hyperpage{142}
+  \item injective map type, \hyperpage{19}, \hyperpage{144}
+  \item instance variable definition, \hyperpage{82}, \hyperpage{148}
+  \item instance variable definitions, \hyperpage{82}, \hyperpage{148}
+  \item Integer division, \hyperpage{9}
+  \item Intersection, \hyperpage{15}
+  \item invariant, \hyperpage{144}
+  \item invariant definition, \hyperpage{82}, \hyperpage{148}
+  \item invariant initial function, \hyperpage{144}
+  \item Inverse cosine, \hyperpage{180}
+  \item Inverse sine, \hyperpage{180}
+  \item Inverse tangent, \hyperpage{180}
+  \item IO, \hyperpage{180, 181}
+  \item iota expression, \hyperpage{50}, \hyperpage{157}
+  \item is basic type, \hyperpage{66}, \hyperpage{171}
+  \item is expression, \hyperpage{66}, \hyperpage{159}
+  \item isofbaseclass expression, \hyperpage{67}, \hyperpage{159}
+  \item isofclass expression, \hyperpage{68}, \hyperpage{159}
+  \item iterate, \hyperpage{156}, \hyperpage{174}
+
+  \indexspace
+
+  \item keyword, \hyperpage{170}
+
+  \indexspace
+
+  \item lambda expression, \hyperpage{63}, \hyperpage{158}
+  \item Length, \hyperpage{17}
+  \item Less or equal, \hyperpage{9}
+  \item Less than, \hyperpage{9}
+  \item less than, \hyperpage{155}
+  \item less than or equal, \hyperpage{155}
+  \item let be expression, \hyperpage{41}, \hyperpage{151}
+  \item let be statement, \hyperpage{88}, \hyperpage{162}
+  \item let expression, \hyperpage{41}, \hyperpage{151}
+  \item let statement, \hyperpage{88}, \hyperpage{161}
+  \item library, \hyperpage{180}
+  \item local definition, \hyperpage{41}, \hyperpage{89}, 
+		\hyperpage{162}
+  \item logical equivalence, \hyperpage{155}
+  \item logical infix operator, \hyperpage{177}
+  \item logical prefix operator, \hyperpage{177}
+
+  \indexspace
+
+  \item Map apply, \hyperpage{20}
+  \item Map composition, \hyperpage{20}
+  \item map comprehension, \hyperpage{55}, \hyperpage{157}
+  \item map domain, \hyperpage{153}
+  \item map domain restrict by, \hyperpage{156}
+  \item map domain restrict to, \hyperpage{156}
+  \item map enumeration, \hyperpage{55}, \hyperpage{157}
+  \item map enumeration pattern, \hyperpage{75}, \hyperpage{166}
+  \item map infix operator, \hyperpage{175}
+  \item Map inverse, \hyperpage{20}
+  \item map inverse, \hyperpage{45}, \hyperpage{153}
+  \item Map iteration, \hyperpage{20}
+  \item map merge, \hyperpage{156}
+  \item map muinon pattern, \hyperpage{75}, \hyperpage{166}
+  \item map or sequence modify, \hyperpage{156}
+  \item map or sequence reference, \hyperpage{93}, \hyperpage{161}
+  \item map prefix operator, \hyperpage{175}
+  \item map range, \hyperpage{153}
+  \item map range restrict by, \hyperpage{156}
+  \item map range restrict to, \hyperpage{156}
+  \item map type, \hyperpage{19}, \hyperpage{144}
+  \item maplet, \hyperpage{55}, \hyperpage{157}
+  \item maplet pattern, \hyperpage{75}, \hyperpage{166}
+  \item maplet pattern list, \hyperpage{75}, \hyperpage{166}
+  \item match value, \hyperpage{75}, \hyperpage{165}
+  \item Math, \hyperpage{180}
+  \item Membership, \hyperpage{15}
+  \item Merge, \hyperpage{20}
+  \item mode, \hyperpage{85}, \hyperpage{148}
+  \item Modulus, \hyperpage{9}
+  \item multi character, \hyperpage{171}
+  \item multiple assign statement, \hyperpage{93}, \hyperpage{162}
+  \item multiple bind, \hyperpage{80}, \hyperpage{167}
+  \item multiple set bind, \hyperpage{80}, \hyperpage{167}
+  \item multiple type bind, \hyperpage{80}, \hyperpage{167}
+  \item Multiple-line comment, \hyperpage{172}
+  \item mutex predicate, \hyperpage{124}, \hyperpage{148}
+
+  \indexspace
+
+  \item name, \hyperpage{71}, \hyperpage{160}
+  \item name list, \hyperpage{71}, \hyperpage{85}, \hyperpage{160}
+  \item named trace, \hyperpage{134}, \hyperpage{149}
+  \item narrow expression, \hyperpage{64}, \hyperpage{158}
+  \item Negation, \hyperpage{6}
+  \item new expression, \hyperpage{59}, \hyperpage{158}
+  \item nil literal, \hyperpage{171}
+  \item nondeterministic statement, \hyperpage{101}, \hyperpage{163}
+  \item not, \hyperpage{153}
+  \item not equal, \hyperpage{155}
+  \item not in set, \hyperpage{155}
+  \item Not membership, \hyperpage{15}
+  \item numeral, \hyperpage{171}
+  \item numeric literal, \hyperpage{171}
+
+  \indexspace
+
+  \item object apply, \hyperpage{103}, \hyperpage{164}
+  \item object designator, \hyperpage{103}, \hyperpage{164}
+  \item object field reference, \hyperpage{103}, \hyperpage{164}
+  \item old name, \hyperpage{71}, \hyperpage{160}
+  \item operation body, \hyperpage{85}, \hyperpage{147}
+  \item operation definition, \hyperpage{84}, \hyperpage{147}
+  \item operation definitions, \hyperpage{84}, \hyperpage{146}
+  \item operation type, \hyperpage{85}, \hyperpage{147}
+  \item optional type, \hyperpage{28}, \hyperpage{144}
+  \item or, \hyperpage{155}
+  \item others expression, \hyperpage{46}, \hyperpage{152}
+  \item others statement, \hyperpage{96}, \hyperpage{163}
+  \item Override, \hyperpage{20}
+
+  \indexspace
+
+  \item parameter types, \hyperpage{35}, \hyperpage{146}
+  \item parameters, \hyperpage{35}, \hyperpage{85}, \hyperpage{146}
+  \item parameters list, \hyperpage{146}
+  \item partial function type, \hyperpage{30}, \hyperpage{35}, 
+		\hyperpage{144}
+  \item pattern, \hyperpage{75}, \hyperpage{165}
+  \item pattern bind, \hyperpage{75}, \hyperpage{166}
+  \item pattern identifier, \hyperpage{75}, \hyperpage{165}
+  \item pattern list, \hyperpage{35}, \hyperpage{75}, \hyperpage{85}, 
+		\hyperpage{166}
+  \item pattern type pair list, \hyperpage{35}, \hyperpage{146}
+  \item permission predicate, \hyperpage{124}, \hyperpage{148}
+  \item permission predicates, \hyperpage{124}, \hyperpage{148}
+  \item pi, \hyperpage{180}
+  \item Power, \hyperpage{9}
+  \item pre-condition expression, \hyperpage{159}
+  \item precondition expression, \hyperpage{74}
+  \item prefix expression, \hyperpage{45}, \hyperpage{152}
+  \item procedural thread definition, \hyperpage{131}, \hyperpage{149}
+  \item Product, \hyperpage{9}
+  \item product type, \hyperpage{23}, \hyperpage{144}
+  \item Proper subset, \hyperpage{15}
+  \item proper subset, \hyperpage{156}
+
+  \indexspace
+
+  \item quantified expression, \hyperpage{48}, \hyperpage{156}
+  \item Quote, \hyperpage{11}
+  \item quote literal, \hyperpage{172}
+  \item quote type, \hyperpage{143}
+
+  \indexspace
+
+  \item Range, \hyperpage{20}
+  \item Range restrict by, \hyperpage{20}
+  \item Range restrict to, \hyperpage{20}
+  \item record constructor, \hyperpage{56}, \hyperpage{158}
+  \item record modification, \hyperpage{57}, \hyperpage{158}
+  \item record modifier, \hyperpage{56}, \hyperpage{158}
+  \item record pattern, \hyperpage{75}, \hyperpage{166}
+  \item record type, \hyperpage{23}
+  \item recursive trap statement, \hyperpage{106}, \hyperpage{164}
+  \item relation, \hyperpage{176}
+  \item relational infix operator, \hyperpage{176}
+  \item Remainder, \hyperpage{9}
+  \item req expression, \hyperpage{70}, \hyperpage{160}
+  \item return statement, \hyperpage{105}, \hyperpage{164}
+
+  \indexspace
+
+  \item same base class membership expression, \hyperpage{68}
+  \item same class membership expression, \hyperpage{69}
+  \item samebaseclass expression, \hyperpage{68}, \hyperpage{160}
+  \item sameclass expression, \hyperpage{69}, \hyperpage{160}
+  \item self expression, \hyperpage{60}, \hyperpage{159}
+  \item self expressions, \hyperpage{105}
+  \item separator, \hyperpage{170}
+  \item seq conc pattern, \hyperpage{75}, \hyperpage{166}
+  \item seq enum pattern, \hyperpage{75}, \hyperpage{166}
+  \item seq type, \hyperpage{17}, \hyperpage{144}
+  \item seq0 type, \hyperpage{17}, \hyperpage{144}
+  \item seq1 type, \hyperpage{17}, \hyperpage{144}
+  \item Sequence application, \hyperpage{17}
+  \item sequence comprehension, \hyperpage{53}, \hyperpage{157}
+  \item sequence concatenate, \hyperpage{156}
+  \item sequence elements, \hyperpage{153}
+  \item sequence enumeration, \hyperpage{53}, \hyperpage{157}
+  \item sequence for loop, \hyperpage{98}, \hyperpage{163}
+  \item sequence head, \hyperpage{153}
+  \item sequence indices, \hyperpage{153}
+  \item sequence infix operator, \hyperpage{175}
+  \item sequence length, \hyperpage{153}
+  \item Sequence modification, \hyperpage{17}
+  \item sequence prefix operator, \hyperpage{175}
+  \item sequence tail, \hyperpage{153}
+  \item set bind, \hyperpage{80}, \hyperpage{166}
+  \item set cardinality, \hyperpage{153}
+  \item set comprehension, \hyperpage{51}, \hyperpage{157}
+  \item set difference, \hyperpage{156}
+  \item set enum pattern, \hyperpage{75}, \hyperpage{165}
+  \item set enumeration, \hyperpage{51}, \hyperpage{157}
+  \item set for loop, \hyperpage{98}, \hyperpage{163}
+  \item set infix operator, \hyperpage{175}
+  \item set intersection, \hyperpage{156}
+  \item set prefix operator, \hyperpage{175}
+  \item set range expression, \hyperpage{51}, \hyperpage{157}
+  \item set relational operator, \hyperpage{176}
+  \item set type, \hyperpage{14}, \hyperpage{144}
+  \item set union, \hyperpage{156}
+  \item set union pattern, \hyperpage{75}, \hyperpage{165}
+  \item Sine, \hyperpage{180}
+  \item Single-line comment, \hyperpage{172}
+  \item specification statement, \hyperpage{112}, \hyperpage{164}
+  \item Square root, \hyperpage{180}
+  \item Standard libraries, \hyperpage{180}
+  \item start list statement, \hyperpage{111}, \hyperpage{164}
+  \item start statement, \hyperpage{111}, \hyperpage{164}
+  \item state designator, \hyperpage{93}, \hyperpage{161}
+  \item statement, \hyperpage{88}, \hyperpage{90, 91}, \hyperpage{93}, 
+		\hyperpage{96}, \hyperpage{98}, \hyperpage{100, 101}, 
+		\hyperpage{103}, \hyperpage{105, 106}, 
+		\hyperpage{109--112}, \hyperpage{161}
+  \item subsequence, \hyperpage{53}, \hyperpage{157}, \hyperpage{174}
+  \item Subset, \hyperpage{15}
+  \item subset, \hyperpage{156}
+  \item Sum, \hyperpage{9}
+  \item symbolic literal, \hyperpage{171}
+  \item synchronization, \hyperpage{124}, \hyperpage{148}
+  \item synchronization definitions, \hyperpage{124}, \hyperpage{148}
+
+  \indexspace
+
+  \item Tail, \hyperpage{17}
+  \item Tangent, \hyperpage{180}
+  \item text literal, \hyperpage{172}
+  \item thread definition, \hyperpage{131}, \hyperpage{149}
+  \item thread definitions, \hyperpage{131}, \hyperpage{149}
+  \item threadid expression, \hyperpage{61}, \hyperpage{159}
+  \item Token, \hyperpage{12}
+  \item total function type, \hyperpage{30}, \hyperpage{35}, 
+		\hyperpage{144}
+  \item trace apply expression, \hyperpage{134}, \hyperpage{149}
+  \item trace binding, \hyperpage{134}, \hyperpage{150}
+  \item trace bindings, \hyperpage{134}, \hyperpage{150}
+  \item trace bracketed expression, \hyperpage{134}, \hyperpage{149}
+  \item trace core definition, \hyperpage{134}, \hyperpage{149}
+  \item trace definition, \hyperpage{134}, \hyperpage{149}
+  \item trace definition list, \hyperpage{134}, \hyperpage{149}
+  \item trace definition term, \hyperpage{134}, \hyperpage{149}
+  \item trace repeat pattern, \hyperpage{134}, \hyperpage{149}
+  \item traces definitions, \hyperpage{133}, \hyperpage{149}
+  \item trap statement, \hyperpage{106}, \hyperpage{164}
+  \item traps, \hyperpage{106}, \hyperpage{165}
+  \item tuple constructor, \hyperpage{56}, \hyperpage{157}
+  \item tuple pattern, \hyperpage{75}, \hyperpage{166}
+  \item tuple select, \hyperpage{58}, \hyperpage{158}
+  \item type, \hyperpage{14}, \hyperpage{16}, \hyperpage{19}, 
+		\hyperpage{23, 24}, \hyperpage{27}, \hyperpage{30}, 
+		\hyperpage{143}
+  \item type bind, \hyperpage{63}, \hyperpage{80}, \hyperpage{166}
+  \item type bind list, \hyperpage{63}, \hyperpage{167}
+  \item type definition, \hyperpage{143}
+  \item type definitions, \hyperpage{142}
+  \item type judgement, \hyperpage{66}, \hyperpage{159}
+  \item type name, \hyperpage{144}
+  \item type variable, \hyperpage{144}
+  \item type variable identifier, \hyperpage{171}
+  \item type variable list, \hyperpage{35}, \hyperpage{146}
+
+  \indexspace
+
+  \item unary expression, \hyperpage{45}, \hyperpage{152}
+  \item Unary minus, \hyperpage{9}
+  \item unary minus, \hyperpage{153}
+  \item unary operator, \hyperpage{45}, \hyperpage{152}
+  \item unary plus, \hyperpage{152}
+  \item undefined expression, \hyperpage{73}, \hyperpage{159}
+  \item Union, \hyperpage{15}
+  \item union type, \hyperpage{28}, \hyperpage{143}
+
+  \indexspace
+
+  \item value definition, \hyperpage{41}, \hyperpage{81}, 
+		\hyperpage{89}, \hyperpage{145}
+  \item value definitions, \hyperpage{81}, \hyperpage{145}
+  \item var information, \hyperpage{85}, \hyperpage{147}
+  \item VDMUtil, \hyperpage{183}
+
+  \indexspace
+
+  \item waiting expression, \hyperpage{70}, \hyperpage{160}
+  \item while loop, \hyperpage{100}, \hyperpage{163}
+
+\end{theindex}

@@ -1,0 +1,270 @@
+
+CMTest.vpp,20
+     ts.Run(14,488
+
+CMTestCase1.vpp,28
+       let reaction 16,458
+
+CMTestCase2.vpp,28
+       let reaction 17,527
+
+Test.vpp,31
+  public Run: TestResult 6,44
+
+TestCase.vpp,33
+  public Run: TestResult 25,503
+
+TestResult.vpp,233
+The class \vdmstyle{dmstyle1,0
+of class \vdmstyle{dmstyle4,166
+found. Note that the standard I/O library,10,489
+supplied with \vdmtools,11,542
+prints a string on the standard output,12,601
+  failures : seq of TestCase 21,877
+
+TestSuite.vpp,92
+  tests : seq of Test 6,78
+  public Run: TestResult 17,301
+  public AddTest: Test 22,406
+
+bus.vpp,60
+public Kind 5,22
+public BUS: nat * Kind * set of CPU 9,60
+
+cpu.vpp,118
+public Kind 5,22
+public CPU: nat * Kind 9,60
+public deploy: OBJRef 13,142
+public setPriority: OBJRef * nat 17,215
+
+environment.vpp,400
+public inline 5,52
+public outline 6,107
+inlines : seq of inline 14,276
+outlines : seq of outline 17,339
+sensors : map nat to Sensor 21,457
+inv dom ranges 22,496
+public addSensor: Sensor 33,725
+    sensors 39,909
+                   inlines 55,1478
+                   done 56,1521
+public handleEvent: EventId * FlareType * Angle * nat * nat 60,1626
+per isFinished 82,2162
+periodic 86,2203
+
+fighteraircraft.vpp,1128
+cpu1 : CPU 6,68
+cpu2 : CPU 9,140
+cpu3 : CPU 13,246
+cpu5 : CPU 17,354
+cpu6 : CPU 18,391
+bus1 : BUS 21,489
+bus2 : BUS 24,599
+bus3 : BUS 27,707
+public static detector : MissileDetector 30,804
+public static sensor0 : Sensor 32,874
+public static sensor1 : Sensor 33,933
+public static sensor2 : Sensor 34,993
+public static sensor3 : Sensor 35,1054
+public static controller0 : FlareController 37,1117
+public static controller1 : FlareController 38,1189
+public static controller2 : FlareController 39,1263
+public static dispenser0 : FlareDispenser 41,1339
+public static dispenser1 : FlareDispenser 42,1408
+public static dispenser2 : FlareDispenser 43,1478
+public static dispenser3 : FlareDispenser 44,1548
+public static dispenser4 : FlareDispenser 46,1620
+public static dispenser5 : FlareDispenser 47,1689
+public static dispenser6 : FlareDispenser 48,1759
+public static dispenser7 : FlareDispenser 49,1829
+public static dispenser8 : FlareDispenser 51,1901
+public static dispenser9 : FlareDispenser 52,1970
+public static dispenser10 : FlareDispenser 53,2040
+public static dispenser11 : FlareDispenser 54,2111
+
+fighteraircraft2.vpp,1143
+cpu1 : CPU 6,68
+--cpu2 : CPU 9,140
+--cpu3 : CPU 13,248
+--cpu5 : CPU 17,360
+--cpu6 : CPU 18,399
+--bus1 : BUS 21,499
+--bus2 : BUS 24,611
+--bus3 : BUS 27,721
+public static detector : MissileDetector 30,820
+public static sensor0 : Sensor 32,890
+public static sensor1 : Sensor 33,949
+public static sensor2 : Sensor 34,1009
+public static sensor3 : Sensor 35,1070
+public static controller0 : FlareController 37,1133
+public static controller1 : FlareController 38,1205
+public static controller2 : FlareController 39,1279
+public static dispenser0 : FlareDispenser 41,1355
+public static dispenser1 : FlareDispenser 42,1424
+public static dispenser2 : FlareDispenser 43,1494
+public static dispenser3 : FlareDispenser 44,1564
+public static dispenser4 : FlareDispenser 46,1636
+public static dispenser5 : FlareDispenser 47,1705
+public static dispenser6 : FlareDispenser 48,1775
+public static dispenser7 : FlareDispenser 49,1845
+public static dispenser8 : FlareDispenser 51,1917
+public static dispenser9 : FlareDispenser 52,1986
+public static dispenser10 : FlareDispenser 53,2056
+public static dispenser11 : FlareDispenser 54,2127
+
+flarecontroller.vpp,343
+private aperture : Angle;6,113
+dispensers : map nat to FlareDispenser 10,227
+inv dom ranges 11,277
+public addDispenser: FlareDispenser 24,604
+       dispensers 32,892
+async public addThreat: EventId * MissileType * Angle * nat 43,1335
+   busy 46,1483
+   threats 53,1738
+per getThreat 69,2170
+per isFinished 70,2205
+    busy 87,2788
+
+flaredispenser.vpp,648
+responseDB : map MissileType to Plan 5,56
+missilePriority : map MissileType to nat 17,525
+public PlanStep 26,681
+public curplan : Plan 30,741
+curprio        : nat 31,771
+aparature     : Angle;33,832
+eventid 34,856
+public FlareDispenser: Angle 38,901
+async public addThreat: EventId * MissileType * nat 46,1064
+           newtime 54,1420
+        curplan 59,1646
+        eventid 60,1678
+        curprio 61,1704
+        busy 62,1746
+                    curplan 75,2200
+                          done 78,2317
+                          busy 79,2359
+private releaseFlare: EventId * FlareType * nat * nat=82,2446
+per isFinished 92,2700
+
+fullmodel.vpp,3325
+  cpu1 : CPU 5,81
+  cpu2 : CPU 8,155
+  cpu3 : CPU 12,265
+  cpu5 : CPU 16,375
+  cpu6 : CPU 17,412
+  bus1 : BUS 20,512
+  bus2 : BUS 23,618
+  bus3 : BUS 26,722
+  public static detector 29,809
+  public static sensor0 : Sensor 31,865
+  public static sensor1 : Sensor 32,926
+  public static sensor2 : Sensor 33,988
+  public static sensor3 : Sensor 34,1051
+  public static controller0 : FlareController 36,1116
+  public static controller1 : FlareController 37,1190
+  public static controller2 : FlareController 38,1266
+  public static dispenser0 : FlareDispenser 40,1344
+  public static dispenser1 : FlareDispenser 41,1415
+  public static dispenser2 : FlareDispenser 42,1487
+  public static dispenser3 : FlareDispenser 43,1559
+  public static dispenser4 : FlareDispenser 45,1633
+  public static dispenser5 : FlareDispenser 46,1704
+  public static dispenser6 : FlareDispenser 47,1776
+  public static dispenser7 : FlareDispenser 48,1848
+  public static dispenser8 : FlareDispenser 50,1922
+  public static dispenser9 : FlareDispenser 51,1993
+  public static dispenser10 : FlareDispenser 52,2065
+  public static dispenser11 : FlareDispenser 53,2138
+  public static env 126,4772
+  public detector : MissileDetector 129,4865
+      env 137,5088
+      controller 145,5410
+      controller 152,5782
+      controller 159,6155
+      env.showResult(179,6945
+  public inline 221,8105
+  public outline 222,8151
+  inlines : seq of inline 229,8310
+  outlines : seq of outline 233,8401
+  sensors : map nat to Sensor 237,8525
+  inv dom ranges 238,8566
+    inlines 245,8781
+  public addSensor: Sensor 247,8858
+       sensors 252,9039
+                          inlines 268,9663
+                          done 269,9713
+  public handleEvent: FlareType * nat * nat 273,9839
+  per isFinished 288,10246
+  private aperture : Angle;302,10565
+  public Sensor: MissileDetector * Angle 305,10608
+  Sensor (pmd, psa) == ( detector := pmd; aperture 306,10661
+  controllers : map nat to FlareController 333,11644
+  inv dom ranges 334,11698
+      ranges 347,12106
+      controllers 348,12168
+  async public addThreat: MissileType * Angle * nat 354,12437
+      busy 357,12573
+      threats 363,12798
+  per getThreat 378,13253
+  per isFinished 379,13290
+      busy 391,13740
+  dispensers : map nat to FlareDispenser 403,14032
+  public addDispenser: FlareDispenser * Angle 415,14377
+        ranges 419,14552
+        dispensers 420,14626
+  async public addThreat: MissileType * Angle * nat 430,15077
+      busy 433,15212
+      threats 439,15437
+  per getThreat 454,15891
+  per isFinished 455,15928
+        busy 471,16550
+  missilePriority : map MissileType to nat 490,17178
+  public PlanStep 498,17345
+  public curplan : Plan 501,17405
+  curprio        : nat 502,17437
+  angle          : nat;504,17502
+  public FlareDispenser: nat 508,17543
+  async public addThreat: MissileType * nat 516,17708
+               newtime 524,18070
+           curplan 529,18307
+           curprio 530,18342
+           busy 531,18387
+                            curplan 544,18879
+                            then ( curprio := 0; done 546,18970
+                            then ( curprio := 0; done := true; busy 546,18970
+  private releaseFlare: FlareType * nat * nat=549,19101
+  per isFinished 557,19328
+
+global.vpp,195
+  public SENSOR_APERTURE 4,24
+  public FLARE_APERTURE 5,56
+  public DISPENSER_APERTURE 6,88
+  -- there are nine different flare types,12,245
+  public FlareType 13,307
+  public Angle 19,525
+
+io.vpp,112
+-- fdir 31,891
+freadval[41,1190
+-- Write text to std out. Surrounding double quotes will be stripped,48,1332
+
+missiledetector.vpp,267
+controllers : map nat to FlareController 11,298
+inv dom ranges 12,350
+     controllers 28,824
+async public addThreat: EventId * MissileType * Angle * nat 35,1088
+   busy 38,1237
+   threats 44,1471
+per getThreat 60,1904
+per isFinished 61,1939
+   busy 74,2376
+
+sensor.vpp,178
+private detector : MissileDetector;6,113
+private aperture : Angle;9,210
+public Sensor: MissileDetector * Angle 13,253
+Sensor (pmd, psa) == ( detector := pmd; aperture 14,304
+
+world.vpp,51
+public static env 6,76
+   env.showResult(54,1683

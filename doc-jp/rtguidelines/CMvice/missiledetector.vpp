@@ -1,0 +1,82 @@
+\begin{vdm_al}
+class ミサイル探知器 is subclass of GLOBAL
+
+-- the primary task of the ミサイル探知器 is to
+-- collect all sensor data and dispatch each event
+-- to the appropriate 火炎弾コントローラ
+
+instance variables
+
+-- maintain a link to each controller
+s対応角度範囲写像 : map nat to (角度 * 角度) := {|->};
+sコントローラ写像 : map nat to 火炎弾コントローラ := {|->};
+inv dom s対応角度範囲写像 = dom sコントローラ写像;
+
+-- collects the observations from all attached sensors
+threats : seq of (事象ID * ミサイルタイプ * 角度 * Time) := [];
+
+-- status of the ミサイル s探知器
+busy : bool := false
+
+operations
+
+-- addController is only used to instantiate the model
+public addController: 火炎弾コントローラ ==> ()
+addController (pctrl) ==
+  (dcl nid : nat := card dom s対応角度範囲写像 + 1;
+   atomic 
+    (s対応角度範囲写像 := s対応角度範囲写像 munion {nid |-> pctrl.対応可能左端角度を得る()};
+     sコントローラ写像 := sコントローラ写像 munion {nid |-> pctrl}
+    );
+   start (pctrl) );
+
+-- add脅威 is a helper operation to modify the event
+-- list. currently events are stored first come first served.
+-- one could imagine using a different ordering instead.
+async public add脅威: 事象ID * ミサイルタイプ * 角度 * Time ==> ()
+add脅威 (evid,pmt,pa,pt) == 
+  (threats := threats ^ [mk_ (evid,pmt,pa,pt)];
+   busy := true );
+
+-- get脅威 is a local helper operation to modify the event list
+private get脅威: () ==> 事象ID * ミサイルタイプ * 角度 * Time
+get脅威 () ==
+  (dcl res : 事象ID * ミサイルタイプ * 角度 * Time := hd threats;
+   threats := tl threats;
+   return res );
+
+public isFinished: () ==> ()
+isFinished () ==
+  for all id in set dom sコントローラ写像 do
+    sコントローラ写像(id).isFinished()
+
+sync
+
+-- add脅威 and get脅威 modify the same instance variables
+-- therefore they need to be declared mutual exclusive
+mutex (add脅威,get脅威);
+
+-- get脅威 is used as a 'blocking read' from the main
+-- thread of control of the ミサイル s探知器
+per get脅威 => len threats > 0;
+per isFinished => not busy
+
+thread
+
+-- the ミサイル s探知器 continuously processes sensor
+-- events. getThread is automatically blocked if there
+-- are no threats available
+while true do
+  (def mk_ (evid,pmt, pa, pt) = get脅威() in
+     for all id in set dom s対応角度範囲写像 do
+       def mk_(papplhs, pappsize) = s対応角度範囲写像(id) in
+         if canObserve(pa, papplhs, pappsize)
+         then sコントローラ写像(id).add脅威(evid,pmt,pa,pt);
+   busy := len threats > 0 )
+
+end ミサイル探知器
+\end{vdm_al}
+
+\begin{rtinfo}[ミサイル探知器`addController]
+{vdm.tc}[ミサイル探知器]
+\end{rtinfo}

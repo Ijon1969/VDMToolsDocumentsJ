@@ -1,0 +1,184 @@
+\begin{vdm}{\small\sf class} $FlareController$\index{FlareController|ModDef}
+\par
+\kInstanceVarDef
+\parlinebr
+\begin{insvar}
+\assdef{dispensers}{FlareDispenser`MagId\index{MagId|TypeOcc} \Gmap FlareDispenser\index{FlareDispenser|TypeOcc}}
+\end{insvar}
+\begin{insvar}
+\assdef{missileDetectorRef}{MissileDetector\index{MissileDetector|TypeOcc}}
+\end{insvar}
+\begin{insvar}
+\assdef{noMoreMissiles}{\Bool }[{\False }]
+\end{insvar}
+\par
+\kValues
+\val{mag1}[FlareDispenser`MagId\index{MagId|TypeOcc}]{\color{not-covered}\reccons{\kw{mk-} \Token}{\Dquote Magazine\hspace{0.5em}1 \Dquote }\color{covered};}
+\val{mag2}[FlareDispenser`MagId\index{MagId|TypeOcc}]{\color{not-covered}\reccons{\kw{mk-} \Token}{\Dquote Magazine\hspace{0.5em}2 \Dquote }\color{covered};}
+\val{mag3}[FlareDispenser`MagId\index{MagId|TypeOcc}]{\color{not-covered}\reccons{\kw{mk-} \Token}{\Dquote Magazine\hspace{0.5em}3 \Dquote }\color{covered};}
+\val{mag4}[FlareDispenser`MagId\index{MagId|TypeOcc}]{\color{not-covered}\reccons{\kw{mk-} \Token}{\Dquote Magazine\hspace{0.5em}4 \Dquote }\color{covered};}
+\val{magids}[\setof{FlareDispenser`MagId\index{MagId|TypeOcc}}]{\color{not-covered}\set{mag1,mag2,mag3,mag4}\color{covered}}
+\kThreadDef
+\begin{thread}
+\begin{setfor}{magid}{magids}
+
+\start{\fnapply{dispensers}{magid}}
+\end{setfor}
+\end{thread}
+\kOperations
+\kw{\kw{public}}\begin{op}[e]{Init}\index{Init|FuncDef}%
+\signature{MissileDetector\index{MissileDetector|TypeOcc} \X Timer\index{Timer|TypeOcc} \Oto ()}
+\parms{initMissileDetector,initTimerRef}
+\annlab[o]{FlareController`Init}
+\begin{blockstmt}
+\ass{missileDetectorRef}{initMissileDetector} ; \\
+\ass{dispensers}{\mapcomp{mag \Mapsto \fnapply{\new{FlareDispenser}}{mag,initTimerRef}} \\
+{mag \In magids}}
+\end{blockstmt};
+\end{op}
+\kw{\kw{public}}\begin{op}[e]{IsFinished}\index{IsFinished|FuncDef}%
+\signature{() \Oto FlareDispenser`MagId\index{MagId|TypeOcc} \Gmap \seqof*{\Lp FlareDispenser`FlareType\index{FlareType|TypeOcc} \X \Nat  \Rp }}
+\parms{}
+\annlab[o]{FlareController`IsFinished}
+\begin{blockstmt}
+\begin{setfor}{magid}{magids}
+\fnapply{dispensers}{magid}.\call{IsFinished}{}
+\end{setfor} ; \\
+\return{\mapcomp{magid \Mapsto \fnapply{\fnapply{dispensers}{magid}.GetResult}{}}{magid \In magids}}
+\end{blockstmt}
+\end{op}
+\kSync
+\index{IsFinished|MethodOcc}
+\per{IsFinished}{
+noMoreMissiles
+}
+
+\kOperations
+\kw{\kw{public}}\begin{op}[e]{MissileIsHere}\index{MissileIsHere|FuncDef}%
+\signature{\Opt{Sensor`MissileType\index{MissileType|TypeOcc} \X Sensor`Angle\index{Angle|TypeOcc}} \Oto ()}
+\parms{newMissileValue}
+\annlab[o]{FlareController`MissileIsHere}
+\begin{blockstmt}
+\If newMissileValue = \Nil 
+\Then \\
+\ass{noMoreMissiles}{\True }
+\Elseif newMissileValue.\#1 \Neq \const{None}
+\Then \\
+\begin{letstmt}
+\patdef{\reccons{\kw{mk-}}{misType,angle}}{newMissileValue}
+\patdef{magid}{\fnapply{Angle2MagId}{angle}}
+\end{letstmt} \\
+\fnapply{dispensers}{magid}.\call{NewMissileValue}{misType}
+\Fi
+\end{blockstmt}
+\end{op}
+\kFunctions
+\begin{fn}[e]{Angle2MagId}\index{Angle2MagId|FuncDef}%
+\signature{Sensor`Angle\index{Angle|TypeOcc} \To FlareDispenser`MagId\index{MagId|TypeOcc}}
+\parms*{\Lp angle\Rp }
+\annlab[o]{FlareController`Angle2MagId}
+\If angle < 90
+\Then \\
+mag1
+\Elseif angle < 180
+\Then \\
+mag2
+\Elseif angle < 270
+\Then \\
+mag3
+\Else \\
+mag4
+\Fi
+\end{fn}
+{\small\sf end} {\it FlareController}
+
+\end{vdm}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{tabular}{p{25mm}l}
+{\bf Test Suite :} & vdm.tc \\ 
+{\bf Class :} & FlareController \\ 
+\end{tabular}
+
+\begin{longtable}{|l|r|r|}\hline
+{\bf FlareController`MissileIsHere} & {\bf \#Calls} & {\bf Coverage} \kill
+{\bf Name} & {\bf \#Calls} & {\bf Coverage} \\ \hline\hline
+\endhead
+FlareController`Init & 1 & $\surd$ \\ \hline
+FlareController`IsFinished & 1 & $\surd$ \\ \hline
+FlareController`Angle2MagId & 7 & $\surd$ \\ \hline
+FlareController`MissileIsHere & 8 & $\surd$ \\ \hline
+\hline
+{\bf Total Coverage} & & {\bf 100\%} \\ \hline
+\end{longtable}
+
+

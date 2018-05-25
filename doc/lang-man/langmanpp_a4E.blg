@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: langmanpp_a4E.aux
+The style file: alpha.bst
+Database file #1: ifad.bib
+Warning--empty author in adalrm
+Warning--empty institution in Durr92a
+Warning--can't use both author and editor fields in Fitzgerald&98
+You've used 8 entries,
+            2543 wiz_defined-function locations,
+            615 strings with 5862 characters,
+and the built_in function-call counts, 2369 in all, are:
+= -- 214
+> -- 95
+< -- 6
++ -- 29
+- -- 29
+* -- 147
+:= -- 408
+add.period$ -- 24
+call.type$ -- 8
+change.case$ -- 43
+chr.to.int$ -- 8
+cite$ -- 11
+duplicate$ -- 114
+empty$ -- 193
+format.name$ -- 40
+if$ -- 475
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 10
+newline$ -- 44
+num.names$ -- 21
+pop$ -- 61
+preamble$ -- 1
+purify$ -- 53
+quote$ -- 0
+skip$ -- 80
+stack$ -- 0
+substring$ -- 56
+swap$ -- 8
+text.length$ -- 6
+text.prefix$ -- 6
+top$ -- 0
+type$ -- 44
+warning$ -- 3
+while$ -- 16
+width$ -- 11
+write$ -- 104
+(There were 3 warnings)

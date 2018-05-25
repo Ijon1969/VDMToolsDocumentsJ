@@ -1,0 +1,110 @@
+{\rtf1\ansi\ansicpg1252\uc1 \deff0\deflang1033\deflangfe1033{\fonttbl{\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}{\f1\fswiss\fcharset0\fprq2{\*\panose 020b0604020202020204}Arial;}
+{\f2\fmodern\fcharset0\fprq1{\*\panose 02070309020205020404}Courier New;}{\f6\fmodern\fcharset0\fprq1{\*\panose 00000000000000000000}Courier;}{\f16\froman\fcharset238\fprq2 Times New Roman CE;}{\f17\froman\fcharset204\fprq2 Times New Roman Cyr;}
+{\f19\froman\fcharset161\fprq2 Times New Roman Greek;}{\f20\froman\fcharset162\fprq2 Times New Roman Tur;}{\f21\froman\fcharset186\fprq2 Times New Roman Baltic;}{\f22\fswiss\fcharset238\fprq2 Arial CE;}{\f23\fswiss\fcharset204\fprq2 Arial Cyr;}
+{\f25\fswiss\fcharset161\fprq2 Arial Greek;}{\f26\fswiss\fcharset162\fprq2 Arial Tur;}{\f27\fswiss\fcharset186\fprq2 Arial Baltic;}{\f28\fmodern\fcharset238\fprq1 Courier New CE;}{\f29\fmodern\fcharset204\fprq1 Courier New Cyr;}
+{\f31\fmodern\fcharset161\fprq1 Courier New Greek;}{\f32\fmodern\fcharset162\fprq1 Courier New Tur;}{\f33\fmodern\fcharset186\fprq1 Courier New Baltic;}}{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;
+\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;
+\red192\green192\blue192;}{\stylesheet{\nowidctlpar\widctlpar\adjustright \fs20\cgrid \snext0 Normal;}{\s1\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel0\adjustright \b\f1\fs28\kerning28\cgrid \sbasedon0 \snext0 heading 1;}{\*\cs10 \additive 
+Default Paragraph Font;}{\s15\nowidctlpar\widctlpar\adjustright \shading1000\cbpat8 \f2\fs20\lang1024\cgrid \snext15 VDM;}{\*\cs16 \additive \f6 \sbasedon10 VDM_COV;}{\*\cs17 \additive \f6\cf16 \sbasedon10 VDM_NCOV;}{
+\s18\nowidctlpar\widctlpar\adjustright \shading1000\cbpat8 \f2\fs20\lang1024\cgrid \sbasedon15 \snext18 VDM_TC_TABLE;}}{\info{\title Default Rose-VDM++ Link forward engineering file}{\author VDM Tools}{\operator Peter Gorm Larsen}
+{\creatim\yr1998\mo10\dy16\hr14\min8}{\revtim\yr2000\mo10\dy3\hr10\min8}{\printim\yr1999\mo9\dy6\hr11\min38}{\version155}{\edmins256}{\nofpages2}{\nofwords226}{\nofchars1289}{\*\company CSK}{\nofcharsws0}{\vern71}}
+\widowctrl\ftnbj\aenddoc\linkstyles\hyphcaps0\formshade\viewkind4\viewscale100\pgbrdrhead\pgbrdrfoot \fet0\sectd \linex0\headery709\footery709\colsx709\endnhere\sectdefaultcl {\*\pnseclvl1\pnucrm\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl2
+\pnucltr\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl3\pndec\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl4\pnlcltr\pnstart1\pnindent720\pnhang{\pntxta )}}{\*\pnseclvl5\pndec\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl6
+\pnlcltr\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl7\pnlcrm\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl8\pnlcltr\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl9\pnlcrm\pnstart1\pnindent720\pnhang
+{\pntxtb (}{\pntxta )}}\pard\plain \s1\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel0\adjustright \b\f1\fs28\kerning28\cgrid {\lang2057 The Class CentralResource
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20\cgrid {This class models the central resource. We assume ther
+e is only one central resource in the system, though many tills can be connected to this. The central resource holds the accounts, ids of illegal cards, and connections to a clock and a letterbox.
+\par 
+\par }\pard\plain \s15\nowidctlpar\widctlpar\adjustright \shading1000\cbpat8 \f2\fs20\lang1024\cgrid {class CentralResource
+\par 
+\par instance variables
+\par   accounts      : map Account`AccountId to Account := \{|->\};
+\par   numberOfTries : map Card`CardId to nat := \{|->\};
+\par   illegalCards  : set of Card`CardId := \{\};
+\par   letterbox     : Letterbox;
+\par   clock         : Clock;
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20\cgrid {
+\par All cards for different accounts cannot be overlapping.
+\par 
+\par }\pard\plain \s15\nowidctlpar\widctlpar\adjustright \shading1000\cbpat8 \f2\fs20\lang1024\cgrid {  inv forall acc1,acc2 in set rng accounts &
+\par           acc1 <> acc2 =>
+\par           acc1.GetCardIds() inter acc2.GetCardIds() = \{\};
+\par 
+\par values
+\par   maxNumberOfTries : nat = 3;
+\par 
+\par operations
+\par   public Create : Clock * Letterbox ==> CentralResource
+\par   Create(c,l) ==
+\par     (clock := c;
+\par      letterbox := l;
+\par      return self);
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20\cgrid {
+\par The following three operations provide the functionality requested in the requirements specification of the system. The operations first check that the requested functionality is allo
+wed and then hand the actual processing over to each account. Note that the checks are necessary even though the till may have performed them as well. For example, a card may have been reported stolen or illegal in another way while it is being used at a 
+till. 
+\par 
+\par }\pard\plain \s15\nowidctlpar\widctlpar\adjustright \shading1000\cbpat8 \f2\fs20\lang1024\cgrid {  public GetBalance : Account`AccountId ==> [nat]
+\par   GetBalance(accountId) ==
+\par     if accountId in set dom accounts then
+\par       accounts(accountId).GetBalance()
+\par     else
+\par       return nil;
+\par 
+\par   public Withdrawal : Account`AccountId * Card`CardId * nat ==> bool
+\par   Withdrawal(accountId,cardId,amount) ==
+\par     if IsLegalCard(accountId,cardId) then
+\par       accounts(accountId).Withdrawal(cardId,amount,clock.GetDate())
+\par     else
+\par       return false;
+\par 
+\par   public PostStatement : Account`AccountId * Card`CardId ==> bool
+\par   PostStatement(accountId,cardId) ==
+\par     if IsLegalCard(accountId,cardId) then
+\par       (letterbox.PostStatement
+\par         (accounts(accountId).MakeStatement(cardId,clock.GetDate()));
+\par        return true)
+\par     else
+\par       return false;
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20\cgrid {
+\par Next some operations follow to check whether cards are legal and administrate number of tries stored for each card. 
+\par }\pard\plain \s15\nowidctlpar\widctlpar\adjustright \shading1000\cbpat8 \f2\fs20\lang1024\cgrid {
+\par   public IsLegalCard : Account`AccountId * Card`CardId ==> bool
+\par   IsLegalCard(accountId,cardId) ==
+\par     return
+\par       cardId not in set illegalCards and
+\par       accountId in set dom accounts and
+\par       cardId in set accounts(accountId).GetCardIds();
+\par 
+\par   public NumberOfTriesExceeded : Card`CardId ==> bool
+\par   NumberOfTriesExceeded(cardId) ==
+\par     return numberOfTries(cardId) >= maxNumberOfTries;
+\par 
+\par   public ResetNumberOfTries : Card`CardId ==> ()
+\par   ResetNumberOfTries(cardId) ==
+\par     numberOfTries(cardId) := 0;
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20\cgrid {
+\par }\pard\plain \s15\nowidctlpar\widctlpar\adjustright \shading1000\cbpat8 \f2\fs20\lang1024\cgrid {  public IncrNumberOfTries : Card`CardId ==> ()
+\par   IncrNumberOfTries(cardId) ==
+\par     numberOfTries(cardId) := numberOfTries(cardId) + 1;
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20\cgrid {
+\par The two operations below are used to update the central resource. 
+\par 
+\par }\pard\plain \s15\nowidctlpar\widctlpar\adjustright \shading1000\cbpat8 \f2\fs20\lang1024\cgrid {  public AddAccount : Account`AccountId * Account ==> ()
+\par   AddAccount(accId,acc) ==
+\par     (numberOfTries := numberOfTries ++
+\par                       \{cId |-> 0 | cId in set acc.GetCardIds()\};
+\par      accounts := accounts ++ \{accId |-> acc\})
+\par   pre accId not in set dom accounts;
+\par 
+\par   public AddIllegalCard : Card`CardId ==> ()
+\par   AddIllegalCard(cId) ==
+\par     illegalCards := illegalCards union \{cId\};
+\par 
+\par end CentralResource
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20\cgrid {
+\par The table below presents test coverage information for the CentralResource class.
+\par 
+\par }\pard\plain \s18\nowidctlpar\widctlpar\adjustright \shading1000\cbpat8 \f2\fs20\lang1024\cgrid {CentralResource
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20\cgrid {
+\par }}

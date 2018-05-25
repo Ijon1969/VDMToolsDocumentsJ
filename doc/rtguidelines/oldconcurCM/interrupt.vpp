@@ -1,0 +1,37 @@
+\begin{vdm_al}
+class Interrupt
+
+instance variables
+
+timer        : Timer;
+currentAlarm : [nat] := nil;
+
+values
+
+operations
+
+public Interrupt: Timer ==> Interrupt
+Interrupt(t) ==
+  timer := t;
+
+public Alarm : nat ==> ()
+Alarm(n) ==
+  SetAlarm(n);
+
+SetAlarm : nat ==> ()
+SetAlarm(n) ==
+  currentAlarm := timer.GetTime() + n;
+
+public Inter : () ==> ()
+Inter() == currentAlarm := nil;
+
+public GetTime: () ==> nat
+GetTime() ==
+  timer.GetTime();
+
+end Interrupt
+\end{vdm_al}
+
+\begin{rtinfo}[Interrupt`Interrupt]
+{vdm.tc}[Interrupt]
+\end{rtinfo}

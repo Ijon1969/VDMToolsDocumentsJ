@@ -1,0 +1,95 @@
+{\rtf1\ansi\ansicpg1252\uc1 \deff0\deflang1033\deflangfe1033{\fonttbl{\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}{\f1\fswiss\fcharset0\fprq2{\*\panose 020b0604020202020204}Arial;}
+{\f2\fmodern\fcharset0\fprq1{\*\panose 02070309020205020404}Courier New;}{\f6\fmodern\fcharset0\fprq1{\*\panose 00000000000000000000}Courier;}{\f17\froman\fcharset238\fprq2 Times New Roman CE;}{\f18\froman\fcharset204\fprq2 Times New Roman Cyr;}
+{\f20\froman\fcharset161\fprq2 Times New Roman Greek;}{\f21\froman\fcharset162\fprq2 Times New Roman Tur;}{\f22\froman\fcharset186\fprq2 Times New Roman Baltic;}{\f23\fswiss\fcharset238\fprq2 Arial CE;}{\f24\fswiss\fcharset204\fprq2 Arial Cyr;}
+{\f26\fswiss\fcharset161\fprq2 Arial Greek;}{\f27\fswiss\fcharset162\fprq2 Arial Tur;}{\f28\fswiss\fcharset186\fprq2 Arial Baltic;}{\f29\fmodern\fcharset238\fprq1 Courier New CE;}{\f30\fmodern\fcharset204\fprq1 Courier New Cyr;}
+{\f32\fmodern\fcharset161\fprq1 Courier New Greek;}{\f33\fmodern\fcharset162\fprq1 Courier New Tur;}{\f34\fmodern\fcharset186\fprq1 Courier New Baltic;}}{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;
+\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;
+\red192\green192\blue192;}{\stylesheet{\nowidctlpar\widctlpar\adjustright \fs20\cgrid \snext0 Normal;}{\s1\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel0\adjustright \b\f1\fs28\kerning28\cgrid \sbasedon0 \snext0 heading 1;}{\*\cs10 \additive 
+Default Paragraph Font;}{\s15\nowidctlpar\widctlpar\adjustright \f2\fs20\lang1024\cgrid \snext15 VDM;}{\*\cs16 \additive \f6 \sbasedon10 VDM_COV;}{\*\cs17 \additive \f6\cf16 \sbasedon10 VDM_NCOV;}{\s18\nowidctlpar\widctlpar\adjustright 
+\f2\fs20\lang1024\cgrid \sbasedon15 \snext18 VDM_TC_TABLE;}{\s19\qj\sa120\nowidctlpar\widctlpar\adjustright \fs22\cgrid \sbasedon0 \snext19 Body Text;}}{\info{\title Default Rose-VDM++ Link forward engineering file}{\author VDM Tools}
+{\operator Paul Mukherjee}{\creatim\yr1999\mo9\dy7\hr9\min34}{\revtim\yr1999\mo12\dy8\hr14\min31}{\version16}{\edmins70}{\nofpages2}{\nofwords251}{\nofchars1433}{\*\company CSK}{\nofcharsws0}{\vern71}}
+\widowctrl\ftnbj\aenddoc\linkstyles\hyphcaps0\formshade\viewkind4\viewscale100\pgbrdrhead\pgbrdrfoot \fet0\sectd \linex0\headery709\footery709\colsx709\endnhere\sectdefaultcl {\*\pnseclvl1\pnucrm\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl2
+\pnucltr\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl3\pndec\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl4\pnlcltr\pnstart1\pnindent720\pnhang{\pntxta )}}{\*\pnseclvl5\pndec\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl6
+\pnlcltr\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl7\pnlcrm\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl8\pnlcltr\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl9\pnlcrm\pnstart1\pnindent720\pnhang
+{\pntxtb (}{\pntxta )}}\pard\plain \s1\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel0\adjustright \b\f1\fs28\kerning28\cgrid {\lang2057 The Class LocalTill
+\par }\pard\plain \s19\qj\sa120\nowidctlpar\widctlpar\adjustright \fs22\cgrid {
+The class LocalTill acts as an interface between a Channel and the CentralResource, allowing the existing CentralResource class to be used without modification. At the heart of the class, requests are repeatedly removed from the Channel, processed, and re
+sponses placed on the Channel.
+\par }\pard\plain \s15\nowidctlpar\widctlpar\adjustright \f2\fs20\lang1024\cgrid {class LocalTill
+\par 
+\par }\pard\plain \s19\qj\sa120\nowidctlpar\widctlpar\adjustright \fs22\cgrid {
+Since it acts as an interface, the LocalTill has references to the two objects it mediates between: a Channel and the CentralResource. In addition a boolean value is used to represent whether the communication
+ has failed or not (this is used for modelling purposes, allowing us to test behaviour of the overall model in the presence of failed communication).
+\par }\pard\plain \s15\nowidctlpar\widctlpar\adjustright \f2\fs20\lang1024\cgrid {instance variables
+\par   c: Channel;
+\par   resource : CentralResource;
+\par   enabled : bool := true;
+\par 
+\par }\pard\plain \s19\qj\sa120\nowidctlpar\widctlpar\adjustright \fs22\cgrid {The heart of thi
+s class is its thread, so we being by describing it. The thread repeatedly receives requests from the Channel and processes them, as long as enabled is true. Note that due to the synchronization constraints in Channel, the call to c.ReceiveRequest will bl
+ock until a request has been sent by a Till. Also, as well as the looping condition there is a second check of enabled in the body of the loop in case it has changed while the thread was waiting for a request.
+\par }\pard\plain \s15\nowidctlpar\widctlpar\adjustright \f2\fs20\lang1024\cgrid {
+\par thread
+\par   while enabled do
+\par       let req = c.ReceiveRequest() in
+\par       if enabled
+\par       then ProcessRequest(req);
+\par }\pard\plain \s19\qj\sa120\nowidctlpar\widctlpar\adjustright \fs22\cgrid {
+\par As can be seen from the thread, the main operation in this class is ProcessRequest. This takes a request, converts it into a call to the CentralResource, then converts the result from Cent
+ralResource into a response and sends this to the Channel. Of course the call to CentralResource will depend upon the kind of request made, so a case statement is used to distinguish these requests.
+\par }\pard\plain \s15\nowidctlpar\widctlpar\adjustright \f2\fs20\lang1024\cgrid {operations
+\par 
+\par   ProcessRequest : Channel`Request ==> ()
+\par   ProcessRequest(req) ==
+\par    (dcl respdata : Channel`RespData;
+\par     cases req:
+\par         mk_Channel`Request(
+\par             <Withdrawal>, \{mk_Channel`AccountId(accId),
+\par                            mk_Channel`CardId(cardId),
+\par                            mk_Channel`Amount(amt)\})     
+\par           -> respdata := resource.Withdrawal(accId, cardId, amt),
+\par         mk_Channel`Request(
+\par             <PostStmt>, \{mk_Channel`AccountId(accId),
+\par                          mk_Channel`CardId(cardId)\})
+\par           -> respdata := resource.PostStatement(accId, cardId),
+\par         mk_Channel`Request(
+\par             <IsLegalCard>, \{mk_Channel`AccountId(accId),
+\par                             mk_Channel`CardId(cardId)\})
+\par           -> respdata := resource.IsLegalCard(accId, cardId),
+\par         mk_Channel`Request(
+\par             <GetBalance>, \{mk_Channel`AccountId(accId)\})
+\par           -> respdata := resource.GetBalance(accId),
+\par         mk_Channel`Request(
+\par             <TriesExceeded>, \{mk_Channel`CardId(cardId)\})
+\par           -> respdata := resource.NumberOfTriesExceeded(cardId),
+\par         mk_Channel`Request(
+\par             <ResetTries>, \{mk_Channel`CardId(cardId)\})
+\par           -> (resource.ResetNumberOfTries(cardId);
+\par               respdata := nil),       
+\par         mk_Channel`Request(
+\par             <IncTries>, \{mk_Channel`CardId(cardId)\})
+\par           -> (resource.IncrNumberOfTries(cardId);
+\par               respdata := nil)
+\par     end;
+\par     c.SendResponse(mk_Channel`Response(req.command, respdata)));
+\par }\pard\plain \s19\qj\sa120\nowidctlpar\widctlpar\adjustright \fs22\cgrid {
+\par Finally we have a few minor operations. Create is used to initialize the Channel and CentralResource.
+\par }\pard\plain \s15\nowidctlpar\widctlpar\adjustright \f2\fs20\lang1024\cgrid {  public Create : Channel * CentralResource ==> ()
+\par   Create(nc, nr) ==
+\par     (c := nc;
+\par      resource := nr);
+\par }\pard\plain \s19\qj\sa120\nowidctlpar\widctlpar\adjustright \fs22\cgrid {
+\par Fail is used to set the enabled flag to false, when we wish to analyse the behaviour of failed communication.
+\par }\pard\plain \s15\nowidctlpar\widctlpar\adjustright \f2\fs20\lang1024\cgrid {  public Fail : () ==> ()
+\par   Fail() ==
+\par     enabled := false;
+\par 
+\par }\pard\plain \s19\qj\sa120\nowidctlpar\widctlpar\adjustright \fs22\cgrid {Repair is used if we wish to reset the communication following a failure. Note that a fresh Channel is used as this gives reset history counters.
+\par }\pard\plain \s15\nowidctlpar\widctlpar\adjustright \f2\fs20\lang1024\cgrid {  public Repair : Channel ==> ()
+\par   Repair(nc) ==
+\par    (c := nc;
+\par     enabled := true);
+\par 
+\par end LocalTill
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20\cgrid {
+\par }}

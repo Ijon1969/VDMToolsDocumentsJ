@@ -1,0 +1,121 @@
+\begin{vdm}{\small\sf class} $MissileDetector$\index{MissileDetector|ModDef}
+\par
+\kInstanceVarDef
+\parlinebr
+\begin{insvar}
+\assdef{sensorRef}{Sensor\index{Sensor|TypeOcc}}
+\end{insvar}
+\begin{insvar}
+\assdef{flareControlRef}{FlareController\index{FlareController|TypeOcc}}
+\end{insvar}
+\begin{insvar}
+\assdef{threat}{\Opt{Sensor`MissileType\index{MissileType|TypeOcc} \X Sensor`Angle\index{Angle|TypeOcc}}}[{\reccons{\kw{mk-}}{\const{None},0}}]
+\end{insvar}
+\par
+\kThreadDef
+\begin{thread}
+\begin{while}{threat \Neq \Nil }
+\begin{letstmt}
+\patdef{newThreat}{\fnapply{sensorRef.GetThreat}{}}
+\end{letstmt} \\
+\call{Update}{newThreat}
+\end{while}
+\end{thread}
+\kOperations
+\kw{\kw{public}}\begin{op}[e]{IsFinished}\index{IsFinished|FuncDef}%
+\signature{() \Oto ()}
+\parms{}
+\annlab[o]{MissileDetector`IsFinished}
+\Skip 
+\end{op}
+\kSync
+\index{IsFinished|MethodOcc}
+\per{IsFinished}{
+threat = \Nil 
+}
+
+\kOperations
+\begin{op}[e]{Update}\index{Update|FuncDef}%
+\signature{\Opt{Sensor`MissileType\index{MissileType|TypeOcc} \X Sensor`Angle\index{Angle|TypeOcc}} \Oto ()}
+\parms{newThreat}
+\annlab[o]{MissileDetector`Update}
+\begin{blockstmt}
+\If newThreat = \Nil  \Or \pex{newThreat \Neq \Nil  \And newThreat.\#1 \Neq \const{None}}
+\Then \\
+\begin{blockstmt}
+\ass{threat}{newThreat} ; \\
+$flareControlRef$.\call{MissileIsHere}{threat}
+\end{blockstmt}
+\Fi
+\end{blockstmt};
+\end{op}
+\kw{\kw{public}}\begin{op}[e]{Init}\index{Init|FuncDef}%
+\signature{Sensor\index{Sensor|TypeOcc} \X FlareController\index{FlareController|TypeOcc} \Oto ()}
+\parms{newSensor,newFlareController}
+\annlab[o]{MissileDetector`Init}
+\begin{blockstmt}
+\ass{sensorRef}{newSensor} ; \\
+\ass{flareControlRef}{newFlareController}
+\end{blockstmt}
+\end{op}
+{\small\sf end} {\it MissileDetector}
+
+\end{vdm}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{tabular}{p{25mm}l}
+{\bf Test Suite :} & vdm.tc \\ 
+{\bf Class :} & MissileDetector \\ 
+\end{tabular}
+
+\begin{longtable}{|l|r|r|}\hline
+{\bf MissileDetector`IsFinished} & {\bf \#Calls} & {\bf Coverage} \kill
+{\bf Name} & {\bf \#Calls} & {\bf Coverage} \\ \hline\hline
+\endhead
+MissileDetector`Init & 1 & $\surd$ \\ \hline
+MissileDetector`Update & 9 & $\surd$ \\ \hline
+MissileDetector`IsFinished & 1 & $\surd$ \\ \hline
+\hline
+{\bf Total Coverage} & & {\bf 100\%} \\ \hline
+\end{longtable}
+

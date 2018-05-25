@@ -1,0 +1,131 @@
+
+CM.vpp,966
+public static detector : MissileDetector 7,80
+public static sensor0 : Sensor 9,148
+public static sensor1 : Sensor 10,206
+public static sensor2 : Sensor 11,265
+public static sensor3 : Sensor 12,325
+public static controller0 : FlareController 14,386
+public static controller1 : FlareController 15,457
+public static controller2 : FlareController 16,530
+public static dispenser0 : FlareDispenser 18,604
+public static dispenser1 : FlareDispenser 19,672
+public static dispenser2 : FlareDispenser 20,741
+public static dispenser3 : FlareDispenser 21,810
+public static dispenser4 : FlareDispenser 23,880
+public static dispenser5 : FlareDispenser 24,948
+public static dispenser6 : FlareDispenser 25,1017
+public static dispenser7 : FlareDispenser 26,1086
+public static dispenser8 : FlareDispenser 28,1156
+public static dispenser9 : FlareDispenser 29,1224
+public static dispenser10 : FlareDispenser 30,1293
+public static dispenser11 : FlareDispenser 31,1363
+
+environment.vpp,404
+public inline 6,63
+public outline 7,117
+io : IO 12,228
+inlines : seq of inline 15,279
+outlines : seq of outline 18,339
+sensors : map nat to Sensor 22,453
+inv dom ranges 23,491
+evid 26,577
+public addSensor: Sensor 37,790
+    sensors 42,954
+                   inlines 68,1762
+                   done 69,1804
+public handleEvent: EventId * FlareType * Angle * nat * nat 76,1998
+{vdm.tc}92,2434
+
+fighteraircraft.vpp,965
+public static detector : MissileDetector 7,80
+public static sensor0 : Sensor 9,148
+public static sensor1 : Sensor 10,197
+public static sensor2 : Sensor 11,247
+public static sensor3 : Sensor 12,298
+public static controller0 : FlareController 14,350
+public static controller1 : FlareController 15,421
+public static controller2 : FlareController 16,494
+public static dispenser0 : FlareDispenser 18,568
+public static dispenser1 : FlareDispenser 19,636
+public static dispenser2 : FlareDispenser 20,705
+public static dispenser3 : FlareDispenser 21,774
+public static dispenser4 : FlareDispenser 23,844
+public static dispenser5 : FlareDispenser 24,912
+public static dispenser6 : FlareDispenser 25,981
+public static dispenser7 : FlareDispenser 26,1050
+public static dispenser8 : FlareDispenser 28,1120
+public static dispenser9 : FlareDispenser 29,1188
+public static dispenser10 : FlareDispenser 30,1257
+public static dispenser11 : FlareDispenser 31,1327
+
+flarecontroller.vpp,306
+private aperature : Angle;7,123
+dispensers : map nat to FlareDispenser 11,234
+inv dom ranges 12,283
+public addDispenser: FlareDispenser 25,598
+      dispensers 32,858
+   busy 43,1235
+public addThreat: EventId * MissileType * Angle * nat 54,1678
+   busy 57,1817
+   threats 63,2045
+{vdm.tc}75,2304
+
+flaredispenser.vpp,594
+responseDB : map MissileType to Plan 6,67
+missilePriority : map MissileType to nat 18,524
+public PlanStep 28,692
+public curplan : Plan 32,748
+curprio        : nat 33,777
+apparature     : Angle;35,836
+eventid 36,860
+public FlareDispenser: nat 40,901
+                 curplan 53,1319
+                       busy 56,1424
+public addThreat: EventId * MissileType * nat 64,1550
+           newtime 72,1892
+            t 75,2026
+        curplan 78,2152
+        eventid 79,2183
+        curprio 80,2208
+        busy 81,2249
+private releaseFlare: EventId * FlareType * nat * nat=83,2274
+
+global.vpp,226
+public SENSOR_APERATURE 6,37
+public FLARE_APERATURE 7,67
+public DISPENSER_APERATURE 8,97
+-- there are nine different flare types,15,253
+public FlareType 16,312
+public Angle 22,520
+public EventId 25,562
+{vdm.tc}45,1097
+
+io.vpp,112
+-- fdir 31,891
+freadval[41,1190
+-- Write text to std out. Surrounding double quotes will be stripped,48,1332
+
+missiledetector.vpp,215
+controllers : map nat to FlareController 12,303
+inv dom ranges 13,354
+     controllers 29,812
+    busy 41,1195
+public addThreat: EventId * MissileType * Angle * nat 49,1475
+   busy 52,1615
+   threats 58,1843
+
+sensor.vpp,181
+private detector : MissileDetector;7,123
+private aperature : Angle;10,217
+public Sensor: MissileDetector * Angle 14,257
+Sensor (pmd, psa) == ( detector := pmd; aperature 15,307
+
+timer.vpp,64
+currentTime : nat 6,48
+stepLength : nat 10,81
+{vdm.tc}26,322
+
+world.vpp,62
+public static env 7,88
+public static timerRef : Timer 8,130

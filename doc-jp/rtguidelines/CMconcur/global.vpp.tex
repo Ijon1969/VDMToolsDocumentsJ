@@ -1,0 +1,94 @@
+\begin{vdm}{\small\sf class} $GLOBAL$\index{GLOBAL|ModDef}
+\par
+\kValues
+\kw{\kw{public}}\val{SENSOR-APERATURE}{90;}
+\kw{\kw{public}}\val{FLARE-APERATURE}{120;}
+\kw{\kw{public}}\val{DISPENSER-APERATURE}{30}
+\kTypes
+\type{\kw{public}\kw{ }MissileType\index{MissileType|TypeDef}}{\const{MissileA} | \const{MissileB} | \const{MissileC} | \const{None};}
+\type{\kw{public}\kw{ }FlareType\index{FlareType|TypeDef}}{\const{FlareOneA} | \const{FlareTwoA} | \const{DoNothingA} |  \\
+\const{FlareOneB} | \const{FlareTwoB} | \const{DoNothingB} |  \\
+\const{FlareOneC} | \const{FlareTwoC} | \const{DoNothingC};}
+\type{\kw{public}\kw{ }Angle\index{Angle|TypeDef}}{\Nat }
+\begin{invfn}{num}num < 360;
+\end{invfn}
+\type{\kw{public}\kw{ }EventId\index{EventId|TypeDef}}{\Nat }
+\kOperations
+\kw{\kw{public}}\begin{op}[e]{canObserve}\index{canObserve|FuncDef}%
+\signature{Angle\index{Angle|TypeOcc} \X Angle\index{Angle|TypeOcc} \X Angle\index{Angle|TypeOcc} \Oto \Bool }
+\parms{pangle,pleft,psize}
+\annlab[o]{GLOBAL`canObserve}
+\begin{defstmt}
+\eqdef{pright}{\pex{pleft + psize} \Mod 360}
+\end{defstmt} \\
+\If pright < pleft
+\Then \\
+\return{\pex{pangle < pright \Or pangle \Ge pleft}}
+\Else \\
+\return{\pex{pangle \Ge pleft \And pangle < pright}}
+\Fi;
+\end{op}
+\kw{\kw{public}}\begin{op}[e]{getAperature}\index{getAperature|FuncDef}%
+\signature{() \Oto Angle\index{Angle|TypeOcc} \X Angle\index{Angle|TypeOcc}}
+\parms{}
+\annlab[o]{GLOBAL`getAperature}
+\issubclassresp
+\end{op}
+{\small\sf end} {\it GLOBAL}
+
+\end{vdm}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{tabular}{p{25mm}l}
+{\bf Test Suite :} & vdm.tc \\ 
+{\bf Class :} & GLOBAL \\ 
+\end{tabular}
+
+\begin{longtable}{|l|r|r|}\hline
+{\bf GLOBAL`canObserve} & {\bf \#Calls} & {\bf Coverage} \kill
+{\bf Name} & {\bf \#Calls} & {\bf Coverage} \\ \hline\hline
+\endhead
+GLOBAL`canObserve & 84 & $\surd$ \\ \hline
+GLOBAL`getAperature & 0 & 0\% \\ \hline
+\hline
+{\bf Total Coverage} & & {\bf 96\%} \\ \hline
+\end{longtable}
+
+

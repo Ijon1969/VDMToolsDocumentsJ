@@ -1,0 +1,105 @@
+\begin{vdm}{\small\sf class} $World$
+\par
+\kInstanceVarDef
+\parlinebr
+\begin{insvar}
+\assdef{sensor}{Sensor}[{\fnapply{\new{Sensor}}{}}]
+\end{insvar}
+\begin{insvar}
+\assdef{detector}{MissileDetector}[{\fnapply{\new{MissileDetector}}{}}]
+\end{insvar}
+\begin{insvar}
+\assdef{flareControl}{FlareController}[{\fnapply{\new{FlareController}}{}}]
+\end{insvar}
+\begin{insvar}
+\assdef{timerRef}{Timer}[{\fnapply{\new{Timer}}{}}]
+\end{insvar}
+\begin{insvar}
+\assdef{inputVals}{\seqof*{\Lp \Opt{Sensor`MissileType \X Sensor`Angle} \X \Nat  \Rp }}[{\seq{}}]
+\end{insvar}
+\par
+\kOperations
+\kw{\kw{public}}\begin{op}[e]{Run}%
+\signature{() \Oto \Lp FlareDispenser`MagId \Gmap \seqof*{\Lp FlareDispenser`FlareType \X \Nat  \Rp } \Rp  \X \Lp \seqof*{\Lp \Opt{Sensor`MissileType \X Sensor`Angle} \X \Nat  \Rp } \Rp }
+\parms{}
+\annlab[o]{World`Run}
+\begin{blockstmt}
+$detector$.\call{Init}{sensor,flareControl} ; \\
+$flareControl$.\call{Init}{detector,timerRef} ; \\
+\begin{while}{ \Not \pex{\fnapply{sensor.IsFinished}{} \And \fnapply{detector.IsFinished}{} \And  \\
+\fnapply{flareControl.IsFinished}{}}}
+\begin{blockstmt}
+\ass{inputVals}{inputVals \Sconc  \\
+\seq{\reccons{\kw{mk-}}{\fnapply{sensor.ReadThreat}{},\fnapply{timerRef.GetTime}{}}}} ; \\
+\If  \Not \fnapply{detector.IsFinished}{}
+\Then \\
+$detector$.\call{Step}{}
+\Fi ; \\
+\If  \Not \fnapply{flareControl.IsFinished}{}
+\Then \\
+$flareControl$.\call{Step}{}
+\Fi ; \\
+$timerRef$.\call{StepTime}{} ; \\
+\If  \Not \fnapply{sensor.IsFinished}{}
+\Then \\
+$sensor$.\call{SetThreat}{}
+\Fi
+\end{blockstmt}
+\end{while} ; \\
+\return{\reccons{\kw{mk-}}{\fnapply{flareControl.GetResult}{},inputVals}}
+\end{blockstmt}
+\end{op}
+{\small\sf end} {\it World}
+
+\end{vdm}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{tabular}{p{25mm}l}
+{\bf Test Suite :} & vdm.tc \\ 
+{\bf Class :} & World \\ 
+\end{tabular}
+
+\begin{longtable}{|l|r|r|}\hline
+{\bf World`Run} & {\bf \#Calls} & {\bf Coverage} \kill
+{\bf Name} & {\bf \#Calls} & {\bf Coverage} \\ \hline\hline
+\endhead
+World`Run & 1 & $\surd$ \\ \hline
+\hline
+{\bf Total Coverage} & & {\bf 100\%} \\ \hline
+\end{longtable}
+
+

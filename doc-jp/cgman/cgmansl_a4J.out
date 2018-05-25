@@ -1,0 +1,37 @@
+\BOOKMARK [1][-]{section.1}{1 導入}{}% 1
+\BOOKMARK [1][-]{section.2}{2 コードジェネレータの起動}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{2.1 コード生成のための要件}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{2.2 グラフィカルインターフェイスの利用}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{2.3 コマンドラインインターフェイスの使用}{section.2}% 5
+\BOOKMARK [2][-]{subsection.2.4}{2.4 C++ 生成ファイル}{section.2}% 6
+\BOOKMARK [1][-]{section.3}{3 生成コードとのインターフェイス接続}{}% 7
+\BOOKMARK [2][-]{subsection.3.1}{3.1 VDM-SL 型のコード生成 - 基本}{section.3}% 8
+\BOOKMARK [2][-]{subsection.3.2}{3.2 ユーザーにより実装されたファイル}{section.3}% 9
+\BOOKMARK [3][-]{subsubsection.3.2.1}{3.2.1 レコードタグに用いるオフセットの定義}{subsection.3.2}% 10
+\BOOKMARK [3][-]{subsubsection.3.2.2}{3.2.2 陰関数／陰操作および宣言文の実装}{subsection.3.2}% 11
+\BOOKMARK [3][-]{subsubsection.3.2.3}{3.2.3 メインプログラムの実装}{subsection.3.2}% 12
+\BOOKMARK [3][-]{subsubsection.3.2.4}{3.2.4 生成された C++ コードの部分的置き換え}{subsection.3.2}% 13
+\BOOKMARK [2][-]{subsection.3.3}{3.3 C++コードのコンパイル、リンク、実行}{section.3}% 14
+\BOOKMARK [1][-]{section.4}{4 サポートされていない構成要素}{}% 15
+\BOOKMARK [1][-]{section.5}{5 VDM 仕様のコード生成　－　詳細}{}% 16
+\BOOKMARK [2][-]{subsection.5.1}{5.1 型のコード生成}{section.5}% 17
+\BOOKMARK [3][-]{subsubsection.5.1.1}{5.1.1 動機付け}{subsection.5.1}% 18
+\BOOKMARK [3][-]{subsubsection.5.1.2}{5.1.2 VDM-SL 型から C++へのマップ}{subsection.5.1}% 19
+\BOOKMARK [3][-]{subsubsection.5.1.3}{5.1.3 VDM-SL 型名称のコード生成}{subsection.5.1}% 20
+\BOOKMARK [3][-]{subsubsection.5.1.4}{5.1.4 不変条件}{subsection.5.1}% 21
+\BOOKMARK [2][-]{subsection.5.2}{5.2 関数定義と操作定義のコード生成}{section.5}% 22
+\BOOKMARK [2][-]{subsection.5.3}{5.3 値および状態定義のコード生成}{section.5}% 23
+\BOOKMARK [2][-]{subsection.5.4}{5.4 値定義のコード生成}{section.5}% 24
+\BOOKMARK [2][-]{subsection.5.5}{5.5 式と文のコード生成}{section.5}% 25
+\BOOKMARK [2][-]{subsection.5.6}{5.6 名称仕様}{section.5}% 26
+\BOOKMARK [2][-]{subsection.5.7}{5.7 標準ライブラリ}{section.5}% 27
+\BOOKMARK [1][-]{appendix.A}{A libCG.a ライブラリ}{}% 28
+\BOOKMARK [2][-]{subsection.A.1}{A.1 cg.h}{appendix.A}% 29
+\BOOKMARK [2][-]{subsection.A.2}{A.2 cg\137aux.h}{appendix.A}% 30
+\BOOKMARK [1][-]{appendix.B}{B C++ 手書きファイル}{}% 31
+\BOOKMARK [2][-]{subsection.B.1}{B.1 DefaultMod\137userdef.h}{appendix.B}% 32
+\BOOKMARK [2][-]{subsection.B.2}{B.2 DefaultMod\137userimpl.cc}{appendix.B}% 33
+\BOOKMARK [2][-]{subsection.B.3}{B.3 sort\137ex.cc}{appendix.B}% 34
+\BOOKMARK [1][-]{appendix.C}{C Makeファイル}{}% 35
+\BOOKMARK [2][-]{subsection.C.1}{C.1 Unix プラットフォームのための Makeファイル}{appendix.C}% 36
+\BOOKMARK [2][-]{subsection.C.2}{C.2 Windows プラットフォームのための Makeファイル}{appendix.C}% 37

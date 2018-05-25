@@ -1,0 +1,130 @@
+\begin{vdm}{\small\sf class} $World$\index{World|ModDef}
+\par
+\kInstanceVarDef
+\parlinebr
+\begin{insvar}\kw{public}\kw{ }\kw{static}
+\assdef{env}{\Opt{Environment\index{Environment|TypeOcc}}}[{\Nil }]
+\end{insvar}
+\begin{insvar}\kw{public}\kw{ }\kw{static}
+\assdef{timerRef}{TimeStamp\index{TimeStamp|TypeOcc}}[{\fnapply{\new{TimeStamp}}{}}]
+\end{insvar}
+\par
+\kOperations
+\kw{\kw{public}}\begin{op}[e]{World}\index{World|FuncDef}%
+\signature{() \Oto World\index{World|TypeOcc}}
+\parms{}
+\annlab[o]{World`World}
+\begin{blockstmt}
+\ass{env}{\fnapply{\new{Environment}}{\Dquote scenario.txt \Dquote }} ; \\
+$env$.\call{addSensor}{FighterAircraft`sensor0} ; \\
+$env$.\call{addSensor}{FighterAircraft`sensor1} ; \\
+$env$.\call{addSensor}{FighterAircraft`sensor2} ; \\
+$env$.\call{addSensor}{FighterAircraft`sensor3} ; \\
+FighterAircraft`controller0.\call{addDispenser}{FighterAircraft`dispenser0} ; \\
+FighterAircraft`controller0.\call{addDispenser}{FighterAircraft`dispenser1} ; \\
+FighterAircraft`controller0.\call{addDispenser}{FighterAircraft`dispenser2} ; \\
+FighterAircraft`controller0.\call{addDispenser}{FighterAircraft`dispenser3} ; \\
+FighterAircraft`detector.\call{addController}{FighterAircraft`controller0} ; \\
+FighterAircraft`controller1.\call{addDispenser}{FighterAircraft`dispenser4} ; \\
+FighterAircraft`controller1.\call{addDispenser}{FighterAircraft`dispenser5} ; \\
+FighterAircraft`controller1.\call{addDispenser}{FighterAircraft`dispenser6} ; \\
+FighterAircraft`controller1.\call{addDispenser}{FighterAircraft`dispenser7} ; \\
+FighterAircraft`detector.\call{addController}{FighterAircraft`controller1} ; \\
+FighterAircraft`controller2.\call{addDispenser}{FighterAircraft`dispenser8} ; \\
+FighterAircraft`controller2.\call{addDispenser}{FighterAircraft`dispenser9} ; \\
+FighterAircraft`controller2.\call{addDispenser}{FighterAircraft`dispenser10} ; \\
+FighterAircraft`controller2.\call{addDispenser}{FighterAircraft`dispenser11} ; \\
+FighterAircraft`detector.\call{addController}{FighterAircraft`controller2} ; \\
+
+\start{FighterAircraft`detector}
+\end{blockstmt};
+\end{op}
+\kw{\kw{public}}\begin{op}[e]{Run}\index{Run|FuncDef}%
+\signature{() \Oto ()}
+\parms{}
+\annlab[o]{World`Run}
+\begin{blockstmt}
+
+\start{env} ; \\
+$env$.\call{isFinished}{} ; \\
+FighterAircraft`detector.\call{isFinished}{} ; \\
+$env$.\call{showResult}{}
+\end{blockstmt}
+\end{op}
+{\small\sf end} {\it World}
+
+\end{vdm}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{tabular}{p{25mm}l}
+{\bf Test Suite :} & vdm.tc \\ 
+{\bf Class :} & World \\ 
+\end{tabular}
+
+\begin{longtable}{|l|r|r|}\hline
+{\bf World`World} & {\bf \#Calls} & {\bf Coverage} \kill
+{\bf Name} & {\bf \#Calls} & {\bf Coverage} \\ \hline\hline
+\endhead
+World`Run & 1 & $\surd$ \\ \hline
+World`World & 1 & $\surd$ \\ \hline
+\hline
+{\bf Total Coverage} & & {\bf 100\%} \\ \hline
+\end{longtable}
+
+

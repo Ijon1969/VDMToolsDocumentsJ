@@ -1,0 +1,90 @@
+\begin{vdm}{\small\sf class} $SensorIO$ {\small\sf is subclass of}  $IO$\index{SensorIO|ModDef}
+\par
+\kInstanceVarDef
+\parlinebr
+\begin{insvar}
+\assdef{curIndex}{\Nat }[{0}]
+\end{insvar}
+\begin{insvar}
+\assdef{mvList}{\seqof*{\Lp Sensor`MissileType\index{MissileType|TypeOcc} \X Sensor`Angle\index{Angle|TypeOcc} \Rp }}[{\seq{}}]
+\end{insvar}
+\par
+\kOperations
+\kw{\kw{public}}\begin{op}[e]{SensorIO}\index{SensorIO|FuncDef}%
+\signature{() \Oto SensorIO\index{SensorIO|TypeOcc}}
+\parms{}
+\annlab[o]{SensorIO`SensorIO}
+\begin{blockstmt}
+\begin{letstmt}
+\patdef{\reccons{\kw{mk-}}{-,list}} \\
+{\fnapply{freadval[\seqof+{\Lp Sensor`MissileType\index{MissileType|TypeOcc} \X Sensor`Angle\index{Angle|TypeOcc} \Rp }]} \\
+{ \\
+\Dquote scenario.txt \Dquote }}
+\end{letstmt} \\
+\ass{mvList}{list} ; \\
+\ass{curIndex}{1} ; \\
+\return{\kSelf }
+\end{blockstmt};
+\end{op}
+\kw{\kw{public}}\begin{op}[e]{readThreat}\index{readThreat|FuncDef}%
+\signature{() \Oto \Opt{Sensor`MissileType\index{MissileType|TypeOcc} \X Sensor`Angle\index{Angle|TypeOcc}}}
+\parms{}
+\annlab[o]{SensorIO`readThreat}
+\If curIndex \Le  \Len mvList
+\Then \\
+\begin{blockstmt}
+\ass{curIndex}{curIndex + 1} ; \\
+\return{\fnapply{mvList}{curIndex \Minus 1}}
+\end{blockstmt}
+\Else \\
+\return{\Nil }
+\Fi
+\end{op}
+{\small\sf end} {\it SensorIO}
+
+\end{vdm}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{tabular}{p{25mm}l}
+{\bf Test Suite :} & vdm.tc \\ 
+{\bf Class :} & SensorIO \\ 
+\end{tabular}
+
+\begin{longtable}{|l|r|r|}\hline
+{\bf SensorIO`readThreat} & {\bf \#Calls} & {\bf Coverage} \kill
+{\bf Name} & {\bf \#Calls} & {\bf Coverage} \\ \hline\hline
+\endhead
+SensorIO`SensorIO & 1 & $\surd$ \\ \hline
+SensorIO`readThreat & 9 & $\surd$ \\ \hline
+\hline
+{\bf Total Coverage} & & {\bf 100\%} \\ \hline
+\end{longtable}
+
+

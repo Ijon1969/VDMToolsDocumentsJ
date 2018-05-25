@@ -1,0 +1,65 @@
+class Sensor
+
+types
+
+public MissileType = <MissileA> | <MissileB> | <MissileC> | <None>;
+
+instance variables
+
+io           : SensorIO := new SensorIO();
+missileValue : [MissileType|<Consumed>] := io.readMissileValue();
+timer        : Timer := new Timer();
+
+values
+
+public stepLength : nat = 100;
+
+thread
+  duration(0)
+  ( start(timer);
+    while missileValue <> nil do
+    ( SkipNum(stepLength);
+      SetMissileValue();
+    )
+  )
+
+operations
+
+SkipNum : nat ==> ()
+SkipNum(n) ==
+  timer.Alarm(n);
+
+operations
+
+public GetMissileValue : () ==> [MissileType]
+GetMissileValue() ==
+  duration(0)
+  let orgMissileValue = missileValue in
+    (if missileValue <> nil
+     then missileValue := <Consumed>;
+     return orgMissileValue);
+
+sync
+
+per GetMissileValue => missileValue not in set {<Consumed>, <None>};
+
+operations
+
+SetMissileValue : () ==> ()
+SetMissileValue() ==
+  missileValue := io.readMissileValue();
+
+sync
+
+  mutex(SetMissileValue, GetMissileValue);
+
+operations
+
+public IsFinished : () ==> ()
+IsFinished() == skip;
+
+sync
+
+  per IsFinished => missileValue = nil;
+
+end Sensor

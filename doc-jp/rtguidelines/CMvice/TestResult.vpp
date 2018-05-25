@@ -1,0 +1,40 @@
+The class \emph{TestResult} maintains a collection
+of references to test cases that have failed. The
+exception handler defined in the operation \emph{Run}
+of class \emph{TestCase} calls the operation
+\emph{AddResult}, which will append the object
+reference of the test case to the tail of the sequence
+\emph{failures}. The operation \emph{Show} is used
+to print a list of test cases that have failed or 
+provide a message to indicate that no failures were
+found. Note that the standard I/O library, which is
+supplied with VDMTools, is used here. \emph{IO.echo}
+prints a string on the standard output, just like 
+\emph{System.out.println} in Java. The \emph{def
+statement} is used to suppress the boolean value 
+returned by \emph{IO.echo}:
+
+\begin{vdm_al}
+class TestResult
+
+instance variables
+  failures : seq of TestCase := []
+  
+operations
+  public AddFailure: TestCase ==> ()
+  AddFailure (ptst) == failures := failures ^ [ptst];
+
+  public Print: seq of char ==> ()
+  Print (pstr) ==
+    def - = new IO().echo(pstr ^ "\n") in skip;
+    
+  public Show: () ==> ()
+  Show () ==
+    if failures = [] then
+      Print ("No failures detected")
+    else
+      for failure in failures do
+        Print (failure.GetName() ^ " failed")
+  
+end TestResult
+\end{vdm_al}

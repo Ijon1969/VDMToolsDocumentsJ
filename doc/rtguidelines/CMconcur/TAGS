@@ -1,0 +1,144 @@
+
+environment.vpp,546
+public inline 6,63
+public outline 7,117
+inlines : seq of inline 15,278
+outlines : seq of outline 18,338
+sensors : map nat to Sensor 22,452
+inv dom ranges 23,490
+evid 26,576
+public addSensor: Sensor 37,789
+    sensors 42,953
+                   inlines 58,1524
+                   done 59,1566
+                   evid 60,1610
+                   evid 62,1680
+         evid 64,1737
+public handleEvent: EventId * FlareType * Angle * nat * nat 66,1762
+per isFinished 80,2119
+    World`timerRef.NotifyAndIncTime(86,2208
+{vdm.tc}92,2319
+
+fighteraircraft.vpp,1006
+  public static detector : MissileDetector 7,82
+  public static sensor0 : Sensor 9,152
+  public static sensor1 : Sensor 10,212
+  public static sensor2 : Sensor 11,273
+  public static sensor3 : Sensor 12,335
+  public static controller0 : FlareController 14,398
+  public static controller1 : FlareController 15,471
+  public static controller2 : FlareController 16,546
+  public static dispenser0 : FlareDispenser 18,622
+  public static dispenser1 : FlareDispenser 19,692
+  public static dispenser2 : FlareDispenser 20,763
+  public static dispenser3 : FlareDispenser 21,834
+  public static dispenser4 : FlareDispenser 23,906
+  public static dispenser5 : FlareDispenser 24,976
+  public static dispenser6 : FlareDispenser 25,1047
+  public static dispenser7 : FlareDispenser 26,1118
+  public static dispenser8 : FlareDispenser 28,1190
+  public static dispenser9 : FlareDispenser 29,1260
+  public static dispenser10 : FlareDispenser 30,1331
+  public static dispenser11 : FlareDispenser 31,1403
+
+flarecontroller.vpp,346
+private aperature : Angle;7,123
+dispensers : map nat to FlareDispenser 11,234
+inv dom ranges 12,283
+public addDispenser: FlareDispenser * Angle 25,598
+       dispensers 32,864
+public addThreat: EventId * MissileType * Angle * nat 43,1299
+   busy 46,1438
+   threats 52,1666
+per getThreat 68,2082
+per isFinished 69,2116
+    busy 86,2683
+
+flaredispenser.vpp,688
+responseDB : map MissileType to Plan 6,67
+missilePriority : map MissileType to nat 18,524
+public PlanStep 28,692
+public curplan : Plan 32,748
+curprio        : nat 33,777
+apparature     : Angle;35,836
+eventid 36,860
+public FlareDispenser: Angle 40,901
+public addThreat: EventId * MissileType * nat 48,1058
+           newtime 56,1400
+            t 59,1534
+         curplan 62,1661
+         eventid 63,1693
+         curprio 64,1719
+         busy 65,1761
+                    curplan 78,2206
+                          done 81,2320
+                          busy 82,2361
+private releaseFlare: EventId * FlareType * nat * nat=85,2445
+per isFinished 95,2690
+{vdm.tc}106,2901
+
+global.vpp,226
+public SENSOR_APERATURE 6,37
+public FLARE_APERATURE 7,67
+public DISPENSER_APERATURE 8,97
+-- there are nine different flare types,15,253
+public FlareType 16,312
+public Angle 22,520
+public EventId 25,562
+{vdm.tc}45,1097
+
+io.vpp,112
+-- fdir 31,891
+freadval[41,1190
+-- Write text to std out. Surrounding double quotes will be stripped,48,1332
+
+missiledetector.vpp,261
+controllers : map nat to FlareController 12,303
+inv dom ranges 13,354
+     controllers 29,812
+public addThreat: EventId * MissileType * Angle * nat 36,1069
+   busy 39,1209
+   threats 45,1437
+per getThreat 61,1854
+per isFinished 62,1888
+   busy 75,2312
+
+sensor.vpp,181
+private detector : MissileDetector;7,123
+private aperature : Angle;10,217
+public Sensor: MissileDetector * Angle 14,257
+Sensor (pmd, psa) == ( detector := pmd; aperature 15,307
+
+timer.vpp,235
+currentTime  : nat 6,48
+subscribers  : set of nat 8,106
+users        : set of nat 9,139
+  per StepTime 19,279
+public UnSubscribe: nat 27,420
+   currentTime 34,568
+public GetTime 36,614
+  stepLength : nat 44,747
+{vdm.tc}50,829
+
+timestamp.vpp,251
+  public stepLength : nat 6,66
+currentTime  : nat 10,119
+wakeUpMap    : map nat to nat 11,146
+public WaitRelative : nat 15,199
+public WaitAbsolute : nat 21,325
+AddToWakeUpMap : nat * nat 27,437
+public NotifyThread : nat 31,545
+{vdm.tc}67,1241
+
+waitnotify.vpp,127
+waitset : set of nat 6,53
+public NotifyThread: nat 21,263
+private AddToWaitSet : nat 29,410
+  mutex(40,590
+{vdm.tc}46,682
+
+world.vpp,110
+public static env 7,86
+public static timerRef : TimeStamp 8,128
+   env.showResult(56,1700
+{vdm.tc}62,1774

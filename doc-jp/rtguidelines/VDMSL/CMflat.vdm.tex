@@ -1,0 +1,378 @@
+% LaTeX 2e Document.
+% 
+% $Id: sort.vdm,v 1.11 2005/05/13 00:41:46 vdmtools Exp $
+% 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PDF compatibility code. 
+\makeatletter
+\newif\ifpdflatex@
+\ifx\pdftexversion\@undefined
+\pdflatex@false
+%\message{Not using pdf}
+\else
+\pdflatex@true
+%\message{Using pdf}
+\fi
+
+\newcommand{\latexorpdf}[2]{
+  \ifpdflatex@ #2
+  \else #1
+  \fi
+}
+
+\newcommand{\pformat}{a4paper}
+
+\makeatother
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\latexorpdf{
+\documentclass[\pformat,12pt]{article}
+}{
+\documentclass[\pformat,pdftex,12pt]{article}
+}
+
+\usepackage{color}
+\usepackage{vdmsl-2e}
+\usepackage{longtable}
+\usepackage{alltt}
+\usepackage{makeidx}
+
+\definecolor{covered}{rgb}{0,0,0}      %black
+\definecolor{not-covered}{rgb}{1,0,0}   %gray for previewing
+%\definecolor{not_covered}{gray}{0.6}   %gray for printing
+\definecolor{not_covered}{rgb}{1,0,0}  %red
+
+\title{Flat Missile VDM-SL example}
+\author{Peter Gorm Larsen}
+\date{2006}
+
+\begin{document}
+\maketitle
+
+\begin{vdm}\kTypes
+\type{\kw{ }MissileInputs\index{MissileInputs|TypeDef}}{\seqof*{MissileInput\index{MissileInput|TypeOcc}};}
+\type{\kw{ }MissileInput\index{MissileInput|TypeDef}}{MissileType\index{MissileType|TypeOcc} \X Angle\index{Angle|TypeOcc};}
+\type{\kw{ }MissileType\index{MissileType|TypeDef}}{\const{MissileA} | \const{MissileB} | \const{MissileC} | \const{None};}
+\type{\kw{ }Angle\index{Angle|TypeDef}}{\Nat }
+\begin{invfn}{num}num \Le 360;
+\end{invfn}
+\type{\kw{ }Output\index{Output|TypeDef}}{MagId\index{MagId|TypeOcc} \Gmap \seqof*{OutputStep\index{OutputStep|TypeOcc}};}
+\type{\kw{ }MagId\index{MagId|TypeDef}}{\Token ;}
+\type{\kw{ }OutputStep\index{OutputStep|TypeDef}}{FlareType\index{FlareType|TypeOcc} \X AbsTime\index{AbsTime|TypeOcc};}
+\type{\kw{ }Response\index{Response|TypeDef}}{FlareType\index{FlareType|TypeOcc} \X \Nat ;}
+\type{\kw{ }AbsTime\index{AbsTime|TypeDef}}{\Nat ;}
+\type{\kw{ }FlareType\index{FlareType|TypeDef}}{\const{FlareOneA} | \const{FlareTwoA} | \const{FlareOneB} |  \\
+\const{FlareTwoB} | \const{FlareOneC} | \const{FlareTwoC} |  \\
+\const{DoNothingA} | \const{DoNothingB} | \const{DoNothingC};}
+\type{\kw{ }Plan\index{Plan|TypeDef}}{\seqof*{\Lp FlareType\index{FlareType|TypeOcc} \X Delay\index{Delay|TypeOcc} \Rp };}
+\type{\kw{ }Delay\index{Delay|TypeDef}}{\Nat }
+\kValues
+\kw{}\val{responseDB}[MissileType\index{MissileType|TypeOcc} \Gmap Plan\index{Plan|TypeOcc}]{\map{\const{MissileA} \Mapsto \seq{\reccons{\kw{mk-}}{\const{FlareOneA},900},\reccons{\kw{mk-}}{\const{FlareTwoA},500}, \\
+\reccons{\kw{mk-}}{\const{DoNothingA},100},\reccons{\kw{mk-}}{\const{FlareOneA},500}}, \\
+\const{MissileB} \Mapsto \seq{\reccons{\kw{mk-}}{\const{FlareTwoB},500},\reccons{\kw{mk-}}{\const{FlareTwoB},700}}, \\
+\const{MissileC} \Mapsto \seq{\reccons{\kw{mk-}}{\const{FlareOneC},400},\reccons{\kw{mk-}}{\const{DoNothingC},100}, \\
+\reccons{\kw{mk-}}{\const{FlareTwoC},400},\reccons{\kw{mk-}}{\const{FlareOneC},500}}};}
+\kw{}\val{missilePriority}[MissileType\index{MissileType|TypeOcc} \Gmap \Nat ]{\map{\const{MissileA} \Mapsto 1, \\
+\const{MissileB} \Mapsto 2, \\
+\const{MissileC} \Mapsto 3, \\
+\const{None} \Mapsto 0};}
+\kw{}\val{stepLength}[\Nat ]{100;}
+\kw{}\val{testval}[MissileInputs\index{MissileInputs|TypeOcc}]{\seq{\reccons{\kw{mk-}}{\const{MissileA},88}, \\
+\reccons{\kw{mk-}}{\const{MissileB},70}, \\
+\reccons{\kw{mk-}}{\const{MissileA},222}, \\
+\reccons{\kw{mk-}}{\const{MissileC},44}};}
+\kw{}\val{testval2}[MissileInputs\index{MissileInputs|TypeOcc}]{\seq{\reccons{\kw{mk-}}{\const{MissileC},188}, \\
+\reccons{\kw{mk-}}{\const{MissileB},70}, \\
+\reccons{\kw{mk-}}{\const{MissileA},2}, \\
+\reccons{\kw{mk-}}{\const{MissileC},44}};}
+\kw{}\val{testval3}[MissileInputs\index{MissileInputs|TypeOcc}]{\seq{\reccons{\kw{mk-}}{\const{MissileA},288}, \\
+\reccons{\kw{mk-}}{\const{MissileB},170}, \\
+\reccons{\kw{mk-}}{\const{MissileA},222}, \\
+\reccons{\kw{mk-}}{\const{MissileC},44}}}
+\kFunctions
+\kw{}\begin{fn}[e]{CounterMeasures}\index{CounterMeasures|FuncDef}%
+\signature{MissileInputs\index{MissileInputs|TypeOcc} \To Output\index{Output|TypeOcc}}
+\parms*{\Lp missileInputs\Rp }
+\annlab[o]{CounterMeasures}
+\fnapply{CM\index{CM|FuncOcc}}{missileInputs,\Emptymap ,\const{None},0,\set{}};
+\end{fn}
+\kw{}\begin{fn}[e]{CM}\index{CM|FuncDef}%
+\signature{MissileInputs\index{MissileInputs|TypeOcc} \X Output\index{Output|TypeOcc} \X \Opt{MissileType\index{MissileType|TypeOcc}} \X \Nat  \X \setof{MagId\index{MagId|TypeOcc}} \To Output\index{Output|TypeOcc}}
+\parms*{\Lp missileInputs,outputSoFar,lastMissile,curTime,activemagids\Rp }
+\annlab[o]{CM}
+\If missileInputs = \seq{}
+\Then \\
+outputSoFar
+\Else \\
+\begin{letexpr}
+\patdef{\reccons{\kw{mk-}}{curMis,angle}}{ \Hd missileInputs}
+\patdef{magid}{\fnapply{Angle2MagId\index{Angle2MagId|FuncOcc}}{angle}}
+\end{letexpr} \\
+\If \fnapply{missilePriority}{curMis} > \fnapply{missilePriority}{lastMissile} \Or  \\
+magid \Notin activemagids
+\Then \\
+\begin{letexpr}
+\patdef{newOutput}{\fnapply{InterruptPlan\index{InterruptPlan|FuncOcc}}{curTime,outputSoFar, \\
+\fnapply{responseDB}{curMis},magid}}
+\end{letexpr} \\
+\fnapply{CM\index{CM|FuncOcc}}{ \Tl missileInputs,newOutput,curMis, \\
+curTime + stepLength,activemagids \Union \set{magid}}
+\Else \\
+\fnapply{CM\index{CM|FuncOcc}}{ \Tl missileInputs,outputSoFar,lastMissile, \\
+curTime + stepLength,activemagids}
+\Fi
+\Fi;
+\end{fn}
+\kw{}\begin{fn}[e]{InterruptPlan}\index{InterruptPlan|FuncDef}%
+\signature{\Nat  \X Output\index{Output|TypeOcc} \X Plan\index{Plan|TypeOcc} \X MagId\index{MagId|TypeOcc} \To Output\index{Output|TypeOcc}}
+\parms*{\Lp curTime,expOutput,plan,magid\Rp }
+\annlab[o]{InterruptPlan}
+\map{magid \Mapsto  \\
+\pex{\If magid \In  \Dom expOutput
+\Then \\
+\fnapply{LeavePrefixUnchanged\index{LeavePrefixUnchanged|FuncOcc}}{\fnapply{expOutput}{magid},curTime}
+\Else \\
+\seq{}
+\Fi} \Sconc  \\
+\fnapply{MakeOutputFromPlan\index{MakeOutputFromPlan|FuncOcc}}{curTime,plan}} \Mapmerge  \\
+\pex{\set{magid} \Dby expOutput};
+\end{fn}
+\kw{}\begin{fn}[e]{LeavePrefixUnchanged}\index{LeavePrefixUnchanged|FuncDef}%
+\signature{\seqof*{OutputStep\index{OutputStep|TypeOcc}} \X \Nat  \To \seqof*{OutputStep\index{OutputStep|TypeOcc}}}
+\parms*{\Lp output-l,curTime\Rp }
+\annlab[o]{LeavePrefixUnchanged}
+\seqcomp{\fnapply{output-l}{i}}{i \In  \Inds output-l} \\
+[\begin{letexpr}
+\patdef{\reccons{\kw{mk-}}{-,t}}{\fnapply{output-l}{i}}
+\end{letexpr} \\
+t \Le curTime];
+\end{fn}
+\kw{}\begin{fn}[e]{MakeOutputFromPlan}\index{MakeOutputFromPlan|FuncDef}%
+\signature{\Nat  \X \seqof*{Response\index{Response|TypeOcc}} \To \seqof*{OutputStep\index{OutputStep|TypeOcc}}}
+\parms*{\Lp curTime,response\Rp }
+\annlab[o]{MakeOutputFromPlan}
+\begin{letexpr}
+\patdef{output}{\fnapply{OutputAtTimeZero\index{OutputAtTimeZero|FuncOcc}}{response}}
+\end{letexpr} \\
+\seqcomp{\begin{letexpr}
+\patdef{\reccons{\kw{mk-}}{flare,t}}{\fnapply{output}{i}}
+\end{letexpr} \\
+\reccons{\kw{mk-}}{flare,t + curTime}} \\
+{i \In  \Inds output};
+\end{fn}
+\kw{}\begin{fn}[e]{OutputAtTimeZero}\index{OutputAtTimeZero|FuncDef}%
+\signature{\seqof*{Response\index{Response|TypeOcc}} \To \seqof*{OutputStep\index{OutputStep|TypeOcc}}}
+\parms*{\Lp response\Rp }
+\annlab[o]{OutputAtTimeZero}
+\begin{letexpr}
+\patdef{absTimes}{\fnapply{RelativeToAbsoluteTimes\index{RelativeToAbsoluteTimes|FuncOcc}}{response}}
+\end{letexpr} \\
+\begin{letexpr}
+\patdef{\reccons{\kw{mk-}}{firstFlare,-}}{ \Hd absTimes}
+\end{letexpr} \\
+\seq{\reccons{\kw{mk-}}{firstFlare,0}} \Sconc  \\
+\seqcomp{\begin{letexpr}
+\patdef{\reccons{\kw{mk-}}{-,t}}{\fnapply{absTimes}{i \Minus 1}}
+\patdef{\reccons{\kw{mk-}}{f,-}}{\fnapply{absTimes}{i}}
+\end{letexpr} \\
+\reccons{\kw{mk-}}{f,t}} \\
+{i \In \setrange{2}{ \Len absTimes}};
+\end{fn}
+\kw{}\begin{fn}[e]{RelativeToAbsoluteTimes}\index{RelativeToAbsoluteTimes|FuncDef}%
+\signature{\seqof*{Response\index{Response|TypeOcc}} \To \seqof*{\Lp FlareType\index{FlareType|TypeOcc} \X \Nat  \Rp }}
+\parms*{\Lp ts\Rp }
+\annlab[o]{RelativeToAbsoluteTimes}
+\If ts = \seq{}
+\Then \\
+\seq{}
+\Else \\
+\begin{letexpr}
+\patdef{\reccons{\kw{mk-}}{f,t}}{ \Hd ts}
+\patdef{ns}{\fnapply{RelativeToAbsoluteTimes\index{RelativeToAbsoluteTimes|FuncOcc}}{ \Tl ts}}
+\end{letexpr} \\
+\seq{\reccons{\kw{mk-}}{f,t}} \Sconc \seqcomp{\begin{letexpr}
+\patdef{\reccons{\kw{mk-}}{nf,nt}}{\fnapply{ns}{i}}
+\end{letexpr} \\
+\reccons{\kw{mk-}}{nf,nt + t}} \\
+{i \In  \Inds ns}
+\Fi;
+\end{fn}
+\kw{}\begin{fn}[e]{Angle2MagId}\index{Angle2MagId|FuncDef}%
+\signature{Angle\index{Angle|TypeOcc} \To MagId\index{MagId|TypeOcc}}
+\parms*{\Lp angle\Rp }
+\annlab[o]{Angle2MagId}
+\If angle < 90
+\Then \\
+\reccons{\kw{mk-} \Token}{\Dquote Magazine\hspace{0.5em}1 \Dquote }
+\Elseif angle < 180
+\Then \\
+\reccons{\kw{mk-} \Token}{\Dquote Magazine\hspace{0.5em}2 \Dquote }
+\Elseif angle < 270
+\Then \\
+\reccons{\kw{mk-} \Token}{\Dquote Magazine\hspace{0.5em}3 \Dquote }
+\Else \\
+\reccons{\kw{mk-} \Token}{\Dquote Magazine\hspace{0.5em}4 \Dquote }
+\Fi
+\end{fn}
+\end{vdm}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{tabular}{p{25mm}l}
+{\bf Test Suite :} & vdm.tc \\ 
+{\bf Module :} & DefaultMod \\ 
+\end{tabular}
+
+\begin{longtable}{|l|r|r|}\hline
+{\bf RelativeToAbsoluteTimes} & {\bf \#Calls} & {\bf Coverage} \kill
+{\bf Name} & {\bf \#Calls} & {\bf Coverage} \\ \hline\hline
+\endhead
+CM & 15 & $\surd$ \\ \hline
+Angle2MagId & 12 & $\surd$ \\ \hline
+InterruptPlan & 11 & $\surd$ \\ \hline
+CounterMeasures & 3 & $\surd$ \\ \hline
+OutputAtTimeZero & 11 & $\surd$ \\ \hline
+MakeOutputFromPlan & 11 & $\surd$ \\ \hline
+LeavePrefixUnchanged & 3 & $\surd$ \\ \hline
+RelativeToAbsoluteTimes & 49 & $\surd$ \\ \hline
+\hline
+{\bf Total Coverage} & & {\bf 100\%} \\ \hline
+\end{longtable}
+
+
+
+\end{document}

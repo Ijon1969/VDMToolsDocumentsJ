@@ -1,0 +1,67 @@
+{\rtf1\ansi\ansicpg1252\uc1 \deff0\deflang1033\deflangfe1033{\fonttbl{\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman{\*\falt Times New Roman};}{\f1\fswiss\fcharset0\fprq2{\*\panose 020b0604020202020204}Arial{\*\falt Arial};}
+{\f2\fmodern\fcharset0\fprq1{\*\panose 02070309020205020404}Courier New;}{\f6\fmodern\fcharset0\fprq1{\*\panose 00000000000000000000}Courier{\*\falt Courier New};}{\f16\froman\fcharset238\fprq2 Times New Roman CE{\*\falt Times New Roman};}
+{\f17\froman\fcharset204\fprq2 Times New Roman Cyr{\*\falt Times New Roman};}{\f19\froman\fcharset161\fprq2 Times New Roman Greek{\*\falt Times New Roman};}{\f20\froman\fcharset162\fprq2 Times New Roman Tur{\*\falt Times New Roman};}
+{\f21\froman\fcharset186\fprq2 Times New Roman Baltic{\*\falt Times New Roman};}{\f22\fswiss\fcharset238\fprq2 Arial CE{\*\falt Arial};}{\f23\fswiss\fcharset204\fprq2 Arial Cyr{\*\falt Arial};}{\f25\fswiss\fcharset161\fprq2 Arial Greek{\*\falt Arial};}
+{\f26\fswiss\fcharset162\fprq2 Arial Tur{\*\falt Arial};}{\f27\fswiss\fcharset186\fprq2 Arial Baltic{\*\falt Arial};}{\f28\fmodern\fcharset238\fprq1 Courier New CE;}{\f29\fmodern\fcharset204\fprq1 Courier New Cyr;}
+{\f31\fmodern\fcharset161\fprq1 Courier New Greek;}{\f32\fmodern\fcharset162\fprq1 Courier New Tur;}{\f33\fmodern\fcharset186\fprq1 Courier New Baltic;}}{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;
+\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;
+\red192\green192\blue192;}{\stylesheet{\nowidctlpar\widctlpar\adjustright \fs20\cgrid \snext0 Normal;}{\s1\sb240\sa60\keepn\nowidctlpar\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid \sbasedon0 \snext0 heading 1;}{\*\cs10 \additive 
+Default Paragraph Font;}{\s15\nowidctlpar\widctlpar\adjustright \shading1000 \f2\fs20\lang1024\cgrid \snext15 VDM;}{\*\cs16 \additive \f6 \sbasedon10 VDM_COV;}{\*\cs17 \additive \f6\cf6 \sbasedon10 VDM_NCOV;}{\s18\nowidctlpar\widctlpar\adjustright 
+\shading1000 \f2\fs20\lang1024\cgrid \sbasedon15 \snext18 VDM_TC_TABLE;}{\s19\qj\nowidctlpar\widctlpar\adjustright \f2\fs20\lang2057\cgrid \sbasedon0 \snext19 Plain Text;}}{\info{\title The MergeSort Class}{\author peter}{\operator Peter Gorm Larsen}
+{\creatim\yr1998\mo7\dy12\hr13\min7}{\revtim\yr2000\mo10\dy26\hr14\min6}{\version7}{\edmins23}{\nofpages1}{\nofwords0}{\nofchars0}{\*\company SCSK}{\nofcharsws0}{\vern71}}
+\widowctrl\ftnbj\aenddoc\hyphcaps0\formshade\viewkind4\viewscale100\pgbrdrhead\pgbrdrfoot \fet0{\*\template C:\\Programmer\\Microsoft Office\\Templates\\VDM.dot}\sectd \linex0\headery709\footery709\colsx709\endnhere\sectdefaultcl {\*\pnseclvl1
+\pnucrm\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl2\pnucltr\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl3\pndec\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl4\pnlcltr\pnstart1\pnindent720\pnhang{\pntxta )}}{\*\pnseclvl5
+\pndec\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl6\pnlcltr\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl7\pnlcrm\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl8\pnlcltr\pnstart1\pnindent720\pnhang
+{\pntxtb (}{\pntxta )}}{\*\pnseclvl9\pnlcrm\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}\pard\plain \s1\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel0\adjustright \b\f1\fs28\kerning28\cgrid {MergeSort
+\par }\pard\plain \s19\qj\nowidctlpar\widctlpar\adjustright \f2\fs20\lang2057\cgrid {
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20\cgrid {The MergeSort class only provides the operation Sort and the functions MergeSorter and Merge to the outside world. It is a subclass of Sorter which is natural in the sen
+se that it is one way of providing the sorting functionality.
+\par 
+\par }\pard\plain \s15\nowidctlpar\widctlpar\adjustright \shading1000 \f2\fs20\lang1024\cgrid {class MergeSort is subclass of Sorter
+\par 
+\par operations
+\par 
+\par   public Sort: seq of int ==> seq of int
+\par   Sort(l) ==
+\par     return MergeSorter(l)
+\par 
+\par functions
+\par 
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20\cgrid {
+\par The function MergeSorter is using the traditional algori
+th for splitting a sequence into two almost equally long sequences and then merging the results of sorting each of them. The split here is made using a let-be expression where l1 and l2 are introduced in a sequence concatenation pattern. A matching soluti
+on must satisfy the predicate which states that the difference of the lengths is less than 2.
+\par 
+\par }\pard\plain \s15\nowidctlpar\widctlpar\adjustright \shading1000 \f2\fs20\lang1024\cgrid {  MergeSorter: seq of real -> seq of real
+\par   MergeSorter(l) ==
+\par     cases l:
+\par       []      -> l,
+\par       [e]     -> l,
+\par       others  -> let l1^l2 in set \{l\} be st abs (len l1 - len l2) < 2
+\par                  in
+\par                    let l_l = MergeSorter(l1),
+\par                        l_r = Mergesorter(l2) in
+\par                     Merge(l_l, l_r)
+\par     end
+\par 
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20\cgrid {
+\par The Merge function is an auxiliary function which simply merges two sorted sequences into a new sorted sequence.
+\par 
+\par }\pard\plain \s15\nowidctlpar\widctlpar\adjustright \shading1000 \f2\fs20\lang1024\cgrid {  Merge: seq of int * seq of bool -> seq of int
+\par   Merge(l1,l2) ==
+\par     cases mk_(l1,l2):
+\par       mk_([],l),mk_(l,[]) -> l,
+\par       others              -> if hd l1 <= hd l2 then 
+\par                                [hd l1] ^ Merge(tail l1, l2)
+\par                              else
+\par                                [hd l2] ^ Merge(l1, tl l2)
+\par     end
+\par   pre forall i in set inds l1 & l1(i) >= 0 and
+\par       forall i in set inds l2 & l2(i) >= 0
+\par 
+\par end MergeSort
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20\cgrid {
+\par test coverage of the MergeSort class can gathered as:
+\par 
+\par }\pard\plain \s18\nowidctlpar\widctlpar\adjustright \shading1000 \f2\fs20\lang1024\cgrid {MergeSort
+\par }}

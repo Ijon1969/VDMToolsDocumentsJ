@@ -1,0 +1,89 @@
+{\rtf1\ansi\ansicpg1252\uc1 \deff0\deflang1033\deflangfe1033{\fonttbl{\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}{\f1\fswiss\fcharset0\fprq2{\*\panose 020b0604020202020204}Arial;}
+{\f2\fmodern\fcharset0\fprq1{\*\panose 02070309020205020404}Courier New;}{\f6\fmodern\fcharset0\fprq1{\*\panose 00000000000000000000}Courier;}{\f17\froman\fcharset238\fprq2 Times New Roman CE;}{\f18\froman\fcharset204\fprq2 Times New Roman Cyr;}
+{\f20\froman\fcharset161\fprq2 Times New Roman Greek;}{\f21\froman\fcharset162\fprq2 Times New Roman Tur;}{\f22\froman\fcharset186\fprq2 Times New Roman Baltic;}{\f23\fswiss\fcharset238\fprq2 Arial CE;}{\f24\fswiss\fcharset204\fprq2 Arial Cyr;}
+{\f26\fswiss\fcharset161\fprq2 Arial Greek;}{\f27\fswiss\fcharset162\fprq2 Arial Tur;}{\f28\fswiss\fcharset186\fprq2 Arial Baltic;}{\f29\fmodern\fcharset238\fprq1 Courier New CE;}{\f30\fmodern\fcharset204\fprq1 Courier New Cyr;}
+{\f32\fmodern\fcharset161\fprq1 Courier New Greek;}{\f33\fmodern\fcharset162\fprq1 Courier New Tur;}{\f34\fmodern\fcharset186\fprq1 Courier New Baltic;}}{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;
+\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;
+\red192\green192\blue192;}{\stylesheet{\nowidctlpar\widctlpar\adjustright \fs20\cgrid \snext0 Normal;}{\s1\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel0\adjustright \b\f1\fs28\kerning28\cgrid \sbasedon0 \snext0 heading 1;}{\*\cs10 \additive 
+Default Paragraph Font;}{\s15\nowidctlpar\widctlpar\adjustright \shading1000\cbpat8 \f2\fs20\lang1024\cgrid \snext15 VDM;}{\*\cs16 \additive \f6 \sbasedon10 VDM_COV;}{\*\cs17 \additive \f6\cf16 \sbasedon10 VDM_NCOV;}{
+\s18\nowidctlpar\widctlpar\adjustright \shading1000\cbpat8 \f2\fs20\lang1024\cgrid \sbasedon15 \snext18 VDM_TC_TABLE;}}{\info{\title Default Rose-VDM++ Link forward engineering file}{\author VDM Tools}{\operator Paul Mukherjee}
+{\creatim\yr1998\mo10\dy16\hr14\min8}{\revtim\yr2000\mo5\dy30\hr15\min46}{\version22}{\edmins122}{\nofpages2}{\nofwords322}{\nofchars1771}{\*\company CSK}{\nofcharsws0}{\vern71}}
+\widowctrl\ftnbj\aenddoc\linkstyles\hyphcaps0\formshade\viewkind4\viewscale100\pgbrdrhead\pgbrdrfoot \fet0\sectd \linex0\headery709\footery709\colsx709\endnhere\sectdefaultcl {\*\pnseclvl1\pnucrm\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl2
+\pnucltr\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl3\pndec\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl4\pnlcltr\pnstart1\pnindent720\pnhang{\pntxta )}}{\*\pnseclvl5\pndec\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl6
+\pnlcltr\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl7\pnlcrm\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl8\pnlcltr\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl9\pnlcrm\pnstart1\pnindent720\pnhang
+{\pntxtb (}{\pntxta )}}\pard\plain \s1\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel0\adjustright \b\f1\fs28\kerning28\cgrid {\lang2057 The System Class
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20\cgrid {The }{\i System}{ class is collecting all the different parts of the system together.
+\par 
+\par }\pard\plain \s15\nowidctlpar\widctlpar\adjustright \shading1000\cbpat8 \f2\fs20\lang1024\cgrid {class System
+\par 
+\par instance variables
+\par 
+\par   tills : map TillId to Till := \{|->\};
+\par   cards : set of Card := \{\};
+\par   resource : CentralResource := new CentralResource();
+\par   clock : Clock := new Clock();
+\par   letterbox : Letterbox := new Letterbox();
+\par 
+\par types
+\par 
+\par   public TillId = nat;
+\par 
+\par operations
+\par 
+\par   public GetTill: TillId ==> Till
+\par   GetTill(tid) ==
+\par     return tills(tid);
+\par 
+\par   public GetResource: () ==> CentralResource
+\par   GetResource() ==
+\par     return resource;
+\par 
+\par   public Init: () ==> System
+\par   Init() ==
+\par     (clock.SetDate("150999");
+\par     let c1 = new Card().Create(123456,1,1),
+\par         c2 = new Card().Create(123457,2,2),
+\par         c3 = new Card().Create(123458,3,3),
+\par         c4 = new Card().Create(123459,4,4), 
+\par         c5 = new Card().Create(123460,5,5),
+\par         c6 = new Card().Create(123461,6,5),
+\par         c7 = new Card().Create(123462,7,5)
+\par     in
+\par     let peter = new Cardholder().Create("Peter Gorm Larsen",
+\par                                         "Granvej 24"),
+\par         paul = new Cardholder().Create("Paul Mukherjee",
+\par                                         "Rugaardsvej 47"),
+\par         sten = new Cardholder().Create("Sten Agerholm",
+\par                                         "Teisensvej ??"),
+\par         kim = new Cardholder().Create("Kim Sunesen",
+\par                                       "??"),
+\par         CSK = new Cardholder().Create("CSK","Forskerparken 10A")
+\par      in
+\par        let pglacc1 = new Account().Create(\{1 |-> peter\},5000),
+\par            saacc1  = new Account().Create(\{2 |-> sten\},0),
+\par            ksacc1  = new Account().Create(\{3 |-> kim\},9000),
+\par            pmacc1  = new Account().Create(\{4 |-> paul\},6000),
+\par            ifacc1  = new Account().Create(\{5 |-> peter,
+\par                                            6 |-> sten,
+\par                                            7 |-> CSK\},70000),
+\par            pglid1 = 1,
+\par            said1  = 2,
+\par            ksid1  = 3,
+\par            pmid1  = 4,
+\par            ifid1  = 5
+\par        in 
+\par          (resource.AddAccount(pglid1,pglacc1);
+\par           resource.AddAccount(said1,saacc1);              
+\par           resource.AddAccount(ksid1,ksacc1);
+\par           resource.AddAccount(pmid1,pmacc1);
+\par           resource.AddAccount(ifid1,ifacc1);
+\par           tills := \{1 |-> new Till().Create(resource),
+\par                     2 |-> new Till().Create(resource),
+\par                     3 |-> new Till().Create(resource)\};
+\par           cards := \{c1,c2,c3,c4,c5,c6,c7\};
+\par           resource := resource.Create(clock,new Letterbox());
+\par           return self));
+\par 
+\par end System
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20\cgrid {
+\par }}

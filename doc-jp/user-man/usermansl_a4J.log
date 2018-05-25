@@ -1,0 +1,1038 @@
+This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.euc) (TeX Live 2017) (preloaded format=platex 2017.7.6)  25 MAY 2018 17:30
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**usermansl_a4J.tex
+(./usermansl_a4J.tex
+pLaTeX2e <2017/05/05> (based on LaTeX2e <2017-04-15>)
+Babel <3.12> and hyphenation patterns for 84 language(s) loaded.
+(/opt/texlive/2016/texmf-dist/tex/platex/base/jarticle.cls
+Document Class: jarticle 2017/03/05 v1.7e Standard pLaTeX class
+\c@@paper=\count82
+(/opt/texlive/2016/texmf-dist/tex/platex/base/jsize12.clo
+File: jsize12.clo 2017/03/05 v1.7e Standard pLaTeX file (size option)
+)
+\c@part=\count83
+\c@section=\count84
+\c@subsection=\count85
+\c@subsubsection=\count86
+\c@paragraph=\count87
+\c@subparagraph=\count88
+\c@figure=\count89
+\c@table=\count90
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\symmincho=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `mincho' in version `bold'
+(Font)                  JY1/mc/m/n --> JY1/gt/m/n on input line 613.
+\toclineskip=\dimen118
+\@lnumwidth=\dimen119
+\bibindent=\dimen120
+\heisei=\count91
+)
+(/opt/texlive/2016/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/opt/texlive/2016/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+(/opt/texlive/2016/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+(/opt/texlive/2016/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/opt/texlive/2016/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: dvipdfmx.def on input line 99.
+
+(/opt/texlive/2016/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
+File: dvipdfmx.def 2017/06/24 v5.0g Graphics/color driver for dvipdfmx
+))
+\Gin@req@height=\dimen121
+\Gin@req@width=\dimen122
+)
+(/opt/texlive/2016/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
+
+(/opt/texlive/2016/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: dvipdfmx.def on input line 147.
+
+(/opt/texlive/2016/texmf-dist/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+))
+(/opt/texlive/2016/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2017/03/14 v6.85a Hypertext links for LaTeX
+
+(/opt/texlive/2016/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
+
+
+(/opt/texlive/2016/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: pdfTeX >= 1.30 not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode not found.
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
+)
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+)
+(/home/yomori/lib/tex/macros/ifxetex.sty
+Package: ifxetex 2008/09/18 v0.4 Provides ifxetex conditional
+)
+(/opt/texlive/2016/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+)
+(/opt/texlive/2016/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+)
+\@linkdim=\dimen123
+\Hy@linkcounter=\count92
+\Hy@pagecounter=\count93
+
+(/opt/texlive/2016/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2017/03/14 v6.85a Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count94
+
+(/opt/texlive/2016/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Option `bookmarks' set `true' on input line 4374.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 4374
+.
+Package hyperref Info: Option `colorlinks' set `true' on input line 4374.
+Package hyperref Info: Option `plainpages' set `true' on input line 4374.
+Package hyperref Info: Hyper figures OFF on input line 4498.
+Package hyperref Info: Link nesting OFF on input line 4503.
+Package hyperref Info: Hyper index ON on input line 4506.
+Package hyperref Info: Plain pages ON on input line 4511.
+Package hyperref Info: Backreferencing OFF on input line 4518.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4751.
+\c@Hy@tempcnt=\count95
+
+(/opt/texlive/2016/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5104.
+\XeTeXLinkMargin=\dimen124
+\Fld@menulength=\count96
+\Field@Width=\dimen125
+\Fld@charsize=\dimen126
+Package hyperref Info: Hyper figures OFF on input line 6358.
+Package hyperref Info: Link nesting OFF on input line 6363.
+Package hyperref Info: Hyper index ON on input line 6366.
+Package hyperref Info: backreferencing OFF on input line 6373.
+Package hyperref Info: Link coloring ON on input line 6376.
+Package hyperref Info: Link coloring with OCG OFF on input line 6383.
+Package hyperref Info: PDF/A mode OFF on input line 6388.
+LaTeX Info: Redefining \ref on input line 6428.
+LaTeX Info: Redefining \pageref on input line 6432.
+\Hy@abspage=\count97
+\c@Item=\count98
+\c@Hfootnote=\count99
+)
+
+Package hyperref Message: Driver: hdvipdfm.
+
+(/opt/texlive/2016/texmf-dist/tex/latex/hyperref/hdvipdfm.def
+File: hdvipdfm.def 2017/03/14 v6.85a Hyperref driver for dvipdfm
+\pdfm@box=\box42
+\c@Hy@AnnotLevel=\count100
+\HyField@AnnotCount=\count101
+\Fld@listcount=\count102
+\c@bookmark@seq@number=\count103
+
+(/opt/texlive/2016/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip43
+)
+(/opt/texlive/2016/texmf-dist/tex/latex/base/alltt.sty
+Package: alltt 1997/06/16 v2.0g defines alltt environment
+)
+(/opt/texlive/2016/texmf-dist/tex/latex/base/makeidx.sty
+Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
+)
+(/opt/texlive/2016/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/opt/texlive/2016/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks16
+\verbatim@line=\toks17
+\verbatim@in@stream=\read1
+)
+(/opt/texlive/2016/texmf-dist/tex/latex/cite/cite.sty
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 332.
+Package: cite 2015/02/27  v 5.5
+) (./toolbox.sty
+Package: toolbox 1998/10/05 Toolbox Style. V1.2
+
+(/opt/texlive/2016/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footer
+s
+\f@nch@headwidth=\skip44
+\f@nch@O@elh=\skip45
+\f@nch@O@erh=\skip46
+\f@nch@O@olh=\skip47
+\f@nch@O@orh=\skip48
+\f@nch@O@elf=\skip49
+\f@nch@O@erf=\skip50
+\f@nch@O@olf=\skip51
+\f@nch@O@orf=\skip52
+)
+(/opt/texlive/2016/texmf-dist/tex/latex/psnfss/pifont.sty
+Package: pifont 2005/04/12 PSNFSS-v9.2a Pi font support (SPQR) 
+
+(I search kanjifont definition file: . . ) (I search font definition file: . .
+. . . . . . )
+LaTeX Font Info:    Try loading font information for U+pzd on input line 63.
+ (/opt/texlive/2016/texmf-dist/tex/latex/psnfss/upzd.fd
+File: upzd.fd 2001/06/04 font definitions for U/pzd.
+)
+(I search kanjifont definition file: . . ) (I search font definition file: . .
+. . . . . . )
+LaTeX Font Info:    Try loading font information for U+psy on input line 64.
+ (/opt/texlive/2016/texmf-dist/tex/latex/psnfss/upsy.fd
+File: upsy.fd 2001/06/04 font definitions for U/psy.
+))
+(/opt/texlive/2016/texmf-dist/tex/latex/graphics/rotating.sty
+Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
+\c@r@tfl@t=\count104
+\rotFPtop=\skip53
+\rotFPbot=\skip54
+\rot@float@box=\box43
+\rot@mess@toks=\toks18
+)
+\ToolboxLogo=\box44
+File: QU-logo.eps Graphic file (type eps)
+<QU-logo.eps>
+\aabox=\box45
+) (./vdmsl-2e.sty
+BSI VDM SL style option <96/05/07> version 1.1.35b for LaTeX2e
+This version of the macros contains some changes
+which are not backwards compatible with previous
+versions. See sections 6.4.10, 12.4.1 and 12.4.2
+of the user guide.
+Also see sections 5.4.1, 5.5.1, 5.5.7 and 5.6.1
+\symAMSa=\mathgroup5
+\symAMSb=\mathgroup6
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 114.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/cmr/m/it on input line 114.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/cmr/m/it on input line 114.
+\w@Rindent=\dimen127
+\c@module=\count105
+\c@outer=\count106
+\c@inner=\count107
+\w@outer=\dimen128
+\w@inner=\dimen129
+\wi@ln=\dimen130
+\w@small@indent=\dimen131
+\w@Indent=\dimen132
+\w@IIndent=\dimen133
+\w@IIIndent=\dimen134
+\w@DIndent=\dimen135
+\wi@indent=\dimen136
+\endMacroSkip=\skip55
+\wi@id=\dimen137
+\wi@blo=\dimen138
+\wi@sep=\dimen139
+\wi@old@indent=\dimen140
+\wi@w@blo=\dimen141
+\t@bl@one=\toks19
+\tmp@box=\box46
+\t@ModuleName=\toks20
+\preModuleSkip=\skip56
+\postModuleSkip=\skip57
+\preInterfaceSkip=\skip58
+\postInterfaceSkip=\skip59
+\preFromSkip=\skip60
+\preInstanceSkip=\skip61
+\preModulesignatureSkip=\skip62
+\preDefinitionsSkip=\skip63
+\postDefinitionsSkip=\skip64
+\preTypesdefSkip=\skip65
+\postTypesdefSkip=\skip66
+\preTypeSkip=\skip67
+\postTypeSkip=\skip68
+\preStatedefSkip=\skip69
+\postStatedefSkip=\skip70
+\preInvfnSkip=\skip71
+\postInvfnSkip=\skip72
+\preInitfnSkip=\skip73
+\preValuesdefSkip=\skip74
+\postValuesdefSkip=\skip75
+\preValdefSkip=\skip76
+\postValdefSkip=\skip77
+\preValueSkip=\skip78
+\postValueSkip=\skip79
+\preFuncdefSkip=\skip80
+\postFuncdefSkip=\skip81
+\preFndefSkip=\skip82
+\postFndefSkip=\skip83
+\preFnSkip=\skip84
+\postFnSkip=\skip85
+\t@fnop@name=\toks21
+\postSignatureSkip=\skip86
+\prePrecondSkip=\skip87
+\prePostcondSkip=\skip88
+\preOperdefSkip=\skip89
+\postOperdefSkip=\skip90
+\preOpdefSkip=\skip91
+\postOpdefSkip=\skip92
+\preOpSkip=\skip93
+\postOpSkip=\skip94
+\wi@wr=\dimen142
+\preExceptionsSkip=\skip95
+\preStmtSkip=\skip96
+\postStmtSkip=\skip97
+\preExprSkip=\skip98
+\postExprSkip=\skip99
+\wi@q@expr=\dimen143
+\car@out=\dimen144
+\coun@car@out=\count108
+\old@indent=\dimen145
+\old@expr=\dimen146
+\w@AnnIndent=\dimen147
+\wi@ann=\dimen148
+\wi@ainn=\dimen149
+\AnnSkip=\skip100
+\preAnnotationsSkip=\skip101
+\postAnnotationsSkip=\skip102
+\@expr@box=\box47
+\wi@expr=\dimen150
+\preProofSkip=\skip103
+\postProofSkip=\skip104
+\w@ProofIndent=\dimen151
+\w@ProofNumber=\dimen152
+\@indentLevel=\count109
+\@indentCount=\count110
+) (/opt/texlive/2016/texmf-dist/tex/platex/base/ascmac.sty
+Package: ascmac 2016/08/21 v2.0c ascmac wrapper (community edition) 
+
+(/opt/texlive/2016/texmf-dist/tex/platex/base/tascmac.sty
+Package: tascmac 2016/08/21 v2.0c ascmac package (community edition) 
+\@savetbaselineshift=\dimen153
+\@saveybaselineshift=\dimen154
+\scb@x=\box48
+\scscb@x=\box49
+\@bw=\dimen155
+\@nbox=\box50
+\@nbody=\box51
+\@scw=\dimen156
+\@itemh=\dimen157
+\@iboxpos=\toks22
+\@iboxstr=\box52
+\@bwsp=\box53
+\@@bwsp=\box54
+\@bcal=\count111
+\shaderule=\dimen158
+))
+\@indexfile=\write3
+\openout3 = `usermansl_a4J.idx'.
+
+
+Writing index file usermansl_a4J.idx
+(/opt/texlive/2016/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip105
+\LTright=\skip106
+\LTpre=\skip107
+\LTpost=\skip108
+\LTchunksize=\count112
+\LTcapwidth=\dimen159
+\LT@head=\box55
+\LT@firsthead=\box56
+\LT@foot=\box57
+\LT@lastfoot=\box58
+\LT@cols=\count113
+\LT@rows=\count114
+\c@LT@tables=\count115
+\c@LT@chunks=\count116
+\LT@p@ftn=\toks23
+)
+(/opt/texlive/2016/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count117
+\float@exts=\toks24
+\float@box=\box59
+\@float@everytoks=\toks25
+\@floatcapt=\box60
+)
+\keywwidth=\skip109
+ (./usermansl_a4J.aux)
+\openout1 = `usermansl_a4J.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+\AtBeginShipoutBox=\box61
+Package hyperref Info: Link coloring ON on input line 169.
+
+(/opt/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+
+(/opt/texlive/2016/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count118
+)
+LaTeX Info: Redefining \ref on input line 169.
+LaTeX Info: Redefining \pageref on input line 169.
+LaTeX Info: Redefining \nameref on input line 169.
+
+(./usermansl_a4J.out) (./usermansl_a4J.out)
+\@outlinefile=\write4
+\openout4 = `usermansl_a4J.out'.
+
+
+(I search kanjifont definition file: . . ) (I search font definition file: . .
+. . . . . . )
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <52> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 172.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <52> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 172.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 172.
+
+ (/opt/texlive/2016/texmf-dist/tex/latex/psnfss/ot1phv.fd
+File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
+)
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <52> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 172.
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <22> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 172.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <22> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 172.
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <22> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 172.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 172.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 172.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 172.
+File: QUcover-logo.eps Graphic file (type eps)
+<QUcover-logo.eps>
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 172.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 172.
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <12> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 172.
+File: vdmtools-logo.eps Graphic file (type eps)
+<vdmtools-logo.eps>
+
+[1
+
+]
+
+LaTeX Font Warning: Font shape `JT1/mc/m/sl' undefined
+(Font)              using `JT1/mc/m/n' instead on input line 172.
+
+
+LaTeX Font Warning: Font shape `JY1/mc/m/sl' undefined
+(Font)              using `JY1/mc/m/n' instead on input line 172.
+
+
+Overfull \hbox (4.90196pt too wide) in paragraph at lines 172--172
+[][][][] 
+ []
+
+
+LaTeX Font Warning: Font shape `JT1/mc/m/it' undefined
+(Font)              using `JT1/mc/m/n' instead on input line 172.
+
+
+LaTeX Font Warning: Font shape `JY1/mc/m/it' undefined
+(Font)              using `JY1/mc/m/n' instead on input line 172.
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 172.
+
+(/opt/texlive/2016/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <14.4> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 172.
+ [2]
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <17.28> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 172.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <17.28> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 172.
+
+(./usermansl_a4J.toc [1]
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <8> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 73.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <8> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 73.
+ [2])
+\tf@toc=\write5
+\openout5 = `usermansl_a4J.toc'.
+
+ [3] [4]
+
+LaTeX Font Warning: Font shape `JT1/gt/m/it' undefined
+(Font)              using `JT1/gt/m/n' instead on input line 196.
+
+
+LaTeX Font Warning: Font shape `JY1/gt/m/it' undefined
+(Font)              using `JY1/gt/m/n' instead on input line 196.
+
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 198.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 198.
+[1] [2] [3]
+File: figures/vdmtools_sl.png Graphic file (type bmp)
+<figures/vdmtools_sl.png>
+ [4] [5]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 373.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 373.
+ [6]
+File: figures/startgui-sl.png Graphic file (type bmp)
+<figures/startgui-sl.png>
+File: figures/help.png Graphic file (type bmp)
+<figures/help.png>
+ [7]
+File: figures/qt.png Graphic file (type bmp)
+<figures/qt.png>
+ [8]
+File: figures/plus.png Graphic file (type bmp)
+<figures/plus.png>
+ [9]
+File: figures/addFiles-sl.png Graphic file (type bmp)
+<figures/addFiles-sl.png>
+File: figures/addedFiles-sl.png Graphic file (type bmp)
+<figures/addedFiles-sl.png>
+ [10]
+File: figures/syntaxcheck.png Graphic file (type bmp)
+<figures/syntaxcheck.png>
+ [11]
+File: figures/errorList-sl.png Graphic file (type bmp)
+<figures/errorList-sl.png>
+File: figures/sourceWindow-sl.png Graphic file (type bmp)
+<figures/sourceWindow-sl.png>
+ [12] [13]
+File: figures/externaleditor.png Graphic file (type bmp)
+<figures/externaleditor.png>
+File: figures/syntaxcheckdone.png Graphic file (type bmp)
+<figures/syntaxcheckdone.png>
+File: figures/moduleView.png Graphic file (type bmp)
+<figures/moduleView.png>
+ [14]
+File: figures/typecheck.png Graphic file (type bmp)
+<figures/typecheck.png>
+File: figures/typecheckdone.png Graphic file (type bmp)
+<figures/typecheckdone.png>
+File: figures/typecheckerror.png Graphic file (type bmp)
+<figures/typecheckerror.png>
+File: figures/typecheckdone.png Graphic file (type bmp)
+<figures/typecheckdone.png>
+ [15]
+File: figures/typeError1-sl.png Graphic file (type bmp)
+<figures/typeError1-sl.png>
+File: figures/sourceWindow-type-sl.png Graphic file (type bmp)
+<figures/sourceWindow-type-sl.png>
+File: figures/typeError2-sl.png Graphic file (type bmp)
+<figures/typeError2-sl.png>
+ [16]
+File: figures/syntaxcheckdone.png Graphic file (type bmp)
+<figures/syntaxcheckdone.png>
+File: figures/syntaxcheckmodified.png Graphic file (type bmp)
+<figures/syntaxcheckmodified.png>
+File: figures/syntaxcheckdone.png Graphic file (type bmp)
+<figures/syntaxcheckdone.png>
+File: figures/typecheckdone.png Graphic file (type bmp)
+<figures/typecheckdone.png>
+ [17]
+[18]
+File: figures/interpreter.png Graphic file (type bmp)
+<figures/interpreter.png>
+File: figures/interpreterWindow.png Graphic file (type bmp)
+<figures/interpreterWindow.png>
+File: figures/runI.png Graphic file (type bmp)
+<figures/runI.png>
+
+Overfull \hbox (12.70557pt too wide) in paragraph at lines 1014--1022
+[][] \OT1/cmr/m/n/12 (\JY1/gt/m/it/12 初期化\OT1/cmr/m/n/12 ) \JY1/mc/m/it/12 
+ボタンを押すことで 、  インタ ープリタの初期化[]が行われ 、 \OT1/cmtt/m/n/12 so
+rt-init.rtf
+ []
+
+[19]
+File: figures/evalExpr-sl.png Graphic file (type bmp)
+<figures/evalExpr-sl.png>
+
+Overfull \hbox (14.22638pt too wide) in paragraph at lines 1035--1038
+ [] 
+ []
+
+[20] [21]
+File: figures/continueI.png Graphic file (type bmp)
+<figures/continueI.png>
+File: figures/upI.png Graphic file (type bmp)
+<figures/upI.png>
+File: figures/downI.png Graphic file (type bmp)
+<figures/downI.png>
+ [22]
+File: figures/singlestepI.png Graphic file (type bmp)
+<figures/singlestepI.png>
+File: figures/debugging-sl.png Graphic file (type bmp)
+<figures/debugging-sl.png>
+ [23]
+File: figures/projectoptions.png Graphic file (type bmp)
+<figures/projectoptions.png>
+File: figures/interpreterOptions-sl.png Graphic file (type bmp)
+<figures/interpreterOptions-sl.png>
+ [24]
+File: figures/dynamicTCError-sl.png Graphic file (type bmp)
+<figures/dynamicTCError-sl.png>
+ [25] [26]
+File: figures/integritycheck.png Graphic file (type bmp)
+<figures/integritycheck.png>
+File: figures/integWin-sl.png Graphic file (type bmp)
+<figures/integWin-sl.png>
+ [27]
+File: figures/right.png Graphic file (type bmp)
+<figures/right.png>
+File: figures/filter.png Graphic file (type bmp)
+<figures/filter.png>
+File: figures/checkmark.png Graphic file (type bmp)
+<figures/checkmark.png>
+ [28] [29] [30]
+File: figures/testCov-sl.png Graphic file (type bmp)
+<figures/testCov-sl.png>
+ [31]
+File: figures/prettyprint.png Graphic file (type bmp)
+<figures/prettyprint.png>
+ [32]
+File: figures/cplusplus.png Graphic file (type bmp)
+<figures/cplusplus.png>
+ [33] [34]
+File: figures/startgui-sl.png Graphic file (type bmp)
+<figures/startgui-sl.png>
+
+[35]
+File: figures/browser.png Graphic file (type bmp)
+<figures/browser.png>
+File: figures/projectView-sl.png Graphic file (type bmp)
+<figures/projectView-sl.png>
+File: figures/syntaxcheckdone.png Graphic file (type bmp)
+<figures/syntaxcheckdone.png>
+File: figures/typecheckdone.png Graphic file (type bmp)
+<figures/typecheckdone.png>
+File: figures/cplusplusdone.png Graphic file (type bmp)
+<figures/cplusplusdone.png>
+File: figures/prettyprintdone.png Graphic file (type bmp)
+<figures/prettyprintdone.png>
+File: figures/syntaxcheckerror.png Graphic file (type bmp)
+<figures/syntaxcheckerror.png>
+File: figures/typecheckerror.png Graphic file (type bmp)
+<figures/typecheckerror.png>
+File: figures/cpluspluserror.png Graphic file (type bmp)
+<figures/cpluspluserror.png>
+File: figures/prettyprinterror.png Graphic file (type bmp)
+<figures/prettyprinterror.png>
+File: figures/projectMenuToolbar-sl.png Graphic file (type bmp)
+<figures/projectMenuToolbar-sl.png>
+ [36]
+File: figures/projectnew.png Graphic file (type bmp)
+<figures/projectnew.png>
+File: figures/load.png Graphic file (type bmp)
+<figures/load.png>
+File: figures/projectsave.png Graphic file (type bmp)
+<figures/projectsave.png>
+File: figures/projectsaveas.png Graphic file (type bmp)
+<figures/projectsaveas.png>
+ [37]
+File: figures/plus.png Graphic file (type bmp)
+<figures/plus.png>
+File: figures/minus.png Graphic file (type bmp)
+<figures/minus.png>
+File: figures/projectoptions.png Graphic file (type bmp)
+<figures/projectoptions.png>
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 1748.
+
+File: figures/tooloptions.png Graphic file (type bmp)
+<figures/tooloptions.png>
+ [38]
+File: figures/actionsMenuToolbar-sl.png Graphic file (type bmp)
+<figures/actionsMenuToolbar-sl.png>
+File: figures/syntaxcheck.png Graphic file (type bmp)
+<figures/syntaxcheck.png>
+File: figures/typecheck.png Graphic file (type bmp)
+<figures/typecheck.png>
+ [39]
+File: figures/integritycheck.png Graphic file (type bmp)
+<figures/integritycheck.png>
+File: figures/cplusplus.png Graphic file (type bmp)
+<figures/cplusplus.png>
+File: figures/prettyprint.png Graphic file (type bmp)
+<figures/prettyprint.png>
+File: figures/log.png Graphic file (type bmp)
+<figures/log.png>
+File: figures/errorList-sl.png Graphic file (type bmp)
+<figures/errorList-sl.png>
+File: figures/error.png Graphic file (type bmp)
+<figures/error.png>
+File: figures/fileclose.png Graphic file (type bmp)
+<figures/fileclose.png>
+File: figures/filecloseall.png Graphic file (type bmp)
+<figures/filecloseall.png>
+File: figures/fileclose.png Graphic file (type bmp)
+<figures/fileclose.png>
+File: figures/filecloseall.png Graphic file (type bmp)
+<figures/filecloseall.png>
+ [40]
+File: figures/source.png Graphic file (type bmp)
+<figures/source.png>
+File: figures/externaleditor.png Graphic file (type bmp)
+<figures/externaleditor.png>
+ [41]
+File: figures/interpreter.png Graphic file (type bmp)
+<figures/interpreter.png>
+File: figures/help.png Graphic file (type bmp)
+<figures/help.png>
+File: figures/qt.png Graphic file (type bmp)
+<figures/qt.png>
+ [42] [43] [44] [45]
+File: figures/syntaxcheck.png Graphic file (type bmp)
+<figures/syntaxcheck.png>
+ [46] [47] [48] [49]
+[50]
+File: figures/typecheck.png Graphic file (type bmp)
+<figures/typecheck.png>
+File: figures/projectoptions.png Graphic file (type bmp)
+<figures/projectoptions.png>
+File: figures/tcOptions-sl.png Graphic file (type bmp)
+<figures/tcOptions-sl.png>
+ [51]
+LaTeX Font Info:    Try loading font information for OMS+cmtt on input line 237
+8.
+LaTeX Font Info:    No file OMScmtt.fd. on input line 2378.
+
+
+LaTeX Font Warning: Font shape `OMS/cmtt/m/n' undefined
+(Font)              using `OMS/cmsy/m/n' instead
+(Font)              for symbol `textbraceleft' on input line 2378.
+
+[52] [53] [54] [55]
+File: figures/interpreter.png Graphic file (type bmp)
+<figures/interpreter.png>
+File: figures/runI.png Graphic file (type bmp)
+<figures/runI.png>
+ [56]
+File: figures/stepI.png Graphic file (type bmp)
+<figures/stepI.png>
+File: figures/stepintoI.png Graphic file (type bmp)
+<figures/stepintoI.png>
+File: figures/singlestepI.png Graphic file (type bmp)
+<figures/singlestepI.png>
+File: figures/continueI.png Graphic file (type bmp)
+<figures/continueI.png>
+File: figures/stopI.png Graphic file (type bmp)
+<figures/stopI.png>
+File: figures/upI.png Graphic file (type bmp)
+<figures/upI.png>
+File: figures/downI.png Graphic file (type bmp)
+<figures/downI.png>
+File: figures/pauseI.png Graphic file (type bmp)
+<figures/pauseI.png>
+File: figures/runI.png Graphic file (type bmp)
+<figures/runI.png>
+ [57]
+File: figures/stepI.png Graphic file (type bmp)
+<figures/stepI.png>
+File: figures/singlestepI.png Graphic file (type bmp)
+<figures/singlestepI.png>
+File: figures/upI.png Graphic file (type bmp)
+<figures/upI.png>
+File: figures/continueI.png Graphic file (type bmp)
+<figures/continueI.png>
+File: figures/stopI.png Graphic file (type bmp)
+<figures/stopI.png>
+ [58]
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <12> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 2659.
+
+ [59]
+Overfull \hbox (31.77524pt too wide) in paragraph at lines 2725--2728
+[]\JY1/mc/m/it/12 通常の \OT1/cmr/m/n/12 VDM-SL \JY1/mc/m/it/12 の値に加えて 、
+ \OT1/cmtt/m/n/12 print \JY1/mc/m/it/12 コマンドは \OT1/cmtt/m/n/12 FUNCTION[]V
+AL \JY1/mc/m/it/12 と \OT1/cmtt/m/n/12 OPERATION[]VAL
+ []
+
+[60] [61]
+File: figures/interpreterOptions-sl.png Graphic file (type bmp)
+<figures/interpreterOptions-sl.png>
+ [62]
+Overfull \hbox (0.5017pt too wide) in paragraph at lines 2828--2834
+[]\JY1/mc/m/it/12 ランタイムエラ ーが発生した際に 、 インタ ー
+ []
+
+[63] [64]
+Overfull \hbox (7.33525pt too wide) in paragraph at lines 2912--2913
+[]\OT1/cmtt/m/n/12 vdmde -i [-DIPQ] [-R testcoverage] [-O res-file] argfile spe
+cfile(s) 
+ []
+
+
+Overfull \hbox (20.92656pt too wide) in paragraph at lines 2917--2923
+\OT1/cmtt/m/n/12 -i \JY1/mc/m/it/12 オプシ ョ ンをつけると \OT1/cmtt/m/n/12 vdm
+de[] \JY1/mc/m/it/12 コマンドは \OT1/cmtt/m/n/12 argfile \JY1/mc/m/it/12 フ ァ 
+イル中 、 フ ァ イル \OT1/cmtt/m/n/12 specfile(s)
+ []
+
+[65]
+Overfull \hbox (7.88521pt too wide) in paragraph at lines 2960--2966
+[]\JY1/mc/m/it/12 ランタイムエラ ーが発生した際に 、 インタ ープリタを停止せず
+、 \OT1/cmtt/m/n/12 <RuntimeError>
+ []
+
+[66] [67]
+Overfull \hbox (31.77524pt too wide) in paragraph at lines 3075--3078
+[]\JY1/mc/m/it/12 通常の \OT1/cmr/m/n/12 VDM-SL \JY1/mc/m/it/12 の値に加えて 、
+ \OT1/cmtt/m/n/12 print \JY1/mc/m/it/12 コマンドは \OT1/cmtt/m/n/12 FUNCTION[]V
+AL \JY1/mc/m/it/12 と \OT1/cmtt/m/n/12 OPERATION[]VAL
+ []
+
+[68] [69] [70]
+File: figures/integritycheck.png Graphic file (type bmp)
+<figures/integritycheck.png>
+File: figures/integWin-sl.png Graphic file (type bmp)
+<figures/integWin-sl.png>
+File: figures/up.png Graphic file (type bmp)
+<figures/up.png>
+File: figures/down.png Graphic file (type bmp)
+<figures/down.png>
+File: figures/checkmark.png Graphic file (type bmp)
+<figures/checkmark.png>
+File: figures/right.png Graphic file (type bmp)
+<figures/right.png>
+File: figures/left.png Graphic file (type bmp)
+<figures/left.png>
+File: figures/filter.png Graphic file (type bmp)
+<figures/filter.png>
+ [71] [72]
+
+LaTeX Font Warning: Font shape `JT1/mc/m/sc' undefined
+(Font)              using `JT1/mc/m/n' instead on input line 3366.
+
+
+LaTeX Font Warning: Font shape `JY1/mc/m/sc' undefined
+(Font)              using `JY1/mc/m/n' instead on input line 3366.
+
+File: figures/prettyprint.png Graphic file (type bmp)
+<figures/prettyprint.png>
+[73]
+File: figures/ppOptions-sl.png Graphic file (type bmp)
+<figures/ppOptions-sl.png>
+ [74] [75] [76]
+File: figures/cplusplus.png Graphic file (type bmp)
+<figures/cplusplus.png>
+File: figures/ccgOptions-sl.png Graphic file (type bmp)
+<figures/ccgOptions-sl.png>
+ [77] [78] [79]
+File: figures/testenv.png Graphic file (type bmp)
+<figures/testenv.png>
+ [80] [81] [82] [83]
+File: figures/guitcov-sl.png Graphic file (type bmp)
+<figures/guitcov-sl.png>
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 3813.
+ [84] [85]
+LaTeX Font Info:    Try loading font information for OMS+cmss on input line 392
+3.
+LaTeX Font Info:    No file OMScmss.fd. on input line 3923.
+
+
+LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
+(Font)              using `OMS/cmsy/m/n' instead
+(Font)              for symbol `textbraceleft' on input line 3923.
+
+[86] [87]
+Overfull \hbox (0.64511pt too wide) in paragraph at lines 3973--3977
+[]\JY1/mc/m/sc/12 生成された \OT1/cmr/m/n/12 L[]T[]X \JY1/mc/m/sc/12 コ ードに
+は 、 マクロ $\OT1/cmtt/m/n/12 \color{covered}$ \JY1/mc/m/sc/12 と $\OT1/cmtt/m
+/n/12 \color{not-[]covered}$
+ []
+
+[88] (./usermansl_a4J.bbl
+Missing character: There is no ^^82 in font cmr12!
+Missing character: There is no ^^c9 in font cmr12!
+Missing character: There is no ^^82 in font cmr12!
+Missing character: There is no ^^83 in font cmr12!
+Missing character: There is no ^^83 in font cmr12!
+Missing character: There is no ^^83 in font cmr12!
+Missing character: There is no ^^83 in font cmr12!
+Missing character: There is no ^^83 in font cmr12!
+Missing character: There is no ^^8e in font cmr12!
+Missing character: There is no ^^8c in font cmr12!
+Missing character: There is no ^^fc in font cmr12!
+Missing character: There is no ^^83 in font cmr12!
+Missing character: There is no ^^83 in font cmr12!
+Missing character: There is no ^^83 in font cmr12!
+Missing character: There is no ^^83 in font cmr12!
+Missing character: There is no ^^80 in font cmr12!
+Missing character: There is no ^^82 in font cmr12!
+Missing character: There is no ^^cc in font cmr12!
+Missing character: There is no ^^8d in font cmr12!
+Missing character: There is no ^^82 in font cmr12!
+Missing character: There is no ^^95 in font cmr12!
+Missing character: There is no ^^8e in font cmr12!
+Missing character: There is no ^^bf in font cmr12!
+Missing character: There is no ^^90 in font cmr12!
+Missing character: There is no ^^dd in font cmr12!
+Missing character: There is no ^^8c in font cmr12!
+Missing character: There is no ^^82 in font cmr12!
+Missing character: There is no ^^c6 in font cmr12!
+Missing character: There is no ^^8c in font cmr12!
+Missing character: There is no ^^9f in font cmr12!
+Missing character: There is no ^^8f in font cmr12!
+Missing character: There is no ^^c4 in font cmr12!
+Missing character: There is no ^^89 in font cmr12!
+Missing character: There is no ^^8e in font cmr12!
+Missing character: There is no ^^8e in font cmr12!
+Missing character: There is no ^^f5 in font cmr12!
+Missing character: There is no ^^8a in font cmr12!
+Missing character: There is no ^^b0 in font cmr12!
+Missing character: There is no ^^96 in font cmr12!
+) [89] (./glossary_jp.tex [90]
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10.95> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 92.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10.95> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 92.
+
+Overfull \hbox (3.65686pt too wide) in paragraph at lines 92--94
+[]\OT1/cmr/m/it/12 Vienna De-vel-op-ment Method\OT1/cmr/m/n/12 . \JY1/mc/m/sc/1
+2 の形式仕様言語 。 \OT1/cmr/m/n/12 ISO \JY1/mc/m/sc/12 標準言語である \OT1/cmr
+/m/n/12 [[][]5[][]]\JY1/mc/m/sc/12 。 
+ []
+
+) [91] [92] [93] [94]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <17.28> on input line 4108.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <14.4> on input line 4136.
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 4136.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 4136.
+ [95] [96] [97]
+Overfull \hbox (11.66638pt too wide) in paragraph at lines 4261--4264
+[]\OT1/cmtt/m/n/12 makeidx \JY1/mc/m/sc/12 スタイルオプシ ョ ンをインクル ード
+する （\OT1/cmr/m/n/12 L[]T[]X \JY1/mc/m/sc/12 なら $\OMS/cmtt/m/n/12 n$\OT1/cm
+tt/m/n/12 documentstyle
+ []
+
+[98]
+File: figures/tooloptions.png Graphic file (type bmp)
+<figures/tooloptions.png>
+File: figures/toolOptions-font.png Graphic file (type bmp)
+<figures/toolOptions-font.png>
+ [99]
+File: figures/tooloptions.png Graphic file (type bmp)
+<figures/tooloptions.png>
+ [100]
+File: figures/toolOptions-ep.png Graphic file (type bmp)
+<figures/toolOptions-ep.png>
+ [101] [102]
+File: sort-ex/test/vdmloop.bat  (verbatim)
+File: sort-ex/test/vdmtest.bat  (verbatim)
+ [103]
+File: sort-ex/test/vdmloop  (verbatim)
+
+Overfull \hbox (13.51025pt too wide) in paragraph at lines 4498--4498
+[]\OT1/cmtt/m/n/12 ## Runs a collection of VDM-SL test examples for the sorting
+ example.[] 
+ []
+
+[104]
+File: sort-ex/test/vdmtest  (verbatim)
+ [105] [106] (./usermansl_a4J.ind [107
+
+] [108] [109])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 4555.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 4555.
+ (./usermansl_a4J.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 4555.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 4555.
+
+Package rerunfilecheck Info: File `usermansl_a4J.out' has not changed.
+(rerunfilecheck)             Checksum: 6B94CAB8550830F44ED27C64EDC16702;6523.
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 4555.
+ ) 
+Here is how much of TeX's memory you used:
+ 7126 strings out of 493648
+ 99627 string characters out of 6151003
+ 202401 words of memory out of 5000000
+ 10501 multiletter control sequences out of 15000+600000
+ 31820 words of font info for 120 fonts, out of 8000000 for 9000
+ 929 hyphenation exceptions out of 8191
+ 36i,17n,49p,286b,625s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on usermansl_a4J.dvi (115 pages, 477300 bytes).

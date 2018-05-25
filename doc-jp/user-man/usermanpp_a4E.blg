@@ -1,0 +1,63 @@
+This is BibTeX, Version 0.99d (TeX Live 2017)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: usermanpp_a4E.aux
+The style file: plain.bst
+Database file #1: user_man.bib
+Warning--I'm ignoring LangManPP-SCSK's extra "key" field
+--line 69641 of file user_man.bib
+Warning--I'm ignoring UMLMan-SCSK's extra "key" field
+--line 69649 of file user_man.bib
+Warning--I'm ignoring LangMan-SCSK's extra "key" field
+--line 69657 of file user_man.bib
+Warning--I'm ignoring APIMan-SCSK's extra "key" field
+--line 69682 of file user_man.bib
+Warning--I'm ignoring Java2VDMMan-SCSK's extra "key" field
+--line 69690 of file user_man.bib
+Warning--I'm ignoring CGManPP-SCSK's extra "key" field
+--line 69714 of file user_man.bib
+Warning--I'm ignoring CGJavaManPP-SCSK's extra "key" field
+--line 69722 of file user_man.bib
+Warning--empty institution in CGJavaManPP-SCSK
+Warning--empty year in CGJavaManPP-SCSK
+You've used 13 entries,
+            2118 wiz_defined-function locations,
+            565 strings with 5641 characters,
+and the built_in function-call counts, 2833 in all, are:
+= -- 265
+> -- 124
+< -- 0
++ -- 57
+- -- 38
+* -- 128
+:= -- 516
+add.period$ -- 39
+call.type$ -- 13
+change.case$ -- 50
+chr.to.int$ -- 0
+cite$ -- 15
+duplicate$ -- 119
+empty$ -- 241
+format.name$ -- 38
+if$ -- 571
+int.to.chr$ -- 0
+int.to.str$ -- 13
+missing$ -- 4
+newline$ -- 68
+num.names$ -- 26
+pop$ -- 93
+preamble$ -- 1
+purify$ -- 45
+quote$ -- 0
+skip$ -- 63
+stack$ -- 0
+substring$ -- 71
+swap$ -- 19
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 48
+warning$ -- 2
+while$ -- 26
+width$ -- 15
+write$ -- 125
+(There were 9 warnings)

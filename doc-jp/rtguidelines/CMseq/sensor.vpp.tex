@@ -1,0 +1,87 @@
+\begin{vdm}{\small\sf class} $Sensor$ {\small\sf is subclass of}  $GLOBAL$\index{Sensor|ModDef}
+\par
+\kInstanceVarDef
+\parlinebr
+\begin{insvar}\kw{private}
+\assdef{detector}{MissileDetector\index{MissileDetector|TypeOcc}}
+\end{insvar}
+\begin{insvar}\kw{private}
+\assdef{aperature}{Angle\index{Angle|TypeOcc}}
+\end{insvar}
+\par
+\kOperations
+\kw{\kw{public}}\begin{op}[e]{Sensor}\index{Sensor|FuncDef}%
+\signature{MissileDetector\index{MissileDetector|TypeOcc} \X Angle\index{Angle|TypeOcc} \Oto Sensor\index{Sensor|TypeOcc}}
+\parms{pmd,psa}
+\annlab[o]{Sensor`Sensor}
+\begin{blockstmt}
+\ass{detector}{pmd} ; \\
+\ass{aperature}{psa}
+\end{blockstmt};
+\end{op}
+\kw{\kw{public}}\begin{op}[e]{getAperature}\index{getAperature|FuncDef}%
+\signature{() \Oto GLOBAL`Angle\index{Angle|TypeOcc} \X GLOBAL`Angle\index{Angle|TypeOcc}}
+\parms{}
+\annlab[o]{Sensor`getAperature}
+\return{\reccons{\kw{mk-}}{aperature,SENSOR-APERATURE}};
+\end{op}
+\kw{\kw{public}}\begin{op}[e]{trip}\index{trip|FuncDef}%
+\signature{EventId\index{EventId|TypeOcc} \X MissileType\index{MissileType|TypeOcc} \X Angle\index{Angle|TypeOcc} \Oto ()}
+\parms{evid,pmt,pa}
+\annlab[o]{Sensor`trip}
+$detector$.\call{addThreat}{evid,pmt,pa,\fnapply{World`timerRef.GetTime}{}}
+\begin{precond}
+\fnapply{canObserve}{pa,aperature,SENSOR-APERATURE}
+\end{precond}
+\end{op}
+{\small\sf end} {\it Sensor}
+
+\end{vdm}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{tabular}{p{25mm}l}
+{\bf Test Suite :} & vdm.tc \\ 
+{\bf Class :} & Sensor \\ 
+\end{tabular}
+
+\begin{longtable}{|l|r|r|}\hline
+{\bf Sensor`getAperature} & {\bf \#Calls} & {\bf Coverage} \kill
+{\bf Name} & {\bf \#Calls} & {\bf Coverage} \\ \hline\hline
+\endhead
+Sensor`trip & 7 & $\surd$ \\ \hline
+Sensor`Sensor & 4 & $\surd$ \\ \hline
+Sensor`getAperature & 4 & $\surd$ \\ \hline
+\hline
+{\bf Total Coverage} & & {\bf 100\%} \\ \hline
+\end{longtable}
+
+

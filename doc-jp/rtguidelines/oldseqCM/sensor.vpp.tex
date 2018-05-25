@@ -1,0 +1,108 @@
+\begin{vdm}{\small\sf class} $Sensor$
+\par
+\kTypes
+\type{\kw{public}\kw{ }MissileType}{\const{MissileA} | \const{MissileB} | \const{MissileC} | \const{None};}
+\type{\kw{public}\kw{ }Angle}{\Nat }
+\begin{invfn}{num}num \Le 360
+\end{invfn}
+\kInstanceVarDef
+\parlinebr
+\begin{insvar}
+\assdef{io}{SensorIO}[{\fnapply{\new{SensorIO}}{}}]
+\end{insvar}
+\begin{insvar}
+\assdef{threat}{\Opt{\Lp MissileType | \const{Consumed} \Rp  \X Angle}}[{\fnapply{io.readThreat}{}}]
+\end{insvar}
+\par
+\kOperations
+\kw{\kw{public}}\begin{op}[e]{SetThreat}%
+\signature{() \Oto ()}
+\parms{}
+\annlab[o]{Sensor`SetThreat}
+\ass{threat}{\fnapply{io.readThreat}{}};
+\end{op}
+\kw{\kw{public}}\begin{op}[e]{ReadThreat}%
+\signature{() \Oto \Opt{MissileType \X Angle}}
+\parms{}
+\annlab[o]{Sensor`ReadThreat}
+\return{threat};
+\end{op}
+\kw{\kw{public}}\begin{op}[e]{IsFinished}%
+\signature{() \Oto \Bool }
+\parms{}
+\annlab[o]{Sensor`IsFinished}
+\return{threat = \Nil };
+\end{op}
+\kw{\kw{public}}\begin{op}[e]{GetThreat}%
+\signature{() \Oto \Opt{MissileType \X Angle}}
+\parms{}
+\annlab[o]{Sensor`GetThreat}
+\begin{letstmt}
+\patdef{orgthreat}{threat}
+\end{letstmt} \\
+\begin{blockstmt}
+\If threat \Neq \Nil 
+\Then \\
+\ass{threat}{\reccons{\kw{mk-}}{\const{Consumed},0}}
+\Fi ; \\
+\return{orgthreat}
+\end{blockstmt}
+\end{op}
+{\small\sf end} {\it Sensor}
+
+\end{vdm}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{tabular}{p{25mm}l}
+{\bf Test Suite :} & vdm.tc \\ 
+{\bf Class :} & Sensor \\ 
+\end{tabular}
+
+\begin{longtable}{|l|r|r|}\hline
+{\bf Sensor`IsFinished} & {\bf \#Calls} & {\bf Coverage} \kill
+{\bf Name} & {\bf \#Calls} & {\bf Coverage} \\ \hline\hline
+\endhead
+Sensor`GetThreat & 9 & $\surd$ \\ \hline
+Sensor`SetThreat & 8 & $\surd$ \\ \hline
+Sensor`IsFinished & 45 & $\surd$ \\ \hline
+Sensor`ReadThreat & 22 & $\surd$ \\ \hline
+\hline
+{\bf Total Coverage} & & {\bf 100\%} \\ \hline
+\end{longtable}
+
+

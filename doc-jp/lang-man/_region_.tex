@@ -1,0 +1,232 @@
+\message{ !name(lang_man.tex)}%%
+%% Toolbox Language Manual
+%% $Id: lang_man.tex,v 1.16 2006/04/19 10:26:51 vdmtools Exp $
+%% 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PDF compatibility code. 
+
+\makeatletter
+\newif\ifpdflatex@
+\ifx\pdftexversion\@undefined
+\pdflatex@false
+%\message{Not using pdf}
+\else
+\pdflatex@true
+%\message{Using pdf}
+\fi
+
+\newcommand{\latexpdf}[2]{
+  \ifpdflatex@ #1
+  \else #2
+  \fi
+}
+
+\newcommand{\latexorpdf}[2]{
+  \ifpdflatex@ #2
+  \else #1
+  \fi
+}
+
+#ifdef A4Format
+\newcommand{\pformat}{a4paper}
+#endif A4Format
+#ifdef LetterFormat
+\newcommand{\pformat}{letterpaper}
+#endif LetterFormat
+
+\makeatother
+
+\newcommand{\RuleTarget}[1]{\hypertarget{rule:#1}{}}
+\newcommand{\Ruledef}[2]
+{
+  \RuleTarget{#1}\Rule{#1}{#2}%
+  }
+\newcommand{\Ruleref}[1]{
+  \hyperlink{rule:#1}{#1}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\latexorpdf{
+\documentclass[\pformat,12pt]{jarticle}
+}{
+% pdftex option is used by graphic[sx],hyperref,toolbox.sty
+\documentclass[\pformat,pdftex,12pt]{jarticle}
+}
+
+\usepackage{toolbox}
+\usepackage{vdmsl-2e}
+\usepackage{makeidx}
+\usepackage{alltt}
+%\usepackage{epsfig}
+%\usepackage{here}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{ifthen}
+% plainpages=false: avoid warning
+%   destination with the same identifier already exists
+%   but it do not seem to work a the first pages
+
+%\ifnum 42146=\euc"A4A2 \AtBeginDvi{\special{pdf:tounicode EUC-UCS2}}\else
+%\AtBeginDvi{\special{pdf:tounicode 90ms-RKSJ-UCS2}}\fi
+\usepackage{atbegshi}
+\ifnum
+  42146=\euc"A4A2 \AtBeginShipoutFirst{\special{pdf:tounicode EUC-UCS2}}
+\else
+  \AtBeginShipoutFirst{\special{pdf:tounicode 90ms-RKSJ-UCS2}}
+\fi
+
+\usepackage[dvipdfm,bookmarks=true,bookmarksnumbered=true,colorlinks,plainpages=true]{hyperref}
+
+#ifdef VDMPP
+\usepackage{vpp}
+#endif VDMPP
+
+\newcommand{\vdmslpp}[2]{%
+#ifdef VDMSL
+#1
+#endif VDMSL
+#ifdef VDMPP
+#2
+#endif VDMPP
+}
+
+\newcommand{\vdmsl}{VDM-SL}
+\newcommand{\vdmpp}{VDM++}
+\newcommand{\Index}[1]{#1\index{#1}}
+#ifdef VDMPP
+%\usepackage{latexsym}
+%\usepackage{epsf}
+\newcommand{\vppsmall}{\small\tt}
+\newcommand{\tr}[1]{{\bf\underline{#1}}}
+
+
+
+\newcommand{\insertfig}[4]{ % Filename, epsheight, epswidth, caption,  label
+\begin{figure}[htb]
+\begin{center}
+\includegraphics[width=#2]{#1} 
+\end{center}
+\caption{{\em #3}} #4
+\end{figure}
+}
+
+\newcommand{\insertfignw}[3]{ % Filename, caption,  label
+\begin{figure}[h]
+\begin{center}
+\includegraphics{#1} 
+\end{center}
+\caption{{\em #2}} #3
+\end{figure}
+}
+
+\newcommand{\insertfignwrot}[3]{ % Filename, caption,  label
+\begin{figure}[h]
+\begin{center}
+\scalebox{1}%
+{\rotatebox{270}{%
+\includegraphics{#1}}}
+\end{center}
+\caption{{\em #2}} #3
+\end{figure}
+}
+
+\makeindex
+#endif VDMPP
+
+% The use of VDMSL/VDMPP ifdef's have basicly been exchanged with the
+% use of LaTeX ifthenelse's.  For this two LaTeX boolean value VDMSL and
+% VDMpp have been defined  (Lowercase p's are used to avoid conflict with
+% the VDMPP environment variable.  The typical use are:
+%   \ifthenelse{\boolean{VDMsl}}{vdmsl-text}{vdmpp-text}
+%   \ifthenelse{\boolean{VDMsl}}{vdmsl-text}{}
+%   \ifthenelse{\boolean{VDMpp}}{vdmpp-text}{}
+% The advantage of this as opposed to ifdef's is that within a general
+% paragraph specific VDM-SL and VDM++ parts can be distinguished without
+% problematic empty lines.
+% 
+% The values are initialised such that exactly one of the values is true
+% and the other is false.  This should hopefully avoid strange behaviour
+% due to possible preprossing errors.  The default case is VDM-SL.
+\newboolean{VDMsl}
+\setboolean{VDMsl}{true}
+\newboolean{VDMpp}
+\setboolean{VDMpp}{false}
+#ifdef VDMSL
+\setboolean{VDMsl}{true}
+\setboolean{VDMpp}{false}
+#endif VDMSL
+#ifdef VDMPP
+\setboolean{VDMpp}{true}
+\setboolean{VDMsl}{false}
+#endif VDMPP
+
+%\latexpdf{\usepackage[pdftex,colorlinks=true,bookmarks=true]{hyperref}}{}
+
+\newcommand{\MYEQUIV}{$\equiv$}
+\newlength{\nonstandlen}
+\newcommand{\nonstandard}[1]{%
+#ifdef VDMSL
+\setlength{\nonstandlen}{#1\baselineskip}%
+  \marginpar{\hspace*{-3mm}\raisebox{\nonstandlen}[0pt][0pt]{\fbox{{\footnotesize Non standard}}}}%
+#endif VDMSL
+}
+\newenvironment{TypeSemantics}{\begin{longtable}[r]{|p{3.5cm}|p{9cm}|}\hline%
+  演算子名称 & 意味記述 \\ \hline\hline \endhead}% 
+  {\hline\end{longtable}}
+  
+%\renewcommand{\vdmpp}{{\small VDM}$^{++}$}
+
+\makeatletter
+% ------------- TOC manipulation ------------
+\def\docglbldepth{1}
+%\setcounter{secnumdepth}{\docglbldepth}
+%\setcounter{tocdepth}{\docglbldepth}
+\def\@pnumwidth{3.0em}
+% more space for for >10 subsections
+%\def\l@section{\@dottedtocline{1}{1.5em}{3.1em}}
+\def\l@subsection{\@dottedtocline{2}{1.5em}{2.8em}}
+%\def\l@subsubsection{\@dottedtocline{3}{4.3em}{3.6em}}
+%\def\l@paragraph{\@dottedtocline{4}{7.9em}{4.1em}}
+%\def\l@subparagraph{\@dottedtocline{5}{10em}{5em}}
+\makeatother
+
+\makeindex
+%\latexpdf{\pdfinfo{
+% /Title (The IFAD VDM-SL Language)
+% /Author (The VDM Tool Group, The Institute of Applied Computer Science)
+%}}{}
+
+
+\begin{document}
+
+\message{ !name(lang_man.tex) !offset(3085) }
+types
+public C1 :: a : nat;
+public C2 :: b : nat;
+public S = C1 | C2;
+
+operations
+public
+Test: () ==> nat
+Test() ==
+ let s : S = mk_C1(1)
+ in
+   let c : C1 = s
+   in
+     return c.a;
+
+public
+Test': () ==> nat
+Test'() ==
+ let s : S = mk_C1(1)
+ in
+   let c : C1 = narrow_(s, C1)
+   in
+     return c.a;
+\message{ !name(lang_man.tex) !offset(12236) }
+
+\end{document}
+
+

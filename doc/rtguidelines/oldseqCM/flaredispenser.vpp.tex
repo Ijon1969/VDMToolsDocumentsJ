@@ -1,0 +1,317 @@
+\begin{vdm}{\small\sf class} $FlareDispenser$
+\par
+\kInstanceVarDef
+\parlinebr
+\begin{insvar}
+\assdef{magid}{MagId}
+\end{insvar}
+\begin{insvar}
+\assdef{currentMissileValue}{Sensor`MissileType}[{\const{None}}]
+\end{insvar}
+\begin{insvar}
+\assdef{latestMissileValue}{Sensor`MissileType}[{\const{None}}]
+\end{insvar}
+\begin{insvar}
+\assdef{outputSequence}{\seqof*{\Lp FlareType \X \Nat  \Rp }}[{\seq{}}]
+\end{insvar}
+\begin{insvar}
+\assdef{currentStep}{\Nat }[{0}]
+\end{insvar}
+\begin{insvar}
+\assdef{numberOfFreshValues}{\Nat }[{0}]
+\end{insvar}
+\begin{insvar}
+\assdef{fresh}{\Bool }[{\False }]
+\end{insvar}
+\begin{insvar}
+\assdef{interrupt}{Interrupt}
+\end{insvar}
+\par
+\kValues
+\val{responseDB}[Sensor`MissileType \Gmap Plan]{\color{not-covered}\map{\const{MissileA} \Mapsto \seq{\reccons{\kw{mk-}}{\const{FlareOneA},900},\reccons{\kw{mk-}}{\const{FlareTwoA},500}, \\
+\reccons{\kw{mk-}}{\const{DoNothingA},100},\reccons{\kw{mk-}}{\const{FlareOneA},500}}, \\
+\const{MissileB} \Mapsto \seq{\reccons{\kw{mk-}}{\const{FlareTwoB},500},\reccons{\kw{mk-}}{\const{FlareTwoB},700}}, \\
+\const{MissileC} \Mapsto \seq{\reccons{\kw{mk-}}{\const{FlareOneC},400},\reccons{\kw{mk-}}{\const{DoNothingC},100}, \\
+\reccons{\kw{mk-}}{\const{FlareTwoC},400},\reccons{\kw{mk-}}{\const{FlareOneC},500}}}\color{covered};}
+\val{missilePriority}[Sensor`MissileType \Gmap \Nat ]{\color{not-covered}\map{\const{MissileA} \Mapsto 1, \\
+\const{MissileB} \Mapsto 2, \\
+\const{MissileC} \Mapsto 3, \\
+\const{None} \Mapsto 0}\color{covered}}
+\kTypes
+\type{\kw{public}\kw{ }MagId}{\Token ;}
+\type{\kw{ }Plan}{\seqof*{PlanStep};}
+\type{\kw{public}\kw{ }PlanStep}{FlareType \X \Nat ;}
+\type{\kw{public}\kw{ }FlareType}{\const{FlareOneA} | \const{FlareTwoA} | \const{FlareOneB} |  \\
+\const{FlareTwoB} | \const{FlareOneC} | \const{FlareTwoC} |  \\
+\const{DoNothingA} | \const{DoNothingB} | \const{DoNothingC}}
+\kOperations
+\kw{\kw{public}}\begin{op}[e]{FlareDispenser}%
+\signature{MagId \X Timer \Oto FlareDispenser}
+\parms{mid,t}
+\annlab[o]{FlareDispenser`FlareDispenser}
+\begin{blockstmt}
+\ass{magid}{mid} ; \\
+\ass{interrupt}{\fnapply{\new{Interrupt}}{t}}
+\end{blockstmt};
+\end{op}
+\kw{\kw{public}}\begin{op}[e]{Step}%
+\signature{() \Oto ()}
+\parms{}
+\annlab[o]{FlareDispenser`Step}
+\begin{blockstmt}
+\If \fnapply{interrupt.CheckAwake}{}
+\Then \\
+\begin{blockstmt}
+\call{StepAlgorithm}{} ; \\
+\If currentMissileValue \Neq \const{None}
+\Then \\
+\begin{letstmt}
+\patdef{\reccons{\kw{mk-}}{-,delay-val}} \\
+{\fnapply{\fnapply{responseDB}{currentMissileValue}}{currentStep \Minus 1}}
+\end{letstmt} \\
+$interrupt$.\call{Alarm}{delay-val}
+\Fi
+\end{blockstmt}
+\Fi
+\end{blockstmt};
+\end{op}
+\begin{op}[e]{StepAlgorithm}%
+\signature{() \Oto ()}
+\parms{}
+\annlab[o]{FlareDispenser`StepAlgorithm}
+\begin{blockstmt}
+\If fresh
+\Then \\
+\begin{blockstmt}
+\ass{fresh}{\False } ; \\
+\call{CheckFreshData}{}
+\end{blockstmt}
+\Fi ; \\
+\If currentMissileValue \Neq \const{None}
+\Then \\
+\call{StepPlan}{}
+\Fi
+\end{blockstmt};
+\end{op}
+\begin{op}[e]{CheckFreshData}%
+\signature{() \Oto ()}
+\parms{}
+\annlab[o]{FlareDispenser`CheckFreshData}
+\begin{blockstmt}
+\If \fnapply{HigherPriority}{latestMissileValue,currentMissileValue}
+\Then \\
+\call{StartPlan}{latestMissileValue}
+\Fi ; \\
+\ass{latestMissileValue}{\const{None}} ; \\
+\ass{numberOfFreshValues}{numberOfFreshValues + 1}
+\end{blockstmt};
+\end{op}
+\begin{op}[e]{HigherPriority}%
+\signature{Sensor`MissileType \X Sensor`MissileType \Oto \Bool }
+\parms{latest,current}
+\annlab[o]{FlareDispenser`HigherPriority}
+\return{\fnapply{missilePriority}{latest} > \fnapply{missilePriority}{current}};
+\end{op}
+\begin{op}[e]{StartPlan}%
+\signature{Sensor`MissileType \Oto ()}
+\parms{newMissileValue}
+\annlab[o]{FlareDispenser`StartPlan}
+\begin{blockstmt}
+\ass{currentMissileValue}{newMissileValue} ; \\
+\ass{currentStep}{1}
+\end{blockstmt};
+\end{op}
+\begin{op}[e]{ReleaseAFlare}%
+\signature{FlareType \Oto ()}
+\parms{ft}
+\annlab[o]{FlareDispenser`ReleaseAFlare}
+\ass{outputSequence}{outputSequence \Sconc \seq{\reccons{\kw{mk-}}{ft,\fnapply{interrupt.GetTime}{}}}};
+\end{op}
+\begin{op}[e]{StepPlan}%
+\signature{() \Oto ()}
+\parms{}
+\annlab[o]{FlareDispenser`StepPlan}
+\If currentStep \Le  \Len \fnapply{responseDB}{currentMissileValue}
+\Then \\
+\begin{blockstmt}
+\begin{letstmt}
+\patdef{\reccons{\kw{mk-}}{flare,-}}{\fnapply{\fnapply{responseDB}{currentMissileValue}}{currentStep}}
+\end{letstmt} \\
+\call{ReleaseAFlare}{flare} ; \\
+\ass{currentStep}{currentStep + 1}
+\end{blockstmt}
+\Else \\
+\begin{blockstmt}
+\ass{currentMissileValue}{\const{None}} ; \\
+\ass{currentStep}{0}
+\end{blockstmt}
+\Fi;
+\end{op}
+\kw{\kw{public}}\begin{op}[e]{GetResult}%
+\signature{() \Oto \seqof*{\Lp FlareType \X \Nat  \Rp }}
+\parms{}
+\annlab[o]{FlareDispenser`GetResult}
+\return{outputSequence};
+\end{op}
+\kw{\kw{public}}\begin{op}[e]{GetCurrentStep}%
+\signature{() \Oto \Nat }
+\parms{}
+\annlab[o]{FlareDispenser`GetCurrentStep}
+\return{currentStep};
+\end{op}
+\kw{\kw{public}}\begin{op}[e]{NewMissileValue}%
+\signature{Sensor`MissileType \Oto ()}
+\parms{misType}
+\annlab[o]{FlareDispenser`NewMissileValue}
+\begin{blockstmt}
+$interrupt$.\call{Inter}{} ; \\
+\ass{latestMissileValue}{misType} ; \\
+\ass{fresh}{\True }
+\end{blockstmt}
+\end{op}
+{\small\sf end} {\it FlareDispenser}
+
+\end{vdm}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{tabular}{p{25mm}l}
+{\bf Test Suite :} & vdm.tc \\ 
+{\bf Class :} & FlareDispenser \\ 
+\end{tabular}
+
+\begin{longtable}{|l|r|r|}\hline
+{\bf FlareDispenser`NewMissileValue} & {\bf \#Calls} & {\bf Coverage} \kill
+{\bf Name} & {\bf \#Calls} & {\bf Coverage} \\ \hline\hline
+\endhead
+FlareDispenser`Step & 88 & $\surd$ \\ \hline
+FlareDispenser`StepPlan & 21 & $\surd$ \\ \hline
+FlareDispenser`GetResult & 4 & $\surd$ \\ \hline
+FlareDispenser`StartPlan & 7 & $\surd$ \\ \hline
+FlareDispenser`ReleaseAFlare & 17 & $\surd$ \\ \hline
+FlareDispenser`StepAlgorithm & 47 & $\surd$ \\ \hline
+FlareDispenser`CheckFreshData & 7 & $\surd$ \\ \hline
+FlareDispenser`FlareDispenser & 4 & $\surd$ \\ \hline
+FlareDispenser`GetCurrentStep & 33 & $\surd$ \\ \hline
+FlareDispenser`HigherPriority & 7 & $\surd$ \\ \hline
+FlareDispenser`NewMissileValue & 7 & $\surd$ \\ \hline
+\hline
+{\bf Total Coverage} & & {\bf 100\%} \\ \hline
+\end{longtable}
+
+

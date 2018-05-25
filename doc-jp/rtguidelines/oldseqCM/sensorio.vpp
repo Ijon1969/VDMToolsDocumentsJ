@@ -1,0 +1,32 @@
+\begin{vdm_al}
+class SensorIO is subclass of IO
+
+instance variables
+
+curIndex : nat := 0;
+mvList   : seq of (Sensor`MissileType * Sensor`Angle) := [];
+
+operations
+
+public SensorIO : () ==> SensorIO
+SensorIO() ==
+( let mk_(-,list) = freadval[seq1 of (Sensor`MissileType * Sensor`Angle)]
+                            ("scenario.txt")
+  in
+    mvList := list;
+    curIndex := 1;
+);
+
+public readThreat : () ==> [Sensor`MissileType * Sensor`Angle]
+readThreat() ==
+  if curIndex <= len mvList
+  then (curIndex := curIndex + 1;
+        return mvList(curIndex-1))
+  else return nil;
+
+end SensorIO
+\end{vdm_al}
+
+\begin{rtinfo}[SensorIO`readThreat]
+{vdm.tc}[SensorIO]
+\end{rtinfo}

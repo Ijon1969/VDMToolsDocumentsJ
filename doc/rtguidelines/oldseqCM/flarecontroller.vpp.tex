@@ -1,0 +1,178 @@
+\begin{vdm}{\small\sf class} $FlareController$
+\par
+\kInstanceVarDef
+\parlinebr
+\begin{insvar}
+\assdef{dispensers}{FlareDispenser`MagId \Gmap FlareDispenser}
+\end{insvar}
+\begin{insvar}
+\assdef{missileDetectorRef}{MissileDetector}
+\end{insvar}
+\begin{insvar}
+\assdef{noMoreMissiles}{\Bool }[{\False }]
+\end{insvar}
+\par
+\kValues
+\val{mag1}[FlareDispenser`MagId]{\color{not-covered}\reccons{\kw{mk-} \Token}{\Dquote Magazine\hspace{0.5em}1 \Dquote }\color{covered};}
+\val{mag2}[FlareDispenser`MagId]{\color{not-covered}\reccons{\kw{mk-} \Token}{\Dquote Magazine\hspace{0.5em}2 \Dquote }\color{covered};}
+\val{mag3}[FlareDispenser`MagId]{\color{not-covered}\reccons{\kw{mk-} \Token}{\Dquote Magazine\hspace{0.5em}3 \Dquote }\color{covered};}
+\val{mag4}[FlareDispenser`MagId]{\color{not-covered}\reccons{\kw{mk-} \Token}{\Dquote Magazine\hspace{0.5em}4 \Dquote }\color{covered};}
+\val{magids}[\setof{FlareDispenser`MagId}]{\color{not-covered}\set{mag1,mag2,mag3,mag4}\color{covered}}
+\kOperations
+\kw{\kw{public}}\begin{op}[e]{Init}%
+\signature{MissileDetector \X Timer \Oto ()}
+\parms{initMissileDetector,initTimerRef}
+\annlab[o]{FlareController`Init}
+\begin{blockstmt}
+\ass{missileDetectorRef}{initMissileDetector} ; \\
+\ass{dispensers}{\mapcomp{mag \Mapsto \fnapply{\new{FlareDispenser}}{mag,initTimerRef}} \\
+{mag \In magids}}
+\end{blockstmt};
+\end{op}
+\kw{\kw{public}}\begin{op}[e]{Step}%
+\signature{() \Oto ()}
+\parms{}
+\annlab[o]{FlareController`Step}
+\begin{setfor}{magid}{magids}
+\fnapply{dispensers}{magid}.\call{Step}{}
+\end{setfor};
+\end{op}
+\kw{\kw{public}}\begin{op}[e]{IsFinished}%
+\signature{() \Oto \Bool }
+\parms{}
+\annlab[o]{FlareController`IsFinished}
+\return{noMoreMissiles \And  \\
+\all{magid \In magids}{\fnapply{\fnapply{dispensers}{magid}.GetCurrentStep}{} = 0}};
+\end{op}
+\kw{\kw{public}}\begin{op}[e]{GetResult}%
+\signature{() \Oto FlareDispenser`MagId \Gmap \seqof*{\Lp FlareDispenser`FlareType \X \Nat  \Rp }}
+\parms{}
+\annlab[o]{FlareController`GetResult}
+\return{\mapcomp{magid \Mapsto \fnapply{\fnapply{dispensers}{magid}.GetResult}{}}{magid \In magids}};
+\end{op}
+\kw{\kw{public}}\begin{op}[e]{MissileIsHere}%
+\signature{\Opt{Sensor`MissileType \X Sensor`Angle} \Oto ()}
+\parms{newMissileValue}
+\annlab[o]{FlareController`MissileIsHere}
+\begin{blockstmt}
+\If newMissileValue = \Nil 
+\Then \\
+\ass{noMoreMissiles}{\True }
+\Elseif newMissileValue.\#1 \Neq \const{None}
+\Then \\
+\begin{letstmt}
+\patdef{\reccons{\kw{mk-}}{misType,angle}}{newMissileValue}
+\patdef{magid}{\fnapply{Angle2MagId}{angle}}
+\end{letstmt} \\
+\fnapply{dispensers}{magid}.\call{NewMissileValue}{misType}
+\Fi
+\end{blockstmt}
+\end{op}
+\kFunctions
+\begin{fn}[e]{Angle2MagId}%
+\signature{Sensor`Angle \To FlareDispenser`MagId}
+\parms*{\Lp angle\Rp }
+\annlab[o]{FlareController`Angle2MagId}
+\If angle < 90
+\Then \\
+mag1
+\Elseif angle < 180
+\Then \\
+mag2
+\Elseif angle < 270
+\Then \\
+mag3
+\Else \\
+mag4
+\Fi
+\end{fn}
+{\small\sf end} {\it FlareController}
+
+\end{vdm}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{tabular}{p{25mm}l}
+{\bf Test Suite :} & vdm.tc \\ 
+{\bf Class :} & FlareController \\ 
+\end{tabular}
+
+\begin{longtable}{|l|r|r|}\hline
+{\bf FlareController`MissileIsHere} & {\bf \#Calls} & {\bf Coverage} \kill
+{\bf Name} & {\bf \#Calls} & {\bf Coverage} \\ \hline\hline
+\endhead
+FlareController`Init & 1 & $\surd$ \\ \hline
+FlareController`Step & 22 & $\surd$ \\ \hline
+FlareController`GetResult & 1 & $\surd$ \\ \hline
+FlareController`IsFinished & 36 & $\surd$ \\ \hline
+FlareController`Angle2MagId & 7 & $\surd$ \\ \hline
+FlareController`MissileIsHere & 8 & $\surd$ \\ \hline
+\hline
+{\bf Total Coverage} & & {\bf 100\%} \\ \hline
+\end{longtable}
+
+

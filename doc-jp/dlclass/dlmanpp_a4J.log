@@ -1,0 +1,320 @@
+This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.euc) (TeX Live 2017) (preloaded format=platex 2017.7.6)  25 MAY 2018 19:01
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**dlmanpp_a4J.tex
+(./dlmanpp_a4J.tex
+pLaTeX2e <2017/05/05> (based on LaTeX2e <2017-04-15>)
+Babel <3.12> and hyphenation patterns for 84 language(s) loaded.
+(/opt/texlive/2016/texmf-dist/tex/platex/base/jarticle.cls
+Document Class: jarticle 2017/03/05 v1.7e Standard pLaTeX class
+\c@@paper=\count82
+(/opt/texlive/2016/texmf-dist/tex/platex/base/jsize12.clo
+File: jsize12.clo 2017/03/05 v1.7e Standard pLaTeX file (size option)
+)
+\c@part=\count83
+\c@section=\count84
+\c@subsection=\count85
+\c@subsubsection=\count86
+\c@paragraph=\count87
+\c@subparagraph=\count88
+\c@figure=\count89
+\c@table=\count90
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\symmincho=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `mincho' in version `bold'
+(Font)                  JY1/mc/m/n --> JY1/gt/m/n on input line 613.
+\toclineskip=\dimen118
+\@lnumwidth=\dimen119
+\bibindent=\dimen120
+\heisei=\count91
+)
+(/opt/texlive/2016/texmf-dist/tex/latex/toolbox/toolbox.sty
+toolbox.sty by M. Vaeth: The TeX Programmer's Toolbox 5.1
+Package: toolbox 2004/04/29 v5.1
+) (./vdmsl-2e.sty
+BSI VDM SL style option <96/05/07> version 1.1.35b for LaTeX2e
+This version of the macros contains some changes
+which are not backwards compatible with previous
+versions. See sections 6.4.10, 12.4.1 and 12.4.2
+of the user guide.
+Also see sections 5.4.1, 5.5.1, 5.5.7 and 5.6.1
+\symAMSa=\mathgroup5
+\symAMSb=\mathgroup6
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 114.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/cmr/m/it on input line 114.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/cmr/m/it on input line 114.
+\w@Rindent=\dimen121
+\c@module=\count92
+\c@outer=\count93
+\c@inner=\count94
+\w@outer=\dimen122
+\w@inner=\dimen123
+\wi@ln=\dimen124
+\w@small@indent=\dimen125
+\w@Indent=\dimen126
+\w@IIndent=\dimen127
+\w@IIIndent=\dimen128
+\w@DIndent=\dimen129
+\wi@indent=\dimen130
+\endMacroSkip=\skip43
+\wi@id=\dimen131
+\wi@blo=\dimen132
+\wi@sep=\dimen133
+\wi@old@indent=\dimen134
+\wi@w@blo=\dimen135
+\t@bl@one=\toks15
+\tmp@box=\box42
+\t@ModuleName=\toks16
+\preModuleSkip=\skip44
+\postModuleSkip=\skip45
+\preInterfaceSkip=\skip46
+\postInterfaceSkip=\skip47
+\preFromSkip=\skip48
+\preInstanceSkip=\skip49
+\preModulesignatureSkip=\skip50
+\preDefinitionsSkip=\skip51
+\postDefinitionsSkip=\skip52
+\preTypesdefSkip=\skip53
+\postTypesdefSkip=\skip54
+\preTypeSkip=\skip55
+\postTypeSkip=\skip56
+\preStatedefSkip=\skip57
+\postStatedefSkip=\skip58
+\preInvfnSkip=\skip59
+\postInvfnSkip=\skip60
+\preInitfnSkip=\skip61
+\preValuesdefSkip=\skip62
+\postValuesdefSkip=\skip63
+\preValdefSkip=\skip64
+\postValdefSkip=\skip65
+\preValueSkip=\skip66
+\postValueSkip=\skip67
+\preFuncdefSkip=\skip68
+\postFuncdefSkip=\skip69
+\preFndefSkip=\skip70
+\postFndefSkip=\skip71
+\preFnSkip=\skip72
+\postFnSkip=\skip73
+\t@fnop@name=\toks17
+\postSignatureSkip=\skip74
+\prePrecondSkip=\skip75
+\prePostcondSkip=\skip76
+\preOperdefSkip=\skip77
+\postOperdefSkip=\skip78
+\preOpdefSkip=\skip79
+\postOpdefSkip=\skip80
+\preOpSkip=\skip81
+\postOpSkip=\skip82
+\wi@wr=\dimen136
+\preExceptionsSkip=\skip83
+\preStmtSkip=\skip84
+\postStmtSkip=\skip85
+\preExprSkip=\skip86
+\postExprSkip=\skip87
+\wi@q@expr=\dimen137
+\car@out=\dimen138
+\coun@car@out=\count95
+\old@indent=\dimen139
+\old@expr=\dimen140
+\w@AnnIndent=\dimen141
+\wi@ann=\dimen142
+\wi@ainn=\dimen143
+\AnnSkip=\skip88
+\preAnnotationsSkip=\skip89
+\postAnnotationsSkip=\skip90
+\@expr@box=\box43
+\wi@expr=\dimen144
+\preProofSkip=\skip91
+\postProofSkip=\skip92
+\w@ProofIndent=\dimen145
+\w@ProofNumber=\dimen146
+\@indentLevel=\count96
+\@indentCount=\count97
+) (/opt/texlive/2016/texmf-dist/tex/latex/base/makeidx.sty
+Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
+)
+(/opt/texlive/2016/texmf-dist/tex/latex/base/alltt.sty
+Package: alltt 1997/06/16 v2.0g defines alltt environment
+)
+(/opt/texlive/2016/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks18
+\verbatim@line=\toks19
+\verbatim@in@stream=\read1
+)
+(/opt/texlive/2016/texmf-dist/tex/latex/moreverb/moreverb.sty
+Package: moreverb 2008/06/03 v2.3a `more' verbatim facilities
+\tab@position=\count98
+\tab@size=\count99
+\listing@line=\count100
+)
+(/opt/texlive/2016/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2017/03/14 v6.85a Hypertext links for LaTeX
+
+(/opt/texlive/2016/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
+
+
+(/opt/texlive/2016/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: pdfTeX >= 1.30 not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode not found.
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
+)
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+)
+(/opt/texlive/2016/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks20
+)
+(/home/yomori/lib/tex/macros/ifxetex.sty
+Package: ifxetex 2008/09/18 v0.4 Provides ifxetex conditional
+)
+(/opt/texlive/2016/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+)
+(/opt/texlive/2016/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+)
+\@linkdim=\dimen147
+\Hy@linkcounter=\count101
+\Hy@pagecounter=\count102
+
+(/opt/texlive/2016/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2017/03/14 v6.85a Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count103
+
+(/opt/texlive/2016/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Option `bookmarks' set `true' on input line 4374.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 4374
+.
+Package hyperref Info: Option `colorlinks' set `true' on input line 4374.
+Package hyperref Info: Option `plainpages' set `true' on input line 4374.
+Package hyperref Info: Hyper figures OFF on input line 4498.
+Package hyperref Info: Link nesting OFF on input line 4503.
+Package hyperref Info: Hyper index ON on input line 4506.
+Package hyperref Info: Plain pages ON on input line 4511.
+Package hyperref Info: Backreferencing OFF on input line 4518.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4751.
+\c@Hy@tempcnt=\count104
+
+(/opt/texlive/2016/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5104.
+\XeTeXLinkMargin=\dimen148
+\Fld@menulength=\count105
+\Field@Width=\dimen149
+\Fld@charsize=\dimen150
+Package hyperref Info: Hyper figures OFF on input line 6358.
+Package hyperref Info: Link nesting OFF on input line 6363.
+Package hyperref Info: Hyper index ON on input line 6366.
+Package hyperref Info: backreferencing OFF on input line 6373.
+Package hyperref Info: Link coloring ON on input line 6376.
+Package hyperref Info: Link coloring with OCG OFF on input line 6383.
+Package hyperref Info: PDF/A mode OFF on input line 6388.
+LaTeX Info: Redefining \ref on input line 6428.
+LaTeX Info: Redefining \pageref on input line 6432.
+\Hy@abspage=\count106
+\c@Item=\count107
+\c@Hfootnote=\count108
+)
+
+Package hyperref Message: Driver: hdvipdfm.
+
+(/opt/texlive/2016/texmf-dist/tex/latex/hyperref/hdvipdfm.def
+File: hdvipdfm.def 2017/03/14 v6.85a Hyperref driver for dvipdfm
+\pdfm@box=\box44
+\c@Hy@AnnotLevel=\count109
+\HyField@AnnotCount=\count110
+\Fld@listcount=\count111
+\c@bookmark@seq@number=\count112
+
+(/opt/texlive/2016/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip93
+)
+(/opt/texlive/2016/texmf-dist/tex/latex/cite/cite.sty
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 332.
+Package: cite 2015/02/27  v 5.5
+)
+(/opt/texlive/2016/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip94
+\LTright=\skip95
+\LTpre=\skip96
+\LTpost=\skip97
+\LTchunksize=\count113
+\LTcapwidth=\dimen151
+\LT@head=\box45
+\LT@firsthead=\box46
+\LT@foot=\box47
+\LT@lastfoot=\box48
+\LT@cols=\count114
+\LT@rows=\count115
+\c@LT@tables=\count116
+\c@LT@chunks=\count117
+\LT@p@ftn=\toks21
+)
+! Undefined control sequence.
+<recently read> \definecolor 
+                             
+l.89 \definecolor
+                 {covered}{rgb}{0,0,0}     %black
+? x
+ 
+Here is how much of TeX's memory you used:
+ 5477 strings out of 493648
+ 75196 string characters out of 6151003
+ 165081 words of memory out of 5000000
+ 9089 multiletter control sequences out of 15000+600000
+ 8877 words of font info for 36 fonts, out of 8000000 for 9000
+ 929 hyphenation exceptions out of 8191
+ 28i,1n,21p,189b,133s stack positions out of 5000i,500n,10000p,200000b,80000s
+No pages of output.

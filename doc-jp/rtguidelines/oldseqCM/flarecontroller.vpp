@@ -1,0 +1,71 @@
+\begin{vdm_al}
+class FlareController
+
+instance variables
+
+dispensers          : map FlareDispenser`MagId to FlareDispenser;
+missileDetectorRef  : MissileDetector;
+noMoreMissiles      : bool := false;
+
+values
+
+  mag1 : FlareDispenser`MagId = mk_token("Magazine 1");
+  mag2 : FlareDispenser`MagId = mk_token("Magazine 2");
+  mag3 : FlareDispenser`MagId = mk_token("Magazine 3");
+  mag4 : FlareDispenser`MagId = mk_token("Magazine 4");
+  magids : set of FlareDispenser`MagId = {mag1, mag2, mag3, mag4};
+
+operations
+
+public Init : MissileDetector * Timer ==> ()
+Init(initMissileDetector, initTimerRef) ==
+  (missileDetectorRef := initMissileDetector;
+   dispensers := {mag |-> new FlareDispenser(mag,initTimerRef) 
+                 | mag in set magids}
+  );
+
+public Step : () ==> ()
+Step() ==
+  for all magid in set magids do
+    dispensers(magid).Step();
+
+public IsFinished : () ==> bool
+IsFinished() == 
+  return noMoreMissiles and 
+         forall magid in set magids & dispensers(magid).GetCurrentStep() = 0;
+
+
+public GetResult : () ==> map FlareDispenser`MagId to 
+                              seq of (FlareDispenser`FlareType * nat)
+GetResult() == 
+  return {magid |-> dispensers(magid).GetResult() | magid in set magids};
+
+public MissileIsHere : [Sensor`MissileType * Sensor`Angle] ==> ()
+MissileIsHere(newMissileValue) ==
+( if newMissileValue = nil
+  then noMoreMissiles := true
+  elseif newMissileValue.#1 <> <None>
+  then let mk_(misType,angle) = newMissileValue,
+           magid = Angle2MagId(angle)
+       in
+         dispensers(magid).NewMissileValue(misType)
+);
+
+functions
+
+  Angle2MagId: Sensor`Angle -> FlareDispenser`MagId
+  Angle2MagId(angle) ==
+    if angle < 90
+    then mag1
+    elseif angle < 180
+    then mag2
+    elseif angle < 270
+    then mag3
+    else mag4
+
+end FlareController
+\end{vdm_al}
+
+\begin{rtinfo}[FlareController`MissileIsHere]
+{vdm.tc}[FlareController]
+\end{rtinfo}

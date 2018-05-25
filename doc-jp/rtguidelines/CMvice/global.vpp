@@ -1,0 +1,45 @@
+\begin{vdm_al}
+class GLOBAL
+
+values
+  public センサ観測可能角度 = 90;
+  public 火炎弾対応可能角度 = 120;
+  public 容器対応角度範囲 = 30
+
+types
+  -- there are three different types of ミサイルs
+  public ミサイルタイプ = <ミサイルA> | <ミサイルB> | <ミサイルC>;
+
+  -- there are nine different 火炎弾 types, three per ミサイル
+  public 火炎弾タイプ =
+    <火炎弾OneA> | <火炎弾TwoA> | <DoNothingA> | 
+    <火炎弾OneB> | <火炎弾TwoB> | <DoNothingB> | 
+    <火炎弾OneC> | <火炎弾TwoC> | <DoNothingC>;
+
+  -- the angle at which the ミサイル is incoming
+  public 角度 = nat
+  inv angle == angle < 360;
+
+public 事象ID = nat;
+
+public Time = nat
+
+operations
+  public canObserve: 角度 * 角度 * 角度 ==> bool
+  canObserve (p角度, p左端角度, p対応角度) ==
+    def  w右端角度 = (p左端角度 + p対応角度) mod 360 in
+      if  w右端角度 < p左端角度
+      -- check between [0, w右端角度> and [p左端角度,360>
+      then return (p角度 <  w右端角度 or p角度 >= p左端角度)
+      -- check between [p左端角度,  w右端角度>
+      else return (p角度 >= p左端角度 and p角度 <  w右端角度);
+       
+  public 対応可能左端角度を得る: () ==> 角度 * 角度
+  対応可能左端角度を得る () == is subclass responsibility;
+
+end GLOBAL
+\end{vdm_al}
+
+\begin{rtinfo}[GLOBAL`canObserve]
+{vdm.tc}[GLOBAL]
+\end{rtinfo}

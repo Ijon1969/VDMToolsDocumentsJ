@@ -1,0 +1,54 @@
+This is pBibTeX, Version 0.99d-j0.33 (utf8.euc) (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: cgmanpp_a4J.aux
+The style file: alpha.bst
+Database file #1: ifad.bib
+Warning--I'm ignoring UserManPP-SCSK's extra "key" field
+--line 69618 of file ifad.bib
+Warning--I'm ignoring LangManPP-SCSK's extra "key" field
+--line 69641 of file ifad.bib
+Warning--I'm ignoring LibMan-SCSK's extra "key" field
+--line 69665 of file ifad.bib
+You've used 5 entries,
+            2543 wiz_defined-function locations,
+            581 strings with 4790 characters,
+and the built_in function-call counts, 1302 in all, are:
+= -- 125
+> -- 40
+< -- 5
++ -- 16
+- -- 10
+* -- 62
+:= -- 221
+add.period$ -- 15
+call.type$ -- 5
+change.case$ -- 20
+chr.to.int$ -- 1
+cite$ -- 5
+duplicate$ -- 65
+empty$ -- 106
+format.name$ -- 20
+if$ -- 257
+int.to.chr$ -- 5
+int.to.str$ -- 0
+missing$ -- 0
+newline$ -- 28
+num.names$ -- 15
+pop$ -- 50
+preamble$ -- 1
+purify$ -- 30
+quote$ -- 0
+skip$ -- 29
+stack$ -- 0
+substring$ -- 37
+swap$ -- 10
+text.length$ -- 5
+text.prefix$ -- 5
+top$ -- 0
+type$ -- 40
+warning$ -- 0
+while$ -- 10
+width$ -- 7
+write$ -- 57
+is.kanji.str$ -- 0
+(There were 3 warnings)

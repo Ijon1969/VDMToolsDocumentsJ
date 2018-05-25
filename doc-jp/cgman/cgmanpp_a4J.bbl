@@ -1,0 +1,28 @@
+\begin{thebibliography}{SCSd}
+
+\bibitem[SCSa]{LibMan-SCSK}
+SCSK.
+\newblock {\em The VDM C++ Library}.
+\newblock SCSK.
+
+\bibitem[SCSb]{InstallPPMan-SCSK}
+SCSK.
+\newblock {\em VDM++ Installation Guide}.
+\newblock SCSK.
+
+\bibitem[SCSc]{LangManPP-SCSK}
+SCSK.
+\newblock {\em The VDM++ Language}.
+\newblock SCSK.
+
+\bibitem[SCSd]{SortExpp-SCSK}
+SCSK.
+\newblock {\em VDM++ Sorting Algorithms}.
+\newblock SCSK.
+
+\bibitem[SCSe]{UserManPP-SCSK}
+SCSK.
+\newblock {\em VDM++ Toolbox User Manual}.
+\newblock SCSK.
+
+\end{thebibliography}

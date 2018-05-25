@@ -1,0 +1,93 @@
+\begin{vdm_al}
+class 火炎弾コントローラ is subclass of GLOBAL
+
+instance variables
+
+-- the left hand-side of the working angle
+private s対応可能左端角度 : 角度;
+
+-- maintain a link to each 容器
+s対応角度範囲写像 : map nat to (角度 * 角度) := {|->};
+s容器写像 : map nat to 火炎弾容器 := {|->};
+inv dom s対応角度範囲写像 = dom s容器写像;
+
+-- the relevant events to be treated by this controller
+ｓ脅威列 : seq of (事象ID * ミサイルタイプ * 角度 * Time) := [];
+
+-- the status of the controller
+busy : bool := false
+
+operations
+
+public 火炎弾コントローラ: 角度 ==> 火炎弾コントローラ
+火炎弾コントローラ (papp) == s対応可能左端角度 := papp;
+
+public add容器: 火炎弾容器 ==> ()
+add容器 (pfldisp) ==
+  let angle = s対応可能左端角度 + pfldisp.Get角度() in
+    (dcl id : nat := card dom s対応角度範囲写像 + 1;
+     atomic
+      (s対応角度範囲写像 := s対応角度範囲写像 munion 
+                 {id |-> mk_(angle, 容器対応角度範囲)};
+       s容器写像 := s容器写像 munion {id |-> pfldisp}
+      );
+      start (pfldisp) );
+
+-- get the left hand-side start point and opening angle
+public 対応可能左端角度を得る: () ==> GLOBAL`角度 * GLOBAL`角度
+対応可能左端角度を得る () == return mk_(s対応可能左端角度, 火炎弾対応可能角度);
+
+-- add脅威 is a helper operation to modify the event
+-- list. currently events are stored first come first served.
+-- one could imagine using a different ordering instead
+async public add脅威: 事象ID * ミサイルタイプ * 角度 * Time ==> ()
+add脅威 (evid,pmt,pa,pt) ==
+  (ｓ脅威列 := ｓ脅威列 ^ [mk_ (evid,pmt,pa,pt)];
+   busy := true );
+
+-- get脅威 is a local helper operation to modify the event list
+private get脅威: () ==> 事象ID * ミサイルタイプ * 角度 * Time
+get脅威 () ==
+  (dcl res : 事象ID * ミサイルタイプ * 角度 * Time := hd ｓ脅威列;
+   ｓ脅威列 := tl ｓ脅威列;
+   return res );
+
+public isFinished: () ==> ()
+isFinished () ==
+  for all id in set dom s容器写像 do
+    s容器写像(id).isFinished();
+
+sync
+
+-- add脅威 and get脅威 modify the same instance variables
+-- therefore they need to be declared mutual exclusive
+mutex (add脅威,get脅威);
+
+-- get脅威 is used as a 'blocking read' from the main
+-- thread of control of the ミサイル s探知器
+per get脅威 => len ｓ脅威列 > 0;
+per isFinished => not busy
+
+thread
+
+-- the 火炎弾 controller continuously processes sensor
+-- events. getThread is automatically blocked if there
+-- are no ｓ脅威列 available
+(-- first start the 容器 threads
+ for all id in set dom s容器写像 do
+   start (s容器写像(id));
+ -- now enter the event handling loop
+ while true do
+   (def mk_ (w事象ID,wミサイルタイプ, w角度, w時間) = get脅威() in
+      for all id in set dom s対応角度範囲写像 do
+        def mk_(w対応左端角度, w対応角度) = s対応角度範囲写像(id) in
+          if canObserve(w角度, w対応左端角度, w対応角度)
+          then s容器写像(id).add脅威(w事象ID,wミサイルタイプ,w時間);
+    busy := len ｓ脅威列 > 0 ) )
+
+end 火炎弾コントローラ
+\end{vdm_al}
+
+\begin{rtinfo}[火炎弾コントローラ`火炎弾コントローラ]
+{vdm.tc}[火炎弾コントローラ]
+\end{rtinfo}

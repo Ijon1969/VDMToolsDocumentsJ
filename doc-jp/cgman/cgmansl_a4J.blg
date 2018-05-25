@@ -1,0 +1,58 @@
+This is pBibTeX, Version 0.99d-j0.33 (utf8.euc) (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: cgmansl_a4J.aux
+The style file: alpha.bst
+Database file #1: ifad.bib
+Warning--I'm ignoring UserMan-SCSK's extra "key" field
+--line 69610 of file ifad.bib
+Warning--I'm ignoring SortEx-SCSK's extra "key" field
+--line 69626 of file ifad.bib
+Warning--I'm ignoring LangManPP-SCSK's extra "key" field
+--line 69641 of file ifad.bib
+Warning--I'm ignoring LangMan-SCSK's extra "key" field
+--line 69657 of file ifad.bib
+Warning--I'm ignoring LibMan-SCSK's extra "key" field
+--line 69665 of file ifad.bib
+You've used 6 entries,
+            2543 wiz_defined-function locations,
+            585 strings with 4905 characters,
+and the built_in function-call counts, 1560 in all, are:
+= -- 150
+> -- 48
+< -- 6
++ -- 20
+- -- 12
+* -- 74
+:= -- 264
+add.period$ -- 18
+call.type$ -- 6
+change.case$ -- 24
+chr.to.int$ -- 1
+cite$ -- 6
+duplicate$ -- 78
+empty$ -- 127
+format.name$ -- 24
+if$ -- 308
+int.to.chr$ -- 6
+int.to.str$ -- 0
+missing$ -- 0
+newline$ -- 33
+num.names$ -- 18
+pop$ -- 60
+preamble$ -- 1
+purify$ -- 36
+quote$ -- 0
+skip$ -- 34
+stack$ -- 0
+substring$ -- 45
+swap$ -- 12
+text.length$ -- 6
+text.prefix$ -- 6
+top$ -- 0
+type$ -- 48
+warning$ -- 0
+while$ -- 12
+width$ -- 9
+write$ -- 68
+is.kanji.str$ -- 0
+(There were 5 warnings)

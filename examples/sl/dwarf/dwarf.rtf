@@ -1,0 +1,276 @@
+{\rtf1\ansi\ansicpg1252\uc1 \deff0\deflang1033\deflangfe1033{\fonttbl{\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman{\*\falt Times New Roman};}{\f1\fswiss\fcharset0\fprq2{\*\panose 020b0604020202020204}Arial{\*\falt Arial};}
+{\f2\fmodern\fcharset0\fprq1{\*\panose 02070309020205020404}Courier New;}{\f6\fmodern\fcharset0\fprq1{\*\panose 00000000000000000000}Courier{\*\falt Courier New};}{\f527\froman\fcharset238\fprq2 Times New Roman CE{\*\falt Times New Roman};}
+{\f528\froman\fcharset204\fprq2 Times New Roman Cyr{\*\falt Times New Roman};}{\f530\froman\fcharset161\fprq2 Times New Roman Greek{\*\falt Times New Roman};}{\f531\froman\fcharset162\fprq2 Times New Roman Tur{\*\falt Times New Roman};}
+{\f532\froman\fcharset186\fprq2 Times New Roman Baltic{\*\falt Times New Roman};}{\f533\fswiss\fcharset238\fprq2 Arial CE{\*\falt Arial};}{\f534\fswiss\fcharset204\fprq2 Arial Cyr{\*\falt Arial};}
+{\f536\fswiss\fcharset161\fprq2 Arial Greek{\*\falt Arial};}{\f537\fswiss\fcharset162\fprq2 Arial Tur{\*\falt Arial};}{\f538\fswiss\fcharset186\fprq2 Arial Baltic{\*\falt Arial};}{\f539\fmodern\fcharset238\fprq1 Courier New CE;}
+{\f540\fmodern\fcharset204\fprq1 Courier New Cyr;}{\f542\fmodern\fcharset161\fprq1 Courier New Greek;}{\f543\fmodern\fcharset162\fprq1 Courier New Tur;}{\f544\fmodern\fcharset186\fprq1 Courier New Baltic;}}{\colortbl;\red0\green0\blue0;
+\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;
+\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;}{\stylesheet{\nowidctlpar\widctlpar\adjustright \cgrid \snext0 Normal;}{\s1\sb240\sa60\keepn\nowidctlpar\widctlpar\adjustright 
+\b\f1\fs28\lang2057\kerning28\cgrid \sbasedon0 \snext0 heading 1;}{\s2\sb240\sa60\keepn\nowidctlpar\widctlpar\adjustright \b\i\f1\lang2057\cgrid \sbasedon0 \snext0 heading 2;}{\*\cs10 \additive Default Paragraph Font;}{
+\s15\nowidctlpar\widctlpar\adjustright \shading1000 \f2\fs20\lang1024\cgrid \snext15 VDM;}{\*\cs16 \additive \f6 \sbasedon10 VDM_COV;}{\*\cs17 \additive \f6\cf6\chshdng5000\chcfpat0\chcbpat8 \sbasedon10 VDM_NCOV;}{\s18\nowidctlpar\widctlpar\adjustright 
+\shading1000 \f2\fs20\lang1024\cgrid \sbasedon15 \snext18 VDM_TC_TABLE;}}{\info{\title A VDM-SL Specification of the Dwarf Signal Controller}{\author peter}{\operator peter}{\creatim\yr1998\mo7\dy30\hr9\min6}{\revtim\yr1998\mo8\dy19\hr8\min26}
+{\printim\yr1998\mo8\dy19\hr8\min16}{\version14}{\edmins162}{\nofpages5}{\nofwords1335}{\nofchars7613}{\*\company SCSK}{\nofcharsws0}{\vern71}}\paperw11909\paperh16834\margl1325\margr1325 
+\widowctrl\ftnbj\aenddoc\hyphcaps0\formshade\viewkind4\viewscale100\pgbrdrhead\pgbrdrfoot \fet0{\*\template F:\\MSOFFICE\\Templates\\VDM.dot}\sectd \psz9\linex0\endnhere\sectdefaultcl {\*\pnseclvl1\pnucrm\pnstart1\pnindent720\pnhang{\pntxta .}}
+{\*\pnseclvl2\pnucltr\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl3\pndec\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl4\pnlcltr\pnstart1\pnindent720\pnhang{\pntxta )}}{\*\pnseclvl5\pndec\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}
+{\*\pnseclvl6\pnlcltr\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl7\pnlcrm\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl8\pnlcltr\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl9
+\pnlcrm\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}\pard\plain \s1\qc\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel0\adjustright \b\f1\fs28\lang2057\kerning28\cgrid {\lang1030 A VDM-SL Specification of the Dwarf Signal Controller
+\par }\pard\plain \s2\qc\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel1\adjustright \b\i\f1\lang2057\cgrid {Peter Gorm Larsen, SCSK
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \cgrid {
+\par The lamps can simply be identified by their names:
+\par 
+\par }\pard\plain \s15\nowidctlpar\widctlpar\adjustright \shading1000 \f2\fs20\lang1024\cgrid {types
+\par 
+\par   LampId = <L1> | <L2> | <L3>;
+\par 
+\par values
+\par 
+\par   darklamps: set of LampId = \{\};
+\par 
+\par   stoplamps: set of LampId = \{<L1>,<L2>\};
+\par 
+\par   warninglamps: set of LampId = \{<L1>,<L3>\};
+\par 
+\par   drivelamps: set of LampId = \{<L2>,<L3>\};
+\par 
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \cgrid {The signals with 3 lamps can be modelled using a type definition called Signal as:
+\par 
+\par }\pard\plain \s15\nowidctlpar\widctlpar\adjustright \shading1000 \f2\fs20\lang1024\cgrid {types
+\par 
+\par   Signal = map LampId to Lamp
+\par   inv m == dom m = \{<L1>,<L2>,<L3>\};
+\par 
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \cgrid {A lamp has ports and scanners. The VDM model could actually be simplied here because we do not treat ports and scanners differently.
+\par 
+\par }\pard\plain \s15\nowidctlpar\widctlpar\adjustright \shading1000 \f2\fs20\lang1024\cgrid {  Lamp ::
+\par      ports    : set of PortId
+\par      scanners : set of ScanId;
+\par 
+\par   PortId = <A> | <B>;
+\par 
+\par   ScanId = <LA> | <LB> | <SA> | <SB> | <SAB>;
+\par 
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \cgrid {
+Because some of the ports and scanners are inverted it may make sense to introduce a number of constant value definitions. Below this is done to indicate whether a lamp is on or off and which of the fixed signal states we have been given (dark,
+ stop,warning,drive).
+\par 
+\par }\pard\plain \s15\nowidctlpar\widctlpar\adjustright \shading1000 \f2\fs20\lang1024\cgrid {values
+\par 
+\par   L1On : Lamp = mk_Lamp(\{\},\{<SA>,<SB>,<LA>\});
+\par 
+\par   L1Off: Lamp = mk_Lamp(\{<A>,<B>\},\{<SAB>,<LB>\});
+\par 
+\par   L2On : Lamp = L1On;
+\par 
+\par   L2Off: Lamp = L1Off;
+\par 
+\par   L3On : Lamp = L1Off;
+\par 
+\par   L3Off: Lamp = L1On;
+\par 
+\par   darksignals: Signal = \{<L1> |-> L1Off,
+\par                          <L2> |-> L2Off,
+\par                          <L3> |-> L3Off\};
+\par                                         
+\par   stopsignals: Signal = \{<L1> |-> L1On,
+\par                          <L2> |-> L2On,
+\par                          <L3> |-> L3Off\};
+\par                                         
+\par   warningsignals: Signal = \{<L1> |-> L1On,
+\par                             <L2> |-> L2Off,
+\par                             <L3> |-> L3On\};
+\par 
+\par   drivesignals: Signal = \{<L1> |-> L1Off,
+\par                           <L2> |-> L2On,
+\par                           <L3> |-> L3On\};
+\par                                         
+\par 
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \cgrid {We must also introduce types to take care of the different kind of input we can give to the control system and the output which can come from the system. The logical commands 
+which can be used are gathered in the type LogCom whereas the messages which can be returned to the user are gathered in the type Message. The errors which can be generated by the control system are specific to an element (either a port or a scanner) and 
+an indication of the error is given using the mapping Errors.
+\par }\pard\plain \s15\nowidctlpar\widctlpar\adjustright \shading1000 \f2\fs20\lang1024\cgrid {types
+\par   
+\par   LogCom = <stop> | <dark> | <drive> | <warning>;
+\par 
+\par   Message = LogCom | <unknown> | <port_failure>;
+\par 
+\par   Errors = map ElemId to [<ABU> | <ANU>];
+\par 
+\par   ElemId = PortId | ScanId;
+\par 
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \cgrid {The main oper
+ation for this small controller is called Control. Given a logical command and an indication of the elements for which a failure should be simulated a message and a collection of errors are returned. Note that we have abstracted away from the way errors a
+r
+e deteckted in the real system (waiting 200 ms) because that part of the software is not interesting to investigate the control logic of the system requirements. At  a later stage this information may be taken into account but for now we think that it is 
+interesting first to validate the correctness of the requirements to the logic of the system. 
+\par 
+\par The operation is defined by getting a new state for the system given the command under the assumption that no failures are present. Afterwards an error correctio
+n is meant to take place depending upon the different failures. In the currenmt version of this VDM model this corrective action have not yet been properly dealt with.
+\par 
+\par }\pard\plain \s15\nowidctlpar\widctlpar\adjustright \shading1000 \f2\fs20\lang1024\cgrid {operations
+\par 
+\par   Control: [LogCom] * set of LampId ==> Message * Errors * Trace
+\par   Control(com,failures) ==
+\par     let newstate = NormalTrans(com)
+\par     in
+\par       ErrorCorrection(com,newstate,failures) 
+\par   pre AllowedCommand(com,lampstate);
+\par 
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \cgrid {The requirement that it is only allowed to move from and to the dark state is captured in a small auxiliary function called AllowedCommand. 
+\par 
+\par }\pard\plain \s15\nowidctlpar\widctlpar\adjustright \shading1000 \f2\fs20\lang1024\cgrid {functions
+\par 
+\par   AllowedCommand: [LogCom] * Signal +> bool
+\par   AllowedCommand(com,signal) ==
+\par     (com = <dark> => signal in set \{stopsignals,darksignals\}) and
+\par     (com in set \{<warning>,<drive>\} => signal <> darksignals);
+\par 
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \cgrid {This func
+tion was called with the lampstate of the system. The entire state of the system is defined as having two components (a trace of the system which is simply a set of the lamps which are on and the current signal state for the lamps). A number of invariants
+ 
+are defined for the state expressing different requirements given the the Dwarf signal requirements document. The auxiliary functions used in the invariant are given at the end of this document. The initial state of the system is that the stop state is us
+ed. This was not in the original requirements document but was revealed sepereately via email afterwards.
+\par 
+\par }\pard\plain \s15\nowidctlpar\widctlpar\adjustright \shading1000 \f2\fs20\lang1024\cgrid {types
+\par 
+\par   Trace = seq of set of LampId;
+\par 
+\par state Dwarf of
+\par     trace : Trace
+\par     lampstate : Signal
+\par   inv mk_Dwarf(t,s) == 
+\par           MaxOneLampChange(t) and 
+\par           StopToDriveOrWarning(t) and
+\par           ToAndFromDark(t) and
+\par           AlwaysDefinedState(s) -- this may change when error are 
+\par                                 -- taken into account
+\par   init s == s = mk_Dwarf([stoplamps],stopsignals)
+\par end
+\par 
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \cgrid {The normal transition function takes the logical command and return the way the state should be changed if no failures are present.
+\par 
+\par }\pard\plain \s15\nowidctlpar\widctlpar\adjustright \shading1000 \f2\fs20\lang1024\cgrid {operations
+\par 
+\par   NormalTrans: [LogCom] ==> Dwarf
+\par   NormalTrans(command) ==
+\par     cases command:
+\par       nil       -> return mk_Dwarf([],lampstate),
+\par       <dark>    -> let t = if lampstate = stopsignals
+\par                            then [\{<L1>\},darklamps]
+\par                            else [] -- already in darksignals state
+\par                    in
+\par                      return mk_Dwarf(t,darksignals),
+\par       <stop>    -> let t = if lampstate = darksignals
+\par                            then [\{<L1>\},stoplamps]
+\par                            elseif lampstate = warningsignals
+\par                            then [\{<L1>\},stoplamps]
+\par                            elseif lampstate = drivesignals
+\par                            then [\{<L2>\},stoplamps]
+\par                            else [] -- already in stopsignals state
+\par                    in
+\par                      return mk_Dwarf(t,stopsignals),
+\par       <warning> -> let t = if lampstate = drivesignals
+\par                            then [\{<L3>\},warninglamps]
+\par                            elseif lampstate = stopsignals
+\par                            then [\{<L1>\},warninglamps]
+\par                            else [] -- already in warningsignals state
+\par                    in
+\par                      return mk_Dwarf(t,warningsignals),
+\par       <drive>   -> let t = if lampstate = warningsignals
+\par                            then [\{<L3>\},drivelamps]
+\par                            elseif lampstate = stopsignals
+\par                            then [\{<L2>\},drivelamps]
+\par                            else [] -- already in drivesignals state
+\par                    in
+\par                      return mk_Dwarf(t,drivesignals)
+\par     end
+\par   pre AllowedCommand(command,lampstate);
+\par 
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \cgrid {The error correction is no
+t yet made. Thus, an empty sequence of failures are always returned and the state from the NormalTransition is always inserted into the overall state. This must naturally be changed.
+\par 
+\par }\pard\plain \s15\nowidctlpar\widctlpar\adjustright \shading1000 \f2\fs20\lang1024\cgrid {  ErrorCorrection: [LogCom] * Dwarf * set of LampId ==> 
+\par                    Message * Errors * Trace
+\par   ErrorCorrection(com,dwarf,failures) ==
+\par      if failures = \{<L2>\}
+\par      then (cases com:
+\par              nil       -> let curlamps = trace(len trace)
+\par                           in
+\par                             if <L2> in set curlamps
+\par                             then }{let errdwarf = NormalTrans(<warning>)
+\par }{       }{                          in
+\par        }{       }{                     NoCo}{rrection(com,errdwarf,failures)}{
+\par }{                            else NoCorrection(com,dwarf,failures),
+\par              <dark>    -> NoCorrection(com,dwarf,failures),
+\par              <stop>    -> let errdwarf = NormalTrans(<warning>)
+\par                           in
+\par                             NoCorrection(com,errdwarf,failures),
+\par              <warning> -> NoCorrection(com,dwarf,failures),
+\par              <drive>   -> }{let errdwarf = NormalTrans(<warning>)
+\par                           in
+\par                             NoCorrection(com,errdwarf,failures)}{
+\par            end;
+\par           )
+\par      else (-- other error sitiuations have not yet been coped with
+\par            NoCorrection(com,dwarf,failures));
+\par 
+\par   NoCorrection: [LogCom] * Dwarf * set of LampId ==> 
+\par                 Message * Errors * Trace
+\par   NoCorrection(com,mk_Dwarf(newtr,newsignals),failures) ==
+\par     (trace := trace ^ newtr;
+\par      lampstate := newsignals;
+\par      let m = if failures <> \{\}
+\par              then <port_failure>
+\par              else}{if com = nil
+\par              then <unknown>
+\par              else}{ com
+\par      in
+\par        return mk_(m,\{|->\},newtr));
+\par 
+\par functions
+\par 
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \cgrid {The requirements state that maximum one lamp at the time may be changed.
+\par 
+\par }\pard\plain \s15\nowidctlpar\widctlpar\adjustright \shading1000 \f2\fs20\lang1024\cgrid {  MaxOneLampChange: Trace +> bool
+\par   MaxOneLampChange(t) ==
+\par     forall i in set inds t \\ \{1\} &
+\par         card (t(i \endash 1) \\  t(i)) <= 1 and card (t(i) \\ t(i \endash  1)) <= 1;
+\par 
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \cgrid {The requirements state that neither three nor none lamps must be burning in any intermediate states between stop and drive/warning.
+\par 
+\par }\pard\plain \s15\nowidctlpar\widctlpar\adjustright \shading1000 \f2\fs20\lang1024\cgrid {  StopToDriveOrWarning: Trace +> bool
+\par   StopToDriveOrWarning(t) ==
+\par     forall i,j in set inds t & 
+\par            (i < j and t(i) = stoplamps and 
+\par             t(j) in set \{drivelamps,warninglamps\} and
+\par             not exists k in set \{i+1,...,j-1\} &
+\par                   t(k) in set \{darklamps, warninglamps,drivelamps\}) 
+\par              =>
+\par             forall k in set \{i+1,...,j-1\} & card t(k) < 3 and card t(k) > 0;
+\par 
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \cgrid {The requirements state that the change to and from dark is only allowed from and to stop.
+\par 
+\par }\pard\plain \s15\nowidctlpar\widctlpar\adjustright \shading1000 \f2\fs20\lang1024\cgrid {  ToAndFromDark: Trace +> bool
+\par   ToAndFromDark(t) ==
+\par     forall i in set inds t & t(i) = darklamps => ToOrFromStop(t,i); 
+\par 
+\par   ToOrFromStop: Trace * nat1 +> bool
+\par   ToOrFromStop(t,i) ==
+\par     (i > 2 => t(i \endash  2) = stoplamps) and 
+\par     (i + 1 < len t => t(i + 2) = stoplamps);
+\par 
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \cgrid {In this first model it is assumed that the system is always in a well-known state. This may change when errors are taken into account.
+\par 
+\par }\pard\plain \s15\nowidctlpar\widctlpar\adjustright \shading1000 \f2\fs20\lang1024\cgrid {  AlwaysDefinedState: Signal +> bool
+\par   AlwaysDefinedState(sig) ==
+\par     sig in set \{darksignals, 
+\par                 stopsignals,
+\par                 warningsignals,
+\par                 drivesignals\};
+\par 
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \cgrid {Inverted is a small auxiliary function which I imagine will be convenient to demonstrate whether a port or a scanner is inverted. This may be useful when error correction is incorporated. 
+\par 
+\par }\pard\plain \s15\nowidctlpar\widctlpar\adjustright \shading1000 \f2\fs20\lang1024\cgrid {  Inverted: LampId * ElemId +> bool
+\par   Inverted(lampid,elemid) ==
+\par     lampid in set \{<L1>,<L2>\} and elemid in set \{<A>,<B>,<SAB>,<LB>\} or
+\par     lampid = <L3> and elemid in set \{<SA>,<SB>,<LA>\};
+\par }}

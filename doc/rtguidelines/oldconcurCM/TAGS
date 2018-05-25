@@ -1,0 +1,88 @@
+
+flarecontroller.vpp,434
+dispensers          : map FlareDispenser`MagId to FlareDispenser;6,58
+missileDetectorRef  : MissileDetector;7,124
+  mag1 : FlareDispenser`MagId12,209
+  mag2 : FlareDispenser`MagId13,265
+  mag3 : FlareDispenser`MagId14,321
+  mag4 : FlareDispenser`MagId15,377
+  magids : set of FlareDispenser`MagId16,433
+public Init : MissileDetector * Timer 25,585
+   dispensers 28,719
+  per IsFinished 43,1132
+public MissileIsHere 47,1181
+
+flaredispenser.vpp,892
+magid               : MagId;6,57
+currentMissileValue : Sensor`MissileType7,86
+latestMissileValue  : Sensor`MissileType8,138
+currentStep         : nat 10,244
+--numberOfFreshValues : nat 11,276
+interrupt           : Interrupt;13,347
+responseDB : map Sensor`MissileType to Plan 17,389
+missilePriority : map Sensor`MissileType to nat25,765
+Plan 34,1007
+public PlanStep 36,1032
+public FlareType 38,1068
+   interrupt 57,1579
+  per StepAlgorithm 70,1801
+   latestMissileValue 78,2031
+--   numberOfFreshValues 79,2064
+HigherPriority : Sensor`MissileType * Sensor`MissileType82,2123
+StartPlan : Sensor`MissileType86,2286
+  currentStep 89,2396
+ReleaseAFlare : FlareType 92,2419
+     currentStep 102,2739
+        currentStep 105,2820
+  per IsFinished 116,3004
+public NewMissileValue: Sensor`MissileType120,3054
+   latestMissileValue 123,3154
+   fresh 124,3188
+{vdm.tc}130,3258
+
+interrupt.vpp,144
+timer        : Timer;6,52
+currentAlarm 7,74
+public Interrupt: Timer 13,124
+public Alarm : nat 17,193
+SetAlarm : nat 26,369
+{vdm.tc}41,607
+
+missiledetector.vpp,215
+sensorRef       : Sensor;6,58
+flareControlRef : FlareController;7,84
+threat 8,119
+  per IsFinished 23,361
+Update 27,408
+public Init : Sensor * FlareController 35,646
+   flareControlRef 38,759
+{vdm.tc}45,856
+
+sensor.vpp,185
+public MissileType 6,36
+public Angle 8,105
+io       : SensorIO 13,168
+threat 14,207
+timerRef : Timer;15,273
+    timerRef.Finished(23,390
+  per GetThreat 70,1044
+{vdm.tc}76,1146
+
+sensorio.vpp,58
+curIndex : nat 6,69
+    curIndex 17,348
+{vdm.tc}32,625
+
+timer.vpp,142
+currentTime  : nat 5,33
+currentAlarm 6,60
+public Alarm : nat 16,206
+  per WakeUp 29,414
+SetAlarm : nat 47,672
+  stepLength : nat 61,903
+
+world.vpp,131
+sensor       : Sensor 5,33
+detector     : MissileDetector 6,81
+flareControl : FlareController 7,138
+timerRef     : Timer 8,195

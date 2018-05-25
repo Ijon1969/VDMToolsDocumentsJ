@@ -1,0 +1,9 @@
+This is makeindex, version 2.15 [TeX Live 2017] (kpathsea + Thai support).
+Scanning input file langmanpp_a4J.idx....
+!! Input index error (file = langmanpp_a4J.idx, line = 203):
+   -- Extra `!' at position 11 of first argument.
+done (810 entries accepted, 1 rejected).
+Sorting entries.........done (8403 comparisons).
+Generating output file langmanpp_a4J.ind....done (662 lines written, 0 warnings).
+Output written in langmanpp_a4J.ind.
+Transcript written in langmanpp_a4J.ilg.

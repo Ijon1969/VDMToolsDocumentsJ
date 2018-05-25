@@ -1,0 +1,26 @@
+class SensorIO is subclass of IO
+
+instance variables
+
+curIndex : nat := 0;
+mvList   : seq of Sensor`MissileType := [];
+
+operations
+
+public SensorIO : () ==> SensorIO
+SensorIO() ==
+( let mk_(-,list) = freadval[seq1 of Sensor`MissileType]("scenario.txt")
+  in
+    mvList := list;
+    curIndex := 1;
+    return self
+);
+
+public readMissileValue : () ==> [Sensor`MissileType]
+readMissileValue() ==
+  if curIndex <= len mvList
+  then (curIndex := curIndex + 1;
+        return mvList(curIndex-1))
+  else return nil;
+
+end SensorIO

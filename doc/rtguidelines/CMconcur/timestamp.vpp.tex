@@ -1,0 +1,174 @@
+\begin{vdm}{\small\sf class} $TimeStamp$ {\small\sf is subclass of}  $WaitNotify$\index{TimeStamp|ModDef}
+\par
+\kValues
+\kw{\kw{public}}\val{stepLength}[\Nat ]{10}
+\kInstanceVarDef
+\parlinebr
+\begin{insvar}
+\assdef{currentTime}{\Nat }[{0}]
+\end{insvar}
+\begin{insvar}
+\assdef{wakeUpMap}{\Nat  \Gmap \Nat }[{\Emptymap }]
+\end{insvar}
+\par
+\kOperations
+\kw{\kw{public}}\begin{op}[e]{WaitRelative}\index{WaitRelative|FuncDef}%
+\signature{\Nat  \Oto ()}
+\parms{val}
+\annlab[o]{TimeStamp`WaitRelative}
+\begin{blockstmt}
+\call{AddToWakeUpMap}{\kw{threadid},currentTime + val} ; \\
+\call{WaitNotify`Wait\index{Wait|FuncOcc}}{}
+\end{blockstmt};
+\end{op}
+\kw{\kw{public}}\begin{op}[e]{WaitAbsolute}\index{WaitAbsolute|FuncDef}%
+\signature{\Nat  \Oto ()}
+\parms{val}
+\annlab[o]{TimeStamp`WaitAbsolute}
+\color{not-covered}\begin{blockstmt}
+\call{AddToWakeUpMap}{\kw{threadid},val} ; \\
+\call{WaitNotify`Wait\index{Wait|FuncOcc}}{}
+\end{blockstmt}\color{covered};
+\end{op}
+\begin{op}[e]{AddToWakeUpMap}\index{AddToWakeUpMap|FuncDef}%
+\signature{\Nat  \X \Nat  \Oto ()}
+\parms{tId,val}
+\annlab[o]{TimeStamp`AddToWakeUpMap}
+\ass{wakeUpMap}{wakeUpMap \Override \map{tId \Mapsto val}};
+\end{op}
+\kw{\kw{public}}\begin{op}[e]{NotifyThread}\index{NotifyThread|FuncDef}%
+\signature{\Nat  \Oto ()}
+\parms{tId}
+\annlab[o]{TimeStamp`NotifyThread}
+\begin{blockstmt}
+\ass{wakeUpMap}{\set{tId} \Dby wakeUpMap} ; \\
+\call{WaitNotify`NotifyThread\index{NotifyThread|FuncOcc}}{tId}
+\end{blockstmt};
+\end{op}
+\kw{\kw{public}}\begin{op}[e]{Notify}\index{Notify|FuncDef}%
+\signature{() \Oto ()}
+\parms{}
+\annlab[o]{TimeStamp`Notify}
+\color{not-covered}\Letbe* tId \In  \Dom wakeUpMap \Lin \\
+\call{NotifyThread}{tId}\color{covered};
+\end{op}
+\kw{\kw{public}}\begin{op}[e]{NotifyAll}\index{NotifyAll|FuncDef}%
+\signature{() \Oto ()}
+\parms{}
+\annlab[o]{TimeStamp`NotifyAll}
+\color{not-covered}\begin{blockstmt}
+\ass{wakeUpMap}{\Emptymap } ; \\
+\call{WaitNotify`NotifyAll\index{NotifyAll|FuncOcc}}{}
+\end{blockstmt}\color{covered};
+\end{op}
+\kw{\kw{public}}\begin{op}[e]{NotifyAndIncTime}\index{NotifyAndIncTime|FuncDef}%
+\signature{() \Oto ()}
+\parms{}
+\annlab[o]{TimeStamp`NotifyAndIncTime}
+\begin{blockstmt}
+\ass{currentTime}{currentTime + stepLength} ; \\
+\begin{setfor}{t}{ \Dom \pex{wakeUpMap \Rto \set{currentTime}}}
+\call{NotifyThread}{t}
+\end{setfor}
+\end{blockstmt};
+\end{op}
+\kw{\kw{public}}\begin{op}[e]{GetTime}\index{GetTime|FuncDef}%
+\signature{() \Oto \Nat }
+\parms{}
+\annlab[o]{TimeStamp`GetTime}
+\return{currentTime}
+\end{op}
+\kSync
+
+\mutex{AddToWakeUpMap,Notify,NotifyThread,NotifyAll}
+
+{\small\sf end} {\it TimeStamp}
+
+\end{vdm}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{tabular}{p{25mm}l}
+{\bf Test Suite :} & vdm.tc \\ 
+{\bf Class :} & TimeStamp \\ 
+\end{tabular}
+
+\begin{longtable}{|l|r|r|}\hline
+{\bf TimeStamp`NotifyAndIncTime} & {\bf \#Calls} & {\bf Coverage} \kill
+{\bf Name} & {\bf \#Calls} & {\bf Coverage} \\ \hline\hline
+\endhead
+TimeStamp`Notify & 0 & 0\% \\ \hline
+TimeStamp`GetTime & 1131 & $\surd$ \\ \hline
+TimeStamp`NotifyAll & 0 & 0\% \\ \hline
+TimeStamp`NotifyThread & 4572 & $\surd$ \\ \hline
+TimeStamp`WaitAbsolute & 0 & 0\% \\ \hline
+TimeStamp`WaitRelative & 4693 & $\surd$ \\ \hline
+TimeStamp`AddToWakeUpMap & 4692 & $\surd$ \\ \hline
+TimeStamp`NotifyAndIncTime & 200 & $\surd$ \\ \hline
+\hline
+{\bf Total Coverage} & & {\bf 73\%} \\ \hline
+\end{longtable}
+
+
+

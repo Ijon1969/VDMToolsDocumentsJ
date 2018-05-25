@@ -1,0 +1,37 @@
+\contentsline {section}{\numberline {1}導入}{1}{section.1}
+\contentsline {section}{\numberline {2}コードジェネレータの起動}{2}{section.2}
+\contentsline {subsection}{\numberline {2.1}コード生成のための要件}{2}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}グラフィカルインターフェイスの利用}{2}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}コマンドラインインターフェイスの使用}{5}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}C++ 生成ファイル}{6}{subsection.2.4}
+\contentsline {section}{\numberline {3}生成コードとのインターフェイス接続}{7}{section.3}
+\contentsline {subsection}{\numberline {3.1}VDM-SL 型のコード生成 - 基本}{7}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}ユーザーにより実装されたファイル}{11}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}レコードタグに用いるオフセットの定義}{12}{subsubsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2}陰関数／陰操作および宣言文の実装}{13}{subsubsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.3}メインプログラムの実装}{14}{subsubsection.3.2.3}
+\contentsline {subsubsection}{\numberline {3.2.4}生成された C++ コードの部分的置き換え}{17}{subsubsection.3.2.4}
+\contentsline {subsection}{\numberline {3.3}C++コードのコンパイル、リンク、実行}{18}{subsection.3.3}
+\contentsline {section}{\numberline {4}サポートされていない構成要素}{20}{section.4}
+\contentsline {section}{\numberline {5}VDM 仕様のコード生成　－　詳細}{22}{section.5}
+\contentsline {subsection}{\numberline {5.1}型のコード生成}{22}{subsection.5.1}
+\contentsline {subsubsection}{\numberline {5.1.1}動機付け}{22}{subsubsection.5.1.1}
+\contentsline {subsubsection}{\numberline {5.1.2}VDM-SL 型から C++へのマップ}{25}{subsubsection.5.1.2}
+\contentsline {subsubsection}{\numberline {5.1.3}VDM-SL 型名称のコード生成}{30}{subsubsection.5.1.3}
+\contentsline {subsubsection}{\numberline {5.1.4}不変条件}{32}{subsubsection.5.1.4}
+\contentsline {subsection}{\numberline {5.2}関数定義と操作定義のコード生成}{33}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}値および状態定義のコード生成}{34}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}値定義のコード生成}{35}{subsection.5.4}
+\contentsline {subsection}{\numberline {5.5}式と文のコード生成}{36}{subsection.5.5}
+\contentsline {subsection}{\numberline {5.6}名称仕様}{37}{subsection.5.6}
+\contentsline {subsection}{\numberline {5.7}標準ライブラリ}{37}{subsection.5.7}
+\contentsline {section}{\numberline {A}libCG.a ライブラリ}{39}{appendix.A}
+\contentsline {subsection}{\numberline {A.1}cg.h}{39}{subsection.A.1}
+\contentsline {subsection}{\numberline {A.2}cg\_aux.h}{40}{subsection.A.2}
+\contentsline {section}{\numberline {B}C++ 手書きファイル}{41}{appendix.B}
+\contentsline {subsection}{\numberline {B.1}DefaultMod\_userdef.h}{41}{subsection.B.1}
+\contentsline {subsection}{\numberline {B.2}DefaultMod\_userimpl.cc}{42}{subsection.B.2}
+\contentsline {subsection}{\numberline {B.3}sort\_ex.cc}{43}{subsection.B.3}
+\contentsline {section}{\numberline {C}Makeファイル}{46}{appendix.C}
+\contentsline {subsection}{\numberline {C.1}Unix プラットフォームのための Makeファイル}{46}{subsection.C.1}
+\contentsline {subsection}{\numberline {C.2}Windows プラットフォームのための Makeファイル}{49}{subsection.C.2}

@@ -1,0 +1,239 @@
+\begin{vdm}{\small\sf class} $FlareDispenser$ {\small\sf is subclass of}  $GLOBAL$\index{FlareDispenser|ModDef}
+\par
+\kValues
+\val{responseDB}[MissileType\index{MissileType|TypeOcc} \Gmap Plan\index{Plan|TypeOcc}]{\map{\const{MissileA} \Mapsto \seq{\reccons{\kw{mk-}}{\const{FlareOneA},900}, \\
+\reccons{\kw{mk-}}{\const{FlareTwoA},500}, \\
+\reccons{\kw{mk-}}{\const{DoNothingA},100}, \\
+\reccons{\kw{mk-}}{\const{FlareOneA},500}}, \\
+\const{MissileB} \Mapsto \seq{\reccons{\kw{mk-}}{\const{FlareTwoB},500}, \\
+\reccons{\kw{mk-}}{\const{FlareTwoB},700}}, \\
+\const{MissileC} \Mapsto \seq{\reccons{\kw{mk-}}{\const{FlareOneC},400}, \\
+\reccons{\kw{mk-}}{\const{DoNothingC},100}, \\
+\reccons{\kw{mk-}}{\const{FlareTwoC},400}, \\
+\reccons{\kw{mk-}}{\const{FlareOneC},500}}};}
+\val{missilePriority}[MissileType\index{MissileType|TypeOcc} \Gmap \Nat ]{\map{\const{None} \Mapsto 0, \\
+\const{MissileA} \Mapsto 1, \\
+\const{MissileB} \Mapsto 2, \\
+\const{MissileC} \Mapsto 3}}
+\kTypes
+\type{\kw{public}\kw{ }Plan\index{Plan|TypeDef}}{\seqof*{PlanStep\index{PlanStep|TypeOcc}};}
+\type{\kw{public}\kw{ }PlanStep\index{PlanStep|TypeDef}}{FlareType\index{FlareType|TypeOcc} \X \Nat }
+\kInstanceVarDef
+\parlinebr
+\begin{insvar}\kw{public}
+\assdef{curplan}{Plan\index{Plan|TypeOcc}}[{\seq{}}]
+\end{insvar}
+\begin{insvar}
+\assdef{curprio}{\Nat }[{0}]
+\end{insvar}
+\begin{insvar}
+\assdef{busy}{\Bool }[{\False }]
+\end{insvar}
+\begin{insvar}
+\assdef{angle}{\Nat }
+\end{insvar}
+\begin{insvar}
+\assdef{eventid}{\Opt{EventId\index{EventId|TypeOcc}}}
+\end{insvar}
+\par
+\kOperations
+\kw{\kw{public}}\begin{op}[e]{FlareDispenser}\index{FlareDispenser|FuncDef}%
+\signature{\Nat  \Oto FlareDispenser\index{FlareDispenser|TypeOcc}}
+\parms{ang}
+\annlab[o]{FlareDispenser`FlareDispenser}
+\begin{blockstmt}
+\ass{angle}{ang}
+\end{blockstmt};
+\end{op}
+\kw{\kw{public}}\begin{op}[e]{Step}\index{Step|FuncDef}%
+\signature{() \Oto ()}
+\parms{}
+\annlab[o]{FlareDispenser`Step}
+\If  \Len curplan > 0
+\Then \\
+\begin{blockstmt}
+\begin{dclstmt}
+\assdef{curtime}{\Nat }[{\fnapply{World`timerRef.GetTime}{}}]
+\assdef{first}{PlanStep\index{PlanStep|TypeOcc}}[{ \Hd curplan}]
+\assdef{next}{Plan\index{Plan|TypeOcc}}[{ \Tl curplan}]
+\end{dclstmt}
+\begin{letstmt}
+\patdef{\reccons{\kw{mk-}}{fltp,fltime}}{first}
+\end{letstmt} \\
+\begin{blockstmt}
+\If fltime \Le curtime
+\Then \\
+\begin{blockstmt}
+\call{releaseFlare}{eventid,fltp,fltime,curtime} ; \\
+\ass{curplan}{next} ; \\
+\If  \Len next = 0
+\Then \\
+\begin{blockstmt}
+\ass{curprio}{0} ; \\
+\ass{busy}{\False }
+\end{blockstmt}
+\Fi
+\end{blockstmt}
+\Fi
+\end{blockstmt}
+\end{blockstmt}
+\Fi;
+\end{op}
+\kw{\kw{public}}\begin{op}[e]{GetAngle}\index{GetAngle|FuncDef}%
+\signature{() \Oto \Nat }
+\parms{}
+\annlab[o]{FlareDispenser`GetAngle}
+\return{angle};
+\end{op}
+\kw{\kw{public}}\begin{op}[e]{addThreat}\index{addThreat|FuncDef}%
+\signature{EventId\index{EventId|TypeOcc} \X MissileType\index{MissileType|TypeOcc} \X \Nat  \Oto ()}
+\parms{evid,pmt,ptime}
+\annlab[o]{FlareDispenser`addThreat}
+\If \fnapply{missilePriority}{pmt} > curprio
+\Then \\
+\begin{blockstmt}
+\begin{dclstmt}
+\assdef{newplan}{Plan\index{Plan|TypeOcc}}[{\seq{}}]
+\assdef{newtime}{\Nat }[{ptime}]
+\end{dclstmt}
+\begin{seqfor}{\reccons{\kw{mk-}}{fltp,fltime}}{\fnapply{responseDB}{pmt}}
+\begin{blockstmt}
+\ass{newplan}{newplan \Sconc \seq{\reccons{\kw{mk-}}{fltp,newtime}}} ; \\
+\ass{newtime}{newtime + fltime}
+\end{blockstmt}
+\end{seqfor} ; \\
+\begin{defstmt}
+\eqdef{\reccons{\kw{mk-}}{fltp,fltime}}{ \Hd newplan}
+\end{defstmt} \\
+\call{releaseFlare}{evid,fltp,fltime,\fnapply{World`timerRef.GetTime}{}} ; \\
+\ass{curplan}{ \Tl newplan} ; \\
+\ass{eventid}{evid} ; \\
+\ass{curprio}{\fnapply{missilePriority}{pmt}} ; \\
+\ass{busy}{\True }
+\end{blockstmt}
+\Fi;
+\end{op}
+\kw{\kw{private}}\begin{op}[e]{releaseFlare}\index{releaseFlare|FuncDef}%
+\signature{EventId\index{EventId|TypeOcc} \X FlareType\index{FlareType|TypeOcc} \X \Nat  \X \Nat  \Oto ()}
+\parms{evid,pfltp,pt1,pt2}
+\annlab[o]{FlareDispenser`releaseFlare}
+World`env.\call{handleEvent}{evid,pfltp,angle,pt1,pt2};
+\end{op}
+\kw{\kw{public}}\begin{op}[e]{isFinished}\index{isFinished|FuncDef}%
+\signature{() \Oto \Bool }
+\parms{}
+\annlab[o]{FlareDispenser`isFinished}
+\return{ \Not busy}
+\end{op}
+{\small\sf end} {\it FlareDispenser}
+
+\end{vdm}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{tabular}{p{25mm}l}
+{\bf Test Suite :} & vdm.tc \\ 
+{\bf Class :} & FlareDispenser \\ 
+\end{tabular}
+
+\begin{longtable}{|l|r|r|}\hline
+{\bf FlareDispenser`FlareDispenser} & {\bf \#Calls} & {\bf Coverage} \kill
+{\bf Name} & {\bf \#Calls} & {\bf Coverage} \\ \hline\hline
+\endhead
+FlareDispenser`Step & 2412 & $\surd$ \\ \hline
+FlareDispenser`GetAngle & 12 & $\surd$ \\ \hline
+FlareDispenser`addThreat & 7 & $\surd$ \\ \hline
+FlareDispenser`isFinished & 250 & $\surd$ \\ \hline
+FlareDispenser`releaseFlare & 21 & $\surd$ \\ \hline
+FlareDispenser`FlareDispenser & 12 & $\surd$ \\ \hline
+\hline
+{\bf Total Coverage} & & {\bf 100\%} \\ \hline
+\end{longtable}
+
+
+

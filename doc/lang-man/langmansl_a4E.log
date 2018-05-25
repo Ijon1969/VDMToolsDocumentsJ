@@ -1,0 +1,1885 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.8.15)  16 AUG 2016 19:37
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**langmansl_a4E.tex
+(./langmansl_a4E.tex
+LaTeX2e <2015/01/01>
+Babel <3.9l> and hyphenation patterns for 79 languages loaded.
+(/opt/texlive/2015/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/opt/texlive/2015/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) (./toolbox.sty
+Package: toolbox 1998/10/05 Toolbox Style. V1.2
+
+(/opt/texlive/2015/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+\fancy@headwidth=\skip43
+\f@ncyO@elh=\skip44
+\f@ncyO@erh=\skip45
+\f@ncyO@olh=\skip46
+\f@ncyO@orh=\skip47
+\f@ncyO@elf=\skip48
+\f@ncyO@erf=\skip49
+\f@ncyO@olf=\skip50
+\f@ncyO@orf=\skip51
+)
+(/opt/texlive/2015/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/opt/texlive/2015/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/opt/texlive/2015/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+
+(/opt/texlive/2015/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/opt/texlive/2015/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 94.
+
+(/opt/texlive/2015/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/opt/texlive/2015/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/opt/texlive/2015/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count87
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+(/opt/texlive/2015/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2014/10/28 v1.1a Standard LaTeX Color (DPC)
+
+(/opt/texlive/2015/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 142.
+)
+(/opt/texlive/2015/texmf-dist/tex/latex/psnfss/pifont.sty
+Package: pifont 2005/04/12 PSNFSS-v9.2a Pi font support (SPQR) 
+LaTeX Font Info:    Try loading font information for U+pzd on input line 63.
+
+(/opt/texlive/2015/texmf-dist/tex/latex/psnfss/upzd.fd
+File: upzd.fd 2001/06/04 font definitions for U/pzd.
+)
+LaTeX Font Info:    Try loading font information for U+psy on input line 64.
+
+(/opt/texlive/2015/texmf-dist/tex/latex/psnfss/upsy.fd
+File: upsy.fd 2001/06/04 font definitions for U/psy.
+))
+(/opt/texlive/2015/texmf-dist/tex/latex/rotating/rotating.sty
+Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
+
+(/opt/texlive/2015/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\c@r@tfl@t=\count88
+\rotFPtop=\skip52
+\rotFPbot=\skip53
+\rot@float@box=\box26
+\rot@mess@toks=\toks15
+)
+\ToolboxLogo=\box27
+
+<QU-logo.jpg, id=1, 347.2975pt x 62.2325pt>
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 81.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+\aabox=\box28
+)
+(../../doc/latex/vdmsl-2e.sty
+BSI VDM SL style option <96/05/07> version 1.1.35b for LaTeX2e
+This version of the macros contains some changes
+which are not backwards compatible with previous
+versions. See sections 6.4.10, 12.4.1 and 12.4.2
+of the user guide.
+Also see sections 5.4.1, 5.5.1, 5.5.7 and 5.6.1
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 114.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/cmr/m/it on input line 114.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/cmr/m/it on input line 114.
+\w@Rindent=\dimen105
+\c@module=\count89
+\c@outer=\count90
+\c@inner=\count91
+\w@outer=\dimen106
+\w@inner=\dimen107
+\wi@ln=\dimen108
+\w@small@indent=\dimen109
+\w@Indent=\dimen110
+\w@IIndent=\dimen111
+\w@IIIndent=\dimen112
+\w@DIndent=\dimen113
+\wi@indent=\dimen114
+\endMacroSkip=\skip54
+\wi@id=\dimen115
+\wi@blo=\dimen116
+\wi@sep=\dimen117
+\wi@old@indent=\dimen118
+\wi@w@blo=\dimen119
+\t@bl@one=\toks16
+\tmp@box=\box29
+\t@ModuleName=\toks17
+\preModuleSkip=\skip55
+\postModuleSkip=\skip56
+\preInterfaceSkip=\skip57
+\postInterfaceSkip=\skip58
+\preFromSkip=\skip59
+\preInstanceSkip=\skip60
+\preModulesignatureSkip=\skip61
+\preDefinitionsSkip=\skip62
+\postDefinitionsSkip=\skip63
+\preTypesdefSkip=\skip64
+\postTypesdefSkip=\skip65
+\preTypeSkip=\skip66
+\postTypeSkip=\skip67
+\preStatedefSkip=\skip68
+\postStatedefSkip=\skip69
+\preInvfnSkip=\skip70
+\postInvfnSkip=\skip71
+\preInitfnSkip=\skip72
+\preValuesdefSkip=\skip73
+\postValuesdefSkip=\skip74
+\preValdefSkip=\skip75
+\postValdefSkip=\skip76
+\preValueSkip=\skip77
+\postValueSkip=\skip78
+\preFuncdefSkip=\skip79
+\postFuncdefSkip=\skip80
+\preFndefSkip=\skip81
+\postFndefSkip=\skip82
+\preFnSkip=\skip83
+\postFnSkip=\skip84
+\t@fnop@name=\toks18
+\postSignatureSkip=\skip85
+\prePrecondSkip=\skip86
+\prePostcondSkip=\skip87
+\preOperdefSkip=\skip88
+\postOperdefSkip=\skip89
+\preOpdefSkip=\skip90
+\postOpdefSkip=\skip91
+\preOpSkip=\skip92
+\postOpSkip=\skip93
+\wi@wr=\dimen120
+\preExceptionsSkip=\skip94
+\preStmtSkip=\skip95
+\postStmtSkip=\skip96
+\preExprSkip=\skip97
+\postExprSkip=\skip98
+\wi@q@expr=\dimen121
+\car@out=\dimen122
+\coun@car@out=\count92
+\old@indent=\dimen123
+\old@expr=\dimen124
+\w@AnnIndent=\dimen125
+\wi@ann=\dimen126
+\wi@ainn=\dimen127
+\AnnSkip=\skip99
+\preAnnotationsSkip=\skip100
+\postAnnotationsSkip=\skip101
+\@expr@box=\box30
+\wi@expr=\dimen128
+\preProofSkip=\skip102
+\postProofSkip=\skip103
+\w@ProofIndent=\dimen129
+\w@ProofNumber=\dimen130
+\@indentLevel=\count93
+\@indentCount=\count94
+) (/opt/texlive/2015/texmf-dist/tex/latex/base/makeidx.sty
+Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
+)
+(/opt/texlive/2015/texmf-dist/tex/latex/base/alltt.sty
+Package: alltt 1997/06/16 v2.0g defines alltt environment
+)
+(/home/yomori/lib/tex/macros/here.sty)
+(/opt/texlive/2015/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count95
+\float@exts=\toks19
+\float@box=\box31
+\@float@everytoks=\toks20
+\@floatcapt=\box32
+)
+(/opt/texlive/2015/texmf-dist/tex/latex/tools/array.sty
+Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen131
+\extrarowheight=\dimen132
+\NC@list=\toks21
+\extratabsurround=\skip104
+\backup@length=\skip105
+)
+(/opt/texlive/2015/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip106
+\LTright=\skip107
+\LTpre=\skip108
+\LTpost=\skip109
+\LTchunksize=\count96
+\LTcapwidth=\dimen133
+\LT@head=\box33
+\LT@firsthead=\box34
+\LT@foot=\box35
+\LT@lastfoot=\box36
+\LT@cols=\count97
+\LT@rows=\count98
+\c@LT@tables=\count99
+\c@LT@chunks=\count100
+\LT@p@ftn=\toks22
+)
+(/opt/texlive/2015/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
+
+(/opt/texlive/2015/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
+
+
+(/opt/texlive/2015/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
+)
+Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
+Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+Package: hopatch 2012/05/28 v1.2 Wrapper for package hooks (HO)
+Package: xcolor-patch 2011/01/30 xcolor patch
+Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
+Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
+)
+(/home/yomori/lib/tex/macros/ifxetex.sty
+Package: ifxetex 2008/09/18 v0.4 Provides ifxetex conditional
+)
+(/opt/texlive/2015/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
+)
+(/opt/texlive/2015/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+)
+\@linkdim=\dimen134
+\Hy@linkcounter=\count101
+\Hy@pagecounter=\count102
+
+(/opt/texlive/2015/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count103
+
+(/opt/texlive/2015/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Option `bookmarks' set `true' on input line 4319.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 4319
+.
+Package hyperref Info: Option `colorlinks' set `true' on input line 4319.
+Package hyperref Info: Option `plainpages' set `true' on input line 4319.
+Package hyperref Info: Hyper figures OFF on input line 4443.
+Package hyperref Info: Link nesting OFF on input line 4448.
+Package hyperref Info: Hyper index ON on input line 4451.
+Package hyperref Info: Plain pages ON on input line 4456.
+Package hyperref Info: Backreferencing OFF on input line 4463.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4688.
+\c@Hy@tempcnt=\count104
+
+(/opt/texlive/2015/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5041.
+\XeTeXLinkMargin=\dimen135
+\Fld@menulength=\count105
+\Field@Width=\dimen136
+\Fld@charsize=\dimen137
+Package hyperref Info: Hyper figures OFF on input line 6295.
+Package hyperref Info: Link nesting OFF on input line 6300.
+Package hyperref Info: Hyper index ON on input line 6303.
+Package hyperref Info: backreferencing OFF on input line 6310.
+Package hyperref Info: Link coloring ON on input line 6313.
+Package hyperref Info: Link coloring with OCG OFF on input line 6320.
+Package hyperref Info: PDF/A mode OFF on input line 6325.
+LaTeX Info: Redefining \ref on input line 6365.
+LaTeX Info: Redefining \pageref on input line 6369.
+\Hy@abspage=\count106
+\c@Item=\count107
+\c@Hfootnote=\count108
+)
+
+Package hyperref Message: Driver: hpdftex.
+
+(/opt/texlive/2015/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
+\Fld@listcount=\count109
+\c@bookmark@seq@number=\count110
+
+(/opt/texlive/2015/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip110
+)
+\nonstandlen=\skip111
+\@indexfile=\write3
+\openout3 = `langmansl_a4E.idx'.
+
+
+Writing index file langmansl_a4E.idx
+(./langmansl_a4E.aux)
+\openout1 = `langmansl_a4E.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 145.
+LaTeX Font Info:    ... okay on input line 145.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 145.
+LaTeX Font Info:    ... okay on input line 145.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 145.
+LaTeX Font Info:    ... okay on input line 145.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 145.
+LaTeX Font Info:    ... okay on input line 145.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 145.
+LaTeX Font Info:    ... okay on input line 145.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 145.
+LaTeX Font Info:    ... okay on input line 145.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 145.
+LaTeX Font Info:    ... okay on input line 145.
+
+(/opt/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count111
+\scratchdimen=\dimen138
+\scratchbox=\box37
+\nofMPsegments=\count112
+\nofMParguments=\count113
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count114
+\MPscratchDim=\dimen139
+\MPnumerator=\count115
+\makeMPintoPDFobject=\count116
+\everyMPtoPDFconversion=\toks24
+) (/opt/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/opt/texlive/2015/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/opt/texlive/2015/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+\AtBeginShipoutBox=\box38
+Package hyperref Info: Link coloring ON on input line 145.
+
+(/opt/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
+
+(/opt/texlive/2015/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count117
+)
+LaTeX Info: Redefining \ref on input line 145.
+LaTeX Info: Redefining \pageref on input line 145.
+LaTeX Info: Redefining \nameref on input line 145.
+
+(./langmansl_a4E.out) (./langmansl_a4E.out)
+\@outlinefile=\write4
+\openout4 = `langmansl_a4E.out'.
+
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 150.
+
+
+(/opt/texlive/2015/texmf-dist/tex/latex/psnfss/ot1phv.fd
+File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
+)
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <52> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 150.
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <22> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 150.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 150.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 150.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 150.
+
+<QUcover-logo.jpg, id=538, 150.5625pt x 156.585pt>
+File: QUcover-logo.jpg Graphic file (type jpg)
+ <use QUcover-logo.jpg>
+Package pdftex.def Info: QUcover-logo.jpg used on input line 150.
+(pdftex.def)             Requested size: 150.56212pt x 156.58461pt.
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <12> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 150.
+
+<vdmtools-logo.png, id=539, 634.37pt x 634.37pt>
+File: vdmtools-logo.png Graphic file (type png)
+ <use vdmtools-logo.png>
+Package pdftex.def Info: vdmtools-logo.png used on input line 150.
+(pdftex.def)             Requested size: 634.36844pt x 634.36844pt.
+
+[1{/home/yomori/.texlive2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+ <./QUcover-logo.jpg> <./vdmtools-logo.png>]
+Overfull \hbox (22.52678pt too wide) in paragraph at lines 150--150
+[][] 
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 150.
+
+(/opt/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <14.4> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 150.
+
+Overfull \hbox (15.39844pt too wide) in paragraph at lines 150--150
+[][] 
+ []
+
+[2] (./langmansl_a4E.toc
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 36.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.36 ...12}Apply Expressions}{55}{subsection.7.12}
+                                                   [1 <./QU-logo.jpg>]
+File: QU-logo.jpg Graphic file (type jpg)
+
+<use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 70.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.70 ... VDM-SL and\\ ISO/VDM-SL}{114}{section.16}
+                                                   [2]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 109.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+
+[3])
+\tf@toc=\write5
+\openout5 = `langmansl_a4E.toc'.
+
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 150.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [4]
+\kwlen=\skip112
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 202.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 202.
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 255.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.255 
+       [1]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 307.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.307 
+       [2]
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 314.
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 351.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.351 
+       [3]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 399.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.399 
+       [4]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 474.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [5]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 501.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [6]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 581.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+
+[7] (./sem-numtypes.tex
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 29.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [8])
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 615.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [9]
+File: QU-logo.jpg Graphic file (type jpg)
+
+<use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 666.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [10]
+LaTeX Font Info:    Try loading font information for OMS+cmtt on input line 712
+.
+LaTeX Font Info:    No file OMScmtt.fd. on input line 712.
+
+
+LaTeX Font Warning: Font shape `OMS/cmtt/m/n' undefined
+(Font)              using `OMS/cmsy/m/n' instead
+(Font)              for symbol `textbraceleft' on input line 712.
+
+File: QU-logo.jpg Graphic file (type jpg)
+<use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 733.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [11]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 777.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [12]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 839.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [13]
+(./sem-settypes.tex
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
+[]|\OT1/cmr/m/n/12 Distributes in-ter-
+ []
+
+File: QU-logo.jpg Graphic file (type jpg)
+<use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 39.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [14])
+Overfull \hbox (3.52661pt too wide) in paragraph at lines 849--851
+[]\OT1/cmr/m/n/12 Let \OT1/cmtt/m/n/12 s1 = \OMS/cmtt/m/n/12 f\OT1/cmtt/m/n/12 
+<France>,<Denmark>,<SouthAfrica>,<SaudiArabia>\OMS/cmtt/m/n/12 g\OT1/cmr/m/n/12
+ ,
+ []
+
+File: QU-logo.jpg Graphic file (type jpg)
+<use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 899.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [15]
+Overfull \hbox (1.53334pt too wide) in paragraph at lines 922--928
+[]\OT1/cmtt/m/n/12 [e | id \OT1/cmss/m/n/12 in set \OT1/cmtt/m/n/12 S & P] \OT1
+/cmr/m/n/12 con-structs a se-quence
+ []
+
+
+Overfull \hbox (18.66905pt too wide) in paragraph at lines 936--958
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+(./sem-seqtypes.tex
+Underfull \hbox (badness 2005) in paragraph at lines 14--15
+[]|\OT1/cmr/m/n/12 yields the set of in-dexes of \OT1/cmtt/m/n/12 l\OT1/cmr/m/n
+/12 , i.e. the set
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--21
+[]|\OT1/cmr/m/n/12 Distributed con-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--29
+[]|\OT1/cmr/m/n/12 Sequence ap-pli-ca-
+ []
+
+File: QU-logo.jpg Graphic file (type jpg)
+<use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 31.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [16])
+Overfull \hbox (25.424pt too wide) in alignment at lines 973--996
+ [] [] [] 
+ []
+
+File: QU-logo.jpg Graphic file (type jpg)
+<use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 1012.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [17]
+Overfull \hbox (20.58704pt too wide) in paragraph at lines 1046--1049
+[]\OMS/cmtt/m/n/12 f\OT1/cmtt/m/n/12 a1 |-> b1, a2 |-> b2, ..., an |-> bn\OMS/c
+mtt/m/n/12 g \OT1/cmr/m/n/12 con-structs
+ []
+
+File: QU-logo.jpg Graphic file (type jpg)
+<use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 1061.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [18]
+Overfull \hbox (49.64958pt too wide) in paragraph at lines 1063--1090
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+(./sem-maptypes.tex
+Underfull \hbox (badness 4543) in paragraph at lines 26--26
+[]|\OT1/cmr/m/n/12 Domain re-stricted
+ []
+
+
+Underfull \hbox (badness 4543) in paragraph at lines 29--29
+[]|\OT1/cmr/m/n/12 Domain re-stricted
+ []
+
+File: QU-logo.jpg Graphic file (type jpg)
+<use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 58.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [19])
+Underfull \hbox (badness 10000) in paragraph at lines 1109--1109
+\OT1/cmtt/m/n/12 <SouthAfrica>,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1132--1132
+\OT1/cmtt/m/n/12 <SouthAfrica> |-> 2,
+ []
+
+File: QU-logo.jpg Graphic file (type jpg)
+<use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 1186.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [20]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 1198.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [21]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 1258.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [22]
+File: QU-logo.jpg Graphic file (type jpg)
+
+<use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 1326.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [23] (./sem-comtypes.tex
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 7.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [24])
+File: QU-logo.jpg Graphic file (type jpg)
+
+<use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 1436.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [25]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 1493.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [26]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 1573.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [27]
+Overfull \hbox (9.5391pt too wide) in paragraph at lines 1629--1642
+[][][][][][][][][][][][] 
+ []
+
+File: QU-logo.jpg Graphic file (type jpg)
+<use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 1643.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [28] (./sem-functypes.tex
+Underfull \hbox (badness 1694) in paragraph at lines 8--8
+[]|\OT1/cmr/m/n/12 Function com-po-si-
+ []
+
+)
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 1671.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [29]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 1793.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [30]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 1846.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [31]
+File: QU-logo.jpg Graphic file (type jpg)
+
+<use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 1913.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [32]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 1975.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [33]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 2020.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [34]
+File: QU-logo.jpg Graphic file (type jpg)
+
+<use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 2062.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [35]
+Overfull \hbox (6.73283pt too wide) in paragraph at lines 2082--2085
+\OT1/cmr/m/n/12 Before we can use the above func-tion, we have to in-stan-ti-at
+e the func-tion \OT1/cmtt/m/n/12 empty[]bag
+ []
+
+
+Overfull \hbox (7.0728pt too wide) in paragraph at lines 2097--2097
+[]  \OT1/cmtt/m/n/12 plus_bag[@elem] : @elem * (\OT1/cmss/m/n/12 map \OT1/cmtt/
+m/n/12 @elem \OT1/cmss/m/n/12 to nat1\OT1/cmtt/m/n/12 ) +> (\OT1/cmss/m/n/12 ma
+p \OT1/cmtt/m/n/12 @elem \OT1/cmss/m/n/12 to nat1\OT1/cmtt/m/n/12 )[] 
+ []
+
+File: QU-logo.jpg Graphic file (type jpg)
+<use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 2104.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [36]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 2147.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [37]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 2210.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [38]
+File: QU-logo.jpg Graphic file (type jpg)
+
+<use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 2254.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [39]
+Overfull \hbox (0.88776pt too wide) in paragraph at lines 2266--2271
+[]\OT1/cmr/m/it/12 Let-be-such-that ex-pres-sions \OT1/cmr/m/n/12 are use-ful f
+or ab-stract-ing away the non-essential
+ []
+
+File: QU-logo.jpg Graphic file (type jpg)
+<use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 2298.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [40]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 2358.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [41]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 2411.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [42]
+File: QU-logo.jpg Graphic file (type jpg)
+
+<use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 2469.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [43]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 2523.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [44]
+Overfull \hbox (1.05553pt too wide) in paragraph at lines 2549--2549
+ []      \OT1/cmss/m/n/12 mk[]\OT1/cmtt/m/n/12 Infix(\OT1/cmss/m/n/12 mk[]\OT1/
+cmtt/m/n/12 (e1,op,e2)) -> "Infix of"[]^print_Expr(e1)^","[] 
+ []
+
+File: QU-logo.jpg Graphic file (type jpg)
+<use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 2559.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [45]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 2623.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [46]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 2665.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [47]
+File: QU-logo.jpg Graphic file (type jpg)
+
+<use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 2722.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [48]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 2777.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [49]
+Overfull \hbox (15.45233pt too wide) in paragraph at lines 2789--2792
+[]\OT1/cmr/m/n/12 Using the val-ues \OT1/cmtt/m/n/12 Europe=\OMS/cmtt/m/n/12 f\
+OT1/cmtt/m/n/12 <France>,<England>,<Denmark>,<Spain>\OMS/cmtt/m/n/12 g
+ []
+
+
+Overfull \hbox (9.60081pt too wide) in paragraph at lines 2793--2817
+[][] 
+ []
+
+File: QU-logo.jpg Graphic file (type jpg)
+<use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 2831.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [50]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 2898.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [51]
+Overfull \hbox (53.61186pt too wide) in paragraph at lines 2922--2922
+[]\OT1/cmss/m/n/12 mk[]\OT1/cmtt/m/n/12 Score(<Brazil>,2,0,1,6), 
+ []
+
+
+Overfull \hbox (53.61186pt too wide) in paragraph at lines 2922--2922
+\OT1/cmss/m/n/12 mk[]\OT1/cmtt/m/n/12 Score(<Norway>,1,2,0,5)] 
+ []
+
+
+Overfull \hbox (8.8489pt too wide) in paragraph at lines 2903--2929
+[][] 
+ []
+
+File: QU-logo.jpg Graphic file (type jpg)
+<use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 2963.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [52]
+Overfull \hbox (38.02896pt too wide) in paragraph at lines 2979--2998
+[][] 
+ []
+
+File: QU-logo.jpg Graphic file (type jpg)
+<use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 3022.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [53]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 3082.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [54]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 3136.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [55]
+File: QU-logo.jpg Graphic file (type jpg)
+
+<use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 3188.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [56]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 3240.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [57]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 3286.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [58]
+File: QU-logo.jpg Graphic file (type jpg)
+
+<use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 3366.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [59]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 3428.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [60]
+Overfull \hbox (6.17627pt too wide) in paragraph at lines 3439--3439
+ []    []  \OT1/cmss/m/n/12 mk[]\OT1/cmtt/m/n/12 sigma(numbers, index) == index
+ \OT1/cmss/m/n/12 not in set el-ems \OT1/cmtt/m/n/12 numbers[] 
+ []
+
+File: QU-logo.jpg Graphic file (type jpg)
+<use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 3480.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [61]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 3546.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [62]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 3598.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [63]
+File: QU-logo.jpg Graphic file (type jpg)
+
+<use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 3665.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [64]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 3715.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [65]
+Overfull \hbox (10.99986pt too wide) in paragraph at lines 3729--3729
+ []             \OT1/cmss/m/n/12 oth-ers    \OT1/cmtt/m/n/12 -> "Neither France
+ nor Brazil are winners"[] 
+ []
+
+File: QU-logo.jpg Graphic file (type jpg)
+<use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 3767.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [66]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 3817.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [67]
+Overfull \hbox (35.67334pt too wide) in paragraph at lines 3823--3823
+ []    \OT1/cmtt/m/n/12 m1 \OT1/cmss/m/n/12 mu-nion \OT1/cmtt/m/n/12 m2 -> map2
+seq[@T1, @T2] (m1) ^  map2seq[@T1, @T2] (m2)[] 
+ []
+
+File: QU-logo.jpg Graphic file (type jpg)
+<use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 3877.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [68]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 3941.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [69]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 3994.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [70]
+File: QU-logo.jpg Graphic file (type jpg)
+
+<use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 4048.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [71]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 4087.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [72]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 4163.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [73]
+File: QU-logo.jpg Graphic file (type jpg)
+
+<use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 4231.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [74]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 4281.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [75]
+Overfull \hbox (18.79192pt too wide) in paragraph at lines 4305--4352
+[][] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4361--4362
+[]|\OT1/cmss/m/n/12 post[]\OT1/cmtt/m/n/12 Op1(1,2,\OT1/cmss/m/n/12 mk[]\OT1/cm
+tt/m/n/12 St(1),
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4364--4365
+[]|\OT1/cmss/m/n/12 post[]\OT1/cmtt/m/n/12 Op2(2,\OT1/cmss/m/n/12 mk[]\OT1/cmtt
+/m/n/12 St(1),
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4367--4368
+[]|\OT1/cmss/m/n/12 post[]\OT1/cmtt/m/n/12 Op3(\OT1/cmss/m/n/12 mk[]\OT1/cmtt/m
+/n/12 St(1),
+ []
+
+File: QU-logo.jpg Graphic file (type jpg)
+<use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 4373.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [76]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 4416.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [77]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 4463.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [78]
+File: QU-logo.jpg Graphic file (type jpg)
+
+<use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 4522.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [79]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 4563.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [80]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 4616.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [81]
+Overfull \hbox (5.26212pt too wide) in paragraph at lines 4625--4625
+ []     \OT1/cmtt/m/n/12 runners_up = \OMS/cmtt/m/n/12 f \OT1/cmtt/m/n/12 gp |-
+> GroupRunnerUp(gp) | gp \OT1/cmss/m/n/12 in set dom \OT1/cmtt/m/n/12 gps\OMS/c
+mtt/m/n/12 g[] 
+ []
+
+File: QU-logo.jpg Graphic file (type jpg)
+<use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 4671.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [82]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 4763.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [83]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 4799.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [84]
+File: QU-logo.jpg Graphic file (type jpg)
+
+<use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 4848.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [85]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 4904.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [86]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 4941.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [87]
+File: QU-logo.jpg Graphic file (type jpg)
+
+<use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 5001.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [88]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 5042.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [89]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 5090.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [90]
+File: QU-logo.jpg Graphic file (type jpg)
+
+<use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 5139.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [91]
+Overfull \hbox (12.4069pt too wide) in paragraph at lines 5149--5157
+\OT1/cmr/m/n/12 Here \OT1/cmtt/m/n/12 BubbleMin \OT1/cmr/m/n/12 ``bub-bles'' th
+e min-i-mum value in the sub-se-quence \OT1/cmtt/m/n/12 l(x,...,y)
+ []
+
+File: QU-logo.jpg Graphic file (type jpg)
+<use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 5181.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [92]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 5231.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [93]
+Overfull \hbox (1.95724pt too wide) in paragraph at lines 5272--5276
+[]\OT1/cmr/m/n/12 In the fol-low-ing ex-am-ple \OT1/cmtt/m/n/12 OpCall \OT1/cmr
+/m/n/12 is an op-er-a-tion call whereas \OT1/cmtt/m/n/12 FunCall
+ []
+
+File: QU-logo.jpg Graphic file (type jpg)
+<use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 5278.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [94]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 5337.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [95]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 5384.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [96]
+File: QU-logo.jpg Graphic file (type jpg)
+
+<use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 5423.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [97]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 5477.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [98]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 5533.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [99]
+File: QU-logo.jpg Graphic file (type jpg)
+
+<use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 5571.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [100]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 5624.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [101]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 5669.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [102]
+File: QU-logo.jpg Graphic file (type jpg)
+
+<use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 5729.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [103]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 5808.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [104]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 5852.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [105]
+File: QU-logo.jpg Graphic file (type jpg)
+
+<use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 5892.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [106]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 5944.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [107]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 6014.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [108]
+Overfull \hbox (9.3785pt too wide) in paragraph at lines 6053--6057
+\OT1/cmr/m/n/12 ex-piry date. This re-quires the \OT1/cmtt/m/n/12 digit \OT1/cm
+r/m/n/12 type de-fined in the mod-ule \OT1/cmtt/m/n/12 BankAccount\OT1/cmr/m/n/
+12 .
+ []
+
+File: QU-logo.jpg Graphic file (type jpg)
+<use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 6062.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [109]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 6108.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [110]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 6176.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [111]
+File: QU-logo.jpg Graphic file (type jpg)
+
+<use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 6213.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [112]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 6263.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [113]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\\' on input line 6266.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6284--6285
+
+ []
+
+File: QU-logo.jpg Graphic file (type jpg)
+<use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 6320.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [114]
+Underfull \hbox (badness 10000) in paragraph at lines 6336--6337
+
+ []
+
+File: QU-logo.jpg Graphic file (type jpg)
+<use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 6383.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [115]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 6421.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [116] (./langmansl_a4E.bbl
+Underfull \hbox (badness 1168) in paragraph at lines 24--29
+[]\OT1/cmr/m/n/12 Cliff B. Jones.  \OT1/cmr/m/it/12 Sys-tem-atic Soft-ware De-v
+el-op-ment Us-ing VDM\OT1/cmr/m/n/12 .
+ []
+
+)
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 6427.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [117]
+Overfull \hbox (23.06987pt too wide) in paragraph at lines 6451--6451
+[]| [] 
+ []
+
+File: QU-logo.jpg Graphic file (type jpg)
+<use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 6494.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [118]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 6560.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [119]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 6624.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [120]
+Overfull \hbox (23.06987pt too wide) in paragraph at lines 6666--6666
+[]| [] 
+ []
+
+File: QU-logo.jpg Graphic file (type jpg)
+<use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 6700.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [121]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 6766.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [122]
+Overfull \hbox (23.06987pt too wide) in paragraph at lines 6808--6808
+[]| [] 
+ []
+
+File: QU-logo.jpg Graphic file (type jpg)
+<use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 6833.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [123]
+Overfull \hbox (23.06987pt too wide) in paragraph at lines 6834--6834
+[]| [] 
+ []
+
+
+Overfull \hbox (23.06987pt too wide) in paragraph at lines 6845--6845
+[]| [] 
+ []
+
+
+Overfull \hbox (23.06987pt too wide) in paragraph at lines 6859--6859
+[]| [] 
+ []
+
+
+Overfull \hbox (23.06987pt too wide) in paragraph at lines 6872--6872
+[]| [] 
+ []
+
+
+Overfull \hbox (23.06987pt too wide) in paragraph at lines 6885--6885
+[]| [] 
+ []
+
+
+Overfull \hbox (23.06987pt too wide) in paragraph at lines 6898--6898
+[]| [] 
+ []
+
+File: QU-logo.jpg Graphic file (type jpg)
+<use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 6911.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [124]
+Overfull \hbox (23.06987pt too wide) in paragraph at lines 6942--6942
+[]| [] 
+ []
+
+
+Overfull \hbox (23.06987pt too wide) in paragraph at lines 6956--6956
+[]| [] 
+ []
+
+
+Overfull \hbox (23.06987pt too wide) in paragraph at lines 6970--6970
+[]| [] 
+ []
+
+
+Overfull \hbox (23.06987pt too wide) in paragraph at lines 6978--6978
+[]| [] 
+ []
+
+File: QU-logo.jpg Graphic file (type jpg)
+<use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 6991.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [125]
+Overfull \hbox (23.06987pt too wide) in paragraph at lines 7001--7001
+[]| [] 
+ []
+
+
+Overfull \hbox (23.06987pt too wide) in paragraph at lines 7010--7010
+[]| [] 
+ []
+
+File: QU-logo.jpg Graphic file (type jpg)
+<use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 7076.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [126]
+Overfull \hbox (23.06987pt too wide) in paragraph at lines 7077--7077
+[]| [] 
+ []
+
+File: QU-logo.jpg Graphic file (type jpg)
+<use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 7091.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [127]
+Overfull \hbox (23.06987pt too wide) in paragraph at lines 7106--7106
+[]| [] 
+ []
+
+File: QU-logo.jpg Graphic file (type jpg)
+<use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 7169.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [128]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 7213.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [129]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 7287.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [130]
+File: QU-logo.jpg Graphic file (type jpg)
+
+<use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 7323.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [131]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 7404.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [132]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 7462.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [133]
+File: QU-logo.jpg Graphic file (type jpg)
+
+<use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 7523.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [134]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 7575.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [135]
+Overfull \hbox (23.06987pt too wide) in paragraph at lines 7582--7582
+[]| [] 
+ []
+
+File: QU-logo.jpg Graphic file (type jpg)
+<use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 7649.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [136]
+Overfull \hbox (23.06987pt too wide) in paragraph at lines 7650--7650
+[]| [] 
+ []
+
+
+Overfull \hbox (23.06987pt too wide) in paragraph at lines 7676--7676
+[]| [] 
+ []
+
+File: QU-logo.jpg Graphic file (type jpg)
+<use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 7688.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [137]
+Overfull \hbox (23.06987pt too wide) in paragraph at lines 7688--7688
+[]| [] 
+ []
+
+File: QU-logo.jpg Graphic file (type jpg)
+<use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 7771.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [138]
+Overfull \hbox (23.06987pt too wide) in paragraph at lines 7805--7805
+[]| [] 
+ []
+
+File: QU-logo.jpg Graphic file (type jpg)
+<use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 7829.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [139]
+Overfull \hbox (23.06987pt too wide) in paragraph at lines 7839--7839
+[]| [] 
+ []
+
+
+Overfull \hbox (23.06987pt too wide) in paragraph at lines 7875--7875
+[]| [] 
+ []
+
+File: QU-logo.jpg Graphic file (type jpg)
+<use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 7879.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [140]
+Overfull \hbox (23.06987pt too wide) in paragraph at lines 7883--7883
+[]| [] 
+ []
+
+File: QU-logo.jpg Graphic file (type jpg)
+<use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 7947.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [141pdfTeX warning (ext4): destination with the same identifier (name{rule:tup
+le\040pattern}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.7947   }
+          ]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 7999.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [142]
+Overfull \hbox (5.69052pt too wide) in paragraph at lines 8090--8099
+[][] 
+ []
+
+File: QU-logo.jpg Graphic file (type jpg)
+<use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 8106.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [143]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 8106.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [144]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 8282.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [145
+
+]
+Overfull \hbox (23.06987pt too wide) in paragraph at lines 8321--8321
+[]| [] 
+ []
+
+File: QU-logo.jpg Graphic file (type jpg)
+<use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 8365.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [146]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 8389.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [147]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 8447.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [148]pdfTeX warning (ext4): destination with the same identifier (name{rule:it
+erate}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.8451   }
+          pdfTeX warning (ext4): destination with the same identifier (name{rul
+e:composition}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.8455   }
+          
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 8514.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [149]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 8598.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [150]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 8650.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+
+[151]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 8708.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [152]
+Overfull \hbox (23.06987pt too wide) in paragraph at lines 8722--8722
+[]| [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8729--8733
+
+ []
+
+File: QU-logo.jpg Graphic file (type jpg)
+<use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 8779.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [153]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 8795.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [154]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 8884.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [155]
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <12> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 8929.
+
+File: QU-logo.jpg Graphic file (type jpg)
+
+<use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 8938.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [156]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 8981.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [157]
+Overfull \hbox (28.35036pt too wide) in paragraph at lines 8994--8994
+[]        \OT1/cmtt/m/n/12 (\OT1/cmss/m/n/12 def \OT1/cmtt/m/n/12 - = IO`fecho(
+logfilename, URLtoString(url)^[]"\n", <append>);[] 
+ []
+
+
+Overfull \hbox (46.8022pt too wide) in paragraph at lines 9018--9022
+[]
+ []
+
+File: QU-logo.jpg Graphic file (type jpg)
+<use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 9022.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [158]
+Overfull \hbox (19.68526pt too wide) in paragraph at lines 9035--9035
+[]\OT1/cmtt/m/n/12 -- Standard library for the VDMTools Interpreter. When the i
+nterpreter[] 
+ []
+
+
+Overfull \hbox (19.68526pt too wide) in paragraph at lines 9037--9037
+[]\OT1/cmtt/m/n/12 -- corresponding internal functions is called instead of iss
+uing a run[] 
+ []
+
+
+Overfull \hbox (1.16025pt too wide) in paragraph at lines 9038--9038
+[]\OT1/cmtt/m/n/12 -- time error. Signatures should not be changed, as well as 
+name of[] 
+ []
+
+
+Overfull \hbox (19.68526pt too wide) in paragraph at lines 9046--9046
+[]\OT1/cmtt/m/n/12 -- Converts a set argument into a sequence in non-determinis
+tic order.[] 
+ []
+
+
+Overfull \hbox (0.64972pt too wide) in paragraph at lines 9053--9053
+[]\OT1/cmtt/m/n/12 get_file_pos : () +> [ \OT1/cmss/m/n/12 seq of char \OT1/cmt
+t/m/n/12 * \OT1/cmss/m/n/12 nat \OT1/cmtt/m/n/12 * \OT1/cmss/m/n/12 nat \OT1/cm
+tt/m/n/12 * \OT1/cmss/m/n/12 seq of char \OT1/cmtt/m/n/12 * \OT1/cmss/m/n/12 se
+q of char \OT1/cmtt/m/n/12 ][] 
+ []
+
+File: QU-logo.jpg Graphic file (type jpg)
+<use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 9062.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [159]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 9070.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [160] (./langmansl_a4E.ind
+File: QU-logo.jpg Graphic file (type jpg)
+
+<use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 80.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [161
+
+]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 167.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [162]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 260.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [163]
+Overfull \hbox (1.66403pt too wide) in paragraph at lines 273--275
+[]\OT1/cmr/m/n/12 extended ex-plicit func-tion def-i-ni-tion, [][]32[][],
+ []
+
+File: QU-logo.jpg Graphic file (type jpg)
+<use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 354.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [164]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 447.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [165]
+File: QU-logo.jpg Graphic file (type jpg)
+ <use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 544.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [166]
+File: QU-logo.jpg Graphic file (type jpg)
+
+<use QU-logo.jpg>
+Package pdftex.def Info: QU-logo.jpg used on input line 620.
+(pdftex.def)             Requested size: 347.29665pt x 62.23235pt.
+ [167])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 9074.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 9074.
+ (./langmansl_a4E.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 9074.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 9074.
+
+Package rerunfilecheck Info: File `langmansl_a4E.out' has not changed.
+(rerunfilecheck)             Checksum: A1FEBE7CE0A49094B49C1EBEF02CF987;10112.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 9074.
+ ) 
+Here is how much of TeX's memory you used:
+ 7736 strings out of 493089
+ 108345 string characters out of 6137536
+ 208914 words of memory out of 5000000
+ 10424 multiletter control sequences out of 15000+600000
+ 22544 words of font info for 70 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 36i,20n,51p,269b,578s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{rule:precondition\040expression} has been referen
+ced but does not exist, replaced by a fixed one
+
+{/opt/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</opt/texlive/2015/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></opt/texlive/2015/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmbx12.pfb></opt/texlive/2015/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmex10.pfb></opt/texlive/2015/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmmi12.pfb></opt/texlive/2015/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmmi8.pfb></opt/texlive/2015/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr10.pfb></opt/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr1
+2.pfb></opt/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></o
+pt/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></opt/texliv
+e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></opt/texlive/2015/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></opt/texlive/2015/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmss10.pfb></opt/texlive/2015/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmss12.pfb></opt/texlive/2015/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmssbx10.pfb></opt/texlive/2015/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmsy10.pfb></opt/texlive/2015/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmsy8.pfb></opt/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mti12.pfb></opt/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pf
+b></opt/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></opt
+/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></opt/texliv
+e/2015/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></opt/texlive/
+2015/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></opt/texlive/20
+15/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb>
+Output written on langmansl_a4E.pdf (173 pages, 756544 bytes).
+PDF statistics:
+ 4142 PDF objects out of 4296 (max. 8388607)
+ 3901 compressed objects within 40 object streams
+ 664 named destinations out of 1000 (max. 500000)
+ 1080 words of extra memory for PDF output out of 10000 (max. 10000000)
+

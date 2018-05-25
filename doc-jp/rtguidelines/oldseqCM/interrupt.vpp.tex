@@ -1,0 +1,110 @@
+\begin{vdm}{\small\sf class} $Interrupt$
+\par
+\kInstanceVarDef
+\parlinebr
+\begin{insvar}
+\assdef{timer}{Timer}
+\end{insvar}
+\begin{insvar}
+\assdef{currentAlarm}{\Opt{\Nat }}[{\Nil }]
+\end{insvar}
+\par
+\kOperations
+\kw{\kw{public}}\begin{op}[e]{Interrupt}%
+\signature{Timer \Oto Interrupt}
+\parms{t}
+\annlab[o]{Interrupt`Interrupt}
+\ass{timer}{t};
+\end{op}
+\kw{\kw{public}}\begin{op}[e]{Alarm}%
+\signature{\Nat  \Oto ()}
+\parms{n}
+\annlab[o]{Interrupt`Alarm}
+\call{SetAlarm}{n};
+\end{op}
+\kw{\kw{public}}\begin{op}[e]{CheckAwake}%
+\signature{() \Oto \Bool }
+\parms{}
+\annlab[o]{Interrupt`CheckAwake}
+\return{currentAlarm = \Nil  \Or  \\
+currentAlarm \Le \fnapply{timer.GetTime}{}};
+\end{op}
+\begin{op}[e]{SetAlarm}%
+\signature{\Nat  \Oto ()}
+\parms{n}
+\annlab[o]{Interrupt`SetAlarm}
+\ass{currentAlarm}{\fnapply{timer.GetTime}{} + n};
+\end{op}
+\kw{\kw{public}}\begin{op}[e]{Inter}%
+\signature{() \Oto ()}
+\parms{}
+\annlab[o]{Interrupt`Inter}
+\ass{currentAlarm}{\Nil };
+\end{op}
+\kw{\kw{public}}\begin{op}[e]{GetTime}%
+\signature{() \Oto \Nat }
+\parms{}
+\annlab[o]{Interrupt`GetTime}
+$timer$.\call{GetTime}{}
+\end{op}
+{\small\sf end} {\it Interrupt}
+
+\end{vdm}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{tabular}{p{25mm}l}
+{\bf Test Suite :} & vdm.tc \\ 
+{\bf Class :} & Interrupt \\ 
+\end{tabular}
+
+\begin{longtable}{|l|r|r|}\hline
+{\bf Interrupt`Interrupt} & {\bf \#Calls} & {\bf Coverage} \kill
+{\bf Name} & {\bf \#Calls} & {\bf Coverage} \\ \hline\hline
+\endhead
+Interrupt`Alarm & 17 & $\surd$ \\ \hline
+Interrupt`Inter & 7 & $\surd$ \\ \hline
+Interrupt`GetTime & 17 & $\surd$ \\ \hline
+Interrupt`SetAlarm & 17 & $\surd$ \\ \hline
+Interrupt`Interrupt & 4 & $\surd$ \\ \hline
+Interrupt`CheckAwake & 88 & $\surd$ \\ \hline
+\hline
+{\bf Total Coverage} & & {\bf 100\%} \\ \hline
+\end{longtable}
+
+

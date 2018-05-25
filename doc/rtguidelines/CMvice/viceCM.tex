@@ -1,0 +1,113 @@
+% LaTeX 2e Document.
+% 
+% $Id: sort.vdm,v 1.11 2005/05/13 00:41:46 vdmtools Exp $
+% 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PDF compatibility code. 
+\makeatletter
+\newif\ifpdflatex@
+\ifx\pdftexversion\@undefined
+\pdflatex@false
+%\message{Not using pdf}
+\else
+\pdflatex@true
+%\message{Using pdf}
+\fi
+
+\newcommand{\latexorpdf}[2]{
+  \ifpdflatex@ #2
+  \else #1
+  \fi
+}
+
+\newcommand{\pformat}{a4paper}
+
+\makeatother
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\latexorpdf{
+\documentclass[\pformat,12pt]{article}
+}{
+\documentclass[\pformat,pdftex,12pt]{article}
+}
+
+\usepackage{color}
+\usepackage{vdmsl-2e}
+\usepackage{vpp}
+\usepackage{longtable}
+\usepackage{alltt}
+\usepackage{makeidx}
+\usepackage{graphics}
+% graphics includes
+\usepackage{graphicx}
+
+\newcommand{\StateDef}[1]{{\bf #1}}
+\newcommand{\TypeDef}[1]{{\bf #1}}
+\newcommand{\TypeOcc}[1]{{\it #1}}
+\newcommand{\FuncDef}[1]{{\bf #1}}
+\newcommand{\FuncOcc}[1]{{#1}}
+\newcommand{\ModDef}[1]{{\tiny #1}}
+\newcommand{\MethodDef}[1]{{\bf #1}}
+\newcommand{\MethodOcc}[1]{{#1}}
+
+\definecolor{covered}{rgb}{0,0,0}      %black
+\definecolor{not-covered}{rgb}{1,0,0}   %gray for previewing
+%\definecolor{not_covered}{gray}{0.6}   %gray for printing
+\definecolor{not_covered}{rgb}{1,0,0}  %red
+
+\title{Concurrent and Distributed Missile VDM++ Model}
+\author{Peter Gorm Larsen and Marcel Verhoef}
+\date{2007}
+
+\makeindex
+
+\begin{document}
+\maketitle
+
+\section{The Overall Class Diagram}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=\textwidth]{viceCMclassdiag.png}
+\end{center}
+\caption{Overview of the classes in the distributed real time CM model}\label{fig:inputoutput}
+\end{figure}
+\newpage
+
+\section{The World Class}
+
+\input{world.vpp.tex}
+
+\section{The Sensor Class}
+
+\input{sensor.vpp.tex}
+
+\section{The Missile Detector Class}
+
+\input{missiledetector.vpp.tex}
+
+\section{The Flare Controller Class}
+
+\input{flarecontroller.vpp.tex}
+
+\section{The Flare Dispenser Class}
+
+\input{flaredispenser.vpp.tex}
+
+\section{The Environment Class}
+
+\input{environment.vpp.tex}
+
+\section{The Global Class}
+
+\input{global.vpp.tex}
+
+\section{The Standard IO Class}
+
+\input{io.vpp.tex}
+
+\printindex
+\addcontentsline{toc}{section}{Index}
+
+\end{document}

@@ -1,0 +1,37 @@
+\begin{vdm_al}
+class Sensor is subclass of GLOBAL
+
+instance variables
+
+-- the ミサイル s探知器 this sensor is connected to
+private s探知器 : ミサイル探知器;
+
+-- the left hand-side of the viewing angle of the sensor
+private s対応可能左端 : 角度;
+
+operations
+
+public Sensor: ミサイル探知器 * 角度 ==> Sensor
+Sensor (pmd, psa) == ( s探知器 := pmd; s対応可能左端 := psa);
+
+-- get the left hand-side start point and opening angle
+public 対応可能左端角度を得る: () ==> GLOBAL`角度 * GLOBAL`角度
+対応可能左端角度を得る () == return mk_ (s対応可能左端, センサ観測可能角度);
+
+-- trip is called asynchronously from the environment to
+-- signal an event. the sensor triggers if the event is
+-- in the field of view. the event is stored in the
+-- ミサイル s探知器 for further processing
+async public trip: 事象ID * ミサイルタイプ * 角度 ==> ()
+trip (evid, pmt, pa) ==
+  -- log and time stamp the observed threat
+  s探知器.add脅威(evid,pmt,pa,time)
+pre canObserve(pa, s対応可能左端, センサ観測可能角度)
+
+end Sensor
+\end{vdm_al}
+
+
+\begin{rtinfo}[Sensor`Sensor]
+{vdm.tc}[Sensor]
+\end{rtinfo}

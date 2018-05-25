@@ -1,0 +1,251 @@
+\begin{vdm}{\small\sf class} $Environment$ {\small\sf is subclass of}  $GLOBAL$\index{Environment|ModDef}
+\par
+\kTypes
+\type{\kw{public}\kw{ }inline\index{inline|TypeDef}}{EventId\index{EventId|TypeOcc} \X MissileType\index{MissileType|TypeOcc} \X Angle\index{Angle|TypeOcc} \X \Nat ;}
+\type{\kw{public}\kw{ }outline\index{outline|TypeDef}}{EventId\index{EventId|TypeOcc} \X FlareType\index{FlareType|TypeOcc} \X Angle\index{Angle|TypeOcc} \X \Nat  \X \Nat }
+\kInstanceVarDef
+\parlinebr
+\begin{insvar}
+\assdef{io}{IO\index{IO|TypeOcc}}[{\fnapply{\new{IO}}{}}]
+\end{insvar}
+\begin{insvar}
+\assdef{inlines}{\seqof*{inline\index{inline|TypeOcc}}}[{\seq{}}]
+\end{insvar}
+\begin{insvar}
+\assdef{busy}{\Bool }[{\True }]
+\end{insvar}
+\begin{insvar}
+\assdef{outlines}{\seqof*{outline\index{outline|TypeOcc}}}[{\seq{}}]
+\end{insvar}
+\begin{insvar}
+\assdef{ranges}{\Nat  \Gmap \Lp Angle\index{Angle|TypeOcc} \X Angle\index{Angle|TypeOcc} \Rp }[{\Emptymap }]
+\end{insvar}
+\begin{insvar}
+\assdef{sensors}{\Nat  \Gmap Sensor\index{Sensor|TypeOcc}}[{\Emptymap }]
+\end{insvar}
+\begin{instinvfn}
+ \Dom ranges =  \Dom sensors\end{instinvfn}
+\begin{insvar}
+\assdef{evid}{\Opt{EventId\index{EventId|TypeOcc}}}[{\Nil }]
+\end{insvar}
+\par
+\kOperations
+\kw{\kw{public}}\begin{op}[e]{Environment}\index{Environment|FuncDef}%
+\signature{\seqof*{\Char } \Oto Environment\index{Environment|TypeOcc}}
+\parms{fname}
+\annlab[o]{Environment`Environment}
+\begin{defstmt}
+\eqdef{\reccons{\kw{mk-}}{-,input}}{\fnapply{io.freadval[\seqof*{inline\index{inline|TypeOcc}}]}{fname}}
+\end{defstmt} \\
+\ass{inlines}{input};
+\end{op}
+\kw{\kw{public}}\begin{op}[e]{addSensor}\index{addSensor|FuncDef}%
+\signature{Sensor\index{Sensor|TypeOcc} \Oto ()}
+\parms{psens}
+\annlab[o]{Environment`addSensor}
+\begin{blockstmt}
+\begin{dclstmt}
+\assdef{id}{\Nat }[{ \Card  \Dom ranges + 1}]
+\end{dclstmt}
+\kw{atomic }
+\begin{blockstmt}\color{not-covered}\ass{ranges}{ranges \Mapmerge \map{id \Mapsto \fnapply{psens.getAperature}{}}}\color{covered} ; \\
+\color{not-covered}\ass{sensors}{sensors \Mapmerge \map{id \Mapsto psens}}\color{covered}
+\end{blockstmt}
+\end{blockstmt};
+\end{op}
+\kw{\kw{public}}\begin{op}[e]{Run}\index{Run|FuncDef}%
+\signature{() \Oto ()}
+\parms{}
+\annlab[o]{Environment`Run}
+\begin{blockstmt}
+\begin{while}{ \Not \pex{\fnapply{isFinished}{} \And \fnapply{FighterAircraft`detector.isFinished}{}}}
+\begin{blockstmt}
+\ass{evid}{\fnapply{createSignal}{}} ; \\
+FighterAircraft`detector.\call{Step}{} ; \\
+World`timerRef.\call{StepTime}{}
+\end{blockstmt}
+\end{while} ; \\
+\call{showResult}{}
+\end{blockstmt};
+\end{op}
+\kw{\kw{private}}\begin{op}[e]{createSignal}\index{createSignal|FuncDef}%
+\signature{() \Oto \Opt{EventId\index{EventId|TypeOcc}}}
+\parms{}
+\annlab[o]{Environment`createSignal}
+\begin{blockstmt}
+\If  \Len inlines > 0
+\Then \\
+\begin{blockstmt}
+\begin{dclstmt}
+\assdef{curtime}{\Nat }[{\fnapply{World`timerRef.GetTime}{}}]
+\assdef{done}{\Bool }[{\False }]
+\end{dclstmt}
+\begin{while}{ \Not done}
+\begin{defstmt}
+\eqdef{\reccons{\kw{mk-}}{eventid,pmt,pa,pt}}{ \Hd inlines}
+\end{defstmt} \\
+\If pt \Le curtime
+\Then \\
+\begin{blockstmt}
+\begin{setfor}{id}{ \Dom ranges}
+\begin{defstmt}
+\eqdef{\reccons{\kw{mk-}}{papplhs,pappsize}}{\fnapply{ranges}{id}}
+\end{defstmt} \\
+\If \fnapply{canObserve}{pa,papplhs,pappsize}
+\Then \\
+\fnapply{sensors}{id}.\call{trip}{eventid,pmt,pa}
+\Fi
+\end{setfor} ; \\
+\ass{inlines}{ \Tl inlines} ; \\
+\ass{done}{ \Len inlines = 0} ; \\
+\return{eventid}
+\end{blockstmt}
+\Else \\
+\begin{blockstmt}
+\ass{done}{\True } ; \\
+\return{\Nil }
+\end{blockstmt}
+\Fi
+\end{while}
+\end{blockstmt}
+\Else \\
+\begin{blockstmt}
+\ass{busy}{\False } ; \\
+\return{\Nil }
+\end{blockstmt}
+\Fi
+\end{blockstmt};
+\end{op}
+\kw{\kw{public}}\begin{op}[e]{handleEvent}\index{handleEvent|FuncDef}%
+\signature{EventId\index{EventId|TypeOcc} \X FlareType\index{FlareType|TypeOcc} \X Angle\index{Angle|TypeOcc} \X \Nat  \X \Nat  \Oto ()}
+\parms{evid,pfltp,angle,pt1,pt2}
+\annlab[o]{Environment`handleEvent}
+\begin{blockstmt}
+\ass{outlines}{outlines \Sconc \seq{\reccons{\kw{mk-}}{evid,pfltp,angle,pt1,pt2}}}
+\end{blockstmt};
+\end{op}
+\kw{\kw{public}}\begin{op}[e]{showResult}\index{showResult|FuncDef}%
+\signature{() \Oto ()}
+\parms{}
+\annlab[o]{Environment`showResult}
+\begin{defstmt}
+\eqdef{-}{\fnapply{io.writeval[\seqof*{outline\index{outline|TypeOcc}}]}{outlines}}
+\end{defstmt} \\
+\Skip ;
+\end{op}
+\kw{\kw{public}}\begin{op}[e]{isFinished}\index{isFinished|FuncDef}%
+\signature{() \Oto \Bool }
+\parms{}
+\annlab[o]{Environment`isFinished}
+\return{inlines = \seq{} \And  \Not busy}
+\end{op}
+{\small\sf end} {\it Environment}
+
+\end{vdm}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{tabular}{p{25mm}l}
+{\bf Test Suite :} & vdm.tc \\ 
+{\bf Class :} & Environment \\ 
+\end{tabular}
+
+\begin{longtable}{|l|r|r|}\hline
+{\bf Environment`createSignal} & {\bf \#Calls} & {\bf Coverage} \kill
+{\bf Name} & {\bf \#Calls} & {\bf Coverage} \\ \hline\hline
+\endhead
+Environment`Run & 1 & $\surd$ \\ \hline
+Environment`addSensor & 4 & $\surd$ \\ \hline
+Environment`isFinished & 202 & $\surd$ \\ \hline
+Environment`showResult & 1 & $\surd$ \\ \hline
+Environment`Environment & 1 & $\surd$ \\ \hline
+Environment`handleEvent & 21 & $\surd$ \\ \hline
+Environment`createSignal & 201 & $\surd$ \\ \hline
+\hline
+{\bf Total Coverage} & & {\bf 100\%} \\ \hline
+\end{longtable}
+
+
+

@@ -1,0 +1,77 @@
+\begin{vdm_al}
+class Sensor
+
+types
+
+public MissileType = <MissileA> | <MissileB> | <MissileC> | <None>;
+
+public Angle = nat
+inv num == num <= 360;
+
+instance variables
+
+io       : SensorIO := new SensorIO();
+threat   : [(MissileType|<Consumed>) * Angle] := io.readThreat();
+timerRef : Timer;
+
+thread
+
+( while threat <> nil do
+  ( ThreatConsumed();
+    SetThreat();
+    timerRef.StepTime());
+    timerRef.Finished()
+  )
+
+operations
+
+ThreatConsumed : () ==> ()
+ThreatConsumed() ==
+  skip
+
+sync
+
+  per ThreatConsumed => threat <> nil and threat.#1 = <Consumed>;
+
+operations
+
+public Init : Timer ==> ()
+Init(newTimer) ==
+  timerRef := newTimer;
+
+SetThreat : () ==> ()
+SetThreat() ==
+  threat := io.readThreat();
+
+sync
+
+  mutex(SetThreat, GetThreat);
+
+operations
+
+public IsFinished : () ==> ()
+IsFinished() == skip;
+
+sync
+
+  per IsFinished => threat = nil;
+
+operations
+
+public GetThreat : () ==> [MissileType * Angle]
+GetThreat() ==
+  let orgThreat = threat in
+   (if threat <> nil
+    then threat := mk_(<Consumed>,0);
+    return orgThreat);
+
+sync
+
+  per GetThreat => threat <> nil => threat.#1 <> <Consumed>;
+
+end Sensor
+\end{vdm_al}
+
+\begin{rtinfo}[Sensor`ThreatConsumed]
+{vdm.tc}[Sensor]
+\end{rtinfo}

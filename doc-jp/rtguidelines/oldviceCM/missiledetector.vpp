@@ -1,0 +1,43 @@
+class MissileDetector
+
+operations
+
+Update : [Sensor`MissileType] ==> ()
+Update(newMissileValue) ==
+  if newMissileValue <> <None>
+  then (missileValue := newMissileValue;
+        flareControlRef.MissileIsHere(missileValue);
+        timerRef.Interruption();
+       );
+
+instance variables
+
+sensorRef       : Sensor;
+flareControlRef : FlareController;
+missileValue    : [Sensor`MissileType] := <None>;
+timerRef        : Timer;
+
+operations
+
+public Init : Sensor * FlareController * Timer ==> ()
+Init (newSensor, newFlareController, newTimer) ==
+( sensorRef := newSensor;
+  flareControlRef := newFlareController;
+  timerRef := newTimer);
+
+thread
+
+while missileValue <> nil do
+  let newMissileValue = sensorRef.GetMissileValue() in
+    Update(newMissileValue);
+
+operations
+
+public IsFinished : () ==> ()
+IsFinished() == skip;
+
+sync
+
+  per IsFinished => missileValue = nil;
+
+end MissileDetector

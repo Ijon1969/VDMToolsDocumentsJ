@@ -1,0 +1,175 @@
+\begin{vdm}{\small\sf class} $MissileDetector$ {\small\sf is subclass of}  $GLOBAL$\index{MissileDetector|ModDef}
+\par
+\kInstanceVarDef
+\parlinebr
+\begin{insvar}
+\assdef{ranges}{\Nat  \Gmap \Lp Angle\index{Angle|TypeOcc} \X Angle\index{Angle|TypeOcc} \Rp }[{\Emptymap }]
+\end{insvar}
+\begin{insvar}
+\assdef{controllers}{\Nat  \Gmap FlareController\index{FlareController|TypeOcc}}[{\Emptymap }]
+\end{insvar}
+\begin{instinvfn}
+ \Dom ranges =  \Dom controllers\end{instinvfn}
+\begin{insvar}
+\assdef{threats}{\seqof*{\Lp EventId\index{EventId|TypeOcc} \X MissileType\index{MissileType|TypeOcc} \X Angle\index{Angle|TypeOcc} \X \Nat  \Rp }}[{\seq{}}]
+\end{insvar}
+\begin{insvar}
+\assdef{busy}{\Bool }[{\False }]
+\end{insvar}
+\par
+\kOperations
+\kw{\kw{public}}\begin{op}[e]{addController}\index{addController|FuncDef}%
+\signature{FlareController\index{FlareController|TypeOcc} \Oto ()}
+\parms{pctrl}
+\annlab[o]{MissileDetector`addController}
+\begin{blockstmt}
+\begin{dclstmt}
+\assdef{nid}{\Nat }[{ \Card  \Dom ranges + 1}]
+\end{dclstmt}
+\kw{atomic }
+\begin{blockstmt}\color{not-covered}\ass{ranges}{ranges \Mapmerge \map{nid \Mapsto \fnapply{pctrl.getAperature}{}}}\color{covered} ; \\
+\color{not-covered}\ass{controllers}{controllers \Mapmerge \map{nid \Mapsto pctrl}}\color{covered}
+\end{blockstmt}
+\end{blockstmt};
+\end{op}
+\kw{\kw{public}}\begin{op}[e]{Step}\index{Step|FuncDef}%
+\signature{() \Oto ()}
+\parms{}
+\annlab[o]{MissileDetector`Step}
+\begin{blockstmt}
+\If threats \Neq \seq{}
+\Then \\
+\begin{defstmt}
+\eqdef{\reccons{\kw{mk-}}{evid,pmt,pa,pt}}{\fnapply{getThreat}{}}
+\end{defstmt} \\
+\begin{setfor}{id}{ \Dom ranges}
+\begin{defstmt}
+\eqdef{\reccons{\kw{mk-}}{papplhs,pappsize}}{\fnapply{ranges}{id}}
+\end{defstmt} \\
+\If \fnapply{canObserve}{pa,papplhs,pappsize}
+\Then \\
+\fnapply{controllers}{id}.\call{addThreat}{evid,pmt,pa,pt}
+\Fi
+\end{setfor}
+\Fi ; \\
+\ass{busy}{ \Len threats > 0} ; \\
+\begin{setfor}{id}{ \Dom controllers}
+\fnapply{controllers}{id}.\call{Step}{}
+\end{setfor}
+\end{blockstmt};
+\end{op}
+\kw{\kw{public}}\begin{op}[e]{addThreat}\index{addThreat|FuncDef}%
+\signature{EventId\index{EventId|TypeOcc} \X MissileType\index{MissileType|TypeOcc} \X Angle\index{Angle|TypeOcc} \X \Nat  \Oto ()}
+\parms{evid,pmt,pa,pt}
+\annlab[o]{MissileDetector`addThreat}
+\begin{blockstmt}
+\ass{threats}{threats \Sconc \seq{\reccons{\kw{mk-}}{evid,pmt,pa,pt}}} ; \\
+\ass{busy}{\True }
+\end{blockstmt};
+\end{op}
+\kw{\kw{private}}\begin{op}[e]{getThreat}\index{getThreat|FuncDef}%
+\signature{() \Oto EventId\index{EventId|TypeOcc} \X MissileType\index{MissileType|TypeOcc} \X Angle\index{Angle|TypeOcc} \X \Nat }
+\parms{}
+\annlab[o]{MissileDetector`getThreat}
+\begin{blockstmt}
+\begin{dclstmt}
+\assdef{res}{EventId\index{EventId|TypeOcc} \X MissileType\index{MissileType|TypeOcc} \X Angle\index{Angle|TypeOcc} \X \Nat }[{ \Hd threats}]
+\end{dclstmt}
+\ass{threats}{ \Tl threats} ; \\
+\return{res}
+\end{blockstmt};
+\end{op}
+\kw{\kw{public}}\begin{op}[e]{isFinished}\index{isFinished|FuncDef}%
+\signature{() \Oto \Bool }
+\parms{}
+\annlab[o]{MissileDetector`isFinished}
+\return{\all{id \In  \Dom controllers} \\
+{\fnapply{\fnapply{controllers}{id}.isFinished}{}}}
+\end{op}
+{\small\sf end} {\it MissileDetector}
+
+\end{vdm}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{tabular}{p{25mm}l}
+{\bf Test Suite :} & vdm.tc \\ 
+{\bf Class :} & MissileDetector \\ 
+\end{tabular}
+
+\begin{longtable}{|l|r|r|}\hline
+{\bf MissileDetector`addController} & {\bf \#Calls} & {\bf Coverage} \kill
+{\bf Name} & {\bf \#Calls} & {\bf Coverage} \\ \hline\hline
+\endhead
+MissileDetector`Step & 201 & $\surd$ \\ \hline
+MissileDetector`addThreat & 7 & $\surd$ \\ \hline
+MissileDetector`getThreat & 7 & $\surd$ \\ \hline
+MissileDetector`isFinished & 120 & $\surd$ \\ \hline
+MissileDetector`addController & 3 & $\surd$ \\ \hline
+\hline
+{\bf Total Coverage} & & {\bf 100\%} \\ \hline
+\end{longtable}
+
+

@@ -1,0 +1,22 @@
+\begin{thebibliography}{1}
+
+\bibitem{omniORB3}
+Sai-Lai Lo, David Riddoch, and Duncan Grisby.
+\newblock {\em The omniORB version 3.0 User's Guide}.
+\newblock AT\&T Laboratories Cambridge, May 2000.
+
+\bibitem{OMG&96}
+{\em The Common Object Request Broker: Architecture and Specification}.
+\newblock OMG, July 1996.
+
+\bibitem{LibMan-SCSK}
+SCSK.
+\newblock {\em The VDM C++ Library}.
+\newblock SCSK.
+
+\bibitem{CGJavaManPP-SCSK}
+SCSK.
+\newblock The vdm++ to java code generator.
+\newblock Technical report.
+
+\end{thebibliography}

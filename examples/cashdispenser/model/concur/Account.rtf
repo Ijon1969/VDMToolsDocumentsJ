@@ -1,0 +1,115 @@
+{\rtf1\ansi\ansicpg1252\uc1 \deff0\deflang1033\deflangfe1033{\fonttbl{\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}{\f1\fswiss\fcharset0\fprq2{\*\panose 020b0604020202020204}Arial;}
+{\f2\fmodern\fcharset0\fprq1{\*\panose 02070309020205020404}Courier New;}{\f6\fmodern\fcharset0\fprq1{\*\panose 00000000000000000000}Courier;}{\f17\froman\fcharset238\fprq2 Times New Roman CE;}{\f18\froman\fcharset204\fprq2 Times New Roman Cyr;}
+{\f20\froman\fcharset161\fprq2 Times New Roman Greek;}{\f21\froman\fcharset162\fprq2 Times New Roman Tur;}{\f22\froman\fcharset186\fprq2 Times New Roman Baltic;}{\f23\fswiss\fcharset238\fprq2 Arial CE;}{\f24\fswiss\fcharset204\fprq2 Arial Cyr;}
+{\f26\fswiss\fcharset161\fprq2 Arial Greek;}{\f27\fswiss\fcharset162\fprq2 Arial Tur;}{\f28\fswiss\fcharset186\fprq2 Arial Baltic;}{\f29\fmodern\fcharset238\fprq1 Courier New CE;}{\f30\fmodern\fcharset204\fprq1 Courier New Cyr;}
+{\f32\fmodern\fcharset161\fprq1 Courier New Greek;}{\f33\fmodern\fcharset162\fprq1 Courier New Tur;}{\f34\fmodern\fcharset186\fprq1 Courier New Baltic;}}{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;
+\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;
+\red192\green192\blue192;}{\stylesheet{\nowidctlpar\widctlpar\adjustright \fs20\cgrid \snext0 Normal;}{\s1\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel0\adjustright \b\f1\fs28\kerning28\cgrid \sbasedon0 \snext0 heading 1;}{\*\cs10 \additive 
+Default Paragraph Font;}{\s15\nowidctlpar\widctlpar\adjustright \shading1000\cbpat8 \f2\fs20\lang1024\cgrid \snext15 VDM;}{\*\cs16 \additive \f6 \sbasedon10 VDM_COV;}{\*\cs17 \additive \f6\cf16 \sbasedon10 VDM_NCOV;}{
+\s18\nowidctlpar\widctlpar\adjustright \shading1000\cbpat8 \f2\fs20\lang1024\cgrid \sbasedon15 \snext18 VDM_TC_TABLE;}}{\info{\title Default Rose-VDM++ Link forward engineering file}{\author VDM Tools}{\operator Paul Mukherjee}
+{\creatim\yr1998\mo10\dy16\hr14\min8}{\revtim\yr1999\mo12\dy8\hr14\min24}{\version155}{\edmins166}{\nofpages2}{\nofwords205}{\nofchars1169}{\*\company CSK}{\nofcharsws0}{\vern71}}
+\widowctrl\ftnbj\aenddoc\linkstyles\hyphcaps0\formshade\viewkind4\viewscale100\pgbrdrhead\pgbrdrfoot \fet0\sectd \linex0\headery709\footery709\colsx709\endnhere\sectdefaultcl {\*\pnseclvl1\pnucrm\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl2
+\pnucltr\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl3\pndec\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl4\pnlcltr\pnstart1\pnindent720\pnhang{\pntxta )}}{\*\pnseclvl5\pndec\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl6
+\pnlcltr\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl7\pnlcrm\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl8\pnlcltr\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl9\pnlcrm\pnstart1\pnindent720\pnhang
+{\pntxtb (}{\pntxta )}}\pard\plain \s1\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel0\adjustright \b\f1\fs28\kerning28\cgrid {\lang2057 The Class Account
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20\cgrid {This class models an account. A number of cards held by individual cardholders are associated with an account. An account has a balance and records transactions.
+\par 
+\par }\pard\plain \s15\nowidctlpar\widctlpar\adjustright \shading1000\cbpat8 \f2\fs20\lang1024\cgrid {class Account
+\par 
+\par instance variables
+\par   cards : map Card`CardId to Cardholder;
+\par   balance : nat;
+\par   transactions : seq of Transaction := [];
+\par   
+\par   inv TransactionsInvariant(transactions);
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20\cgrid {
+\par The invariant ensures that transactions performed on the same day do not exceed the daily limit, which is a constant value defined below. Note that we have chosen to not allow a negative balance.
+\par }\pard\plain \s15\nowidctlpar\widctlpar\adjustright \shading1000\cbpat8 \f2\fs20\lang1024\cgrid {
+\par values
+\par   dailyLimit : nat = 2000;
+\par 
+\par types
+\par   public AccountId = nat;
+\par   public Transaction :: date : Clock`Date
+\par                  cardId : Card`CardId
+\par                  amount : nat;
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20\cgrid {
+\par In this specification we have
+ chosen to model transaction as a type. Alternatively it could have been modeled as a class, but it has no obvious functionality except trivial read/write operations. Moreover, transaction objects/values do not need to be shared among many objects. Our ch
+oice also illustrates the power of the VDM++ type system.
+\par 
+\par }\pard\plain \s15\nowidctlpar\widctlpar\adjustright \shading1000\cbpat8 \f2\fs20\lang1024\cgrid {operations
+\par   public Create : map Card`CardId to Cardholder * nat ==> Account
+\par   Create(cs,b) ==
+\par     (cards := cs;
+\par      balance := b;
+\par      return self);
+\par 
+\par   public GetBalance : () ==> nat
+\par   GetBalance() ==
+\par     return balance;
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20\cgrid {
+\par The Withdrawal operation checks that an account and the daily limit are not overdrawn. 
+\par 
+\par }\pard\plain \s15\nowidctlpar\widctlpar\adjustright \shading1000\cbpat8 \f2\fs20\lang1024\cgrid {  public Withdrawal : Card`CardId * nat * Clock`Date ==> bool
+\par   Withdrawal(cardId,amount,date) ==
+\par     let transaction = mk_Transaction(date,cardId,amount)
+\par     in
+\par       if balance \endash  amount >= 0 and 
+\par          DateTotal(date,transactions^[transaction]) <= dailyLimit 
+\par       then
+\par        (balance := balance \endash  amount;
+\par         transactions := transactions ^ [transaction];
+\par         return true)
+\par       else 
+\par         return false
+\par   pre cardId in set dom cards;
+\par 
+\par   public MakeStatement : Card`CardId * Clock`Date ==> Letter
+\par   MakeStatement(cardId,date) ==
+\par     let nm = cards(cardId).GetName(),
+\par         addr = cards(cardId).GetAddress()
+\par     in 
+\par       (dcl letter : Letter := new Letter();
+\par        letter.Create(nm,addr,date,transactions,balance))
+\par   pre cardId in set dom cards;
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20\cgrid {
+\par The GetCardIds operation is used to obtain all cards associated with the account.
+\par 
+\par }\pard\plain \s15\nowidctlpar\widctlpar\adjustright \shading1000\cbpat8 \f2\fs20\lang1024\cgrid {  public GetCardIds: () ==> set of Card`CardId
+\par   GetCardIds() == 
+\par     return dom cards;
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20\cgrid {
+\par The following operations and functions provide auxiliary functionality of various sorts.
+\par 
+\par }\pard\plain \s15\nowidctlpar\widctlpar\adjustright \shading1000\cbpat8 \f2\fs20\lang1024\cgrid {  AddCard : Card`CardId * Cardholder ==> ()
+\par   AddCard(cId,ch) ==
+\par     cards := cards munion \{cId |-> ch\}
+\par   pre cId not in set dom cards;
+\par 
+\par functions
+\par   TransactionsInvariant: seq of Transaction +> bool
+\par   TransactionsInvariant(ts) ==
+\par     forall date in set \{ts(i).date | i in set inds ts\} &
+\par       DateTotal(date,ts) <= dailyLimit;
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20\cgrid {
+\par The transactions invariant first computes all dates in the sequence of transactions and then compares the sum of the drawn amounts for each day with the daily limit.
+\par 
+\par }\pard\plain \s15\nowidctlpar\widctlpar\adjustright \shading1000\cbpat8 \f2\fs20\lang1024\cgrid {  DateTotal : Clock`Date * seq of Transaction +> nat
+\par   DateTotal(date,ts) ==
+\par     Sum([ts(i).amount | i in set inds ts & ts(i).date = date]);
+\par 
+\par   Sum: seq of real +> real
+\par   Sum(rs) ==
+\par     if rs = [] then 0
+\par     else
+\par       hd rs + Sum(tl rs);
+\par 
+\par end Account
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20\cgrid {
+\par The table below presents test coverage information for the Account class.
+\par 
+\par }\pard\plain \s18\nowidctlpar\widctlpar\adjustright \shading1000\cbpat8 \f2\fs20\lang1024\cgrid {Account
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20\cgrid {
+\par 
+\par }}

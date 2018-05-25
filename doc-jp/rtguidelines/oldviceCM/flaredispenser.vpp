@@ -1,0 +1,131 @@
+\begin{vdm_al}
+class FlareDispenser
+
+instance variables
+
+magid               : MagId;
+currentMissileValue : Sensor`MissileType := <None>;
+latestMissileValue  : Sensor`MissileType := <None>;
+outputSequence      : seq of (FlareType * nat) := [];
+currentStep         : nat := 0;
+--numberOfFreshValues : nat := 0;
+fresh               : bool := false;
+interrupt           : Interrupt;
+
+values
+
+responseDB : map Sensor`MissileType to Plan =
+  {<MissileA> |-> [ mk_(<FlareOneA>,900), mk_(<FlareTwoA>,500),
+                    mk_(<DoNothingA>,100), mk_(<FlareOneA>,500)],
+   <MissileB> |-> [ mk_(<FlareTwoB>,500), mk_(<FlareTwoB>,700)],
+   <MissileC> |-> [ mk_(<FlareOneC>,400), mk_(<DoNothingC>,100),
+                    mk_(<FlareTwoC>,400), mk_(<FlareOneC>,500)]
+  };
+
+missilePriority : map Sensor`MissileType to nat
+                    = {<MissileA> |-> 1,
+                       <MissileB> |-> 2,
+                       <MissileC> |-> 3,
+                       <None>     |-> 0}
+
+types
+
+public MagId = token;
+Plan = seq of PlanStep;
+
+public PlanStep = FlareType * nat;
+
+public FlareType = <FlareOneA> | <FlareTwoA> | <FlareOneB> |
+                   <FlareTwoB> | <FlareOneC> | <FlareTwoC> |
+                   <DoNothingA> | <DoNothingB> | <DoNothingC>;
+
+thread
+
+while true do
+  (StepAlgorithm();
+   if currentMissileValue <> <None>
+   then let mk_(-, delay_val) =
+               responseDB(currentMissileValue)(currentStep-1)
+        in interrupt.Alarm(delay_val)
+  )
+
+operations
+
+public FlareDispenser: MagId * Timer ==> FlareDispenser
+FlareDispenser(mid,t) ==
+  (magid := mid;
+   interrupt := new Interrupt(t));
+
+StepAlgorithm : () ==> ()
+StepAlgorithm() ==
+  (if fresh
+   then (fresh := false;
+         CheckFreshData();
+        );
+   if currentMissileValue <> <None>
+   then StepPlan()
+  );
+sync
+
+  per StepAlgorithm => fresh = true or currentMissileValue <> <None>;
+
+operations
+
+CheckFreshData : () ==> ()
+CheckFreshData() ==
+  (if HigherPriority(latestMissileValue,currentMissileValue)
+   then StartPlan(latestMissileValue);
+   latestMissileValue := <None>;
+--   numberOfFreshValues := numberOfFreshValues + 1;
+  );
+
+HigherPriority : Sensor`MissileType * Sensor`MissileType ==> bool
+HigherPriority(latest, current) ==
+  return missilePriority(latest) > missilePriority(current);
+
+StartPlan : Sensor`MissileType ==> ()
+StartPlan(newMissileValue) ==
+( currentMissileValue := newMissileValue;
+  currentStep := 1
+);
+
+ReleaseAFlare : FlareType ==> ()
+ReleaseAFlare(ft) ==
+  outputSequence := outputSequence ^[mk_(ft,interrupt.GetTime())];
+
+StepPlan : () ==> ()
+StepPlan() ==
+  if currentStep <= len responseDB(currentMissileValue)
+  then
+    (let mk_(flare, -) = responseDB(currentMissileValue)(currentStep)
+     in ReleaseAFlare(flare);
+     currentStep := currentStep + 1
+    )
+  else (currentMissileValue := <None>;
+        currentStep := 0
+       );
+
+public GetResult : () ==> seq of (FlareType * nat)
+GetResult() == return outputSequence;
+
+public IsFinished: () ==> ()
+IsFinished() == skip;
+
+sync
+
+  per IsFinished => currentStep = 0;
+
+operations
+
+public NewMissileValue: Sensor`MissileType ==> ()
+NewMissileValue(misType) ==
+  (interrupt.Inter();
+   latestMissileValue := misType;
+   fresh := true);
+  
+end FlareDispenser
+\end{vdm_al}
+
+\begin{rtinfo}[FlareDispenser`NewMissileValue]
+{vdm.tc}[FlareDispenser]
+\end{rtinfo}

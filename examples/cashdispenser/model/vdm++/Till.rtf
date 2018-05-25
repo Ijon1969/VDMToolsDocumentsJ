@@ -1,0 +1,135 @@
+{\rtf1\ansi\ansicpg1252\uc1 \deff0\deflang1033\deflangfe1033{\fonttbl{\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}{\f1\fswiss\fcharset0\fprq2{\*\panose 020b0604020202020204}Arial;}
+{\f2\fmodern\fcharset0\fprq1{\*\panose 02070309020205020404}Courier New;}{\f6\fmodern\fcharset0\fprq1{\*\panose 00000000000000000000}Courier;}{\f17\froman\fcharset238\fprq2 Times New Roman CE;}{\f18\froman\fcharset204\fprq2 Times New Roman Cyr;}
+{\f20\froman\fcharset161\fprq2 Times New Roman Greek;}{\f21\froman\fcharset162\fprq2 Times New Roman Tur;}{\f22\froman\fcharset186\fprq2 Times New Roman Baltic;}{\f23\fswiss\fcharset238\fprq2 Arial CE;}{\f24\fswiss\fcharset204\fprq2 Arial Cyr;}
+{\f26\fswiss\fcharset161\fprq2 Arial Greek;}{\f27\fswiss\fcharset162\fprq2 Arial Tur;}{\f28\fswiss\fcharset186\fprq2 Arial Baltic;}{\f29\fmodern\fcharset238\fprq1 Courier New CE;}{\f30\fmodern\fcharset204\fprq1 Courier New Cyr;}
+{\f32\fmodern\fcharset161\fprq1 Courier New Greek;}{\f33\fmodern\fcharset162\fprq1 Courier New Tur;}{\f34\fmodern\fcharset186\fprq1 Courier New Baltic;}}{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;
+\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;
+\red192\green192\blue192;}{\stylesheet{\nowidctlpar\widctlpar\adjustright \fs20\cgrid \snext0 Normal;}{\s1\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel0\adjustright \b\f1\fs28\kerning28\cgrid \sbasedon0 \snext0 heading 1;}{\*\cs10 \additive 
+Default Paragraph Font;}{\s15\nowidctlpar\widctlpar\adjustright \shading1000\cbpat8 \f2\fs20\lang1024\cgrid \snext15 VDM;}{\*\cs16 \additive \f6 \sbasedon10 VDM_COV;}{\*\cs17 \additive \f6\cf16 \sbasedon10 VDM_NCOV;}{
+\s18\nowidctlpar\widctlpar\adjustright \shading1000\cbpat8 \f2\fs20\lang1024\cgrid \sbasedon15 \snext18 VDM_TC_TABLE;}}{\info{\title Default Rose-VDM++ Link forward engineering file}{\author VDM Tools}{\operator Paul Mukherjee}
+{\creatim\yr1998\mo10\dy16\hr14\min8}{\revtim\yr2000\mo5\dy30\hr15\min47}{\version171}{\edmins285}{\nofpages3}{\nofwords546}{\nofchars3117}{\*\company CSK}{\nofcharsws0}{\vern71}}
+\widowctrl\ftnbj\aenddoc\linkstyles\hyphcaps0\formshade\viewkind4\viewscale100\pgbrdrhead\pgbrdrfoot \fet0\sectd \linex0\headery709\footery709\colsx709\endnhere\sectdefaultcl {\*\pnseclvl1\pnucrm\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl2
+\pnucltr\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl3\pndec\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl4\pnlcltr\pnstart1\pnindent720\pnhang{\pntxta )}}{\*\pnseclvl5\pndec\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl6
+\pnlcltr\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl7\pnlcrm\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl8\pnlcltr\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl9\pnlcrm\pnstart1\pnindent720\pnhang
+{\pntxtb (}{\pntxta )}}\pard\plain \s1\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel0\adjustright \b\f1\fs28\kerning28\cgrid {\lang2057 The Class Till
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20\cgrid {
+This class models a till. A till is connected to a central resource and holds a number of retained cards, which have not been returned to a user of the till. It may hold a current card and it has an attribute to say whether the current card and its PIN co
+de have been validated successfully. In this version of the till we assume that the central resource will always become available within a reasonable time limit.
+\par 
+\par }\pard\plain \s15\nowidctlpar\widctlpar\adjustright \shading1000\cbpat8 \f2\fs20\lang1024\cgrid {class Till
+\par 
+\par instance variables
+\par   curCard : [Card] := nil;
+\par   cardOk : bool := false;
+\par   retainedCards : set of Card := \{\};
+\par   resource : CentralResource;
+\par 
+\par   inv curCard = nil => not cardOk;
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20\cgrid {
+\par The invariant says that if there is no card in the till then the validation status of the current card shall be false.
+\par 
+\par }\pard\plain \s15\nowidctlpar\widctlpar\adjustright \shading1000\cbpat8 \f2\fs20\lang1024\cgrid {operations
+\par   public Create: CentralResource ==> Till
+\par   Create(res) == 
+\par     (resource := res;
+\par      return self);
+\par 
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20\cgrid {The Create operation is used once in a till object\rquote s lifetime in order to set up a connection to a central resource.
+\par 
+\par }\pard\plain \s15\nowidctlpar\widctlpar\adjustright \shading1000\cbpat8 \f2\fs20\lang1024\cgrid {  public InsertCard : Card ==> ()
+\par   InsertCard(c) ==
+\par     curCard := c
+\par   pre not CardInside();
+\par 
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20\cgrid {The InsertCard operation models the activity of inserting a card into the till. This cannot be done if the till holds a card already, which is documented in the precondition.
+\par 
+\par }\pard\plain \s15\nowidctlpar\widctlpar\adjustright \shading1000\cbpat8 \f2\fs20\lang1024\cgrid {  public Validate : Card`PinCode ==> <PinOk> | <PinNotOk> | <Retained>
+\par   Validate(pin) ==
+\par     let cardId = curCard.GetCardId(),
+\par         codeOk = curCard.GetCode() = Encode(pin),
+\par         cardLegal = IsLegalCard()
+\par     in
+\par       (cardOk := codeOk and cardLegal;
+\par        if not cardLegal then 
+\par          (retainedCards := retainedCards union \{curCard\};
+\par           curCard := nil;
+\par           return <Retained>)
+\par        elseif codeOk then
+\par          resource.ResetNumberOfTries(cardId)
+\par        else
+\par          (resource.IncrNumberOfTries(cardId);
+\par           if resource.NumberOfTriesExceeded(cardId) then
+\par             (retainedCards := retainedCards union \{curCard\};
+\par              cardOk := false;
+\par              curCard := nil;
+\par              return <Retained>));
+\par        return if cardOk
+\par               then <PinOk>
+\par               else <PinNotOk>)
+\par   pre CardInside() and not cardOk;
+\par 
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20\cgrid {
+\par The operation Validate is used to validate a PIN code and to check that a card is not illegal. The precondition ensures that the till currently holds a card which has not yet been validated. If a card turns out to be illegal, the machine keeps the card. 
+
+\par 
+\par }\pard\plain \s15\nowidctlpar\widctlpar\adjustright \shading1000\cbpat8 \f2\fs20\lang1024\cgrid {  public ReturnCard : () ==> ()
+\par   ReturnCard() ==
+\par     (cardOk := false;
+\par      curCard:= nil)
+\par   pre CardInside();
+\par 
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20\cgrid {The }{\f6 ReturnCard}{
+ operation is useful to end user sessions, though it is not mentioned in the requirements. It allows the user to perform more than one transaction in each session, e.g. to first view the balance and then make a withdrawal.
+\par 
+\par The following three operations are listed in the requirements document. They all require that the till holds a card which has been validated successfully. The operations are mirrored in the central resource. The }{\f6 GetBalance}{
+ operation return the value }{\f6 nil}{ if it is not possible to get the balance. 
+\par 
+\par }\pard\plain \s15\nowidctlpar\widctlpar\adjustright \shading1000\cbpat8 \f2\fs20\lang1024\cgrid {  public GetBalance : () ==> [nat]
+\par   GetBalance() ==
+\par     resource.GetBalance(curCard.GetAccountId())
+\par   pre CardValidated();
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20\cgrid {
+\par The }{\f6 MakeWithdrawal}{ and }{\f6 RequestStatement}{ operations returns a boolean indicating whether the requested transactions could be completed.
+\par 
+\par }\pard\plain \s15\nowidctlpar\widctlpar\adjustright \shading1000\cbpat8 \f2\fs20\lang1024\cgrid {  public MakeWithdrawal : nat ==> bool
+\par   MakeWithdrawal(amount) ==
+\par     resource.Withdrawal
+\par       (curCard.GetAccountId(),curCard.GetCardId(),amount)
+\par   pre CardValidated();
+\par 
+\par   public RequestStatement : () ==> bool
+\par   RequestStatement() ==
+\par     resource.PostStatement(curCard.GetAccountId(),curCard.GetCardId())
+\par   pre CardValidated();
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20\cgrid {
+\par The IsLegalCard operation below is only used internally to validate a card.
+\par 
+\par }\pard\plain \s15\nowidctlpar\widctlpar\adjustright \shading1000\cbpat8 \f2\fs20\lang1024\cgrid {  public IsLegalCard : () ==> bool
+\par   IsLegalCard() ==
+\par     return 
+\par       resource.IsLegalCard(curCard.GetAccountId(),curCard.GetCardId())
+\par   pre CardInside();
+\par 
+\par   public CardValidated: () ==> bool
+\par   CardValidated() ==
+\par     return curCard <> nil and cardOk;
+\par 
+\par   public CardInside: () ==> bool
+\par   CardInside() ==
+\par     return curCard <> nil;
+\par 
+\par functions
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20\cgrid {
+\par The requirements say that the till should encode the PIN code before comparing it to the code on the card. We have documented this requirement in the function below, but not yet made a choice of approach to this.
+\par 
+\par }\pard\plain \s15\nowidctlpar\widctlpar\adjustright \shading1000\cbpat8 \f2\fs20\lang1024\cgrid {  Encode: Card`PinCode +> Card`Code
+\par   Encode(pin) ==
+\par     pin; -- NB! The actual encoding procedure has not yet been chosen
+\par 
+\par end Till
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20\cgrid {
+\par The table below presents test coverage information for the Till class.
+\par 
+\par }\pard\plain \s18\nowidctlpar\widctlpar\adjustright \shading1000\cbpat8 \f2\fs20\lang1024\cgrid {Till
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20\cgrid {
+\par }}

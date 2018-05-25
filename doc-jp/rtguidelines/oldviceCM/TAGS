@@ -1,0 +1,114 @@
+
+flarecontroller.vpp,721
+Plan 5,30
+PlanStep 7,55
+public FlareType 9,84
+responseDB : map Sensor`MissileType to Plan 15,278
+missilePriority : map Sensor`MissileType to nat23,654
+timerRef            : Timer;32,905
+currentMissileValue 33,934
+currentStep         : nat 34,987
+latestMissileValue  : Sensor`MissileType36,1086
+outputSequence      : seq of FlareType 37,1139
+  per IsFinished 47,1343
+ReleaseAFlare : FlareType 51,1412
+    outputSequence 65,1893
+public Init : MissileDetector * Timer 95,2500
+   timerRef 98,2631
+   latestMissileValue 104,2806
+per StepAlgorithm 118,2991
+StartPlan : Sensor`MissileType138,3518
+   currentStep 141,3629
+     currentStep 150,3853
+        currentStep 153,3934
+public MissileIsHere 156,3970
+
+flaredispenser.vpp,892
+magid               : MagId;6,57
+currentMissileValue : Sensor`MissileType7,86
+latestMissileValue  : Sensor`MissileType8,138
+currentStep         : nat 10,244
+--numberOfFreshValues : nat 11,276
+interrupt           : Interrupt;13,347
+responseDB : map Sensor`MissileType to Plan 17,389
+missilePriority : map Sensor`MissileType to nat25,765
+Plan 34,1007
+public PlanStep 36,1032
+public FlareType 38,1068
+   interrupt 57,1579
+  per StepAlgorithm 70,1801
+   latestMissileValue 78,2031
+--   numberOfFreshValues 79,2064
+HigherPriority : Sensor`MissileType * Sensor`MissileType82,2123
+StartPlan : Sensor`MissileType86,2286
+  currentStep 89,2396
+ReleaseAFlare : FlareType 92,2419
+     currentStep 102,2739
+        currentStep 105,2820
+  per IsFinished 116,3004
+public NewMissileValue: Sensor`MissileType120,3054
+   latestMissileValue 123,3154
+   fresh 124,3188
+{vdm.tc}130,3290
+
+interrupt.vpp,144
+timer        : Timer;6,52
+currentAlarm 7,74
+public Interrupt: Timer 13,124
+public Alarm : nat 17,193
+SetAlarm : nat 21,247
+{vdm.tc}36,506
+
+missiledetector.vpp,266
+Update 5,35
+sensorRef       : Sensor;15,288
+flareControlRef : FlareController;16,314
+missileValue 17,349
+timerRef        : Timer;18,399
+public Init : Sensor * FlareController * Timer 22,437
+  flareControlRef 25,567
+  timerRef 26,608
+  per IsFinished 41,827
+
+sensor.vpp,214
+public MissileType 5,21
+io           : SensorIO 9,110
+missileValue 10,153
+timer        : Timer 11,219
+public stepLength : nat 15,265
+SkipNum : nat 28,444
+per GetMissileValue 44,734
+  per IsFinished 63,1028
+
+sensorio.vpp,84
+curIndex : nat 5,54
+mvList   : seq of Sensor`MissileType6,75
+    curIndex 15,278
+
+system.vpp,478
+  static public fc : FlareController 6,86
+  CPU1 : CPU 8,220
+  static public disp1 : FlareDispenser 11,315
+  static public disp2 : FlareDispenser 12,379
+  static public disp3 : FlareDispenser 13,443
+  static public disp4 : FlareDispenser 14,507
+  CPU2 : CPU 16,643
+  CPU3 : CPU 17,681
+  CPU4 : CPU 18,719
+  CPU5 : CPU 19,757
+  static public md : MissileDetector 22,841
+  CPU6 : CPU 24,974
+  BUS1 : BUS 27,1083
+      -- starting the CPUs and BUS is implicit53,1964
+
+timer.vpp,140
+currentTime  : nat 5,33
+currentAlarm : nat 7,89
+periodic(11,124
+public Alarm : nat 20,273
+  per WaitAlarm 31,422
+  currentTime 42,612
+
+world.vpp,47
+timerRef : Timer 5,33
+sensor   : Sensor 6,76

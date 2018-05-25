@@ -1,0 +1,168 @@
+\contentsline {section}{\numberline {1}Introduction}{1}{section.1}
+\contentsline {subsection}{\numberline {1.1}Purpose of The Document}{1}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}History of The Language}{1}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}Structure of the Document}{2}{subsection.1.3}
+\contentsline {section}{\numberline {2}Conformance Issues}{2}{section.2}
+\contentsline {section}{\numberline {3}Concrete Syntax Notation}{3}{section.3}
+\contentsline {section}{\numberline {4}Data Type Definitions}{4}{section.4}
+\contentsline {subsection}{\numberline {4.1}Basic Data Types}{5}{subsection.4.1}
+\contentsline {subsubsection}{\numberline {4.1.1}The Boolean Type}{5}{subsubsection.4.1.1}
+\contentsline {subsubsection}{\numberline {4.1.2}The Numeric Types}{8}{subsubsection.4.1.2}
+\contentsline {subsubsection}{\numberline {4.1.3}The Character Type}{11}{subsubsection.4.1.3}
+\contentsline {subsubsection}{\numberline {4.1.4}The Quote Type}{11}{subsubsection.4.1.4}
+\contentsline {subsubsection}{\numberline {4.1.5}The Token Type}{12}{subsubsection.4.1.5}
+\contentsline {subsection}{\numberline {4.2}Compound Types}{13}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}Set Types}{13}{subsubsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2}Sequence Types}{16}{subsubsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.3}Map Types}{19}{subsubsection.4.2.3}
+\contentsline {subsubsection}{\numberline {4.2.4}Product Types}{23}{subsubsection.4.2.4}
+\contentsline {subsubsection}{\numberline {4.2.5}Composite Types}{23}{subsubsection.4.2.5}
+\contentsline {subsubsection}{\numberline {4.2.6}Union and Optional Types}{27}{subsubsection.4.2.6}
+\contentsline {subsubsection}{\numberline {4.2.7}The Object Reference Type}{29}{subsubsection.4.2.7}
+\contentsline {subsubsection}{\numberline {4.2.8}Function Types}{30}{subsubsection.4.2.8}
+\contentsline {subsection}{\numberline {4.3}Invariants}{32}{subsection.4.3}
+\contentsline {section}{\numberline {5}Algorithm Definitions}{33}{section.5}
+\contentsline {section}{\numberline {6}Function Definitions}{34}{section.6}
+\contentsline {subsection}{\numberline {6.1}Polymorphic Functions}{38}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Higher Order Functions}{39}{subsection.6.2}
+\contentsline {section}{\numberline {7}Expressions}{40}{section.7}
+\contentsline {subsection}{\numberline {7.1}Let Expressions}{40}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}The Define Expression}{43}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}Unary and Binary Expressions}{44}{subsection.7.3}
+\contentsline {subsection}{\numberline {7.4}Conditional Expressions}{45}{subsection.7.4}
+\contentsline {subsection}{\numberline {7.5}Quantified Expressions}{48}{subsection.7.5}
+\contentsline {subsection}{\numberline {7.6}The Iota Expression}{50}{subsection.7.6}
+\contentsline {subsection}{\numberline {7.7}Set Expressions}{51}{subsection.7.7}
+\contentsline {subsection}{\numberline {7.8}Sequence Expressions}{53}{subsection.7.8}
+\contentsline {subsection}{\numberline {7.9}Map Expressions}{55}{subsection.7.9}
+\contentsline {subsection}{\numberline {7.10}Tuple Constructor Expressions}{56}{subsection.7.10}
+\contentsline {subsection}{\numberline {7.11}Record Expressions}{56}{subsection.7.11}
+\contentsline {subsection}{\numberline {7.12}Apply Expressions}{58}{subsection.7.12}
+\contentsline {subsection}{\numberline {7.13}The New Expression}{59}{subsection.7.13}
+\contentsline {subsection}{\numberline {7.14}The Self Expression}{60}{subsection.7.14}
+\contentsline {subsection}{\numberline {7.15}The Threadid Expression}{61}{subsection.7.15}
+\contentsline {subsection}{\numberline {7.16}The Lambda Expression}{63}{subsection.7.16}
+\contentsline {subsection}{\numberline {7.17}Narrow Expressions}{64}{subsection.7.17}
+\contentsline {subsection}{\numberline {7.18}Is Expressions}{66}{subsection.7.18}
+\contentsline {subsection}{\numberline {7.19}Base Class Membership}{67}{subsection.7.19}
+\contentsline {subsection}{\numberline {7.20}Class Membership}{68}{subsection.7.20}
+\contentsline {subsection}{\numberline {7.21}Same Base Class Membership}{68}{subsection.7.21}
+\contentsline {subsection}{\numberline {7.22}Same Class Membership}{69}{subsection.7.22}
+\contentsline {subsection}{\numberline {7.23}History Expressions}{69}{subsection.7.23}
+\contentsline {subsection}{\numberline {7.24}Literals and Names}{71}{subsection.7.24}
+\contentsline {subsection}{\numberline {7.25}The Undefined Expression}{73}{subsection.7.25}
+\contentsline {subsection}{\numberline {7.26}The Precondition Expression}{74}{subsection.7.26}
+\contentsline {section}{\numberline {8}Patterns}{75}{section.8}
+\contentsline {section}{\numberline {9}Bindings}{80}{section.9}
+\contentsline {section}{\numberline {10}Value (Constant) Definitions}{81}{section.10}
+\contentsline {section}{\numberline {11}Instance Variables}{82}{section.11}
+\contentsline {section}{\numberline {12}Operation Definitions}{84}{section.12}
+\contentsline {subsection}{\numberline {12.1}Constructors}{88}{subsection.12.1}
+\contentsline {section}{\numberline {13}Statements}{88}{section.13}
+\contentsline {subsection}{\numberline {13.1}Let Statements}{88}{subsection.13.1}
+\contentsline {subsection}{\numberline {13.2}The Define Statement}{90}{subsection.13.2}
+\contentsline {subsection}{\numberline {13.3}The Block Statement}{91}{subsection.13.3}
+\contentsline {subsection}{\numberline {13.4}The Assignment Statement}{93}{subsection.13.4}
+\contentsline {subsection}{\numberline {13.5}Conditional Statements}{96}{subsection.13.5}
+\contentsline {subsection}{\numberline {13.6}For-Loop Statements}{98}{subsection.13.6}
+\contentsline {subsection}{\numberline {13.7}The While-Loop Statement}{100}{subsection.13.7}
+\contentsline {subsection}{\numberline {13.8}The Nondeterministic Statement}{101}{subsection.13.8}
+\contentsline {subsection}{\numberline {13.9}The Call Statement}{103}{subsection.13.9}
+\contentsline {subsection}{\numberline {13.10}The Return Statement}{105}{subsection.13.10}
+\contentsline {subsection}{\numberline {13.11}Exception Handling Statements}{106}{subsection.13.11}
+\contentsline {subsection}{\numberline {13.12}The Error Statement}{109}{subsection.13.12}
+\contentsline {subsection}{\numberline {13.13}The Identity Statement}{110}{subsection.13.13}
+\contentsline {subsection}{\numberline {13.14}Start and Start List Statements}{111}{subsection.13.14}
+\contentsline {subsection}{\numberline {13.15}The Specification Statement}{112}{subsection.13.15}
+\contentsline {section}{\numberline {14}Top-level Specification}{114}{section.14}
+\contentsline {subsection}{\numberline {14.1}Classes}{114}{subsection.14.1}
+\contentsline {subsection}{\numberline {14.2}Inheritance}{116}{subsection.14.2}
+\contentsline {subsection}{\numberline {14.3}Interface and Availability of Class Members}{119}{subsection.14.3}
+\contentsline {section}{\numberline {15}Synchronization Constraints}{123}{section.15}
+\contentsline {subsection}{\numberline {15.1}Permission Predicates}{124}{subsection.15.1}
+\contentsline {subsubsection}{\numberline {15.1.1}History guards}{126}{subsubsection.15.1.1}
+\contentsline {subsubsection}{\numberline {15.1.2}The object state guard}{127}{subsubsection.15.1.2}
+\contentsline {subsubsection}{\numberline {15.1.3}Queue condition guards}{127}{subsubsection.15.1.3}
+\contentsline {subsubsection}{\numberline {15.1.4}Evaluation of Guards}{128}{subsubsection.15.1.4}
+\contentsline {subsection}{\numberline {15.2}Inheritance of Synchronization Constraints}{129}{subsection.15.2}
+\contentsline {subsubsection}{\numberline {15.2.1}Mutex constraints}{129}{subsubsection.15.2.1}
+\contentsline {section}{\numberline {16}Threads}{131}{section.16}
+\contentsline {subsection}{\numberline {16.1}Procedural Thread Definitions}{131}{subsection.16.1}
+\contentsline {section}{\numberline {17}Trace Definitions}{133}{section.17}
+\contentsline {section}{\numberline {18}Differences between VDM++ and ISO /VDM-SL}{136}{section.18}
+\contentsline {section}{\numberline {19}Static Semantics}{138}{section.19}
+\contentsline {section}{\numberline {20}Scope Conflicts}{139}{section.20}
+\contentsline {section}{\numberline {A}The VDM++ Syntax}{142}{appendix.A}
+\contentsline {subsection}{\numberline {A.1}Document}{142}{subsection.A.1}
+\contentsline {subsection}{\numberline {A.2}Classes}{142}{subsection.A.2}
+\contentsline {subsection}{\numberline {A.3}Definitions}{142}{subsection.A.3}
+\contentsline {subsubsection}{\numberline {A.3.1}Type Definitions}{142}{subsubsection.A.3.1}
+\contentsline {subsubsection}{\numberline {A.3.2}Value Definitions}{145}{subsubsection.A.3.2}
+\contentsline {subsubsection}{\numberline {A.3.3}Function Definitions}{145}{subsubsection.A.3.3}
+\contentsline {subsubsection}{\numberline {A.3.4}Operation Definitions}{146}{subsubsection.A.3.4}
+\contentsline {subsubsection}{\numberline {A.3.5}Instance Variable Definitions}{148}{subsubsection.A.3.5}
+\contentsline {subsubsection}{\numberline {A.3.6}Synchronization Definitions}{148}{subsubsection.A.3.6}
+\contentsline {subsubsection}{\numberline {A.3.7}Thread Definitions}{149}{subsubsection.A.3.7}
+\contentsline {subsubsection}{\numberline {A.3.8}Trace Definitions}{149}{subsubsection.A.3.8}
+\contentsline {subsection}{\numberline {A.4}Expressions}{150}{subsection.A.4}
+\contentsline {subsubsection}{\numberline {A.4.1}Bracketed Expressions}{151}{subsubsection.A.4.1}
+\contentsline {subsubsection}{\numberline {A.4.2}Local Binding Expressions}{151}{subsubsection.A.4.2}
+\contentsline {subsubsection}{\numberline {A.4.3}Conditional Expressions}{151}{subsubsection.A.4.3}
+\contentsline {subsubsection}{\numberline {A.4.4}Unary Expressions}{152}{subsubsection.A.4.4}
+\contentsline {subsubsection}{\numberline {A.4.5}Binary Expressions}{154}{subsubsection.A.4.5}
+\contentsline {subsubsection}{\numberline {A.4.6}Quantified Expressions}{156}{subsubsection.A.4.6}
+\contentsline {subsubsection}{\numberline {A.4.7}The Iota Expression}{157}{subsubsection.A.4.7}
+\contentsline {subsubsection}{\numberline {A.4.8}Set Expressions}{157}{subsubsection.A.4.8}
+\contentsline {subsubsection}{\numberline {A.4.9}Sequence Expressions}{157}{subsubsection.A.4.9}
+\contentsline {subsubsection}{\numberline {A.4.10}Map Expressions}{157}{subsubsection.A.4.10}
+\contentsline {subsubsection}{\numberline {A.4.11}The Tuple Constructor Expression}{157}{subsubsection.A.4.11}
+\contentsline {subsubsection}{\numberline {A.4.12}Record Expressions}{158}{subsubsection.A.4.12}
+\contentsline {subsubsection}{\numberline {A.4.13}Apply Expressions}{158}{subsubsection.A.4.13}
+\contentsline {subsubsection}{\numberline {A.4.14}The Lambda Expression}{158}{subsubsection.A.4.14}
+\contentsline {subsection}{\numberline {A.5}The narrow Expression}{158}{subsection.A.5}
+\contentsline {subsubsection}{\numberline {A.5.1}The New Expression}{158}{subsubsection.A.5.1}
+\contentsline {subsubsection}{\numberline {A.5.2}The Self Expression}{159}{subsubsection.A.5.2}
+\contentsline {subsubsection}{\numberline {A.5.3}The Threadid Expression}{159}{subsubsection.A.5.3}
+\contentsline {subsubsection}{\numberline {A.5.4}The Is Expression}{159}{subsubsection.A.5.4}
+\contentsline {subsubsection}{\numberline {A.5.5}The Undefined Expression}{159}{subsubsection.A.5.5}
+\contentsline {subsubsection}{\numberline {A.5.6}The Precondition Expression}{159}{subsubsection.A.5.6}
+\contentsline {subsubsection}{\numberline {A.5.7}Base Class Membership}{159}{subsubsection.A.5.7}
+\contentsline {subsubsection}{\numberline {A.5.8}Class Membership}{159}{subsubsection.A.5.8}
+\contentsline {subsubsection}{\numberline {A.5.9}Same Base Class Membership}{160}{subsubsection.A.5.9}
+\contentsline {subsubsection}{\numberline {A.5.10}Same Class Membership}{160}{subsubsection.A.5.10}
+\contentsline {subsubsection}{\numberline {A.5.11}History Expressions}{160}{subsubsection.A.5.11}
+\contentsline {subsubsection}{\numberline {A.5.12}Names}{160}{subsubsection.A.5.12}
+\contentsline {subsection}{\numberline {A.6}State Designators}{161}{subsection.A.6}
+\contentsline {subsection}{\numberline {A.7}Statements}{161}{subsection.A.7}
+\contentsline {subsubsection}{\numberline {A.7.1}Local Binding Statements}{161}{subsubsection.A.7.1}
+\contentsline {subsubsection}{\numberline {A.7.2}Block and Assignment Statements}{162}{subsubsection.A.7.2}
+\contentsline {subsubsection}{\numberline {A.7.3}Conditional Statements}{163}{subsubsection.A.7.3}
+\contentsline {subsubsection}{\numberline {A.7.4}Loop Statements}{163}{subsubsection.A.7.4}
+\contentsline {subsubsection}{\numberline {A.7.5}The Nondeterministic Statement}{163}{subsubsection.A.7.5}
+\contentsline {subsubsection}{\numberline {A.7.6}Call and Return Statements}{164}{subsubsection.A.7.6}
+\contentsline {subsubsection}{\numberline {A.7.7}The Specification Statement}{164}{subsubsection.A.7.7}
+\contentsline {subsubsection}{\numberline {A.7.8}Start and Start List Statements}{164}{subsubsection.A.7.8}
+\contentsline {subsubsection}{\numberline {A.7.9}Exception Handling Statements}{164}{subsubsection.A.7.9}
+\contentsline {subsubsection}{\numberline {A.7.10}The Error Statement}{165}{subsubsection.A.7.10}
+\contentsline {subsubsection}{\numberline {A.7.11}The Identity Statement}{165}{subsubsection.A.7.11}
+\contentsline {subsection}{\numberline {A.8}Patterns and Bindings}{165}{subsection.A.8}
+\contentsline {subsubsection}{\numberline {A.8.1}Patterns}{165}{subsubsection.A.8.1}
+\contentsline {subsubsection}{\numberline {A.8.2}Bindings}{166}{subsubsection.A.8.2}
+\contentsline {section}{\numberline {B}Lexical Specification}{167}{appendix.B}
+\contentsline {subsection}{\numberline {B.1}Characters}{167}{subsection.B.1}
+\contentsline {subsection}{\numberline {B.2}Symbols}{170}{subsection.B.2}
+\contentsline {section}{\numberline {C}Operator Precedence}{173}{appendix.C}
+\contentsline {subsection}{\numberline {C.1}The Family of Combinators}{174}{subsection.C.1}
+\contentsline {subsection}{\numberline {C.2}The Family of Applicators}{174}{subsection.C.2}
+\contentsline {subsection}{\numberline {C.3}The Family of Evaluators}{175}{subsection.C.3}
+\contentsline {subsection}{\numberline {C.4}The Family of Relations}{176}{subsection.C.4}
+\contentsline {subsection}{\numberline {C.5}The Family of Connectives}{177}{subsection.C.5}
+\contentsline {subsection}{\numberline {C.6}The Family of Constructors}{177}{subsection.C.6}
+\contentsline {subsection}{\numberline {C.7}Grouping}{177}{subsection.C.7}
+\contentsline {subsection}{\numberline {C.8}The Type Operators}{178}{subsection.C.8}
+\contentsline {section}{\numberline {D}Differences between the two Concrete Syntaxes}{178}{appendix.D}
+\contentsline {section}{\numberline {E}Standard Libraries}{180}{appendix.E}
+\contentsline {subsection}{\numberline {E.1}Math Library}{180}{subsection.E.1}
+\contentsline {subsection}{\numberline {E.2}IO Library}{181}{subsection.E.2}
+\contentsline {subsection}{\numberline {E.3}VDMUtil Library}{183}{subsection.E.3}
+\contentsline {section}{Index}{186}{subsection.E.3}

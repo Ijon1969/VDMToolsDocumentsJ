@@ -1,0 +1,61 @@
+This is BibTeX, Version 0.99d (TeX Live 2017)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: usermansl_a4E.aux
+The style file: plain.bst
+Database file #1: user_man.bib
+Warning--I'm ignoring SortEx-SCSK's extra "key" field
+--line 69626 of file user_man.bib
+Warning--I'm ignoring LangManPP-SCSK's extra "key" field
+--line 69641 of file user_man.bib
+Warning--I'm ignoring UMLMan-SCSK's extra "key" field
+--line 69649 of file user_man.bib
+Warning--I'm ignoring LangMan-SCSK's extra "key" field
+--line 69657 of file user_man.bib
+Warning--I'm ignoring DLMan-SCSK's extra "key" field
+--line 69674 of file user_man.bib
+Warning--I'm ignoring APIMan-SCSK's extra "key" field
+--line 69682 of file user_man.bib
+Warning--I'm ignoring CGMan-SCSK's extra "key" field
+--line 69698 of file user_man.bib
+You've used 12 entries,
+            2118 wiz_defined-function locations,
+            562 strings with 5583 characters,
+and the built_in function-call counts, 2633 in all, are:
+= -- 246
+> -- 117
+< -- 0
++ -- 53
+- -- 36
+* -- 117
+:= -- 478
+add.period$ -- 36
+call.type$ -- 12
+change.case$ -- 45
+chr.to.int$ -- 0
+cite$ -- 12
+duplicate$ -- 111
+empty$ -- 226
+format.name$ -- 36
+if$ -- 534
+int.to.chr$ -- 0
+int.to.str$ -- 12
+missing$ -- 4
+newline$ -- 63
+num.names$ -- 24
+pop$ -- 87
+preamble$ -- 1
+purify$ -- 42
+quote$ -- 0
+skip$ -- 59
+stack$ -- 0
+substring$ -- 65
+swap$ -- 19
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 44
+warning$ -- 0
+while$ -- 24
+width$ -- 14
+write$ -- 116
+(There were 7 warnings)

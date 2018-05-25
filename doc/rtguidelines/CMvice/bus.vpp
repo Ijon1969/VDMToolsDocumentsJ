@@ -1,0 +1,13 @@
+class BUS
+
+types
+
+public Kind = token;
+
+operations
+
+public BUS: nat * Kind * set of CPU ==> BUS
+BUS(capacity,kind,cpus) ==
+  is not yet specified;
+
+end BUS

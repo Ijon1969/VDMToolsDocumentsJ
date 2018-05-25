@@ -1,0 +1,165 @@
+{\rtf1\ansi\ansicpg1252\uc1 \deff0\deflang1033\deflangfe1033{\fonttbl{\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}{\f1\fswiss\fcharset0\fprq2{\*\panose 020b0604020202020204}Arial;}
+{\f2\fmodern\fcharset0\fprq1{\*\panose 02070309020205020404}Courier New;}{\f6\fmodern\fcharset0\fprq1{\*\panose 00000000000000000000}Courier;}{\f77\froman\fcharset238\fprq2 Times New Roman CE;}{\f78\froman\fcharset204\fprq2 Times New Roman Cyr;}
+{\f80\froman\fcharset161\fprq2 Times New Roman Greek;}{\f81\froman\fcharset162\fprq2 Times New Roman Tur;}{\f82\froman\fcharset186\fprq2 Times New Roman Baltic;}{\f83\fswiss\fcharset238\fprq2 Arial CE;}{\f84\fswiss\fcharset204\fprq2 Arial Cyr;}
+{\f86\fswiss\fcharset161\fprq2 Arial Greek;}{\f87\fswiss\fcharset162\fprq2 Arial Tur;}{\f88\fswiss\fcharset186\fprq2 Arial Baltic;}{\f89\fmodern\fcharset238\fprq1 Courier New CE;}{\f90\fmodern\fcharset204\fprq1 Courier New Cyr;}
+{\f92\fmodern\fcharset161\fprq1 Courier New Greek;}{\f93\fmodern\fcharset162\fprq1 Courier New Tur;}{\f94\fmodern\fcharset186\fprq1 Courier New Baltic;}}{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;
+\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;
+\red192\green192\blue192;}{\stylesheet{\nowidctlpar\widctlpar\adjustright \cgrid \snext0 Normal;}{\s1\sb240\sa60\keepn\nowidctlpar\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid \sbasedon0 \snext0 heading 1;}{\*\cs10 \additive Default Paragraph Font;}{
+\s15\nowidctlpar\widctlpar\adjustright \shading1000 \f2\fs20\lang1024\cgrid \snext15 VDM;}{\*\cs16 \additive \f6 \sbasedon10 VDM_COV;}{\*\cs17 \additive \f6\cf6 \sbasedon10 VDM_NCOV;}{\s18\nowidctlpar\widctlpar\adjustright \shading1000 
+\f2\fs20\lang1024\cgrid \sbasedon15 \snext18 VDM_TC_TABLE;}{\s19\qj\nowidctlpar\widctlpar\adjustright \f2\fs20\lang2057\cgrid \sbasedon0 \snext19 Plain Text;}}{\info{\title General VDM definitions}{\author peter}{\operator peter}
+{\creatim\yr1998\mo10\dy5\hr11\min21}{\revtim\yr1998\mo10\dy5\hr11\min25}{\version1}{\edmins4}{\nofpages3}{\nofwords620}{\nofchars3537}{\*\company SCSK}{\nofcharsws4343}{\vern71}}
+\widowctrl\ftnbj\aenddoc\formshade\viewkind4\viewscale100\pgbrdrhead\pgbrdrfoot \fet0{\*\template C:\\Program Files\\Microsoft Office\\Templates\\VDM.dot}\sectd \linex0\endnhere\sectdefaultcl {\*\pnseclvl1\pnucrm\pnstart1\pnindent720\pnhang{\pntxta .}}
+{\*\pnseclvl2\pnucltr\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl3\pndec\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl4\pnlcltr\pnstart1\pnindent720\pnhang{\pntxta )}}{\*\pnseclvl5\pndec\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}
+{\*\pnseclvl6\pnlcltr\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl7\pnlcrm\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl8\pnlcltr\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl9
+\pnlcrm\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}\pard\plain \s1\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel0\adjustright \b\f1\fs28\kerning28\cgrid {General VDM definitions
+\par }\pard\plain \s15\nowidctlpar\widctlpar\adjustright \shading1000 \f2\fs20\lang1024\cgrid {values
+\par 
+\par s2 = \{ 2, 4, 6, 8\};
+\par s3 = \{ \};
+\par l1 = [3, 1, 4, 1, 5, 9, 2];
+\par l2 = [2, 7, 1, 8];
+\par m1 = \{ 1 |-> 2, 5 |-> 3, 6 |-> 6\};
+\par m2 = \{ 1 |-> 2, 2 |-> 3, 3 |-> 4, 4 |-> 1\};
+\par v16 = set_filter[nat](lambda n:nat & n mod 2 = 0)(\{1,...,10\});
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \cgrid {
+\par }\pard\plain \s15\nowidctlpar\widctlpar\adjustright \shading1000 \f2\fs20\lang1024\cgrid {functions
+\par 
+\par -- explicit function example
+\par map_disj : (map nat to nat) * (map nat to nat) -> map nat to nat
+\par map_disj (m1,m2) ==
+\par   (dom m1 inter dom m2) <-: m1 munion
+\par   (dom m1 inter dom m2) <-: m2
+\par pre forall d in set dom m1 inter dom m2 & m1(d) = m2(d)
+\par post dom RESULT = (dom m1 union dom m2) \\ (dom m1 inter dom m2) and
+\par      forall d in set dom RESULT & RESULT(d) = m1(d) or
+\par                                   RESULT(d) = m2(d);
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \cgrid {
+\par }\pard\plain \s15\nowidctlpar\widctlpar\adjustright \shading1000 \f2\fs20\lang1024\cgrid {map_inter: (map nat to nat) * (map nat to nat) -> map nat to nat
+\par map_inter (m1,m2) ==
+\par   (dom m1 inter dom m2) <: m1
+\par pre forall d in set dom m1 inter dom m2 & m1(d) = m2(d)
+\par post dom RESULT = dom m1 inter dom m2 and
+\par      forall d in set dom RESULT & RESULT(d) = m1(d);
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \cgrid {
+\par }\pard\plain \s15\nowidctlpar\widctlpar\adjustright \shading1000 \f2\fs20\lang1024\cgrid {-- implicit function example
+\par map_inter2 (m1,m2: map nat to nat) m: map nat to nat
+\par pre forall d in set dom m1 inter dom m2 & m1(d) = m2(d)
+\par post dom m = dom m1 inter dom m2 and
+\par      forall d in set dom m & m(d) = m1(d);
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \cgrid {
+\par }\pard\plain \s15\nowidctlpar\widctlpar\adjustright \shading1000 \f2\fs20\lang1024\cgrid {map_partition: (map nat to nat) * (map nat to nat) -> 
+\par                (map nat to nat) * (map nat to nat)
+\par map_partition (m1,m2) ==
+\par   mk_(map_inter(m1,m2), map_disj(m1,m2));
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \cgrid {
+\par }\pard\plain \s15\nowidctlpar\widctlpar\adjustright \shading1000 \f2\fs20\lang1024\cgrid {-- quoting pre and post conditions
+\par map_partition2 (m1,m2: map nat to nat) 
+\par                p:(map nat to nat) * (map nat to nat)
+\par pre pre_map_inter(m1,m2) and pre_map_disj(m1,m2)
+\par post let mk_(minter, mdisj) = p in
+\par        post_map_inter(m1,m2,minter) and
+\par        post_map_disj(m1,m2,mdisj);
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \cgrid {
+\par }\pard\plain \s15\nowidctlpar\widctlpar\adjustright \shading1000 \f2\fs20\lang1024\cgrid {-- example of recursion
+\par --   note use of quantification in post condition
+\par map_dinter : seq1 of (map nat to nat) -> map nat to nat
+\par map_dinter (ms) ==
+\par   if len ms = 1
+\par   then hd ms
+\par   else map_inter (hd ms, map_dinter (tl ms))
+\par pre forall m1,m2 in set elems ms & pre_map_inter(m1,m2)
+\par post (len ms = 1 and RESULT = hd ms) or
+\par      (len ms > 1 and exists m: map nat to nat &
+\par                       post_map_inter (hd ms, m, RESULT) and
+\par                       post_map_dinter (tl ms, m));
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \cgrid {
+\par }\pard\plain \s15\nowidctlpar\widctlpar\adjustright \shading1000 \f2\fs20\lang1024\cgrid {-- higher order functions
+\par nat_filter : (nat -> bool) * seq of nat -> seq of nat
+\par nat_filter (p,ns) ==
+\par   [ns(i) | i in set inds ns & p(ns(i))];
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \cgrid {
+\par }\pard\plain \s15\nowidctlpar\widctlpar\adjustright \shading1000 \f2\fs20\lang1024\cgrid {-- polymorphic higher order function
+\par filter[@elem]: (@elem -> bool) * seq of @elem -> seq of @elem
+\par filter (p,l) ==
+\par   [l(i) | i in set inds l & p(l(i))];
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \cgrid {
+\par }\pard\plain \s15\nowidctlpar\widctlpar\adjustright \shading1000 \f2\fs20\lang1024\cgrid {-- curried polymorphic higher order function
+\par fmap[@elem]: (@elem -> @elem) -> seq of @elem -> seq of @elem
+\par fmap (f)(l) ==
+\par   if l = []
+\par   then []
+\par   else [f(hd l)]^(fmap[@elem] (f)(tl l));
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \cgrid {
+\par }\pard\plain \s15\nowidctlpar\widctlpar\adjustright \shading1000 \f2\fs20\lang1024\cgrid {-- let expressions
+\par --   c.f. map_disj (above)
+\par let_example1 : (map nat to nat) * (map nat to nat) -> (map nat to nat)
+\par let_example1 (m1,m2) ==
+\par   let inter_dom = dom m1 inter dom m2
+\par   in
+\par     (inter_dom <-: m1) munion (inter_dom <-: m2);
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \cgrid {
+\par }\pard\plain \s15\nowidctlpar\widctlpar\adjustright \shading1000 \f2\fs20\lang1024\cgrid {-- using let to select from a set
+\par set_filter[@elem] : (@elem -> bool) -> (set of @elem) -> (set of @elem)
+\par set_filter(p)(s) ==
+\par   if s = \{\}
+\par   then \{\}
+\par   else let x in set s
+\par        in (if p(x) then \{x\} else \{\}) union
+\par           set_filter[@elem](p)(s \\ \{x\});
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \cgrid {
+\par }\pard\plain \s15\nowidctlpar\widctlpar\adjustright \shading1000 \f2\fs20\lang1024\cgrid {set_filter2[@elem] : (@elem -> bool) -> (set of @elem) -> (set of @elem)
+\par set_filter2(p)(s) ==
+\par   \{ x | x in set s & p(x)\};
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \cgrid {
+\par }\pard\plain \s15\nowidctlpar\widctlpar\adjustright \shading1000 \f2\fs20\lang1024\cgrid {-- quantified expressions
+\par min(s:set of nat) x:nat
+\par pre exists y in set s & true
+\par     -- better written as s <> \{\} !
+\par post x in set s and
+\par      forall y in set s \\ \{x\} & y < x;
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \cgrid {
+\par }\pard\plain \s15\nowidctlpar\widctlpar\adjustright \shading1000 \f2\fs20\lang1024\cgrid {pairset_is_map : set of (nat * nat) -> bool
+\par pairset_is_map (s) ==
+\par   let dom_s = \{ d | mk_(d,-) in set s \},
+\par       rng_s = \{ r | mk_(-,r) in set s \}
+\par   in forall d in set dom_s & 
+\par         exists1 r in set rng_s & mk_(d,r) in set s;
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \cgrid {
+\par }\pard\plain \s15\nowidctlpar\widctlpar\adjustright \shading1000 \f2\fs20\lang1024\cgrid {-- patterns
+\par set2seq[@elem] : set of @elem -> seq of @elem
+\par set2seq(s) ==
+\par   cases s:
+\par     \{\} -> [],
+\par     s1 union s2 -> (set2seq[@elem](s1))^(set2seq[@elem](s2))
+\par   end
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \cgrid {
+\par }\pard\plain \s15\nowidctlpar\widctlpar\adjustright \shading1000 \f2\fs20\lang1024\cgrid {operations
+\par 
+\par -- while loops
+\par SquareRoot : real * real ==> real
+\par SquareRoot (r,e) ==
+\par   (dcl x:real := 1,
+\par        nextx:real := r;
+\par    while abs (x - nextx) >= e * x do
+\par      ( x := nextx;
+\par        nextx := ((r / x) + x) / 2;
+\par      );
+\par    return nextx
+\par   );
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \cgrid {
+\par }\pard\plain \s15\nowidctlpar\widctlpar\adjustright \shading1000 \f2\fs20\lang1024\cgrid {SquareRootErr : real * real ==> real
+\par SquareRootErr (r,e) ==
+\par   if r < 0
+\par   then error
+\par   else
+\par     (dcl x:real := 1;
+\par      dcl nextx:real := r;
+\par      while abs (x - nextx) >= e * x do
+\par        ( x := nextx;
+\par          nextx := ((r / x) + x) / 2;
+\par        );
+\par      return nextx
+\par     )
+\par }\pard\plain \s19\qj\nowidctlpar\widctlpar\adjustright \f2\fs20\lang2057\cgrid {
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \cgrid {
+\par }}

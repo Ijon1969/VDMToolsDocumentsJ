@@ -1,0 +1,32 @@
+\begin{vdm_al}
+class World
+
+instance variables
+
+sensor       : Sensor          := new Sensor();
+detector     : MissileDetector := new MissileDetector();
+flareControl : FlareController := new FlareController();
+timerRef     : Timer           := new Timer();
+
+operations
+
+public Run : () ==> map FlareDispenser`MagId to 
+                        seq of (FlareDispenser`FlareType * nat)
+Run() ==
+( sensor.Init(timerRef);
+  detector.Init(sensor,flareControl);
+  flareControl.Init(detector,timerRef);
+  start(sensor);
+  start(detector);
+  start(flareControl);
+  sensor.IsFinished();
+  detector.IsFinished();
+  return flareControl.IsFinished()
+)
+
+end World
+\end{vdm_al}
+
+\begin{rtinfo}[World`Run]
+{vdm.tc}[World]
+\end{rtinfo}

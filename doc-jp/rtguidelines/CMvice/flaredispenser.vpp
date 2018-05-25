@@ -1,0 +1,106 @@
+\begin{vdm_al}
+class 火炎弾容器 is subclass of GLOBAL
+
+values
+
+対策DB : map ミサイルタイプ to 計画 =
+  {<ミサイルA> |-> [mk_(<火炎弾OneA>,900),
+                   mk_(<火炎弾TwoA>,500),
+                   mk_(<DoNothingA>,100),
+                   mk_(<火炎弾OneA>,500)],
+   <ミサイルB> |-> [mk_(<火炎弾TwoB>,500),
+                   mk_(<火炎弾TwoB>,700)],
+   <ミサイルC> |-> [mk_(<火炎弾OneC>,400),
+                   mk_(<DoNothingC>,100),
+                   mk_(<火炎弾TwoC>,400),
+                   mk_(<火炎弾OneC>,500)] };
+
+ミサイル優先順位写像 : map ミサイルタイプ to nat =
+  {<ミサイルA> |-> 1,
+   <ミサイルB> |-> 2,
+   <ミサイルC> |-> 3 }
+
+types
+
+public 計画 = seq of 計画Step;
+
+public 計画Step = 火炎弾タイプ * Time;
+
+instance variables
+
+public s現在の計画 : 計画 := [];
+s現在の優先順位        : nat := 0;
+busy           : bool := false;
+s対応可能角度      : 角度;
+eventid        : [事象ID];
+
+operations
+
+public 火炎弾容器: 角度 ==> 火炎弾容器
+火炎弾容器(ang) ==
+  s対応可能角度 := ang;
+
+public Get角度: () ==> nat
+Get角度() ==
+  return s対応可能角度;
+
+async public add脅威: 事象ID * ミサイルタイプ * Time ==> ()
+add脅威 (evid, pmt, ptime) ==
+  if ミサイル優先順位写像(pmt) > s現在の優先順位
+  then (dcl newplan : 計画 :=  [],
+            newtime : Time := ptime;
+        -- construct an absolute time plan
+        for mk_(fltp, fltime) in 対策DB(pmt) do
+          (newplan := newplan ^ [mk_ (fltp, newtime)];
+           newtime := newtime + fltime );
+        -- immediately release the first action
+        def mk_(fltp, fltime) = hd newplan in
+          火炎弾を発射する(evid,fltp,fltime,time);
+        -- store the rest of the plan
+        s現在の計画 := tl newplan;
+        eventid := evid;
+        s現在の優先順位 := ミサイル優先順位写像(pmt);
+        busy := true )
+pre pmt in set dom ミサイル優先順位写像 and
+    pmt in set dom 対策DB;
+
+async evalQueue: () ==> ()
+evalQueue () ==
+  cycles (1E19) 
+  (if len s現在の計画 > 0
+   then (dcl curtime : Time := time, done : bool := false;
+         while not done do
+           (dcl first : 計画Step := hd s現在の計画,
+                next : 計画 := tl s現在の計画;
+            let mk_(fltp, fltime) = first in
+              if fltime <= curtime
+              then (火炎弾を発射する(eventid,fltp,fltime,curtime);
+                    s現在の計画 := next;
+                    if len next = 0
+                    then (s現在の優先順位 := 0; 
+                          done := true; 
+                          busy := false ) )
+              else done := true ) ) );
+
+private 火炎弾を発射する: 事象ID * 火炎弾タイプ * Time * Time ==> ()
+火炎弾を発射する (p事象ID, p火炎弾タイプ, pt1, pt2) == 
+  World`env.handleEvent(p事象ID,p火炎弾タイプ,s対応可能角度,pt1,pt2);
+
+public isFinished: () ==> ()
+isFinished () == skip
+
+sync
+
+mutex (add脅威,evalQueue);
+per isFinished => not busy
+
+thread
+
+periodic (1000,0,0,0) (evalQueue)
+
+end 火炎弾容器
+\end{vdm_al}
+
+\begin{rtinfo}[火炎弾容器`火炎弾容器]
+{vdm.tc}[火炎弾容器]
+\end{rtinfo}

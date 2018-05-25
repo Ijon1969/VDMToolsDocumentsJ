@@ -1,0 +1,230 @@
+\begin{vdm}{\small\sf class} $FlareController$ {\small\sf is subclass of}  $GLOBAL$\index{FlareController|ModDef}
+\par
+\kInstanceVarDef
+\parlinebr
+\begin{insvar}\kw{private}
+\assdef{aperature}{Angle\index{Angle|TypeOcc}}
+\end{insvar}
+\begin{insvar}
+\assdef{ranges}{\Nat  \Gmap \Lp Angle\index{Angle|TypeOcc} \X Angle\index{Angle|TypeOcc} \Rp }[{\Emptymap }]
+\end{insvar}
+\begin{insvar}
+\assdef{dispensers}{\Nat  \Gmap FlareDispenser\index{FlareDispenser|TypeOcc}}[{\Emptymap }]
+\end{insvar}
+\begin{instinvfn}
+ \Dom ranges =  \Dom dispensers\end{instinvfn}
+\begin{insvar}
+\assdef{threats}{\seqof*{\Lp EventId\index{EventId|TypeOcc} \X MissileType\index{MissileType|TypeOcc} \X Angle\index{Angle|TypeOcc} \X \Nat  \Rp }}[{\seq{}}]
+\end{insvar}
+\begin{insvar}
+\assdef{busy}{\Bool }[{\False }]
+\end{insvar}
+\par
+\kOperations
+\kw{\kw{public}}\begin{op}[e]{FlareController}\index{FlareController|FuncDef}%
+\signature{Angle\index{Angle|TypeOcc} \Oto FlareController\index{FlareController|TypeOcc}}
+\parms{papp}
+\annlab[o]{FlareController`FlareController}
+\ass{aperature}{papp};
+\end{op}
+\kw{\kw{public}}\begin{op}[e]{addDispenser}\index{addDispenser|FuncDef}%
+\signature{FlareDispenser\index{FlareDispenser|TypeOcc} \Oto ()}
+\parms{pfldisp}
+\annlab[o]{FlareController`addDispenser}
+\begin{letstmt}
+\patdef{angle}{aperature + \fnapply{pfldisp.GetAngle}{}}
+\end{letstmt} \\
+\begin{blockstmt}
+\begin{dclstmt}
+\assdef{id}{\Nat }[{ \Card  \Dom ranges + 1}]
+\end{dclstmt}
+\kw{atomic }
+\begin{blockstmt}\color{not-covered}\ass{ranges}{ranges \Mapmerge \map{id \Mapsto \reccons{\kw{mk-}}{angle,DISPENSER-APERATURE}}}\color{covered} ; \\
+\color{not-covered}\ass{dispensers}{dispensers \Mapmerge \map{id \Mapsto pfldisp}}\color{covered}
+\end{blockstmt} ; \\
+
+\start{pfldisp}
+\end{blockstmt};
+\end{op}
+\kw{\kw{public}}\begin{op}[e]{getAperature}\index{getAperature|FuncDef}%
+\signature{() \Oto GLOBAL`Angle\index{Angle|TypeOcc} \X GLOBAL`Angle\index{Angle|TypeOcc}}
+\parms{}
+\annlab[o]{FlareController`getAperature}
+\return{\reccons{\kw{mk-}}{aperature,FLARE-APERATURE}};
+\end{op}
+\kw{\kw{public}}\begin{op}[e]{addThreat}\index{addThreat|FuncDef}%
+\signature{EventId\index{EventId|TypeOcc} \X MissileType\index{MissileType|TypeOcc} \X Angle\index{Angle|TypeOcc} \X \Nat  \Oto ()}
+\parms{evid,pmt,pa,pt}
+\annlab[o]{FlareController`addThreat}
+\begin{blockstmt}
+\ass{threats}{threats \Sconc \seq{\reccons{\kw{mk-}}{evid,pmt,pa,pt}}} ; \\
+\ass{busy}{\True }
+\end{blockstmt};
+\end{op}
+\kw{\kw{private}}\begin{op}[e]{getThreat}\index{getThreat|FuncDef}%
+\signature{() \Oto EventId\index{EventId|TypeOcc} \X MissileType\index{MissileType|TypeOcc} \X Angle\index{Angle|TypeOcc} \X \Nat }
+\parms{}
+\annlab[o]{FlareController`getThreat}
+\begin{blockstmt}
+\begin{dclstmt}
+\assdef{res}{EventId\index{EventId|TypeOcc} \X MissileType\index{MissileType|TypeOcc} \X Angle\index{Angle|TypeOcc} \X \Nat }[{ \Hd threats}]
+\end{dclstmt}
+\ass{threats}{ \Tl threats} ; \\
+\return{res}
+\end{blockstmt};
+\end{op}
+\kw{\kw{public}}\begin{op}[e]{isFinished}\index{isFinished|FuncDef}%
+\signature{() \Oto ()}
+\parms{}
+\annlab[o]{FlareController`isFinished}
+\begin{setfor}{id}{ \Dom dispensers}
+\fnapply{dispensers}{id}.\call{isFinished}{}
+\end{setfor}
+\end{op}
+\kSync
+
+\mutex{addThreat,getThreat};
+
+\index{getThreat|MethodOcc}
+\per{getThreat}{
+ \Len threats > 0
+};
+
+\index{isFinished|MethodOcc}
+\per{isFinished}{
+ \Not busy
+}
+
+\kThreadDef
+\begin{thread}
+\begin{blockstmt}
+\begin{setfor}{id}{ \Dom dispensers}
+
+\start{\fnapply{dispensers}{id}}
+\end{setfor} ; \\
+\begin{while}{\True }
+\begin{blockstmt}
+\begin{defstmt}
+\eqdef{\reccons{\kw{mk-}}{evid,pmt,pa,pt}}{\fnapply{getThreat}{}}
+\end{defstmt} \\
+\begin{setfor}{id}{ \Dom ranges}
+\begin{defstmt}
+\eqdef{\reccons{\kw{mk-}}{papplhs,pappsize}}{\fnapply{ranges}{id}}
+\end{defstmt} \\
+\If \fnapply{canObserve}{pa,papplhs,pappsize}
+\Then \\
+\fnapply{dispensers}{id}.\call{addThreat}{evid,pmt,pt}
+\Fi
+\end{setfor} ; \\
+\ass{busy}{ \Len threats > 0}
+\end{blockstmt}
+\end{while}
+\end{blockstmt}
+\end{thread}
+{\small\sf end} {\it FlareController}
+
+\end{vdm}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{tabular}{p{25mm}l}
+{\bf Test Suite :} & vdm.tc \\ 
+{\bf Class :} & FlareController \\ 
+\end{tabular}
+
+\begin{longtable}{|l|r|r|}\hline
+{\bf FlareController`FlareController} & {\bf \#Calls} & {\bf Coverage} \kill
+{\bf Name} & {\bf \#Calls} & {\bf Coverage} \\ \hline\hline
+\endhead
+FlareController`addThreat & 7 & $\surd$ \\ \hline
+FlareController`getThreat & 7 & $\surd$ \\ \hline
+FlareController`isFinished & 3 & $\surd$ \\ \hline
+FlareController`addDispenser & 12 & $\surd$ \\ \hline
+FlareController`getAperature & 3 & $\surd$ \\ \hline
+FlareController`FlareController & 3 & $\surd$ \\ \hline
+\hline
+{\bf Total Coverage} & & {\bf 100\%} \\ \hline
+\end{longtable}
+
+
+

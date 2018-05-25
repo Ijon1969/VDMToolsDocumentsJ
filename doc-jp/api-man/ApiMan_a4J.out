@@ -1,0 +1,78 @@
+\BOOKMARK [1][-]{section.1}{1 導入}{}% 1
+\BOOKMARK [1][-]{section.2}{2 CORBA - 基本原則}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{2.1 IDL}{section.2}% 3
+\BOOKMARK [1][-]{section.3}{3 VDM Toolbox API（アプリケーションインターフェイス）}{}% 4
+\BOOKMARK [2][-]{subsection.3.1}{3.1 APIツールのIDL記述}{section.3}% 5
+\BOOKMARK [3][-]{subsubsection.3.1.1}{3.1.1 VDMProject}{subsection.3.1}% 6
+\BOOKMARK [3][-]{subsubsection.3.1.2}{3.1.2 VDMModuleRepos}{subsection.3.1}% 7
+\BOOKMARK [3][-]{subsubsection.3.1.3}{3.1.3 VDMParser}{subsection.3.1}% 8
+\BOOKMARK [3][-]{subsubsection.3.1.4}{3.1.4 VDMInterpreter}{subsection.3.1}% 9
+\BOOKMARK [3][-]{subsubsection.3.1.5}{3.1.5 VDMErrors}{subsection.3.1}% 10
+\BOOKMARK [2][-]{subsection.3.2}{3.2 VDM値のIDL記述}{section.3}% 11
+\BOOKMARK [3][-]{subsubsection.3.2.1}{3.2.1 分散オブジェクトとしてのVDM値}{subsection.3.2}% 12
+\BOOKMARK [3][-]{subsubsection.3.2.2}{3.2.2 インタープリタから戻ってきた値の利用}{subsection.3.2}% 13
+\BOOKMARK [3][-]{subsubsection.3.2.3}{3.2.3 クライアントの VDM値構築}{subsection.3.2}% 14
+\BOOKMARK [3][-]{subsubsection.3.2.4}{3.2.4 分散されたVDM値の ``実数型" VDM C++ 値への変換　}{subsection.3.2}% 15
+\BOOKMARK [2][-]{subsection.3.3}{3.3 例外の取り扱い}{section.3}% 16
+\BOOKMARK [1][-]{section.4}{4 \040C++ クライアントの記述}{}% 17
+\BOOKMARK [2][-]{subsection.4.1}{4.1 CORBA 実装の選択}{section.4}% 18
+\BOOKMARK [2][-]{subsection.4.2}{4.2 クライアントの実装}{section.4}% 19
+\BOOKMARK [3][-]{subsubsection.4.2.1}{4.2.1 CORBA サービスの初期化}{subsection.4.2}% 20
+\BOOKMARK [3][-]{subsubsection.4.2.2}{4.2.2 アプリケーションオブジェクトの獲得}{subsection.4.2}% 21
+\BOOKMARK [3][-]{subsubsection.4.2.3}{4.2.3 C++でのオブジェクト参照}{subsection.4.2}% 22
+\BOOKMARK [3][-]{subsubsection.4.2.4}{4.2.4 最新プロジェクトの設定}{subsection.4.2}% 23
+\BOOKMARK [3][-]{subsubsection.4.2.5}{4.2.5 構文解析ツールの使用}{subsection.4.2}% 24
+\BOOKMARK [3][-]{subsubsection.4.2.6}{4.2.6 型チェックツールの使用}{subsection.4.2}% 25
+\BOOKMARK [3][-]{subsubsection.4.2.7}{4.2.7 インタープリタの利用}{subsection.4.2}% 26
+\BOOKMARK [3][-]{subsubsection.4.2.8}{4.2.8 例題に付加される解釈}{subsection.4.2}% 27
+\BOOKMARK [2][-]{subsection.4.3}{4.3 クライアントのコンパイル}{section.4}% 28
+\BOOKMARK [3][-]{subsubsection.4.3.1}{4.3.1 サポートされるコンパイラ}{subsection.4.3}% 29
+\BOOKMARK [2][-]{subsection.4.4}{4.4 クライアントの実行}{section.4}% 30
+\BOOKMARK [1][-]{section.5}{5 Javaクライアントの記述}{}% 31
+\BOOKMARK [2][-]{subsection.5.1}{5.1 CORBA 実装の選択}{section.5}% 32
+\BOOKMARK [2][-]{subsection.5.2}{5.2 クライアントの実装}{section.5}% 33
+\BOOKMARK [3][-]{subsubsection.5.2.1}{5.2.1 CORBA サービスのインポート}{subsection.5.2}% 34
+\BOOKMARK [3][-]{subsubsection.5.2.2}{5.2.2 アプリケーションオブジェクトの獲得}{subsection.5.2}% 35
+\BOOKMARK [3][-]{subsubsection.5.2.3}{5.2.3 最新プロジェクトの設定}{subsection.5.2}% 36
+\BOOKMARK [3][-]{subsubsection.5.2.4}{5.2.4 構文解析ツールの利用}{subsection.5.2}% 37
+\BOOKMARK [3][-]{subsubsection.5.2.5}{5.2.5 型チェックツールの使用}{subsection.5.2}% 38
+\BOOKMARK [3][-]{subsubsection.5.2.6}{5.2.6 インタープリタの利用}{subsection.5.2}% 39
+\BOOKMARK [3][-]{subsubsection.5.2.7}{5.2.7 例題に追加される解釈}{subsection.5.2}% 40
+\BOOKMARK [2][-]{subsection.5.3}{5.3 クライアントのコンパイル}{section.5}% 41
+\BOOKMARK [2][-]{subsection.5.4}{5.4 クライアントの実行}{section.5}% 42
+\BOOKMARK [1][-]{section.6}{6 API 参照ガイド}{}% 43
+\BOOKMARK [2][-]{subsection.6.1}{6.1 Corba API}{section.6}% 44
+\BOOKMARK [3][-]{subsubsection.6.1.1}{6.1.1 型}{subsection.6.1}% 45
+\BOOKMARK [3][-]{subsubsection.6.1.2}{6.1.2 エラー構造}{subsection.6.1}% 46
+\BOOKMARK [3][-]{subsubsection.6.1.3}{6.1.3 ModuleStatus 構造}{subsection.6.1}% 47
+\BOOKMARK [3][-]{subsubsection.6.1.4}{6.1.4 VDMApplicationインターフェイス}{subsection.6.1}% 48
+\BOOKMARK [3][-]{subsubsection.6.1.5}{6.1.5 VDMCodeGeneratorインターフェイス}{subsection.6.1}% 49
+\BOOKMARK [3][-]{subsubsection.6.1.6}{6.1.6 VDMErrorsインターフェイス}{subsection.6.1}% 50
+\BOOKMARK [3][-]{subsubsection.6.1.7}{6.1.7 VDMInterpreterインターフェイス}{subsection.6.1}% 51
+\BOOKMARK [3][-]{subsubsection.6.1.8}{6.1.8 VDMModuleReposインターフェイス}{subsection.6.1}% 52
+\BOOKMARK [3][-]{subsubsection.6.1.9}{6.1.9 VDMParserインターフェイス}{subsection.6.1}% 53
+\BOOKMARK [3][-]{subsubsection.6.1.10}{6.1.10 VDMPrettyPrinterインターフェイス}{subsection.6.1}% 54
+\BOOKMARK [3][-]{subsubsection.6.1.11}{6.1.11 VDMProjectインターフェイス}{subsection.6.1}% 55
+\BOOKMARK [3][-]{subsubsection.6.1.12}{6.1.12 VDMTypeCheckerインターフェイス}{subsection.6.1}% 56
+\BOOKMARK [2][-]{subsection.6.2}{6.2 VDM API}{section.6}% 57
+\BOOKMARK [3][-]{subsubsection.6.2.1}{6.2.1 型}{subsection.6.2}% 58
+\BOOKMARK [3][-]{subsubsection.6.2.2}{6.2.2 VDM::VDMGenericインターフェイス}{subsection.6.2}% 59
+\BOOKMARK [3][-]{subsubsection.6.2.3}{6.2.3 基本VDM型}{subsection.6.2}% 60
+\BOOKMARK [3][-]{subsubsection.6.2.4}{6.2.4 VDM::VDMMapインターフェイス}{subsection.6.2}% 61
+\BOOKMARK [3][-]{subsubsection.6.2.5}{6.2.5 VDM::VDMRecordインターフェイス}{subsection.6.2}% 62
+\BOOKMARK [3][-]{subsubsection.6.2.6}{6.2.6 VDM::VDMSequenceインターフェイス}{subsection.6.2}% 63
+\BOOKMARK [3][-]{subsubsection.6.2.7}{6.2.7 VDM::VDMSetインターフェイス}{subsection.6.2}% 64
+\BOOKMARK [3][-]{subsubsection.6.2.8}{6.2.8 VDMTupleインターフェイス}{subsection.6.2}% 65
+\BOOKMARK [3][-]{subsubsection.6.2.9}{6.2.9 VDMFactoryインターフェイス}{subsection.6.2}% 66
+\BOOKMARK [2][-]{subsection.6.3}{6.3 例外}{section.6}% 67
+\BOOKMARK [2][-]{subsection.6.4}{6.4 C++ API参照}{section.6}% 68
+\BOOKMARK [3][-]{subsubsection.6.4.1}{6.4.1 corba\137client.h}{subsection.6.4}% 69
+\BOOKMARK [3][-]{subsubsection.6.4.2}{6.4.2 命名規則}{subsection.6.4}% 70
+\BOOKMARK [3][-]{subsubsection.6.4.3}{6.4.3 キャスト操作}{subsection.6.4}% 71
+\BOOKMARK [2][-]{subsection.6.5}{6.5 Java API}{section.6}% 72
+\BOOKMARK [3][-]{subsubsection.6.5.1}{6.5.1 Helperクラス}{subsection.6.5}% 73
+\BOOKMARK [3][-]{subsubsection.6.5.2}{6.5.2 Holderクラス}{subsection.6.5}% 74
+\BOOKMARK [1][-]{section.7}{7 推奨文献}{}% 75
+\BOOKMARK [1][-]{appendix.A}{A 例題プログラム}{}% 76
+\BOOKMARK [2][-]{subsection.A.1}{A.1 C++ クライアントの例題}{appendix.A}% 77
+\BOOKMARK [2][-]{subsection.A.2}{A.2 Java クライアントの例題}{appendix.A}% 78

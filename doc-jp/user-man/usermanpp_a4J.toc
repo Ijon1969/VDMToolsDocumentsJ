@@ -1,0 +1,91 @@
+\contentsline {section}{\numberline {1}はじめに}{1}{section.1}
+\contentsline {section}{\numberline {2}\VDMTools \ の概略}{4}{section.2}
+\contentsline {section}{\numberline {3}\VDMTools ガイドツアー }{7}{section.3}
+\contentsline {subsection}{\numberline {3.1}\VDMTools で取り扱う仕様の作成}{7}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}GUIで VDM++\ を始める}{8}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}オンラインヘルプ}{8}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}メニュー、ツールバー、サブウインドウ}{9}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}プロジェクトを作成する}{11}{subsection.3.5}
+\contentsline {subsection}{\numberline {3.6}VDM仕様の構文チェック}{12}{subsection.3.6}
+\contentsline {subsubsection}{\numberline {3.6.1}仕様の解析}{12}{subsubsection.3.6.1}
+\contentsline {subsubsection}{\numberline {3.6.2}構文エラーの修正}{13}{subsubsection.3.6.2}
+\contentsline {subsection}{\numberline {3.7}VDM仕様の型チェック}{16}{subsection.3.7}
+\contentsline {subsection}{\numberline {3.8}仕様の検証}{19}{subsection.3.8}
+\contentsline {subsubsection}{\numberline {3.8.1}インタープリタを使用した式の評価}{20}{subsubsection.3.8.1}
+\contentsline {subsubsection}{\numberline {3.8.2}ブレイクポイントの設定}{22}{subsubsection.3.8.2}
+\contentsline {subsubsection}{\numberline {3.8.3}動的型チェック}{26}{subsubsection.3.8.3}
+\contentsline {subsubsection}{\numberline {3.8.4}証明課題のチェック}{27}{subsubsection.3.8.4}
+\contentsline {subsubsection}{\numberline {3.8.5}マルチスレッド・モデル}{32}{subsubsection.3.8.5}
+\contentsline {subsection}{\numberline {3.9}体系的テスト}{32}{subsection.3.9}
+\contentsline {subsection}{\numberline {3.10}清書機能}{34}{subsection.3.10}
+\contentsline {subsection}{\numberline {3.11}コード生成}{35}{subsection.3.11}
+\contentsline {subsection}{\numberline {3.12}\VDMTools \ API}{36}{subsection.3.12}
+\contentsline {subsection}{\numberline {3.13}\VDMTools の終了}{36}{subsection.3.13}
+\contentsline {section}{\numberline {4}\VDMTools \ リファレンスマニュアル}{37}{section.4}
+\contentsline {subsection}{\numberline {4.1}GUI全般}{37}{subsection.4.1}
+\contentsline {subsubsection}{\numberline {4.1.1}プロジェクト・ハンドリング}{38}{subsubsection.4.1.1}
+\contentsline {subsubsection}{\numberline {4.1.2}仕様の操作}{41}{subsubsection.4.1.2}
+\contentsline {subsubsection}{\numberline {4.1.3}ログウインドウ、エラーリストウインドウ、ソースウインドウ}{42}{subsubsection.4.1.3}
+\contentsline {subsubsection}{\numberline {4.1.4}ファイルの編集}{44}{subsubsection.4.1.4}
+\contentsline {subsubsection}{\numberline {4.1.5}インタープリタを使う}{44}{subsubsection.4.1.5}
+\contentsline {subsubsection}{\numberline {4.1.6}オンラインヘルプ}{44}{subsubsection.4.1.6}
+\contentsline {subsection}{\numberline {4.2}コマンドラインインターフェース全般}{45}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}ファイルの初期化}{47}{subsubsection.4.2.1}
+\contentsline {subsection}{\numberline {4.3}構文チェック機能}{48}{subsection.4.3}
+\contentsline {subsubsection}{\numberline {4.3.1}GUI}{48}{subsubsection.4.3.1}
+\contentsline {subsubsection}{\numberline {4.3.2}構文エラーのフォーマット}{49}{subsubsection.4.3.2}
+\contentsline {subsubsection}{\numberline {4.3.3}コマンドラインインターフェース}{49}{subsubsection.4.3.3}
+\contentsline {subsubsection}{\numberline {4.3.4}Emacsインターフェース}{50}{subsubsection.4.3.4}
+\contentsline {subsection}{\numberline {4.4}型チェック機能}{52}{subsection.4.4}
+\contentsline {subsubsection}{\numberline {4.4.1}GUI}{53}{subsubsection.4.4.1}
+\contentsline {paragraph}{オプション設定}{53}{section*.4}
+\contentsline {subsubsection}{\numberline {4.4.2}エラーおよびワーニングのフォーマット}{54}{subsubsection.4.4.2}
+\contentsline {paragraph}{``def''型チェックで考えられるエラー}{55}{section*.5}
+\contentsline {subsubsection}{\numberline {4.4.3}コマンドラインインターフェース}{55}{subsubsection.4.4.3}
+\contentsline {subsubsection}{\numberline {4.4.4}Emacsインターフェース}{56}{subsubsection.4.4.4}
+\contentsline {subsection}{\numberline {4.5}インタープリタとデバッガ}{58}{subsection.4.5}
+\contentsline {subsubsection}{\numberline {4.5.1}GUI}{58}{subsubsection.4.5.1}
+\contentsline {paragraph}{入力画面で利用できるコマンド}{59}{section*.6}
+\contentsline {paragraph}{オプション設定}{65}{section*.7}
+\contentsline {subsubsection}{\numberline {4.5.2}スタンダードライブラリ}{67}{subsubsection.4.5.2}
+\contentsline {subsubsection}{\numberline {4.5.3}コマンドラインインターフェース}{68}{subsubsection.4.5.3}
+\contentsline {subsubsection}{\numberline {4.5.4}Emacsインターフェース}{70}{subsubsection.4.5.4}
+\contentsline {subsubsection}{\numberline {4.5.5}スレッドのスケジューリング}{76}{subsubsection.4.5.5}
+\contentsline {subsection}{\numberline {4.6}証明課題生成機能}{77}{subsection.4.6}
+\contentsline {subsection}{\numberline {4.7}清書機能}{79}{subsection.4.7}
+\contentsline {subsubsection}{\numberline {4.7.1}GUI}{80}{subsubsection.4.7.1}
+\contentsline {paragraph}{オプション設定}{80}{section*.11}
+\contentsline {subsubsection}{\numberline {4.7.2}コマンドラインインターフェース}{80}{subsubsection.4.7.2}
+\contentsline {subsubsection}{\numberline {4.7.3}Emacsインターフェース}{82}{subsubsection.4.7.3}
+\contentsline {subsection}{\numberline {4.8}VDM++からC++コード生成}{83}{subsection.4.8}
+\contentsline {subsubsection}{\numberline {4.8.1}GUI}{83}{subsubsection.4.8.1}
+\contentsline {subsubsection}{\numberline {4.8.2}コマンドラインインターフェース}{83}{subsubsection.4.8.2}
+\contentsline {subsubsection}{\numberline {4.8.3}Emacsインターフェース}{84}{subsubsection.4.8.3}
+\contentsline {subsection}{\numberline {4.9}VDM++からJavaへのコード生成}{85}{subsection.4.9}
+\contentsline {subsubsection}{\numberline {4.9.1}GUI}{85}{subsubsection.4.9.1}
+\contentsline {subsubsection}{\numberline {4.9.2}コマンドラインインターフェース}{86}{subsubsection.4.9.2}
+\contentsline {subsubsection}{\numberline {4.9.3}Emacsインターフェース}{87}{subsubsection.4.9.3}
+\contentsline {subsection}{\numberline {4.10}VDMモデルの体系的テスト}{89}{subsection.4.10}
+\contentsline {subsubsection}{\numberline {4.10.1}テストカバレッジファイルの準備}{90}{subsubsection.4.10.1}
+\contentsline {subsubsection}{\numberline {4.10.2}テストカバレッジファイルの更新}{90}{subsubsection.4.10.2}
+\contentsline {subsubsection}{\numberline {4.10.3}テストカバレッジの統計データ作成}{91}{subsubsection.4.10.3}
+\contentsline {subsubsection}{\numberline {4.10.4}\LaTeX \ を使ったテストカバレッジ例}{92}{subsubsection.4.10.4}
+\contentsline {paragraph}{\LaTeX \ テストカバレッジ向け入力ファイルフォーマット}{94}{section*.12}
+\contentsline {paragraph}{テストカバレッジテーブルと\LaTeX \ テストカバレッジ環境}{95}{section*.13}
+\contentsline {paragraph}{Colouring}{96}{section*.14}
+\contentsline {section}{用語集}{99}{section*.16}
+\contentsline {section}{\numberline {A}VDM技術の情報源}{101}{appendix.A}
+\contentsline {section}{\numberline {B}VDM++と \LaTeX \ の結合}{104}{appendix.B}
+\contentsline {subsection}{\numberline {B.1}仕様ファイルのフォーマット}{104}{subsection.B.1}
+\contentsline {subsection}{\numberline {B.2} \LaTeX \ 文書のセットアップ}{104}{subsection.B.2}
+\contentsline {section}{\numberline {C}\VDMTools {}環境の設定}{108}{appendix.C}
+\contentsline {subsection}{\numberline {C.1}一般}{108}{subsection.C.1}
+\contentsline {subsection}{\numberline {C.2}インターフェースオプション}{109}{subsection.C.2}
+\contentsline {subsection}{\numberline {C.3}UMLリンクオプション}{111}{subsection.C.3}
+\contentsline {section}{\numberline {D}Emacsインターフェース}{113}{appendix.D}
+\contentsline {section}{\numberline {E}Sort例題向けテストスクリプト}{114}{appendix.E}
+\contentsline {subsection}{\numberline {E.1}Windows/DOSプラットフォーム}{114}{subsection.E.1}
+\contentsline {subsection}{\numberline {E.2}UNIXプラットフォーム}{115}{subsection.E.2}
+\contentsline {section}{\numberline {F}Microsoft Wordについてのトラブルシューティング問題}{117}{appendix.F}
+\contentsline {section}{\numberline {G}プライオリティファイルのフォーマット}{118}{appendix.G}
+\contentsline {section}{索引}{119}{appendix.G}

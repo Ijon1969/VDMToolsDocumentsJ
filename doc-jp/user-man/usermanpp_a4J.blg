@@ -1,0 +1,64 @@
+This is pBibTeX, Version 0.99d-j0.33 (sjis.euc) (TeX Live 2017)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: usermanpp_a4J.aux
+The style file: jplain.bst
+Database file #1: user_man.bib
+Warning--I'm ignoring LangManPP-SCSK's extra "key" field
+--line 69641 of file user_man.bib
+Warning--I'm ignoring UMLMan-SCSK's extra "key" field
+--line 69649 of file user_man.bib
+Warning--I'm ignoring LangMan-SCSK's extra "key" field
+--line 69657 of file user_man.bib
+Warning--I'm ignoring APIMan-SCSK's extra "key" field
+--line 69682 of file user_man.bib
+Warning--I'm ignoring Java2VDMMan-SCSK's extra "key" field
+--line 69690 of file user_man.bib
+Warning--I'm ignoring CGManPP-SCSK's extra "key" field
+--line 69714 of file user_man.bib
+Warning--I'm ignoring CGJavaManPP-SCSK's extra "key" field
+--line 69722 of file user_man.bib
+Warning--empty institution in CGJavaManPP-SCSK
+Warning--empty year in CGJavaManPP-SCSK
+You've used 14 entries,
+            2620 wiz_defined-function locations,
+            666 strings with 6292 characters,
+and the built_in function-call counts, 3909 in all, are:
+= -- 299
+> -- 148
+< -- 0
++ -- 68
+- -- 48
+* -- 149
+:= -- 594
+add.period$ -- 43
+call.type$ -- 14
+change.case$ -- 57
+chr.to.int$ -- 0
+cite$ -- 16
+duplicate$ -- 226
+empty$ -- 361
+format.name$ -- 72
+if$ -- 848
+int.to.chr$ -- 0
+int.to.str$ -- 14
+missing$ -- 6
+newline$ -- 74
+num.names$ -- 28
+pop$ -- 161
+preamble$ -- 1
+purify$ -- 52
+quote$ -- 0
+skip$ -- 179
+stack$ -- 0
+substring$ -- 76
+swap$ -- 19
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 50
+warning$ -- 2
+while$ -- 28
+width$ -- 16
+write$ -- 137
+is.kanji.str$ -- 123
+(There were 9 warnings)

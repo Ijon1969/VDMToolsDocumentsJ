@@ -1,0 +1,192 @@
+\begin{vdm}{\small\sf class} $Sensor$\index{Sensor|ModDef}
+\par
+\kTypes
+\type{\kw{public}\kw{ }MissileType\index{MissileType|TypeDef}}{\const{MissileA} | \const{MissileB} | \const{MissileC} | \const{None};}
+\type{\kw{public}\kw{ }Angle\index{Angle|TypeDef}}{\Nat }
+\begin{invfn}{num}num \Le 360
+\end{invfn}
+\kInstanceVarDef
+\parlinebr
+\begin{insvar}
+\assdef{io}{SensorIO\index{SensorIO|TypeOcc}}[{\fnapply{\new{SensorIO}}{}}]
+\end{insvar}
+\begin{insvar}
+\assdef{threat}{\Opt{\Lp MissileType\index{MissileType|TypeOcc} | \const{Consumed} \Rp  \X Angle\index{Angle|TypeOcc}}}[{\fnapply{io.readThreat}{}}]
+\end{insvar}
+\begin{insvar}
+\assdef{timerRef}{Timer\index{Timer|TypeOcc}}
+\end{insvar}
+\par
+\kThreadDef
+\begin{thread}
+\begin{blockstmt}
+\begin{while}{threat \Neq \Nil }
+\begin{blockstmt}
+\call{ThreatConsumed}{} ; \\
+\call{SetThreat}{} ; \\
+$timerRef$.\call{StepTime}{}
+\end{blockstmt}
+\end{while} ; \\
+$timerRef$.\call{Finished}{}
+\end{blockstmt}
+\end{thread}
+\kOperations
+\begin{op}[e]{ThreatConsumed}\index{ThreatConsumed|FuncDef}%
+\signature{() \Oto ()}
+\parms{}
+\annlab[o]{Sensor`ThreatConsumed}
+\Skip 
+\end{op}
+\kSync
+\index{ThreatConsumed|MethodOcc}
+\per{ThreatConsumed}{
+threat \Neq \Nil  \And threat.\#1 = \const{Consumed}
+}
+
+\kOperations
+\kw{\kw{public}}\begin{op}[e]{Init}\index{Init|FuncDef}%
+\signature{Timer\index{Timer|TypeOcc} \Oto ()}
+\parms{newTimer}
+\annlab[o]{Sensor`Init}
+\ass{timerRef}{newTimer};
+\end{op}
+\begin{op}[e]{SetThreat}\index{SetThreat|FuncDef}%
+\signature{() \Oto ()}
+\parms{}
+\annlab[o]{Sensor`SetThreat}
+\ass{threat}{\fnapply{io.readThreat}{}}
+\end{op}
+\kSync
+
+\mutex{SetThreat,GetThreat}
+
+\kOperations
+\kw{\kw{public}}\begin{op}[e]{IsFinished}\index{IsFinished|FuncDef}%
+\signature{() \Oto ()}
+\parms{}
+\annlab[o]{Sensor`IsFinished}
+\Skip 
+\end{op}
+\kSync
+\index{IsFinished|MethodOcc}
+\per{IsFinished}{
+threat = \Nil 
+}
+
+\kOperations
+\kw{\kw{public}}\begin{op}[e]{GetThreat}\index{GetThreat|FuncDef}%
+\signature{() \Oto \Opt{MissileType\index{MissileType|TypeOcc} \X Angle\index{Angle|TypeOcc}}}
+\parms{}
+\annlab[o]{Sensor`GetThreat}
+\begin{letstmt}
+\patdef{orgThreat}{threat}
+\end{letstmt} \\
+\begin{blockstmt}
+\If threat \Neq \Nil 
+\Then \\
+\ass{threat}{\reccons{\kw{mk-}}{\const{Consumed},0}}
+\Fi ; \\
+\return{orgThreat}
+\end{blockstmt}
+\end{op}
+\kSync
+\index{GetThreat|MethodOcc}
+\per{GetThreat}{
+threat \Neq \Nil  \Implies threat.\#1 \Neq \const{Consumed}
+}
+
+{\small\sf end} {\it Sensor}
+
+\end{vdm}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{tabular}{p{25mm}l}
+{\bf Test Suite :} & vdm.tc \\ 
+{\bf Class :} & Sensor \\ 
+\end{tabular}
+
+\begin{longtable}{|l|r|r|}\hline
+{\bf Sensor`ThreatConsumed} & {\bf \#Calls} & {\bf Coverage} \kill
+{\bf Name} & {\bf \#Calls} & {\bf Coverage} \\ \hline\hline
+\endhead
+Sensor`Init & 1 & $\surd$ \\ \hline
+Sensor`GetThreat & 9 & $\surd$ \\ \hline
+Sensor`SetThreat & 8 & $\surd$ \\ \hline
+Sensor`IsFinished & 1 & $\surd$ \\ \hline
+Sensor`ThreatConsumed & 8 & $\surd$ \\ \hline
+\hline
+{\bf Total Coverage} & & {\bf 100\%} \\ \hline
+\end{longtable}
+
+

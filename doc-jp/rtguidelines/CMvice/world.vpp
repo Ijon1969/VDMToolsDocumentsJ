@@ -1,0 +1,62 @@
+\begin{vdm_al}
+class World
+
+instance variables
+
+-- maintain a link to the environment
+public static env : [シミュレーション環境] := nil;
+
+operations
+
+public World: () ==> World
+World () ==
+  (-- set-up the sensors
+   env := new シミュレーション環境("scenario.txt");
+   env.addSensor(ミサイル防御対策システム`sensor0);
+   env.addSensor(ミサイル防御対策システム`sensor1);
+   env.addSensor(ミサイル防御対策システム`sensor2);
+   env.addSensor(ミサイル防御対策システム`sensor3);
+
+   -- add the first controller with four 容器s
+   ミサイル防御対策システム`controller0.add容器(ミサイル防御対策システム`容器0);
+   ミサイル防御対策システム`controller0.add容器(ミサイル防御対策システム`容器1);
+   ミサイル防御対策システム`controller0.add容器(ミサイル防御対策システム`容器2);
+   ミサイル防御対策システム`controller0.add容器(ミサイル防御対策システム`容器3);
+   ミサイル防御対策システム`s探知器.addController(ミサイル防御対策システム`controller0);
+
+   -- add the second controller with four 容器s
+   ミサイル防御対策システム`controller1.add容器(ミサイル防御対策システム`容器4);
+   ミサイル防御対策システム`controller1.add容器(ミサイル防御対策システム`容器5);
+   ミサイル防御対策システム`controller1.add容器(ミサイル防御対策システム`容器6);
+   ミサイル防御対策システム`controller1.add容器(ミサイル防御対策システム`容器7);
+   ミサイル防御対策システム`s探知器.addController(ミサイル防御対策システム`controller1);
+ 
+   -- add the third controller with four 容器s
+   ミサイル防御対策システム`controller2.add容器(ミサイル防御対策システム`容器8);
+   ミサイル防御対策システム`controller2.add容器(ミサイル防御対策システム`容器9);
+   ミサイル防御対策システム`controller2.add容器(ミサイル防御対策システム`容器10);
+   ミサイル防御対策システム`controller2.add容器(ミサイル防御対策システム`容器11);
+   ミサイル防御対策システム`s探知器.addController(ミサイル防御対策システム`controller2);
+      
+   -- start the s探知器
+   start(ミサイル防御対策システム`s探知器) );
+
+-- the run function blocks the user-interface thread
+-- until all ミサイルs in the file have been processed
+public Run: () ==> ()
+Run () == 
+  (-- start the environment
+   start (env);
+   -- wait for the environment to handle all input
+   env.isFinished();
+   -- wait for the ミサイル s探知器 to finish
+   ミサイル防御対策システム`s探知器.isFinished();
+   -- print the result
+   env.showResult())
+
+end World
+\end{vdm_al}
+
+\begin{rtinfo}[World`World]
+{vdm.tc}[World]
+\end{rtinfo}

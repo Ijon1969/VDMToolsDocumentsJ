@@ -1,0 +1,124 @@
+\begin{vdm}{\small\sf class} $WaitNotify$\index{WaitNotify|ModDef}
+\par
+\kInstanceVarDef
+\parlinebr
+\begin{insvar}
+\assdef{waitset}{\setof{\Nat }}[{\set{}}]
+\end{insvar}
+\par
+\kOperations
+\kw{\kw{public}}\begin{op}[e]{Wait}\index{Wait|FuncDef}%
+\signature{() \Oto ()}
+\parms{}
+\annlab[o]{WaitNotify`Wait}
+\begin{blockstmt}
+\call{AddToWaitSet}{\kw{threadid}} ; \\
+\call{Awake}{}
+\end{blockstmt};
+\end{op}
+\kw{\kw{public}}\begin{op}[e]{Notify}\index{Notify|FuncDef}%
+\signature{() \Oto ()}
+\parms{}
+\annlab[o]{WaitNotify`Notify}
+\color{not-covered}\Letbe* p \In waitset \Lin \\
+\ass{waitset}{waitset \Setdiff \set{p}}\color{covered};
+\end{op}
+\kw{\kw{public}}\begin{op}[e]{NotifyThread}\index{NotifyThread|FuncDef}%
+\signature{\Nat  \Oto ()}
+\parms{tId}
+\annlab[o]{WaitNotify`NotifyThread}
+\ass{waitset}{waitset \Setdiff \set{tId}};
+\end{op}
+\kw{\kw{public}}\begin{op}[e]{NotifyAll}\index{NotifyAll|FuncDef}%
+\signature{() \Oto ()}
+\parms{}
+\annlab[o]{WaitNotify`NotifyAll}
+\color{not-covered}\ass{waitset}{\set{}}\color{covered};
+\end{op}
+\kw{\kw{private}}\begin{op}[e]{AddToWaitSet}\index{AddToWaitSet|FuncDef}%
+\signature{\Nat  \Oto ()}
+\parms{n}
+\annlab[o]{WaitNotify`AddToWaitSet}
+\ass{waitset}{waitset \Union \set{n}};
+\end{op}
+\kw{\kw{private}}\begin{op}[e]{Awake}\index{Awake|FuncDef}%
+\signature{() \Oto ()}
+\parms{}
+\annlab[o]{WaitNotify`Awake}
+\Skip 
+\end{op}
+\kSync
+\index{Awake|MethodOcc}
+\per{Awake}{
+\kw{threadid} \Notin waitset
+};
+
+
+\mutex{AddToWaitSet}
+
+{\small\sf end} {\it WaitNotify}
+
+\end{vdm}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{tabular}{p{25mm}l}
+{\bf Test Suite :} & vdm.tc \\ 
+{\bf Class :} & WaitNotify \\ 
+\end{tabular}
+
+\begin{longtable}{|l|r|r|}\hline
+{\bf WaitNotify`AddToWaitSet} & {\bf \#Calls} & {\bf Coverage} \kill
+{\bf Name} & {\bf \#Calls} & {\bf Coverage} \\ \hline\hline
+\endhead
+WaitNotify`Wait & 4692 & $\surd$ \\ \hline
+WaitNotify`Awake & 4669 & $\surd$ \\ \hline
+WaitNotify`Notify & 0 & 0\% \\ \hline
+WaitNotify`NotifyAll & 0 & 0\% \\ \hline
+WaitNotify`AddToWaitSet & 4692 & $\surd$ \\ \hline
+WaitNotify`NotifyThread & 4572 & $\surd$ \\ \hline
+\hline
+{\bf Total Coverage} & & {\bf 60\%} \\ \hline
+\end{longtable}
+
+

@@ -1,0 +1,109 @@
+\begin{vdm}{\small\sf class} $MissileDetector$
+\par
+\kInstanceVarDef
+\parlinebr
+\begin{insvar}
+\assdef{sensorRef}{Sensor}
+\end{insvar}
+\begin{insvar}
+\assdef{flareControlRef}{FlareController}
+\end{insvar}
+\begin{insvar}
+\assdef{threat}{\Opt{Sensor`MissileType \X Sensor`Angle}}[{\reccons{\kw{mk-}}{\const{None},0}}]
+\end{insvar}
+\par
+\kOperations
+\kw{\kw{public}}\begin{op}[e]{Init}%
+\signature{Sensor \X FlareController \Oto ()}
+\parms{newSensor,newFlareController}
+\annlab[o]{MissileDetector`Init}
+\begin{blockstmt}
+\ass{sensorRef}{newSensor} ; \\
+\ass{flareControlRef}{newFlareController}
+\end{blockstmt};
+\end{op}
+\kw{\kw{public}}\begin{op}[e]{Step}%
+\signature{() \Oto ()}
+\parms{}
+\annlab[o]{MissileDetector`Step}
+\begin{letstmt}
+\patdef{newthreat}{\fnapply{sensorRef.GetThreat}{}}
+\end{letstmt} \\
+\call{Update}{newthreat};
+\end{op}
+\begin{op}[e]{Update}%
+\signature{\Opt{Sensor`MissileType \X Sensor`Angle} \Oto ()}
+\parms{newThreat}
+\annlab[o]{MissileDetector`Update}
+\begin{blockstmt}
+\If newThreat = \Nil  \Or \pex{newThreat \Neq \Nil  \And newThreat.\#1 \Neq \const{None}}
+\Then \\
+\begin{blockstmt}
+\ass{threat}{newThreat} ; \\
+$flareControlRef$.\call{MissileIsHere}{newThreat}
+\end{blockstmt}
+\Fi
+\end{blockstmt};
+\end{op}
+\kw{\kw{public}}\begin{op}[e]{IsFinished}%
+\signature{() \Oto \Bool }
+\parms{}
+\annlab[o]{MissileDetector`IsFinished}
+\return{threat = \Nil }
+\end{op}
+{\small\sf end} {\it MissileDetector}
+
+\end{vdm}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{tabular}{p{25mm}l}
+{\bf Test Suite :} & vdm.tc \\ 
+{\bf Class :} & MissileDetector \\ 
+\end{tabular}
+
+\begin{longtable}{|l|r|r|}\hline
+{\bf MissileDetector`IsFinished} & {\bf \#Calls} & {\bf Coverage} \kill
+{\bf Name} & {\bf \#Calls} & {\bf Coverage} \\ \hline\hline
+\endhead
+MissileDetector`Init & 1 & $\surd$ \\ \hline
+MissileDetector`Step & 9 & $\surd$ \\ \hline
+MissileDetector`Update & 9 & $\surd$ \\ \hline
+MissileDetector`IsFinished & 37 & $\surd$ \\ \hline
+\hline
+{\bf Total Coverage} & & {\bf 100\%} \\ \hline
+\end{longtable}
+
+

@@ -1,0 +1,168 @@
+\BOOKMARK [1][-]{section.1}{1 Introduction}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{1.1 Purpose of The Document}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{1.2 History of The Language}{section.1}% 3
+\BOOKMARK [2][-]{subsection.1.3}{1.3 Structure of the Document}{section.1}% 4
+\BOOKMARK [1][-]{section.2}{2 Conformance Issues}{}% 5
+\BOOKMARK [1][-]{section.3}{3 Concrete Syntax Notation}{}% 6
+\BOOKMARK [1][-]{section.4}{4 Data Type Definitions}{}% 7
+\BOOKMARK [2][-]{subsection.4.1}{4.1 Basic Data Types}{section.4}% 8
+\BOOKMARK [3][-]{subsubsection.4.1.1}{4.1.1 The Boolean Type}{subsection.4.1}% 9
+\BOOKMARK [3][-]{subsubsection.4.1.2}{4.1.2 The Numeric Types}{subsection.4.1}% 10
+\BOOKMARK [3][-]{subsubsection.4.1.3}{4.1.3 The Character Type}{subsection.4.1}% 11
+\BOOKMARK [3][-]{subsubsection.4.1.4}{4.1.4 The Quote Type}{subsection.4.1}% 12
+\BOOKMARK [3][-]{subsubsection.4.1.5}{4.1.5 The Token Type}{subsection.4.1}% 13
+\BOOKMARK [2][-]{subsection.4.2}{4.2 Compound Types}{section.4}% 14
+\BOOKMARK [3][-]{subsubsection.4.2.1}{4.2.1 Set Types}{subsection.4.2}% 15
+\BOOKMARK [3][-]{subsubsection.4.2.2}{4.2.2 Sequence Types}{subsection.4.2}% 16
+\BOOKMARK [3][-]{subsubsection.4.2.3}{4.2.3 Map Types}{subsection.4.2}% 17
+\BOOKMARK [3][-]{subsubsection.4.2.4}{4.2.4 Product Types}{subsection.4.2}% 18
+\BOOKMARK [3][-]{subsubsection.4.2.5}{4.2.5 Composite Types}{subsection.4.2}% 19
+\BOOKMARK [3][-]{subsubsection.4.2.6}{4.2.6 Union and Optional Types}{subsection.4.2}% 20
+\BOOKMARK [3][-]{subsubsection.4.2.7}{4.2.7 The Object Reference Type}{subsection.4.2}% 21
+\BOOKMARK [3][-]{subsubsection.4.2.8}{4.2.8 Function Types}{subsection.4.2}% 22
+\BOOKMARK [2][-]{subsection.4.3}{4.3 Invariants}{section.4}% 23
+\BOOKMARK [1][-]{section.5}{5 Algorithm Definitions}{}% 24
+\BOOKMARK [1][-]{section.6}{6 Function Definitions}{}% 25
+\BOOKMARK [2][-]{subsection.6.1}{6.1 Polymorphic Functions}{section.6}% 26
+\BOOKMARK [2][-]{subsection.6.2}{6.2 Higher Order Functions}{section.6}% 27
+\BOOKMARK [1][-]{section.7}{7 Expressions}{}% 28
+\BOOKMARK [2][-]{subsection.7.1}{7.1 Let Expressions}{section.7}% 29
+\BOOKMARK [2][-]{subsection.7.2}{7.2 The Define Expression}{section.7}% 30
+\BOOKMARK [2][-]{subsection.7.3}{7.3 Unary and Binary Expressions}{section.7}% 31
+\BOOKMARK [2][-]{subsection.7.4}{7.4 Conditional Expressions}{section.7}% 32
+\BOOKMARK [2][-]{subsection.7.5}{7.5 Quantified Expressions}{section.7}% 33
+\BOOKMARK [2][-]{subsection.7.6}{7.6 The Iota Expression}{section.7}% 34
+\BOOKMARK [2][-]{subsection.7.7}{7.7 Set Expressions}{section.7}% 35
+\BOOKMARK [2][-]{subsection.7.8}{7.8 Sequence Expressions}{section.7}% 36
+\BOOKMARK [2][-]{subsection.7.9}{7.9 Map Expressions}{section.7}% 37
+\BOOKMARK [2][-]{subsection.7.10}{7.10 Tuple Constructor Expressions}{section.7}% 38
+\BOOKMARK [2][-]{subsection.7.11}{7.11 Record Expressions}{section.7}% 39
+\BOOKMARK [2][-]{subsection.7.12}{7.12 Apply Expressions}{section.7}% 40
+\BOOKMARK [2][-]{subsection.7.13}{7.13 The New Expression}{section.7}% 41
+\BOOKMARK [2][-]{subsection.7.14}{7.14 The Self Expression}{section.7}% 42
+\BOOKMARK [2][-]{subsection.7.15}{7.15 The Threadid Expression}{section.7}% 43
+\BOOKMARK [2][-]{subsection.7.16}{7.16 The Lambda Expression}{section.7}% 44
+\BOOKMARK [2][-]{subsection.7.17}{7.17 Narrow Expressions}{section.7}% 45
+\BOOKMARK [2][-]{subsection.7.18}{7.18 Is Expressions}{section.7}% 46
+\BOOKMARK [2][-]{subsection.7.19}{7.19 Base Class Membership}{section.7}% 47
+\BOOKMARK [2][-]{subsection.7.20}{7.20 Class Membership}{section.7}% 48
+\BOOKMARK [2][-]{subsection.7.21}{7.21 Same Base Class Membership}{section.7}% 49
+\BOOKMARK [2][-]{subsection.7.22}{7.22 Same Class Membership}{section.7}% 50
+\BOOKMARK [2][-]{subsection.7.23}{7.23 History Expressions}{section.7}% 51
+\BOOKMARK [2][-]{subsection.7.24}{7.24 Literals and Names}{section.7}% 52
+\BOOKMARK [2][-]{subsection.7.25}{7.25 The Undefined Expression}{section.7}% 53
+\BOOKMARK [2][-]{subsection.7.26}{7.26 The Precondition Expression}{section.7}% 54
+\BOOKMARK [1][-]{section.8}{8 Patterns}{}% 55
+\BOOKMARK [1][-]{section.9}{9 Bindings}{}% 56
+\BOOKMARK [1][-]{section.10}{10 Value \(Constant\) Definitions}{}% 57
+\BOOKMARK [1][-]{section.11}{11 Instance Variables}{}% 58
+\BOOKMARK [1][-]{section.12}{12 Operation Definitions}{}% 59
+\BOOKMARK [2][-]{subsection.12.1}{12.1 Constructors}{section.12}% 60
+\BOOKMARK [1][-]{section.13}{13 Statements}{}% 61
+\BOOKMARK [2][-]{subsection.13.1}{13.1 Let Statements}{section.13}% 62
+\BOOKMARK [2][-]{subsection.13.2}{13.2 The Define Statement}{section.13}% 63
+\BOOKMARK [2][-]{subsection.13.3}{13.3 The Block Statement}{section.13}% 64
+\BOOKMARK [2][-]{subsection.13.4}{13.4 The Assignment Statement}{section.13}% 65
+\BOOKMARK [2][-]{subsection.13.5}{13.5 Conditional Statements}{section.13}% 66
+\BOOKMARK [2][-]{subsection.13.6}{13.6 For-Loop Statements}{section.13}% 67
+\BOOKMARK [2][-]{subsection.13.7}{13.7 The While-Loop Statement}{section.13}% 68
+\BOOKMARK [2][-]{subsection.13.8}{13.8 The Nondeterministic Statement}{section.13}% 69
+\BOOKMARK [2][-]{subsection.13.9}{13.9 The Call Statement}{section.13}% 70
+\BOOKMARK [2][-]{subsection.13.10}{13.10 The Return Statement}{section.13}% 71
+\BOOKMARK [2][-]{subsection.13.11}{13.11 Exception Handling Statements}{section.13}% 72
+\BOOKMARK [2][-]{subsection.13.12}{13.12 The Error Statement}{section.13}% 73
+\BOOKMARK [2][-]{subsection.13.13}{13.13 The Identity Statement}{section.13}% 74
+\BOOKMARK [2][-]{subsection.13.14}{13.14 Start and Start List Statements}{section.13}% 75
+\BOOKMARK [2][-]{subsection.13.15}{13.15 The Specification Statement}{section.13}% 76
+\BOOKMARK [1][-]{section.14}{14 Top-level Specification}{}% 77
+\BOOKMARK [2][-]{subsection.14.1}{14.1 Classes}{section.14}% 78
+\BOOKMARK [2][-]{subsection.14.2}{14.2 Inheritance}{section.14}% 79
+\BOOKMARK [2][-]{subsection.14.3}{14.3 Interface and Availability of Class Members}{section.14}% 80
+\BOOKMARK [1][-]{section.15}{15 Synchronization Constraints}{}% 81
+\BOOKMARK [2][-]{subsection.15.1}{15.1 Permission Predicates}{section.15}% 82
+\BOOKMARK [3][-]{subsubsection.15.1.1}{15.1.1 History guards}{subsection.15.1}% 83
+\BOOKMARK [3][-]{subsubsection.15.1.2}{15.1.2 The object state guard}{subsection.15.1}% 84
+\BOOKMARK [3][-]{subsubsection.15.1.3}{15.1.3 Queue condition guards}{subsection.15.1}% 85
+\BOOKMARK [3][-]{subsubsection.15.1.4}{15.1.4 Evaluation of Guards}{subsection.15.1}% 86
+\BOOKMARK [2][-]{subsection.15.2}{15.2 Inheritance of Synchronization Constraints}{section.15}% 87
+\BOOKMARK [3][-]{subsubsection.15.2.1}{15.2.1 Mutex constraints}{subsection.15.2}% 88
+\BOOKMARK [1][-]{section.16}{16 Threads}{}% 89
+\BOOKMARK [2][-]{subsection.16.1}{16.1 Procedural Thread Definitions}{section.16}% 90
+\BOOKMARK [1][-]{section.17}{17 Trace Definitions}{}% 91
+\BOOKMARK [1][-]{section.18}{18 Differences between VDM++ and ISO /VDM-SL}{}% 92
+\BOOKMARK [1][-]{section.19}{19 Static Semantics}{}% 93
+\BOOKMARK [1][-]{section.20}{20 Scope Conflicts}{}% 94
+\BOOKMARK [1][-]{appendix.A}{A The VDM++ Syntax}{}% 95
+\BOOKMARK [2][-]{subsection.A.1}{A.1 Document}{appendix.A}% 96
+\BOOKMARK [2][-]{subsection.A.2}{A.2 Classes}{appendix.A}% 97
+\BOOKMARK [2][-]{subsection.A.3}{A.3 Definitions}{appendix.A}% 98
+\BOOKMARK [3][-]{subsubsection.A.3.1}{A.3.1 Type Definitions}{subsection.A.3}% 99
+\BOOKMARK [3][-]{subsubsection.A.3.2}{A.3.2 Value Definitions}{subsection.A.3}% 100
+\BOOKMARK [3][-]{subsubsection.A.3.3}{A.3.3 Function Definitions}{subsection.A.3}% 101
+\BOOKMARK [3][-]{subsubsection.A.3.4}{A.3.4 Operation Definitions}{subsection.A.3}% 102
+\BOOKMARK [3][-]{subsubsection.A.3.5}{A.3.5 Instance Variable Definitions}{subsection.A.3}% 103
+\BOOKMARK [3][-]{subsubsection.A.3.6}{A.3.6 Synchronization Definitions}{subsection.A.3}% 104
+\BOOKMARK [3][-]{subsubsection.A.3.7}{A.3.7 Thread Definitions}{subsection.A.3}% 105
+\BOOKMARK [3][-]{subsubsection.A.3.8}{A.3.8 Trace Definitions}{subsection.A.3}% 106
+\BOOKMARK [2][-]{subsection.A.4}{A.4 Expressions}{appendix.A}% 107
+\BOOKMARK [3][-]{subsubsection.A.4.1}{A.4.1 Bracketed Expressions}{subsection.A.4}% 108
+\BOOKMARK [3][-]{subsubsection.A.4.2}{A.4.2 Local Binding Expressions}{subsection.A.4}% 109
+\BOOKMARK [3][-]{subsubsection.A.4.3}{A.4.3 Conditional Expressions}{subsection.A.4}% 110
+\BOOKMARK [3][-]{subsubsection.A.4.4}{A.4.4 Unary Expressions}{subsection.A.4}% 111
+\BOOKMARK [3][-]{subsubsection.A.4.5}{A.4.5 Binary Expressions}{subsection.A.4}% 112
+\BOOKMARK [3][-]{subsubsection.A.4.6}{A.4.6 Quantified Expressions}{subsection.A.4}% 113
+\BOOKMARK [3][-]{subsubsection.A.4.7}{A.4.7 The Iota Expression}{subsection.A.4}% 114
+\BOOKMARK [3][-]{subsubsection.A.4.8}{A.4.8 Set Expressions}{subsection.A.4}% 115
+\BOOKMARK [3][-]{subsubsection.A.4.9}{A.4.9 Sequence Expressions}{subsection.A.4}% 116
+\BOOKMARK [3][-]{subsubsection.A.4.10}{A.4.10 Map Expressions}{subsection.A.4}% 117
+\BOOKMARK [3][-]{subsubsection.A.4.11}{A.4.11 The Tuple Constructor Expression}{subsection.A.4}% 118
+\BOOKMARK [3][-]{subsubsection.A.4.12}{A.4.12 Record Expressions}{subsection.A.4}% 119
+\BOOKMARK [3][-]{subsubsection.A.4.13}{A.4.13 Apply Expressions}{subsection.A.4}% 120
+\BOOKMARK [3][-]{subsubsection.A.4.14}{A.4.14 The Lambda Expression}{subsection.A.4}% 121
+\BOOKMARK [2][-]{subsection.A.5}{A.5 The narrow Expression}{appendix.A}% 122
+\BOOKMARK [3][-]{subsubsection.A.5.1}{A.5.1 The New Expression}{subsection.A.5}% 123
+\BOOKMARK [3][-]{subsubsection.A.5.2}{A.5.2 The Self Expression}{subsection.A.5}% 124
+\BOOKMARK [3][-]{subsubsection.A.5.3}{A.5.3 The Threadid Expression}{subsection.A.5}% 125
+\BOOKMARK [3][-]{subsubsection.A.5.4}{A.5.4 The Is Expression}{subsection.A.5}% 126
+\BOOKMARK [3][-]{subsubsection.A.5.5}{A.5.5 The Undefined Expression}{subsection.A.5}% 127
+\BOOKMARK [3][-]{subsubsection.A.5.6}{A.5.6 The Precondition Expression}{subsection.A.5}% 128
+\BOOKMARK [3][-]{subsubsection.A.5.7}{A.5.7 Base Class Membership}{subsection.A.5}% 129
+\BOOKMARK [3][-]{subsubsection.A.5.8}{A.5.8 Class Membership}{subsection.A.5}% 130
+\BOOKMARK [3][-]{subsubsection.A.5.9}{A.5.9 Same Base Class Membership}{subsection.A.5}% 131
+\BOOKMARK [3][-]{subsubsection.A.5.10}{A.5.10 Same Class Membership}{subsection.A.5}% 132
+\BOOKMARK [3][-]{subsubsection.A.5.11}{A.5.11 History Expressions}{subsection.A.5}% 133
+\BOOKMARK [3][-]{subsubsection.A.5.12}{A.5.12 Names}{subsection.A.5}% 134
+\BOOKMARK [2][-]{subsection.A.6}{A.6 State Designators}{appendix.A}% 135
+\BOOKMARK [2][-]{subsection.A.7}{A.7 Statements}{appendix.A}% 136
+\BOOKMARK [3][-]{subsubsection.A.7.1}{A.7.1 Local Binding Statements}{subsection.A.7}% 137
+\BOOKMARK [3][-]{subsubsection.A.7.2}{A.7.2 Block and Assignment Statements}{subsection.A.7}% 138
+\BOOKMARK [3][-]{subsubsection.A.7.3}{A.7.3 Conditional Statements}{subsection.A.7}% 139
+\BOOKMARK [3][-]{subsubsection.A.7.4}{A.7.4 Loop Statements}{subsection.A.7}% 140
+\BOOKMARK [3][-]{subsubsection.A.7.5}{A.7.5 The Nondeterministic Statement}{subsection.A.7}% 141
+\BOOKMARK [3][-]{subsubsection.A.7.6}{A.7.6 Call and Return Statements}{subsection.A.7}% 142
+\BOOKMARK [3][-]{subsubsection.A.7.7}{A.7.7 The Specification Statement}{subsection.A.7}% 143
+\BOOKMARK [3][-]{subsubsection.A.7.8}{A.7.8 Start and Start List Statements}{subsection.A.7}% 144
+\BOOKMARK [3][-]{subsubsection.A.7.9}{A.7.9 Exception Handling Statements}{subsection.A.7}% 145
+\BOOKMARK [3][-]{subsubsection.A.7.10}{A.7.10 The Error Statement}{subsection.A.7}% 146
+\BOOKMARK [3][-]{subsubsection.A.7.11}{A.7.11 The Identity Statement}{subsection.A.7}% 147
+\BOOKMARK [2][-]{subsection.A.8}{A.8 Patterns and Bindings}{appendix.A}% 148
+\BOOKMARK [3][-]{subsubsection.A.8.1}{A.8.1 Patterns}{subsection.A.8}% 149
+\BOOKMARK [3][-]{subsubsection.A.8.2}{A.8.2 Bindings}{subsection.A.8}% 150
+\BOOKMARK [1][-]{appendix.B}{B Lexical Specification}{}% 151
+\BOOKMARK [2][-]{subsection.B.1}{B.1 Characters}{appendix.B}% 152
+\BOOKMARK [2][-]{subsection.B.2}{B.2 Symbols}{appendix.B}% 153
+\BOOKMARK [1][-]{appendix.C}{C Operator Precedence}{}% 154
+\BOOKMARK [2][-]{subsection.C.1}{C.1 The Family of Combinators}{appendix.C}% 155
+\BOOKMARK [2][-]{subsection.C.2}{C.2 The Family of Applicators}{appendix.C}% 156
+\BOOKMARK [2][-]{subsection.C.3}{C.3 The Family of Evaluators}{appendix.C}% 157
+\BOOKMARK [2][-]{subsection.C.4}{C.4 The Family of Relations}{appendix.C}% 158
+\BOOKMARK [2][-]{subsection.C.5}{C.5 The Family of Connectives}{appendix.C}% 159
+\BOOKMARK [2][-]{subsection.C.6}{C.6 The Family of Constructors}{appendix.C}% 160
+\BOOKMARK [2][-]{subsection.C.7}{C.7 Grouping}{appendix.C}% 161
+\BOOKMARK [2][-]{subsection.C.8}{C.8 The Type Operators}{appendix.C}% 162
+\BOOKMARK [1][-]{appendix.D}{D Differences between the two Concrete Syntaxes}{}% 163
+\BOOKMARK [1][-]{appendix.E}{E Standard Libraries}{}% 164
+\BOOKMARK [2][-]{subsection.E.1}{E.1 Math Library}{appendix.E}% 165
+\BOOKMARK [2][-]{subsection.E.2}{E.2 IO Library}{appendix.E}% 166
+\BOOKMARK [2][-]{subsection.E.3}{E.3 VDMUtil Library}{appendix.E}% 167
+\BOOKMARK [1][-]{subsection.E.3}{Index}{}% 168

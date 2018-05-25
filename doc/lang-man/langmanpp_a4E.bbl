@@ -1,0 +1,52 @@
+\newcommand{\etalchar}[1]{$^{#1}$}
+\begin{thebibliography}{FLM{\etalchar{+}}05}
+
+\bibitem[Ada83]{adalrm}
+Reference manual for the ada programming language.
+\newblock Technical report, United States Government (Department of Defence),
+  American National Standards Institute, 1983.
+
+\bibitem[Daw91]{Dawes91}
+John Dawes.
+\newblock {\em {The VDM-SL Reference Guide}}.
+\newblock Pitman, 1991.
+\newblock ISBN 0-273-03151-1.
+
+\bibitem[D{\"u}r92]{Durr92a}
+E.H.H.\ D{\"u}rr.
+\newblock Syntactic description of the vdm++ language.
+\newblock Technical report, CAP Gemini, P.O.Box 2575, 3500 GN Utrecht, NL,
+  September 1992.
+
+\bibitem[FJ98]{Fitzgerald&98}
+J.S. Fitzgerald and C.B. Jones.
+\newblock {\em Proof in VDM: case studies}, chapter Proof in the Validation of
+  a Formal Model of a Tracking System for a Nuclear Plant.
+\newblock Springer-Verlag FACIT Series, 1998.
+
+\bibitem[FLM{\etalchar{+}}05]{Fitzgerald&05}
+John Fitzgerald, Peter~Gorm Larsen, Paul Mukherjee, Nico Plat, and Marcel
+  Verhoef.
+\newblock {\em {Validated Designs for Object--oriented Systems}}.
+\newblock Springer, New York, 2005.
+
+\bibitem[Jon90]{Jones90a}
+Cliff~B.\ Jones.
+\newblock {\em {Systematic Software Development Using VDM}}.
+\newblock Prentice-Hall International, Englewood Cliffs, New Jersey, second
+  edition, 1990.
+\newblock ISBN 0-13-880733-7.
+
+\bibitem[{P. }96]{ISOVDM96}
+{P. G. Larsen and B. S. Hansen and H. Brunn N. Plat and H. Toetenel and D. J.
+  Andrews and J. Dawes and G. Parkin and others}.
+\newblock {Information technology --- Programming languages, their environments
+  and system software interfaces --- Vienna Development Method ---
+  Specification Language --- Part 1: Base language}, December 1996.
+
+\bibitem[Pau91]{Paulson91}
+Lawrence~C.\ Paulson.
+\newblock {\em {ML for the Working Programmer}}.
+\newblock Cambridge University Press, 1991.
+
+\end{thebibliography}

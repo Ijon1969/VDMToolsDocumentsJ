@@ -1,0 +1,76 @@
+\BOOKMARK [1][-]{section.1}{1 はじめに}{}% 1
+\BOOKMARK [1][-]{section.2}{2 VDMTools の概略}{}% 2
+\BOOKMARK [1][-]{section.3}{3 VDMToolsガイドツアー }{}% 3
+\BOOKMARK [2][-]{subsection.3.1}{3.1 VDMToolsで取り扱う仕様の作成}{section.3}% 4
+\BOOKMARK [2][-]{subsection.3.2}{3.2 GUIで VDM-SL を始める}{section.3}% 5
+\BOOKMARK [2][-]{subsection.3.3}{3.3 オンラインヘルプ}{section.3}% 6
+\BOOKMARK [2][-]{subsection.3.4}{3.4 メニュー、ツールバー、サブウインドウ}{section.3}% 7
+\BOOKMARK [2][-]{subsection.3.5}{3.5 プロジェクトを作成する}{section.3}% 8
+\BOOKMARK [2][-]{subsection.3.6}{3.6 VDM仕様の構文チェック}{section.3}% 9
+\BOOKMARK [3][-]{subsubsection.3.6.1}{3.6.1 仕様の解析}{subsection.3.6}% 10
+\BOOKMARK [3][-]{subsubsection.3.6.2}{3.6.2 構文エラーの修正}{subsection.3.6}% 11
+\BOOKMARK [2][-]{subsection.3.7}{3.7 VDM仕様の型チェック}{section.3}% 12
+\BOOKMARK [2][-]{subsection.3.8}{3.8 仕様の検証}{section.3}% 13
+\BOOKMARK [3][-]{subsubsection.3.8.1}{3.8.1 インタープリタを使用した式の評価}{subsection.3.8}% 14
+\BOOKMARK [3][-]{subsubsection.3.8.2}{3.8.2 ブレイクポイントの設定}{subsection.3.8}% 15
+\BOOKMARK [3][-]{subsubsection.3.8.3}{3.8.3 動的型チェック}{subsection.3.8}% 16
+\BOOKMARK [3][-]{subsubsection.3.8.4}{3.8.4 証明課題のチェック}{subsection.3.8}% 17
+\BOOKMARK [2][-]{subsection.3.9}{3.9 体系的テスト}{section.3}% 18
+\BOOKMARK [2][-]{subsection.3.10}{3.10 清書機能}{section.3}% 19
+\BOOKMARK [2][-]{subsection.3.11}{3.11 コード生成}{section.3}% 20
+\BOOKMARK [2][-]{subsection.3.12}{3.12 動的リンク機能}{section.3}% 21
+\BOOKMARK [2][-]{subsection.3.13}{3.13 VDMTools API}{section.3}% 22
+\BOOKMARK [2][-]{subsection.3.14}{3.14 VDMToolsの終了}{section.3}% 23
+\BOOKMARK [1][-]{section.4}{4 VDMTools リファレンスマニュアル}{}% 24
+\BOOKMARK [2][-]{subsection.4.1}{4.1 GUI全般}{section.4}% 25
+\BOOKMARK [3][-]{subsubsection.4.1.1}{4.1.1 プロジェクト・ハンドリング}{subsection.4.1}% 26
+\BOOKMARK [3][-]{subsubsection.4.1.2}{4.1.2 仕様の操作}{subsection.4.1}% 27
+\BOOKMARK [3][-]{subsubsection.4.1.3}{4.1.3 ログウインドウ、エラーリストウインドウ、ソースウインドウ}{subsection.4.1}% 28
+\BOOKMARK [3][-]{subsubsection.4.1.4}{4.1.4 ファイルの編集}{subsection.4.1}% 29
+\BOOKMARK [3][-]{subsubsection.4.1.5}{4.1.5 インタープリタを使う}{subsection.4.1}% 30
+\BOOKMARK [3][-]{subsubsection.4.1.6}{4.1.6 オンラインヘルプ}{subsection.4.1}% 31
+\BOOKMARK [2][-]{subsection.4.2}{4.2 コマンドラインインターフェース全般}{section.4}% 32
+\BOOKMARK [3][-]{subsubsection.4.2.1}{4.2.1 ファイルの初期化}{subsection.4.2}% 33
+\BOOKMARK [2][-]{subsection.4.3}{4.3 構文チェック機能}{section.4}% 34
+\BOOKMARK [3][-]{subsubsection.4.3.1}{4.3.1 GUI}{subsection.4.3}% 35
+\BOOKMARK [3][-]{subsubsection.4.3.2}{4.3.2 構文エラーのフォーマット}{subsection.4.3}% 36
+\BOOKMARK [3][-]{subsubsection.4.3.3}{4.3.3 コマンドラインインターフェース}{subsection.4.3}% 37
+\BOOKMARK [3][-]{subsubsection.4.3.4}{4.3.4 Emacsインターフェース}{subsection.4.3}% 38
+\BOOKMARK [2][-]{subsection.4.4}{4.4 型チェック機能}{section.4}% 39
+\BOOKMARK [3][-]{subsubsection.4.4.1}{4.4.1 GUI}{subsection.4.4}% 40
+\BOOKMARK [3][-]{subsubsection.4.4.2}{4.4.2 エラーおよびワーニングのフォーマット}{subsection.4.4}% 41
+\BOOKMARK [3][-]{subsubsection.4.4.3}{4.4.3 コマンドラインインターフェース}{subsection.4.4}% 42
+\BOOKMARK [3][-]{subsubsection.4.4.4}{4.4.4 Emacsインターフェース}{subsection.4.4}% 43
+\BOOKMARK [2][-]{subsection.4.5}{4.5 インタープリタとデバッガ}{section.4}% 44
+\BOOKMARK [3][-]{subsubsection.4.5.1}{4.5.1 GUI}{subsection.4.5}% 45
+\BOOKMARK [3][-]{subsubsection.4.5.2}{4.5.2 スタンダードライブラリ}{subsection.4.5}% 46
+\BOOKMARK [3][-]{subsubsection.4.5.3}{4.5.3 コマンドラインインターフェース}{subsection.4.5}% 47
+\BOOKMARK [3][-]{subsubsection.4.5.4}{4.5.4 Emacsインターフェース}{subsection.4.5}% 48
+\BOOKMARK [2][-]{subsection.4.6}{4.6 証明課題生成機能}{section.4}% 49
+\BOOKMARK [2][-]{subsection.4.7}{4.7 清書機能}{section.4}% 50
+\BOOKMARK [3][-]{subsubsection.4.7.1}{4.7.1 GUI}{subsection.4.7}% 51
+\BOOKMARK [3][-]{subsubsection.4.7.2}{4.7.2 コマンドラインインターフェース}{subsection.4.7}% 52
+\BOOKMARK [3][-]{subsubsection.4.7.3}{4.7.3 Emacsインターフェース}{subsection.4.7}% 53
+\BOOKMARK [2][-]{subsection.4.8}{4.8 VDM-SLからC++コード生成}{section.4}% 54
+\BOOKMARK [3][-]{subsubsection.4.8.1}{4.8.1 GUI}{subsection.4.8}% 55
+\BOOKMARK [3][-]{subsubsection.4.8.2}{4.8.2 コマンドラインインターフェース}{subsection.4.8}% 56
+\BOOKMARK [3][-]{subsubsection.4.8.3}{4.8.3 Emacsインターフェース}{subsection.4.8}% 57
+\BOOKMARK [2][-]{subsection.4.9}{4.9 VDMモデルの体系的テスト}{section.4}% 58
+\BOOKMARK [3][-]{subsubsection.4.9.1}{4.9.1 テストカバレッジファイルの準備}{subsection.4.9}% 59
+\BOOKMARK [3][-]{subsubsection.4.9.2}{4.9.2 テストカバレッジファイルの更新}{subsection.4.9}% 60
+\BOOKMARK [3][-]{subsubsection.4.9.3}{4.9.3 テストカバレッジの統計データ作成}{subsection.4.9}% 61
+\BOOKMARK [3][-]{subsubsection.4.9.4}{4.9.4 LaTeX を使ったテストカバレッジ例}{subsection.4.9}% 62
+\BOOKMARK [1][-]{section*.16}{用語集}{}% 63
+\BOOKMARK [1][-]{appendix.A}{A VDM技術の情報源}{}% 64
+\BOOKMARK [1][-]{appendix.B}{B VDM-SLと LaTeX の結合}{}% 65
+\BOOKMARK [2][-]{subsection.B.1}{B.1 仕様ファイルのフォーマット}{appendix.B}% 66
+\BOOKMARK [2][-]{subsection.B.2}{B.2 \040LaTeX 文書のセットアップ}{appendix.B}% 67
+\BOOKMARK [1][-]{appendix.C}{C VDMTools環境の設定}{}% 68
+\BOOKMARK [2][-]{subsection.C.1}{C.1 一般}{appendix.C}% 69
+\BOOKMARK [2][-]{subsection.C.2}{C.2 インターフェースオプション}{appendix.C}% 70
+\BOOKMARK [1][-]{appendix.D}{D Emacsインターフェース}{}% 71
+\BOOKMARK [1][-]{appendix.E}{E Sort例題向けテストスクリプト}{}% 72
+\BOOKMARK [2][-]{subsection.E.1}{E.1 Windows/DOSプラットフォーム}{appendix.E}% 73
+\BOOKMARK [2][-]{subsection.E.2}{E.2 UNIXプラットフォーム}{appendix.E}% 74
+\BOOKMARK [1][-]{appendix.F}{F Microsoft Wordについてのトラブルシューティング問題}{}% 75
+\BOOKMARK [1][-]{Item.15}{索引}{}% 76

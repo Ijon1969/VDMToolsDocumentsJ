@@ -1,0 +1,807 @@
+\indexentry{Boolean|hyperpage}{6}
+\indexentry{{\sf  bool}|hyperpage}{6}
+\indexentry{{\sf  true}|hyperpage}{6}
+\indexentry{{\sf  false}|hyperpage}{6}
+\indexentry{\keyw{not}|hyperpage}{6}
+\indexentry{Negation|hyperpage}{6}
+\indexentry{\keyw{and}|hyperpage}{6}
+\indexentry{Conjunction|hyperpage}{6}
+\indexentry{\keyw{or}|hyperpage}{6}
+\indexentry{Disjunction|hyperpage}{6}
+\indexentry{\texttt{=>}|hyperpage}{6}
+\indexentry{Implication|hyperpage}{6}
+\indexentry{\texttt{<=>}|hyperpage}{6}
+\indexentry{Biimplication|hyperpage}{6}
+\indexentry{\texttt{=}!boolean equality|hyperpage}{6}
+\indexentry{Equality!boolean type|hyperpage}{6}
+\indexentry{\texttt{<>}!boolean inequality|hyperpage}{6}
+\indexentry{Inequality!boolean type|hyperpage}{6}
+\indexentry{{\sf  real}|hyperpage}{8}
+\indexentry{{\sf  rat}|hyperpage}{8}
+\indexentry{{\sf  int}|hyperpage}{8}
+\indexentry{{\sf  nat}|hyperpage}{8}
+\indexentry{{\sf  nat1}|hyperpage}{8}
+\indexentry{\texttt{-}|hyperpage}{9}
+\indexentry{Unary minus|hyperpage}{9}
+\indexentry{\keyw{abs}|hyperpage}{9}
+\indexentry{Absolute value|hyperpage}{9}
+\indexentry{\keyw{floor}|hyperpage}{9}
+\indexentry{Floor|hyperpage}{9}
+\indexentry{\texttt{+}|hyperpage}{9}
+\indexentry{Sum|hyperpage}{9}
+\indexentry{Difference!numeric|hyperpage}{9}
+\indexentry{\texttt{*}|hyperpage}{9}
+\indexentry{Product|hyperpage}{9}
+\indexentry{\texttt{/}|hyperpage}{9}
+\indexentry{Division|hyperpage}{9}
+\indexentry{\keyw{div}|hyperpage}{9}
+\indexentry{Integer division|hyperpage}{9}
+\indexentry{\keyw{mod}|hyperpage}{9}
+\indexentry{Remainder|hyperpage}{9}
+\indexentry{\keyw{mod}|hyperpage}{9}
+\indexentry{Modulus|hyperpage}{9}
+\indexentry{\texttt{**}!numeric power|hyperpage}{9}
+\indexentry{Power|hyperpage}{9}
+\indexentry{\texttt{<}|hyperpage}{9}
+\indexentry{Less than|hyperpage}{9}
+\indexentry{\texttt{>}|hyperpage}{9}
+\indexentry{Greater than|hyperpage}{9}
+\indexentry{\texttt{<=}|hyperpage}{9}
+\indexentry{Less or equal|hyperpage}{9}
+\indexentry{\texttt{>=}|hyperpage}{9}
+\indexentry{Greater or equal|hyperpage}{9}
+\indexentry{\texttt{=}!numeric equality|hyperpage}{9}
+\indexentry{Equality!numeric type|hyperpage}{9}
+\indexentry{\texttt{<>}!numeric inequality|hyperpage}{9}
+\indexentry{Inequality!numeric type|hyperpage}{9}
+\indexentry{Char|hyperpage}{11}
+\indexentry{{\sf  char}|hyperpage}{11}
+\indexentry{\texttt{=}!char equality|hyperpage}{11}
+\indexentry{Equality!char|hyperpage}{11}
+\indexentry{\texttt{<>}!char inequality|hyperpage}{11}
+\indexentry{Inequality!char|hyperpage}{11}
+\indexentry{Quote|hyperpage}{11}
+\indexentry{\texttt{<>}!quote value|hyperpage}{12}
+\indexentry{\texttt{=}!quote equality|hyperpage}{12}
+\indexentry{Equality!quote type|hyperpage}{12}
+\indexentry{\texttt{<>}!quote inequality|hyperpage}{12}
+\indexentry{Inequality!quote|hyperpage}{12}
+\indexentry{Token|hyperpage}{12}
+\indexentry{{\sf  token}|hyperpage}{12}
+\indexentry{\keyw{mk\_}!token value|hyperpage}{12}
+\indexentry{\texttt{=}!token equality|hyperpage}{12}
+\indexentry{Equality!token type|hyperpage}{12}
+\indexentry{\texttt{<>}!token inequality|hyperpage}{12}
+\indexentry{Inequality!token type|hyperpage}{12}
+\indexentry{type|hyperpage}{14}
+\indexentry{set type|hyperpage}{14}
+\indexentry{\keyw{set of}|hyperpage}{14}
+\indexentry{\texttt{\{\}}!set enumeration|hyperpage}{14}
+\indexentry{\texttt{\{"|\}}!set comprehension|hyperpage}{14}
+\indexentry{\texttt{\&}!set comprehension|hyperpage}{14}
+\indexentry{\keyw{in set}|hyperpage}{15}
+\indexentry{Membership|hyperpage}{15}
+\indexentry{\keyw{not in set}|hyperpage}{15}
+\indexentry{Not membership|hyperpage}{15}
+\indexentry{\keyw{union}|hyperpage}{15}
+\indexentry{Union|hyperpage}{15}
+\indexentry{\keyw{inter}|hyperpage}{15}
+\indexentry{Intersection|hyperpage}{15}
+\indexentry{\texttt{\char'134}|hyperpage}{15}
+\indexentry{Difference!set|hyperpage}{15}
+\indexentry{\keyw{subset}|hyperpage}{15}
+\indexentry{Subset|hyperpage}{15}
+\indexentry{\keyw{psubset}|hyperpage}{15}
+\indexentry{Proper subset|hyperpage}{15}
+\indexentry{\texttt{=}!set equality|hyperpage}{15}
+\indexentry{Equality!set type|hyperpage}{15}
+\indexentry{\texttt{<>}!set inequality|hyperpage}{15}
+\indexentry{Inequality!set type|hyperpage}{15}
+\indexentry{\keyw{card}|hyperpage}{15}
+\indexentry{Cardinality|hyperpage}{15}
+\indexentry{\keyw{dunion}|hyperpage}{15}
+\indexentry{Distributed union|hyperpage}{15}
+\indexentry{\keyw{dinter}|hyperpage}{15}
+\indexentry{Distributed intersection|hyperpage}{15}
+\indexentry{\keyw{power}|hyperpage}{15}
+\indexentry{Finite power set|hyperpage}{15}
+\indexentry{type|hyperpage}{16}
+\indexentry{seq type|hyperpage}{17}
+\indexentry{seq0 type|hyperpage}{17}
+\indexentry{seq1 type|hyperpage}{17}
+\indexentry{\keyw{seq of}|hyperpage}{17}
+\indexentry{\keyw{seq1 of}|hyperpage}{17}
+\indexentry{\texttt{[]}!sequence enumeration|hyperpage}{17}
+\indexentry{\texttt{["|]}!sequence comprehension|hyperpage}{17}
+\indexentry{\texttt{\&}!sequence comprehension|hyperpage}{17}
+\indexentry{\keyw{hd}|hyperpage}{17}
+\indexentry{Head|hyperpage}{17}
+\indexentry{\keyw{tl}|hyperpage}{17}
+\indexentry{Tail|hyperpage}{17}
+\indexentry{\keyw{len}|hyperpage}{17}
+\indexentry{Length|hyperpage}{17}
+\indexentry{\keyw{elems}|hyperpage}{17}
+\indexentry{Elements|hyperpage}{17}
+\indexentry{\keyw{inds}|hyperpage}{17}
+\indexentry{Indexes|hyperpage}{17}
+\indexentry{\texttt{\char'136}|hyperpage}{17}
+\indexentry{Concatenation|hyperpage}{17}
+\indexentry{\keyw{conc}|hyperpage}{17}
+\indexentry{Distributed concatenation|hyperpage}{17}
+\indexentry{\texttt{++}!sequence modification|hyperpage}{17}
+\indexentry{Sequence modification|hyperpage}{17}
+\indexentry{\texttt{()}!sequence apply|hyperpage}{17}
+\indexentry{Sequence application|hyperpage}{17}
+\indexentry{\texttt{=}!sequence equality|hyperpage}{17}
+\indexentry{Equality!sequence type|hyperpage}{17}
+\indexentry{\texttt{<>}!sequence inequality|hyperpage}{17}
+\indexentry{Inequality!sequence type|hyperpage}{17}
+\indexentry{type|hyperpage}{19}
+\indexentry{map type|hyperpage}{19}
+\indexentry{general map type|hyperpage}{19}
+\indexentry{injective map type|hyperpage}{19}
+\indexentry{\keyw{map to}|hyperpage}{19}
+\indexentry{\keyw{inmap to}|hyperpage}{19}
+\indexentry{\texttt{\{\}}!map enumeration|hyperpage}{20}
+\indexentry{\texttt{\{"|\}}!map comprehension|hyperpage}{20}
+\indexentry{\texttt{\&}!map comprehension|hyperpage}{20}
+\indexentry{\keyw{dom}|hyperpage}{20}
+\indexentry{Domain|hyperpage}{20}
+\indexentry{\keyw{rng}|hyperpage}{20}
+\indexentry{Range|hyperpage}{20}
+\indexentry{\keyw{munion}|hyperpage}{20}
+\indexentry{Merge|hyperpage}{20}
+\indexentry{\texttt{++}!map override|hyperpage}{20}
+\indexentry{Override|hyperpage}{20}
+\indexentry{\keyw{merge}|hyperpage}{20}
+\indexentry{Distribute merge|hyperpage}{20}
+\indexentry{\texttt{<:}|hyperpage}{20}
+\indexentry{Domain restrict to|hyperpage}{20}
+\indexentry{\texttt{<-:}|hyperpage}{20}
+\indexentry{Domain restrict by|hyperpage}{20}
+\indexentry{\texttt{:>}|hyperpage}{20}
+\indexentry{Range restrict to|hyperpage}{20}
+\indexentry{\texttt{:->}|hyperpage}{20}
+\indexentry{Range restrict by|hyperpage}{20}
+\indexentry{\texttt{()}!map apply|hyperpage}{20}
+\indexentry{Map apply|hyperpage}{20}
+\indexentry{\keyw{comp}!map composition|hyperpage}{20}
+\indexentry{Map composition|hyperpage}{20}
+\indexentry{\texttt{**}|hyperpage}{20}
+\indexentry{Map iteration|hyperpage}{20}
+\indexentry{\texttt{=}!map equality|hyperpage}{20}
+\indexentry{Equality!map type|hyperpage}{20}
+\indexentry{\texttt{<>}!map inequality|hyperpage}{20}
+\indexentry{Inequality!map type|hyperpage}{20}
+\indexentry{\keyw{inverse}|hyperpage}{20}
+\indexentry{Map inverse|hyperpage}{20}
+\indexentry{type|hyperpage}{23}
+\indexentry{product type|hyperpage}{23}
+\indexentry{\texttt{*}!tuple type|hyperpage}{23}
+\indexentry{\keyw{mk\_}!tuple constructor|hyperpage}{23}
+\indexentry{\texttt{=}!tuple equality|hyperpage}{23}
+\indexentry{Equality!tuple|hyperpage}{23}
+\indexentry{\texttt{<>}!tuple inequality|hyperpage}{23}
+\indexentry{Inequality!tuple|hyperpage}{23}
+\indexentry{record type|hyperpage}{23}
+\indexentry{type|hyperpage}{24}
+\indexentry{composite type|hyperpage}{24}
+\indexentry{field list|hyperpage}{24}
+\indexentry{field|hyperpage}{24}
+\indexentry{composite type|hyperpage}{24}
+\indexentry{\texttt{::}|hyperpage}{24}
+\indexentry{\texttt{:-}|hyperpage}{24}
+\indexentry{equality abstraction field|hyperpage}{25}
+\indexentry{\keyw{mk\_}!record constructor|hyperpage}{25}
+\indexentry{\texttt{.}!record field selector|hyperpage}{25}
+\indexentry{Field select|hyperpage}{25}
+\indexentry{\texttt{=}!record equality|hyperpage}{25}
+\indexentry{Equality!record|hyperpage}{25}
+\indexentry{\texttt{<>}!record inequality|hyperpage}{25}
+\indexentry{Inequality!record|hyperpage}{25}
+\indexentry{type|hyperpage}{27}
+\indexentry{union type|hyperpage}{28}
+\indexentry{optional type|hyperpage}{28}
+\indexentry{\texttt{|}!union type|hyperpage}{28}
+\indexentry{\texttt{[]}!optional type|hyperpage}{28}
+\indexentry{\texttt{=}!union equality|hyperpage}{28}
+\indexentry{Equality!union type|hyperpage}{28}
+\indexentry{\texttt{<>}!union inequality|hyperpage}{28}
+\indexentry{Inequality!union type|hyperpage}{28}
+\indexentry{\texttt{=}!optional equality|hyperpage}{28}
+\indexentry{Equality!optional type|hyperpage}{28}
+\indexentry{\texttt{<>}!optional inequality|hyperpage}{28}
+\indexentry{Inequality!optional type|hyperpage}{28}
+\indexentry{type|hyperpage}{30}
+\indexentry{function type|hyperpage}{30}
+\indexentry{partial function type|hyperpage}{30}
+\indexentry{total function type|hyperpage}{30}
+\indexentry{discretionary type|hyperpage}{30}
+\indexentry{\texttt{->}|hyperpage}{30}
+\indexentry{\texttt{+>}|hyperpage}{30}
+\indexentry{\texttt{=}!function equality|hyperpage}{31}
+\indexentry{Equality!function type|hyperpage}{31}
+\indexentry{\texttt{<>}!function inequality|hyperpage}{31}
+\indexentry{Inequality!function type|hyperpage}{31}
+\indexentry{\keyw{comp}!function composition|hyperpage}{31}
+\indexentry{Function composition|hyperpage}{31}
+\indexentry{\texttt{**}!function iteration|hyperpage}{31}
+\indexentry{Function iteration|hyperpage}{31}
+\indexentry{\texttt{()}!function apply|hyperpage}{31}
+\indexentry{Function apply|hyperpage}{31}
+\indexentry{function definitions|hyperpage}{34}
+\indexentry{access function definition|hyperpage}{34}
+\indexentry{access|hyperpage}{34}
+\indexentry{function definition|hyperpage}{34}
+\indexentry{explicit function definition|hyperpage}{34}
+\indexentry{implicit function definition|hyperpage}{35}
+\indexentry{extended explicit function definition|hyperpage}{35}
+\indexentry{type variable list|hyperpage}{35}
+\indexentry{identifier type pair list|hyperpage}{35}
+\indexentry{parameter types|hyperpage}{35}
+\indexentry{pattern type pair list|hyperpage}{35}
+\indexentry{function type|hyperpage}{35}
+\indexentry{partial function type|hyperpage}{35}
+\indexentry{total function type|hyperpage}{35}
+\indexentry{discretionary type|hyperpage}{35}
+\indexentry{parameters|hyperpage}{35}
+\indexentry{pattern list|hyperpage}{35}
+\indexentry{function body|hyperpage}{36}
+\indexentry{{\sf  is not yet specified}!functions|hyperpage}{36}
+\indexentry{{\sf  is subclass responsibility}!functions|hyperpage}{36}
+\indexentry{expression|hyperpage}{40}
+\indexentry{let expression|hyperpage}{41}
+\indexentry{let be expression|hyperpage}{41}
+\indexentry{local definition|hyperpage}{41}
+\indexentry{value definition|hyperpage}{41}
+\indexentry{expression|hyperpage}{43}
+\indexentry{def expression|hyperpage}{44}
+\indexentry{expression|hyperpage}{44}
+\indexentry{unary expression|hyperpage}{45}
+\indexentry{prefix expression|hyperpage}{45}
+\indexentry{unary operator|hyperpage}{45}
+\indexentry{map inverse|hyperpage}{45}
+\indexentry{binary expression|hyperpage}{45}
+\indexentry{binary operator|hyperpage}{45}
+\indexentry{expression|hyperpage}{45}
+\indexentry{if expression|hyperpage}{46}
+\indexentry{elseif expression|hyperpage}{46}
+\indexentry{cases expression|hyperpage}{46}
+\indexentry{cases expression alternatives|hyperpage}{46}
+\indexentry{cases expression alternative|hyperpage}{46}
+\indexentry{others expression|hyperpage}{46}
+\indexentry{expression|hyperpage}{48}
+\indexentry{quantified expression|hyperpage}{48}
+\indexentry{all expression|hyperpage}{48}
+\indexentry{exists expression|hyperpage}{48}
+\indexentry{bind list|hyperpage}{48}
+\indexentry{exists unique expression|hyperpage}{48}
+\indexentry{expression|hyperpage}{50}
+\indexentry{iota expression|hyperpage}{50}
+\indexentry{expression|hyperpage}{51}
+\indexentry{set enumeration|hyperpage}{51}
+\indexentry{expression list|hyperpage}{51}
+\indexentry{set comprehension|hyperpage}{51}
+\indexentry{set range expression|hyperpage}{51}
+\indexentry{expression|hyperpage}{53}
+\indexentry{sequence enumeration|hyperpage}{53}
+\indexentry{sequence comprehension|hyperpage}{53}
+\indexentry{subsequence|hyperpage}{53}
+\indexentry{expression|hyperpage}{55}
+\indexentry{map enumeration|hyperpage}{55}
+\indexentry{maplet|hyperpage}{55}
+\indexentry{map comprehension|hyperpage}{55}
+\indexentry{expression|hyperpage}{56}
+\indexentry{tuple constructor|hyperpage}{56}
+\indexentry{expression|hyperpage}{56}
+\indexentry{record constructor|hyperpage}{56}
+\indexentry{record modifier|hyperpage}{56}
+\indexentry{record modification|hyperpage}{57}
+\indexentry{expression|hyperpage}{58}
+\indexentry{apply|hyperpage}{58}
+\indexentry{field select|hyperpage}{58}
+\indexentry{tuple select|hyperpage}{58}
+\indexentry{function type instantiation|hyperpage}{58}
+\indexentry{expression|hyperpage}{59}
+\indexentry{new expression|hyperpage}{59}
+\indexentry{expression|hyperpage}{60}
+\indexentry{self expression|hyperpage}{60}
+\indexentry{expression|hyperpage}{61}
+\indexentry{threadid expression|hyperpage}{61}
+\indexentry{expression|hyperpage}{63}
+\indexentry{lambda expression|hyperpage}{63}
+\indexentry{type bind list|hyperpage}{63}
+\indexentry{type bind|hyperpage}{63}
+\indexentry{expression|hyperpage}{64}
+\indexentry{narrow expression|hyperpage}{64}
+\indexentry{expression|hyperpage}{66}
+\indexentry{general is expression|hyperpage}{66}
+\indexentry{is expression|hyperpage}{66}
+\indexentry{is basic type|hyperpage}{66}
+\indexentry{type judgement|hyperpage}{66}
+\indexentry{base class membership expression|hyperpage}{67}
+\indexentry{expression|hyperpage}{67}
+\indexentry{isofbaseclass expression|hyperpage}{67}
+\indexentry{class membership expression|hyperpage}{68}
+\indexentry{expression|hyperpage}{68}
+\indexentry{isofclass expression|hyperpage}{68}
+\indexentry{same base class membership expression|hyperpage}{68}
+\indexentry{expression|hyperpage}{68}
+\indexentry{samebaseclass expression|hyperpage}{68}
+\indexentry{same class membership expression|hyperpage}{69}
+\indexentry{expression|hyperpage}{69}
+\indexentry{sameclass expression|hyperpage}{69}
+\indexentry{history expressions|hyperpage}{69}
+\indexentry{expression|hyperpage}{69}
+\indexentry{act expression|hyperpage}{69}
+\indexentry{fin expression|hyperpage}{70}
+\indexentry{active expression|hyperpage}{70}
+\indexentry{req expression|hyperpage}{70}
+\indexentry{waiting expression|hyperpage}{70}
+\indexentry{expression|hyperpage}{71}
+\indexentry{name|hyperpage}{71}
+\indexentry{name list|hyperpage}{71}
+\indexentry{old name|hyperpage}{71}
+\indexentry{expression|hyperpage}{73}
+\indexentry{undefined expression|hyperpage}{73}
+\indexentry{expression|hyperpage}{74}
+\indexentry{precondition expression|hyperpage}{74}
+\indexentry{pattern bind|hyperpage}{75}
+\indexentry{pattern|hyperpage}{75}
+\indexentry{pattern identifier|hyperpage}{75}
+\indexentry{match value|hyperpage}{75}
+\indexentry{set enum pattern|hyperpage}{75}
+\indexentry{set union pattern|hyperpage}{75}
+\indexentry{seq enum pattern|hyperpage}{75}
+\indexentry{seq conc pattern|hyperpage}{75}
+\indexentry{map enumeration pattern|hyperpage}{75}
+\indexentry{maplet pattern list|hyperpage}{75}
+\indexentry{maplet pattern|hyperpage}{75}
+\indexentry{map muinon pattern|hyperpage}{75}
+\indexentry{tuple pattern|hyperpage}{75}
+\indexentry{record pattern|hyperpage}{75}
+\indexentry{pattern list|hyperpage}{75}
+\indexentry{bind|hyperpage}{80}
+\indexentry{set bind|hyperpage}{80}
+\indexentry{type bind|hyperpage}{80}
+\indexentry{bind list|hyperpage}{80}
+\indexentry{multiple bind|hyperpage}{80}
+\indexentry{multiple set bind|hyperpage}{80}
+\indexentry{multiple type bind|hyperpage}{80}
+\indexentry{value definitions|hyperpage}{81}
+\indexentry{access value definition|hyperpage}{81}
+\indexentry{value definition|hyperpage}{81}
+\indexentry{instance variable definitions|hyperpage}{82}
+\indexentry{instance variable definition|hyperpage}{82}
+\indexentry{access assignment definition|hyperpage}{82}
+\indexentry{assignment definition|hyperpage}{82}
+\indexentry{invariant definition|hyperpage}{82}
+\indexentry{operation definitions|hyperpage}{84}
+\indexentry{access operation definition|hyperpage}{84}
+\indexentry{operation definition|hyperpage}{84}
+\indexentry{explicit operation definition|hyperpage}{84}
+\indexentry{implicit operation definition|hyperpage}{84}
+\indexentry{implicit operation body|hyperpage}{84}
+\indexentry{extended explicit operation definition|hyperpage}{84}
+\indexentry{operation type|hyperpage}{85}
+\indexentry{discretionary type|hyperpage}{85}
+\indexentry{parameters|hyperpage}{85}
+\indexentry{pattern list|hyperpage}{85}
+\indexentry{operation body|hyperpage}{85}
+\indexentry{{\sf  is not yet specified}!operations|hyperpage}{85}
+\indexentry{{\sf  is subclass responsibility}!operations|hyperpage}{85}
+\indexentry{externals|hyperpage}{85}
+\indexentry{var information|hyperpage}{85}
+\indexentry{mode|hyperpage}{85}
+\indexentry{name list|hyperpage}{85}
+\indexentry{exceptions|hyperpage}{85}
+\indexentry{error list|hyperpage}{85}
+\indexentry{error|hyperpage}{85}
+\indexentry{statement|hyperpage}{88}
+\indexentry{let statement|hyperpage}{88}
+\indexentry{let be statement|hyperpage}{88}
+\indexentry{local definition|hyperpage}{89}
+\indexentry{value definition|hyperpage}{89}
+\indexentry{statement|hyperpage}{90}
+\indexentry{def statement|hyperpage}{90}
+\indexentry{equals definition|hyperpage}{90}
+\indexentry{statement|hyperpage}{91}
+\indexentry{block statement|hyperpage}{92}
+\indexentry{dcl statement|hyperpage}{92}
+\indexentry{assignment definition|hyperpage}{92}
+\indexentry{statement|hyperpage}{93}
+\indexentry{general assign statement|hyperpage}{93}
+\indexentry{assign statement|hyperpage}{93}
+\indexentry{state designator|hyperpage}{93}
+\indexentry{field reference|hyperpage}{93}
+\indexentry{map or sequence reference|hyperpage}{93}
+\indexentry{multiple assign statement|hyperpage}{93}
+\indexentry{statement|hyperpage}{96}
+\indexentry{if statement|hyperpage}{96}
+\indexentry{elseif statement|hyperpage}{96}
+\indexentry{cases statement|hyperpage}{96}
+\indexentry{cases statement alternatives|hyperpage}{96}
+\indexentry{cases statement alternative|hyperpage}{96}
+\indexentry{others statement|hyperpage}{96}
+\indexentry{statement|hyperpage}{98}
+\indexentry{sequence for loop|hyperpage}{98}
+\indexentry{for loop|hyperpage}{98}
+\indexentry{set for loop|hyperpage}{98}
+\indexentry{index for loop|hyperpage}{98}
+\indexentry{statement|hyperpage}{100}
+\indexentry{while loop|hyperpage}{100}
+\indexentry{statement|hyperpage}{101}
+\indexentry{nondeterministic statement|hyperpage}{101}
+\indexentry{statement|hyperpage}{103}
+\indexentry{call statement|hyperpage}{103}
+\indexentry{object designator|hyperpage}{103}
+\indexentry{object field reference|hyperpage}{103}
+\indexentry{object apply|hyperpage}{103}
+\indexentry{self expressions|hyperpage}{105}
+\indexentry{statement|hyperpage}{105}
+\indexentry{return statement|hyperpage}{105}
+\indexentry{statement|hyperpage}{106}
+\indexentry{always statement|hyperpage}{106}
+\indexentry{trap statement|hyperpage}{106}
+\indexentry{recursive trap statement|hyperpage}{106}
+\indexentry{traps|hyperpage}{106}
+\indexentry{exit statement|hyperpage}{106}
+\indexentry{statement|hyperpage}{109}
+\indexentry{error statement|hyperpage}{109}
+\indexentry{statement|hyperpage}{110}
+\indexentry{identity statement|hyperpage}{110}
+\indexentry{statement|hyperpage}{111}
+\indexentry{start statement|hyperpage}{111}
+\indexentry{start list statement|hyperpage}{111}
+\indexentry{statement|hyperpage}{112}
+\indexentry{specification statement|hyperpage}{112}
+\indexentry{document|hyperpage}{114}
+\indexentry{class|hyperpage}{114}
+\indexentry{inheritance clause|hyperpage}{114}
+\indexentry{class body|hyperpage}{114}
+\indexentry{definition block|hyperpage}{115}
+\indexentry{synchronization definitions|hyperpage}{124}
+\indexentry{synchronization|hyperpage}{124}
+\indexentry{permission predicates|hyperpage}{124}
+\indexentry{permission predicate|hyperpage}{124}
+\indexentry{mutex predicate|hyperpage}{124}
+\indexentry{thread definitions|hyperpage}{131}
+\indexentry{thread definition|hyperpage}{131}
+\indexentry{procedural thread definition|hyperpage}{131}
+\indexentry{traces definitions|hyperpage}{133}
+\indexentry{named trace|hyperpage}{134}
+\indexentry{trace definition list|hyperpage}{134}
+\indexentry{trace definition term|hyperpage}{134}
+\indexentry{trace definition|hyperpage}{134}
+\indexentry{trace core definition|hyperpage}{134}
+\indexentry{trace apply expression|hyperpage}{134}
+\indexentry{trace repeat pattern|hyperpage}{134}
+\indexentry{trace bracketed expression|hyperpage}{134}
+\indexentry{trace bindings|hyperpage}{134}
+\indexentry{trace binding|hyperpage}{134}
+\indexentry{document|hyperpage}{142}
+\indexentry{class|hyperpage}{142}
+\indexentry{inheritance clause|hyperpage}{142}
+\indexentry{class body|hyperpage}{142}
+\indexentry{definition block|hyperpage}{142}
+\indexentry{type definitions|hyperpage}{142}
+\indexentry{access type definition|hyperpage}{142}
+\indexentry{access|hyperpage}{143}
+\indexentry{type definition|hyperpage}{143}
+\indexentry{type|hyperpage}{143}
+\indexentry{bracketed type|hyperpage}{143}
+\indexentry{basic type|hyperpage}{143}
+\indexentry{quote type|hyperpage}{143}
+\indexentry{composite type|hyperpage}{143}
+\indexentry{field list|hyperpage}{143}
+\indexentry{field|hyperpage}{143}
+\indexentry{union type|hyperpage}{143}
+\indexentry{product type|hyperpage}{144}
+\indexentry{optional type|hyperpage}{144}
+\indexentry{set type|hyperpage}{144}
+\indexentry{seq type|hyperpage}{144}
+\indexentry{seq0 type|hyperpage}{144}
+\indexentry{seq1 type|hyperpage}{144}
+\indexentry{map type|hyperpage}{144}
+\indexentry{general map type|hyperpage}{144}
+\indexentry{injective map type|hyperpage}{144}
+\indexentry{function type|hyperpage}{144}
+\indexentry{partial function type|hyperpage}{144}
+\indexentry{total function type|hyperpage}{144}
+\indexentry{discretionary type|hyperpage}{144}
+\indexentry{type name|hyperpage}{144}
+\indexentry{type variable|hyperpage}{144}
+\indexentry{invariant|hyperpage}{144}
+\indexentry{invariant initial function|hyperpage}{144}
+\indexentry{value definitions|hyperpage}{145}
+\indexentry{access value definition|hyperpage}{145}
+\indexentry{value definition|hyperpage}{145}
+\indexentry{function definitions|hyperpage}{145}
+\indexentry{access function definition|hyperpage}{145}
+\indexentry{function definition|hyperpage}{145}
+\indexentry{explicit function definition|hyperpage}{145}
+\indexentry{implicit function definition|hyperpage}{145}
+\indexentry{extended explicit function definition|hyperpage}{146}
+\indexentry{type variable list|hyperpage}{146}
+\indexentry{identifier type pair|hyperpage}{146}
+\indexentry{parameter types|hyperpage}{146}
+\indexentry{identifier type pair list|hyperpage}{146}
+\indexentry{pattern type pair list|hyperpage}{146}
+\indexentry{parameters list|hyperpage}{146}
+\indexentry{parameters|hyperpage}{146}
+\indexentry{function body|hyperpage}{146}
+\indexentry{operation definitions|hyperpage}{146}
+\indexentry{access operation definition|hyperpage}{146}
+\indexentry{operation definition|hyperpage}{147}
+\indexentry{explicit operation definition|hyperpage}{147}
+\indexentry{implicit operation definition|hyperpage}{147}
+\indexentry{implicit operation body|hyperpage}{147}
+\indexentry{extended explicit operation definition|hyperpage}{147}
+\indexentry{operation type|hyperpage}{147}
+\indexentry{operation body|hyperpage}{147}
+\indexentry{externals|hyperpage}{147}
+\indexentry{var information|hyperpage}{147}
+\indexentry{mode|hyperpage}{148}
+\indexentry{exceptions|hyperpage}{148}
+\indexentry{error list|hyperpage}{148}
+\indexentry{error|hyperpage}{148}
+\indexentry{instance variable definitions|hyperpage}{148}
+\indexentry{instance variable definition|hyperpage}{148}
+\indexentry{access assignment definition|hyperpage}{148}
+\indexentry{invariant definition|hyperpage}{148}
+\indexentry{synchronization definitions|hyperpage}{148}
+\indexentry{synchronization|hyperpage}{148}
+\indexentry{permission predicates|hyperpage}{148}
+\indexentry{permission predicate|hyperpage}{148}
+\indexentry{mutex predicate|hyperpage}{148}
+\indexentry{thread definitions|hyperpage}{149}
+\indexentry{thread definition|hyperpage}{149}
+\indexentry{procedural thread definition|hyperpage}{149}
+\indexentry{traces definitions|hyperpage}{149}
+\indexentry{named trace|hyperpage}{149}
+\indexentry{trace definition list|hyperpage}{149}
+\indexentry{trace definition term|hyperpage}{149}
+\indexentry{trace definition|hyperpage}{149}
+\indexentry{trace core definition|hyperpage}{149}
+\indexentry{trace apply expression|hyperpage}{149}
+\indexentry{trace repeat pattern|hyperpage}{149}
+\indexentry{trace bracketed expression|hyperpage}{149}
+\indexentry{trace bindings|hyperpage}{150}
+\indexentry{trace binding|hyperpage}{150}
+\indexentry{expression list|hyperpage}{150}
+\indexentry{expression|hyperpage}{150}
+\indexentry{bracketed expression|hyperpage}{151}
+\indexentry{let expression|hyperpage}{151}
+\indexentry{let be expression|hyperpage}{151}
+\indexentry{def expression|hyperpage}{151}
+\indexentry{if expression|hyperpage}{151}
+\indexentry{elseif expression|hyperpage}{151}
+\indexentry{cases expression|hyperpage}{152}
+\indexentry{cases expression alternatives|hyperpage}{152}
+\indexentry{cases expression alternative|hyperpage}{152}
+\indexentry{others expression|hyperpage}{152}
+\indexentry{unary expression|hyperpage}{152}
+\indexentry{prefix expression|hyperpage}{152}
+\indexentry{unary operator|hyperpage}{152}
+\indexentry{unary plus|hyperpage}{152}
+\indexentry{unary minus|hyperpage}{153}
+\indexentry{arithmetic abs|hyperpage}{153}
+\indexentry{floor|hyperpage}{153}
+\indexentry{not|hyperpage}{153}
+\indexentry{set cardinality|hyperpage}{153}
+\indexentry{finite power set|hyperpage}{153}
+\indexentry{distributed set union|hyperpage}{153}
+\indexentry{distributed set intersection|hyperpage}{153}
+\indexentry{sequence head|hyperpage}{153}
+\indexentry{sequence tail|hyperpage}{153}
+\indexentry{sequence length|hyperpage}{153}
+\indexentry{sequence elements|hyperpage}{153}
+\indexentry{sequence indices|hyperpage}{153}
+\indexentry{distributed sequence concatenation|hyperpage}{153}
+\indexentry{map domain|hyperpage}{153}
+\indexentry{map range|hyperpage}{153}
+\indexentry{distributed map merge|hyperpage}{153}
+\indexentry{map inverse|hyperpage}{153}
+\indexentry{binary expression|hyperpage}{154}
+\indexentry{binary operator|hyperpage}{154}
+\indexentry{arithmetic plus|hyperpage}{154}
+\indexentry{arithmetic minus|hyperpage}{154}
+\indexentry{arithmetic multiplication|hyperpage}{155}
+\indexentry{arithmetic divide|hyperpage}{155}
+\indexentry{arithmetic integer division|hyperpage}{155}
+\indexentry{arithmetic rem|hyperpage}{155}
+\indexentry{arithmetic mod|hyperpage}{155}
+\indexentry{less than|hyperpage}{155}
+\indexentry{less than or equal|hyperpage}{155}
+\indexentry{greater than|hyperpage}{155}
+\indexentry{greater than or equal|hyperpage}{155}
+\indexentry{equal|hyperpage}{155}
+\indexentry{not equal|hyperpage}{155}
+\indexentry{or|hyperpage}{155}
+\indexentry{and|hyperpage}{155}
+\indexentry{imply|hyperpage}{155}
+\indexentry{logical equivalence|hyperpage}{155}
+\indexentry{in set|hyperpage}{155}
+\indexentry{not in set|hyperpage}{155}
+\indexentry{subset|hyperpage}{156}
+\indexentry{proper subset|hyperpage}{156}
+\indexentry{set union|hyperpage}{156}
+\indexentry{set difference|hyperpage}{156}
+\indexentry{set intersection|hyperpage}{156}
+\indexentry{sequence concatenate|hyperpage}{156}
+\indexentry{map or sequence modify|hyperpage}{156}
+\indexentry{map merge|hyperpage}{156}
+\indexentry{map domain restrict to|hyperpage}{156}
+\indexentry{map domain restrict by|hyperpage}{156}
+\indexentry{map range restrict to|hyperpage}{156}
+\indexentry{map range restrict by|hyperpage}{156}
+\indexentry{composition|hyperpage}{156}
+\indexentry{iterate|hyperpage}{156}
+\indexentry{quantified expression|hyperpage}{156}
+\indexentry{all expression|hyperpage}{156}
+\indexentry{exists expression|hyperpage}{156}
+\indexentry{exists unique expression|hyperpage}{156}
+\indexentry{iota expression|hyperpage}{157}
+\indexentry{set enumeration|hyperpage}{157}
+\indexentry{set comprehension|hyperpage}{157}
+\indexentry{set range expression|hyperpage}{157}
+\indexentry{sequence enumeration|hyperpage}{157}
+\indexentry{sequence comprehension|hyperpage}{157}
+\indexentry{subsequence|hyperpage}{157}
+\indexentry{map enumeration|hyperpage}{157}
+\indexentry{maplet|hyperpage}{157}
+\indexentry{map comprehension|hyperpage}{157}
+\indexentry{tuple constructor|hyperpage}{157}
+\indexentry{record constructor|hyperpage}{158}
+\indexentry{record modifier|hyperpage}{158}
+\indexentry{record modification|hyperpage}{158}
+\indexentry{apply|hyperpage}{158}
+\indexentry{field select|hyperpage}{158}
+\indexentry{tuple select|hyperpage}{158}
+\indexentry{function type instantiation|hyperpage}{158}
+\indexentry{lambda expression|hyperpage}{158}
+\indexentry{narrow expression|hyperpage}{158}
+\indexentry{new expression|hyperpage}{158}
+\indexentry{self expression|hyperpage}{159}
+\indexentry{threadid expression|hyperpage}{159}
+\indexentry{general is expression|hyperpage}{159}
+\indexentry{is expression|hyperpage}{159}
+\indexentry{type judgement|hyperpage}{159}
+\indexentry{undefined expression|hyperpage}{159}
+\indexentry{pre-condition expression|hyperpage}{159}
+\indexentry{isofbaseclass expression|hyperpage}{159}
+\indexentry{isofclass expression|hyperpage}{159}
+\indexentry{samebaseclass expression|hyperpage}{160}
+\indexentry{sameclass expression|hyperpage}{160}
+\indexentry{act expression|hyperpage}{160}
+\indexentry{fin expression|hyperpage}{160}
+\indexentry{active expression|hyperpage}{160}
+\indexentry{req expression|hyperpage}{160}
+\indexentry{waiting expression|hyperpage}{160}
+\indexentry{name|hyperpage}{160}
+\indexentry{name list|hyperpage}{160}
+\indexentry{old name|hyperpage}{160}
+\indexentry{state designator|hyperpage}{161}
+\indexentry{field reference|hyperpage}{161}
+\indexentry{map or sequence reference|hyperpage}{161}
+\indexentry{statement|hyperpage}{161}
+\indexentry{let statement|hyperpage}{161}
+\indexentry{local definition|hyperpage}{162}
+\indexentry{let be statement|hyperpage}{162}
+\indexentry{def statement|hyperpage}{162}
+\indexentry{equals definition|hyperpage}{162}
+\indexentry{block statement|hyperpage}{162}
+\indexentry{dcl statement|hyperpage}{162}
+\indexentry{assignment definition|hyperpage}{162}
+\indexentry{general assign statement|hyperpage}{162}
+\indexentry{assign statement|hyperpage}{162}
+\indexentry{multiple assign statement|hyperpage}{162}
+\indexentry{if statement|hyperpage}{163}
+\indexentry{elseif statement|hyperpage}{163}
+\indexentry{cases statement|hyperpage}{163}
+\indexentry{cases statement alternatives|hyperpage}{163}
+\indexentry{cases statement alternative|hyperpage}{163}
+\indexentry{others statement|hyperpage}{163}
+\indexentry{sequence for loop|hyperpage}{163}
+\indexentry{set for loop|hyperpage}{163}
+\indexentry{index for loop|hyperpage}{163}
+\indexentry{while loop|hyperpage}{163}
+\indexentry{nondeterministic statement|hyperpage}{163}
+\indexentry{call statement|hyperpage}{164}
+\indexentry{object designator|hyperpage}{164}
+\indexentry{object field reference|hyperpage}{164}
+\indexentry{object apply|hyperpage}{164}
+\indexentry{return statement|hyperpage}{164}
+\indexentry{specification statement|hyperpage}{164}
+\indexentry{start statement|hyperpage}{164}
+\indexentry{start list statement|hyperpage}{164}
+\indexentry{always statement|hyperpage}{164}
+\indexentry{trap statement|hyperpage}{164}
+\indexentry{recursive trap statement|hyperpage}{164}
+\indexentry{traps|hyperpage}{165}
+\indexentry{exit statement|hyperpage}{165}
+\indexentry{error statement|hyperpage}{165}
+\indexentry{identity statement|hyperpage}{165}
+\indexentry{pattern|hyperpage}{165}
+\indexentry{pattern identifier|hyperpage}{165}
+\indexentry{match value|hyperpage}{165}
+\indexentry{set enum pattern|hyperpage}{165}
+\indexentry{set union pattern|hyperpage}{165}
+\indexentry{seq enum pattern|hyperpage}{166}
+\indexentry{seq conc pattern|hyperpage}{166}
+\indexentry{map enumeration pattern|hyperpage}{166}
+\indexentry{maplet pattern list|hyperpage}{166}
+\indexentry{maplet pattern|hyperpage}{166}
+\indexentry{map muinon pattern|hyperpage}{166}
+\indexentry{tuple pattern|hyperpage}{166}
+\indexentry{tuple pattern|hyperpage}{166}
+\indexentry{record pattern|hyperpage}{166}
+\indexentry{pattern list|hyperpage}{166}
+\indexentry{pattern bind|hyperpage}{166}
+\indexentry{bind|hyperpage}{166}
+\indexentry{set bind|hyperpage}{166}
+\indexentry{type bind|hyperpage}{166}
+\indexentry{bind list|hyperpage}{166}
+\indexentry{multiple bind|hyperpage}{167}
+\indexentry{multiple set bind|hyperpage}{167}
+\indexentry{multiple type bind|hyperpage}{167}
+\indexentry{type bind list|hyperpage}{167}
+\indexentry{character|hyperpage}{167}
+\indexentry{keyword|hyperpage}{170}
+\indexentry{separator|hyperpage}{170}
+\indexentry{identifier|hyperpage}{170}
+\indexentry{type variable identifier|hyperpage}{171}
+\indexentry{is basic type|hyperpage}{171}
+\indexentry{symbolic literal|hyperpage}{171}
+\indexentry{numeral|hyperpage}{171}
+\indexentry{numeric literal|hyperpage}{171}
+\indexentry{exponent|hyperpage}{171}
+\indexentry{decimal literal|hyperpage}{171}
+\indexentry{hexadecimal literal|hyperpage}{171}
+\indexentry{boolean literal|hyperpage}{171}
+\indexentry{nil literal|hyperpage}{171}
+\indexentry{character literal|hyperpage}{171}
+\indexentry{escape sequence|hyperpage}{171}
+\indexentry{multi character|hyperpage}{171}
+\indexentry{text literal|hyperpage}{172}
+\indexentry{quote literal|hyperpage}{172}
+\indexentry{Single-line comment|hyperpage}{172}
+\indexentry{Multiple-line comment|hyperpage}{172}
+\indexentry{combinator|hyperpage}{174}
+\indexentry{iterate|hyperpage}{174}
+\indexentry{composition|hyperpage}{174}
+\indexentry{applicator|hyperpage}{174}
+\indexentry{subsequence|hyperpage}{174}
+\indexentry{apply|hyperpage}{174}
+\indexentry{function type instantiation|hyperpage}{174}
+\indexentry{field select|hyperpage}{174}
+\indexentry{evaluator|hyperpage}{175}
+\indexentry{arithmetic prefix operator|hyperpage}{175}
+\indexentry{set prefix operator|hyperpage}{175}
+\indexentry{sequence prefix operator|hyperpage}{175}
+\indexentry{map prefix operator|hyperpage}{175}
+\indexentry{arithmetic infix operator|hyperpage}{175}
+\indexentry{set infix operator|hyperpage}{175}
+\indexentry{sequence infix operator|hyperpage}{175}
+\indexentry{map infix operator|hyperpage}{175}
+\indexentry{relation|hyperpage}{176}
+\indexentry{relational infix operator|hyperpage}{176}
+\indexentry{set relational operator|hyperpage}{176}
+\indexentry{connective|hyperpage}{177}
+\indexentry{logical prefix operator|hyperpage}{177}
+\indexentry{logical infix operator|hyperpage}{177}
+\indexentry{Standard libraries|hyperpage}{180}
+\indexentry{library|hyperpage}{180}
+\indexentry{Math|hyperpage}{180}
+\indexentry{IO|hyperpage}{180}
+\indexentry{Sine|hyperpage}{180}
+\indexentry{Cosine|hyperpage}{180}
+\indexentry{Tangent|hyperpage}{180}
+\indexentry{Cotangent|hyperpage}{180}
+\indexentry{Inverse sine|hyperpage}{180}
+\indexentry{Inverse cosine|hyperpage}{180}
+\indexentry{Inverse tangent|hyperpage}{180}
+\indexentry{Square root|hyperpage}{180}
+\indexentry{pi|hyperpage}{180}
+\indexentry{IO|hyperpage}{181}
+\indexentry{VDMUtil|hyperpage}{183}

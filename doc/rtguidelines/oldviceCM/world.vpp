@@ -1,0 +1,23 @@
+class World
+
+instance variables
+
+timerRef : Timer           := new Timer();
+sensor   : Sensor          := new Sensor();
+
+operations
+
+public Run : () ==> seq of FlareController`FlareType
+Run() ==
+  ( start(timerRef);
+    CM`md.Init(sensor,CM`fc,timerRef);
+    CM`fc.Init(CM`md,timerRef);
+    start(sensor);
+    start(CM`md);
+    start(CM`fc);
+    sensor.IsFinished();
+    CM`md.IsFinished();
+    return CM`fc.IsFinished()
+  )
+
+end World

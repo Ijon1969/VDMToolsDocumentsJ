@@ -1,0 +1,32 @@
+\begin{vdm_al}
+class Sensor is subclass of GLOBAL
+
+instance variables
+
+-- the left hand-side of the viewing angle of the sensor
+private aperature : Angle;
+
+operations
+
+public Sensor: Angle ==> Sensor
+Sensor (psa) == aperature := psa;
+
+-- get the left hand-side start point and opening angle
+public getAperature: () ==> GLOBAL`Angle * GLOBAL`Angle
+getAperature () == return mk_ (aperature, SENSOR_APERATURE);
+
+-- trip is called from the environment to
+-- signal an event. The sensor triggers the
+-- missile detector for further processing
+public trip: EventId * MissileType * Angle ==> ()
+trip (evid, pmt, pa) ==
+  -- log and time stamp the observed threat
+  CM`detector.addThreat(evid, pmt,pa,World`timerRef.GetTime())
+pre canObserve(pa, aperature, SENSOR_APERATURE)
+
+end Sensor
+\end{vdm_al}
+
+\begin{rtinfo}[Sensor`getAperature]
+{vdm.tc}[Sensor]
+\end{rtinfo}

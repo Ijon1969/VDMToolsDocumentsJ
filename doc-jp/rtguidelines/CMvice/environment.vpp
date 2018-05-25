@@ -1,0 +1,95 @@
+\section{シミュレーション環境}
+\begin{vdm_al}
+class シミュレーション環境 is subclass of GLOBAL
+
+types
+
+public inline  = 事象ID * ミサイルタイプ * 角度 * Time;
+public outline = 事象ID * 火炎弾タイプ * 角度 * nat * Time
+
+instance variables
+
+-- access to the VDMTools stdio
+io : IO := new IO();
+
+-- the input file to process
+inlines : seq of inline := [];
+
+-- the output file to print
+outlines : seq of outline := [];
+
+-- maintain a link to all sセンサ写像
+s対応角度範囲写像 : map nat to (角度 * 角度) := {|->};
+sセンサ写像 : map nat to Sensor := {|->};
+inv dom s対応角度範囲写像 = dom sセンサ写像;
+
+busy : bool := true;
+
+operations
+
+public シミュレーション環境: seq of char ==> シミュレーション環境
+シミュレーション環境 (fname) ==
+  def mk_ (-,input) = io.freadval[seq of inline](fname) in
+    inlines := input;
+
+public addSensor: Sensor ==> ()
+addSensor (psens) ==
+  duration (0)
+  (dcl id : nat := card dom s対応角度範囲写像 + 1;
+   atomic (
+    s対応角度範囲写像 := s対応角度範囲写像 munion {id |-> psens.対応可能左端角度を得る()};
+    sセンサ写像 := sセンサ写像 munion {id |-> psens} 
+   )
+  );
+
+private createSignal: () ==> ()
+createSignal () ==
+  duration (0) 
+  (if len inlines > 0
+   then (dcl curtime : Time := time, done : bool := false;
+         while not done do
+           def mk_ (eventid, pmt, pa, pt) = hd inlines in
+             if pt <= curtime
+             then (for all id in set dom s対応角度範囲写像 do
+                     def mk_(papplhs,pappsize) = s対応角度範囲写像(id) in
+                       if canObserve(pa,papplhs,pappsize)
+                       then sセンサ写像(id).trip(eventid,pmt,pa);
+                   inlines := tl inlines;
+                   done := len inlines = 0)
+             else done := true)
+   else busy := false);
+
+public handleEvent: 事象ID * 火炎弾タイプ * 角度 * Time * Time ==> ()
+handleEvent (p事象ID,p火炎弾タイプ,p角度,pt1,pt2) ==
+  duration (0) 
+  (outlines := outlines ^ [mk_ (p事象ID,p火炎弾タイプ,p角度,pt1,pt2)] );
+
+public showResult: () ==> ()
+showResult () ==
+  def - = io.writeval[seq of outline](outlines) in skip;
+
+public isFinished : () ==> ()
+isFinished () == skip;
+
+public GetAndPurgeOutlines: () ==> seq of outline
+GetAndPurgeOutlines() ==
+  let res = outlines
+  in
+    (outlines := [];
+     return res);
+
+sync
+
+mutex (handleEvent);
+per isFinished => not busy;
+
+thread
+
+periodic (1000,10,900,0) (createSignal)
+
+end シミュレーション環境
+\end{vdm_al}
+
+\begin{rtinfo}[シミュレーション環境`GetAndPurgeOutlines]
+{vdm.tc}[シミュレーション環境]
+\end{rtinfo}
